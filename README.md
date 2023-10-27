@@ -1,2 +1,1 @@
-# sri
-Smart Readiness Indicator Ontology
+# Smart Readiness Indicator Ontology
