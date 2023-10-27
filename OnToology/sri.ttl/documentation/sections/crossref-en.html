@@ -1,0 +1,232 @@
+<h2 id="crossreference" class="list">Cross-reference for The example ontology classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by The example ontology.
+<div xmlns:extra="https://w3id.org/extra#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     id="classes">
+   <h3 id="classes-headline" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#Organization" title="https://w3id.org/sri#Organization">Organization</a>
+      </li>
+      <li>
+         <a href="#Researcher" title="https://w3id.org/sri#Researcher">Researcher</a>
+      </li>
+      <li>
+         <a href="#Student" title="https://w3id.org/sri#Student">Student</a>
+      </li>
+   </ul>
+   <div class="entity" id="Organization">
+      <h3>Organization<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/sri#Organization</p>
+      <div class="comment">
+         <span class="markdown">An organized body of people with a particular purpose, especially a business, society, association, etc.</span>
+      </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>University of Southern California</pre>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#foundedIn" title="https://w3id.org/sri#foundedIn">founded in</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasMember" title="https://w3id.org/sri#hasMember">has member</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#partOf" title="https://w3id.org/sri#partOf">part of</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Researcher">
+      <h3>Researcher<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/sri#Researcher</p>
+      <div class="comment">
+         <span class="markdown">A definition of your class. For example, A researcher is a person who publishes scientific papers, writes research proposals and mentors students</span>
+      </div>
+      <dl>
+         <dt>Term rationale</dt>
+         <dd>The reason why this concept was added to the ontology. This could reflect some agreement or use cases that may need to be reflected here. For example: The concept Researcher was added to the ontology to represent those authors of scientific publications that belong to a public institution.</dd>
+      </dl>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>An example using the Researcher class, e.g., Bob is a professor at the University of Southern California.</pre>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#partOf" title="https://w3id.org/sri#partOf">part of</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasMember" title="https://w3id.org/sri#hasMember">has member</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasMentor" title="https://w3id.org/sri#hasMentor">has mentor</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Student">
+      <h3>Student<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/sri#Student</p>
+      <div class="comment">
+         <span class="markdown">Student is a class introduced in the version 1.0.1 of the ontology. </span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasMentor" title="https://w3id.org/sri#hasMentor">has mentor</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div xmlns:extra="https://w3id.org/extra#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#hasMember" title="https://w3id.org/sri#hasMember">has member</a>
+      </li>
+      <li>
+         <a href="#hasMentor" title="https://w3id.org/sri#hasMentor">has mentor</a>
+      </li>
+      <li>
+         <a href="#partOf" title="https://w3id.org/sri#partOf">part of</a>
+      </li>
+   </ul>
+   <div class="entity" id="hasMember">
+      <h3>has member<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/sri#hasMember</p>
+      <div class="comment">
+         <span class="markdown">This example property indicates that an Organization has a Researcher as member</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Organization" title="https://w3id.org/sri#Organization">Organization</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Researcher" title="https://w3id.org/sri#Researcher">Researcher</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasMentor">
+      <h3>has mentor<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/sri#hasMentor</p>
+      <div class="comment">
+         <span class="markdown">This property links the students to the researcher who mentored them</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Student" title="https://w3id.org/sri#Student">Student</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Researcher" title="https://w3id.org/sri#Researcher">Researcher</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="partOf">
+      <h3>part of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/sri#partOf</p>
+      <div class="comment">
+         <span class="markdown">This property links instances from Researcher to Organization</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Researcher" title="https://w3id.org/sri#Researcher">Researcher</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Organization" title="https://w3id.org/sri#Organization">Organization</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div xmlns:extra="https://w3id.org/extra#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     id="dataproperties">
+   <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#foundedIn" title="https://w3id.org/sri#foundedIn">founded in</a>
+      </li>
+   </ul>
+   <div class="entity" id="foundedIn">
+      <h3>founded in<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/sri#foundedIn</p>
+      <div class="comment">
+         <span class="markdown">Date when an organization was founded</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Organization" title="https://w3id.org/sri#Organization">Organization</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#date"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#date">date</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+</div>
+</div>
