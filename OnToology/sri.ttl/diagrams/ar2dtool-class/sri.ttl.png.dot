@@ -1,0 +1,12 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "base:Student" "base:Researcher" "base:Organization" ; /*classes style*/
+	"https://w3id.org/sri" -> "https://w3id.org/sri/1.0" [ label = "owl:versionIRI" ];
+	"https://w3id.org/sri" -> "http://creativecommons.org/licenses/by/2.0/" [ label = ":license" ];
+	"base:Researcher" -> "base:Organization" [ label = "base:partOf" ];
+	"base:Student" -> "base:Researcher" [ label = "base:hasMentor" ];
+	"base:Organization" -> "base:Researcher" [ label = "base:hasMember" ];
+	"base:Organization" -> "xsd:date" [ label = "base:foundedIn" ];
+
+}
