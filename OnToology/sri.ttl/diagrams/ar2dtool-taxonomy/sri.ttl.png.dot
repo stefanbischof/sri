@@ -1,5 +1,10 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1000"
+node [shape = rectangle, color="black"]; "base:Service" "base:FunctionalThing" "base:KeyCapability" "base:ImpactThing" "base:Domain" "base:Impact" ; /*classes style*/
+	"base:Impact" -> "base:ImpactThing" [ label = "rdfs:subClassOf" ];
+	"base:KeyCapability" -> "base:ImpactThing" [ label = "rdfs:subClassOf" ];
+	"base:Domain" -> "base:FunctionalThing" [ label = "rdfs:subClassOf" ];
+	"base:Service" -> "base:FunctionalThing" [ label = "rdfs:subClassOf" ];
 
 }
