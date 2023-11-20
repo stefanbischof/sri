@@ -523,21 +523,21 @@
 
     <owl:NamedIndividual rdf:about="https://eu-phoenix.eu/sri#dsd-assessment">
         <rdf:type rdf:resource="http://purl.org/linked-data/cube#DataStructureDefinition"/>
-        <cube:component rdf:nodeID="genid23"/>
-        <cube:component rdf:nodeID="genid24"/>
         <cube:component>
             <rdf:Description>
                 <cube:measure rdf:resource="https://eu-phoenix.eu/sri#score"/>
             </rdf:Description>
         </cube:component>
+        <cube:component rdf:nodeID="genid24"/>
+        <cube:component rdf:nodeID="genid25"/>
     </owl:NamedIndividual>
-    <rdf:Description rdf:nodeID="genid23">
-        <cube:dimension rdf:resource="https://eu-phoenix.eu/sri#level"/>
-        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</cube:order>
-    </rdf:Description>
     <rdf:Description rdf:nodeID="genid24">
         <cube:dimension rdf:resource="https://eu-phoenix.eu/sri#function"/>
         <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</cube:order>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid25">
+        <cube:dimension rdf:resource="https://eu-phoenix.eu/sri#level"/>
+        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</cube:order>
     </rdf:Description>
     
 
@@ -547,26 +547,26 @@
 
     <owl:NamedIndividual rdf:about="https://eu-phoenix.eu/sri#dsd-scores">
         <rdf:type rdf:resource="http://purl.org/linked-data/cube#DataStructureDefinition"/>
-        <cube:component rdf:nodeID="genid26"/>
-        <cube:component rdf:nodeID="genid27"/>
         <cube:component>
             <rdf:Description>
                 <cube:measure rdf:resource="https://eu-phoenix.eu/sri#score"/>
             </rdf:Description>
         </cube:component>
+        <cube:component rdf:nodeID="genid27"/>
+        <cube:component rdf:nodeID="genid28"/>
         <cube:component rdf:nodeID="genid29"/>
     </owl:NamedIndividual>
-    <rdf:Description rdf:nodeID="genid26">
-        <cube:dimension rdf:resource="https://eu-phoenix.eu/sri#level"/>
-        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</cube:order>
-    </rdf:Description>
     <rdf:Description rdf:nodeID="genid27">
+        <cube:dimension rdf:resource="https://eu-phoenix.eu/sri#impact"/>
+        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</cube:order>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid28">
         <cube:dimension rdf:resource="https://eu-phoenix.eu/sri#function"/>
         <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</cube:order>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid29">
-        <cube:dimension rdf:resource="https://eu-phoenix.eu/sri#impact"/>
-        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</cube:order>
+        <cube:dimension rdf:resource="https://eu-phoenix.eu/sri#level"/>
+        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</cube:order>
     </rdf:Description>
     
 
@@ -576,31 +576,31 @@
 
     <owl:NamedIndividual rdf:about="https://eu-phoenix.eu/sri#dsd-weights">
         <rdf:type rdf:resource="http://purl.org/linked-data/cube#DataStructureDefinition"/>
-        <cube:component rdf:nodeID="genid30"/>
-        <cube:component rdf:nodeID="genid31"/>
         <cube:component>
             <rdf:Description>
                 <cube:measure rdf:resource="https://eu-phoenix.eu/sri#weight"/>
             </rdf:Description>
         </cube:component>
+        <cube:component rdf:nodeID="genid31"/>
+        <cube:component rdf:nodeID="genid32"/>
         <cube:component rdf:nodeID="genid33"/>
         <cube:component rdf:nodeID="genid34"/>
     </owl:NamedIndividual>
-    <rdf:Description rdf:nodeID="genid30">
-        <cube:dimension rdf:resource="https://eu-phoenix.eu/sri#function"/>
-        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</cube:order>
-    </rdf:Description>
     <rdf:Description rdf:nodeID="genid31">
-        <cube:dimension rdf:resource="https://eu-phoenix.eu/sri#type"/>
-        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</cube:order>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid33">
         <cube:dimension rdf:resource="https://eu-phoenix.eu/sri#impact"/>
         <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</cube:order>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid34">
+    <rdf:Description rdf:nodeID="genid32">
         <cube:dimension rdf:resource="https://eu-phoenix.eu/sri#refArea"/>
         <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</cube:order>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid33">
+        <cube:dimension rdf:resource="https://eu-phoenix.eu/sri#function"/>
+        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</cube:order>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid34">
+        <cube:dimension rdf:resource="https://eu-phoenix.eu/sri#type"/>
+        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</cube:order>
     </rdf:Description>
     
 

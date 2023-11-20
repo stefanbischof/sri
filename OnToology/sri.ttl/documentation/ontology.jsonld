@@ -76,12 +76,8 @@
   } ]
 }, {
   "@id" : "_:genid23",
-  "http://purl.org/linked-data/cube#dimension" : [ {
-    "@id" : "https://eu-phoenix.eu/sri#level"
-  } ],
-  "http://purl.org/linked-data/cube#order" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "2"
+  "http://purl.org/linked-data/cube#measure" : [ {
+    "@id" : "https://eu-phoenix.eu/sri#score"
   } ]
 }, {
   "@id" : "_:genid24",
@@ -94,20 +90,29 @@
   } ]
 }, {
   "@id" : "_:genid25",
-  "http://purl.org/linked-data/cube#measure" : [ {
-    "@id" : "https://eu-phoenix.eu/sri#score"
-  } ]
-}, {
-  "@id" : "_:genid26",
   "http://purl.org/linked-data/cube#dimension" : [ {
     "@id" : "https://eu-phoenix.eu/sri#level"
   } ],
   "http://purl.org/linked-data/cube#order" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "3"
+    "@value" : "2"
+  } ]
+}, {
+  "@id" : "_:genid26",
+  "http://purl.org/linked-data/cube#measure" : [ {
+    "@id" : "https://eu-phoenix.eu/sri#score"
   } ]
 }, {
   "@id" : "_:genid27",
+  "http://purl.org/linked-data/cube#dimension" : [ {
+    "@id" : "https://eu-phoenix.eu/sri#impact"
+  } ],
+  "http://purl.org/linked-data/cube#order" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2"
+  } ]
+}, {
+  "@id" : "_:genid28",
   "http://purl.org/linked-data/cube#dimension" : [ {
     "@id" : "https://eu-phoenix.eu/sri#function"
   } ],
@@ -116,18 +121,13 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid28",
-  "http://purl.org/linked-data/cube#measure" : [ {
-    "@id" : "https://eu-phoenix.eu/sri#score"
-  } ]
-}, {
   "@id" : "_:genid29",
   "http://purl.org/linked-data/cube#dimension" : [ {
-    "@id" : "https://eu-phoenix.eu/sri#impact"
+    "@id" : "https://eu-phoenix.eu/sri#level"
   } ],
   "http://purl.org/linked-data/cube#order" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "2"
+    "@value" : "3"
   } ]
 }, {
   "@id" : "_:genid3",
@@ -140,29 +140,11 @@
   } ]
 }, {
   "@id" : "_:genid30",
-  "http://purl.org/linked-data/cube#dimension" : [ {
-    "@id" : "https://eu-phoenix.eu/sri#function"
-  } ],
-  "http://purl.org/linked-data/cube#order" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "1"
-  } ]
-}, {
-  "@id" : "_:genid31",
-  "http://purl.org/linked-data/cube#dimension" : [ {
-    "@id" : "https://eu-phoenix.eu/sri#type"
-  } ],
-  "http://purl.org/linked-data/cube#order" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "4"
-  } ]
-}, {
-  "@id" : "_:genid32",
   "http://purl.org/linked-data/cube#measure" : [ {
     "@id" : "https://eu-phoenix.eu/sri#weight"
   } ]
 }, {
-  "@id" : "_:genid33",
+  "@id" : "_:genid31",
   "http://purl.org/linked-data/cube#dimension" : [ {
     "@id" : "https://eu-phoenix.eu/sri#impact"
   } ],
@@ -171,13 +153,31 @@
     "@value" : "2"
   } ]
 }, {
-  "@id" : "_:genid34",
+  "@id" : "_:genid32",
   "http://purl.org/linked-data/cube#dimension" : [ {
     "@id" : "https://eu-phoenix.eu/sri#refArea"
   } ],
   "http://purl.org/linked-data/cube#order" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#integer",
     "@value" : "3"
+  } ]
+}, {
+  "@id" : "_:genid33",
+  "http://purl.org/linked-data/cube#dimension" : [ {
+    "@id" : "https://eu-phoenix.eu/sri#function"
+  } ],
+  "http://purl.org/linked-data/cube#order" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid34",
+  "http://purl.org/linked-data/cube#dimension" : [ {
+    "@id" : "https://eu-phoenix.eu/sri#type"
+  } ],
+  "http://purl.org/linked-data/cube#order" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "4"
   } ]
 }, {
   "@id" : "_:genid35",
