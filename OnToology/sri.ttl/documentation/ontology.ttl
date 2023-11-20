@@ -299,58 +299,58 @@
 ###  https://eu-phoenix.eu/sri#dsd-assessment
 :dsd-assessment rdf:type owl:NamedIndividual ,
                          <http://purl.org/linked-data/cube#DataStructureDefinition> ;
-                <http://purl.org/linked-data/cube#component> _:genid23 ,
+                <http://purl.org/linked-data/cube#component> [ <http://purl.org/linked-data/cube#measure> :score
+                                                             ] ,
                                                              _:genid24 ,
-                                                             [ <http://purl.org/linked-data/cube#measure> :score
-                                                             ] .
-
-_:genid23 <http://purl.org/linked-data/cube#dimension> :level ;
-           <http://purl.org/linked-data/cube#order> 2 .
+                                                             _:genid25 .
 
 _:genid24 <http://purl.org/linked-data/cube#dimension> :function ;
            <http://purl.org/linked-data/cube#order> 1 .
+
+_:genid25 <http://purl.org/linked-data/cube#dimension> :level ;
+           <http://purl.org/linked-data/cube#order> 2 .
 
 
 ###  https://eu-phoenix.eu/sri#dsd-scores
 :dsd-scores rdf:type owl:NamedIndividual ,
                      <http://purl.org/linked-data/cube#DataStructureDefinition> ;
-            <http://purl.org/linked-data/cube#component> _:genid26 ,
-                                                         _:genid27 ,
-                                                         [ <http://purl.org/linked-data/cube#measure> :score
+            <http://purl.org/linked-data/cube#component> [ <http://purl.org/linked-data/cube#measure> :score
                                                          ] ,
+                                                         _:genid27 ,
+                                                         _:genid28 ,
                                                          _:genid29 .
 
-_:genid26 <http://purl.org/linked-data/cube#dimension> :level ;
-           <http://purl.org/linked-data/cube#order> 3 .
+_:genid27 <http://purl.org/linked-data/cube#dimension> :impact ;
+           <http://purl.org/linked-data/cube#order> 2 .
 
-_:genid27 <http://purl.org/linked-data/cube#dimension> :function ;
+_:genid28 <http://purl.org/linked-data/cube#dimension> :function ;
            <http://purl.org/linked-data/cube#order> 1 .
 
-_:genid29 <http://purl.org/linked-data/cube#dimension> :impact ;
-           <http://purl.org/linked-data/cube#order> 2 .
+_:genid29 <http://purl.org/linked-data/cube#dimension> :level ;
+           <http://purl.org/linked-data/cube#order> 3 .
 
 
 ###  https://eu-phoenix.eu/sri#dsd-weights
 :dsd-weights rdf:type owl:NamedIndividual ,
                       <http://purl.org/linked-data/cube#DataStructureDefinition> ;
-             <http://purl.org/linked-data/cube#component> _:genid30 ,
-                                                          _:genid31 ,
-                                                          [ <http://purl.org/linked-data/cube#measure> :weight
+             <http://purl.org/linked-data/cube#component> [ <http://purl.org/linked-data/cube#measure> :weight
                                                           ] ,
+                                                          _:genid31 ,
+                                                          _:genid32 ,
                                                           _:genid33 ,
                                                           _:genid34 .
 
-_:genid30 <http://purl.org/linked-data/cube#dimension> :function ;
-           <http://purl.org/linked-data/cube#order> 1 .
-
-_:genid31 <http://purl.org/linked-data/cube#dimension> :type ;
-           <http://purl.org/linked-data/cube#order> 4 .
-
-_:genid33 <http://purl.org/linked-data/cube#dimension> :impact ;
+_:genid31 <http://purl.org/linked-data/cube#dimension> :impact ;
            <http://purl.org/linked-data/cube#order> 2 .
 
-_:genid34 <http://purl.org/linked-data/cube#dimension> :refArea ;
+_:genid32 <http://purl.org/linked-data/cube#dimension> :refArea ;
            <http://purl.org/linked-data/cube#order> 3 .
+
+_:genid33 <http://purl.org/linked-data/cube#dimension> :function ;
+           <http://purl.org/linked-data/cube#order> 1 .
+
+_:genid34 <http://purl.org/linked-data/cube#dimension> :type ;
+           <http://purl.org/linked-data/cube#order> 4 .
 
 
 ###  https://eu-phoenix.eu/sri#function

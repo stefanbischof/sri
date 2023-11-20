@@ -1,0 +1,1142 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://purl.org/linked-data/sdmx/2009/dimension", "http://www.w3.org/2001/XMLSchema", "https://eu-phoenix.eu/sri", "http://purl.org/linked-data/cube", "http://purl.org/linked-data/sdmx/2009/measure", "http://www.w3.org/2004/02/skos/core" ],
+    "title" : {
+      "en" : "Semantic Readiness Indicator"
+    },
+    "iri" : "https://eu-phoenix.eu/sri",
+    "version" : "1.0.0",
+    "author" : [ "Stefan Bischoff" ],
+    "labels" : {
+      "en" : "SRI Ontology"
+    },
+    "other" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Stefan Bischoff",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2022-02-02",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "sri",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.0.0",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "Semantic Readiness Indicator",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://smartreadinessindicator.eu/",
+        "type" : "iri"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "60",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "46",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "71",
+    "type" : "owl:Class"
+  }, {
+    "id" : "75",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "76",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "74",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "29",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "50",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "9",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "55",
+    "type" : "owl:Thing"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://eu-phoenix.eu/sri#ServiceCatalogue",
+    "baseIri" : "https://eu-phoenix.eu/sri",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ServiceCatalogue"
+    },
+    "id" : "2"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "1",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#MeasureProperty",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MeasureProperty"
+    },
+    "individuals" : [ {
+      "iri" : "https://eu-phoenix.eu/sri#score",
+      "baseIri" : "https://eu-phoenix.eu/sri",
+      "labels" : {
+        "IRI-based" : "score",
+        "en" : "smart readiness score"
+      }
+    }, {
+      "iri" : "https://eu-phoenix.eu/sri#weight",
+      "baseIri" : "https://eu-phoenix.eu/sri",
+      "labels" : {
+        "IRI-based" : "weight",
+        "en" : "weight"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "7",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "https://eu-phoenix.eu/sri#BuildingType",
+    "baseIri" : "https://eu-phoenix.eu/sri",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BuildingType",
+      "en" : "BuildingType"
+    },
+    "individuals" : [ {
+      "iri" : "https://eu-phoenix.eu/sri#residential",
+      "baseIri" : "https://eu-phoenix.eu/sri",
+      "labels" : {
+        "IRI-based" : "residential",
+        "en" : "Residential"
+      }
+    }, {
+      "iri" : "https://eu-phoenix.eu/sri#nonresidential",
+      "baseIri" : "https://eu-phoenix.eu/sri",
+      "labels" : {
+        "IRI-based" : "nonresidential",
+        "en" : "Non-residential"
+      }
+    } ],
+    "id" : "32"
+  }, {
+    "iri" : "https://eu-phoenix.eu/sri#FunctionalThing",
+    "baseIri" : "https://eu-phoenix.eu/sri",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FunctionalThing",
+      "en" : "FunctionalThing"
+    },
+    "subClasses" : [ "13", "21" ],
+    "id" : "6"
+  }, {
+    "iri" : "https://eu-phoenix.eu/sri#Building",
+    "baseIri" : "https://eu-phoenix.eu/sri",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Building",
+      "en" : "Building"
+    },
+    "id" : "33"
+  }, {
+    "iri" : "https://eu-phoenix.eu/sri#Triage",
+    "baseIri" : "https://eu-phoenix.eu/sri",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Triage"
+    },
+    "id" : "5"
+  }, {
+    "iri" : "https://eu-phoenix.eu/sri#KeyCapability",
+    "baseIri" : "https://eu-phoenix.eu/sri",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "KeyCapability",
+      "en" : "KeyCapability"
+    },
+    "id" : "16",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#DimensionProperty",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DimensionProperty"
+    },
+    "individuals" : [ {
+      "iri" : "https://eu-phoenix.eu/sri#function",
+      "baseIri" : "https://eu-phoenix.eu/sri",
+      "labels" : {
+        "IRI-based" : "function",
+        "en" : "function"
+      }
+    }, {
+      "iri" : "https://eu-phoenix.eu/sri#level",
+      "baseIri" : "https://eu-phoenix.eu/sri",
+      "labels" : {
+        "IRI-based" : "level",
+        "en" : "level"
+      }
+    }, {
+      "iri" : "https://eu-phoenix.eu/sri#type",
+      "baseIri" : "https://eu-phoenix.eu/sri",
+      "labels" : {
+        "IRI-based" : "type",
+        "en" : "type"
+      }
+    }, {
+      "iri" : "https://eu-phoenix.eu/sri#impact",
+      "baseIri" : "https://eu-phoenix.eu/sri",
+      "labels" : {
+        "IRI-based" : "impact",
+        "en" : "impact"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "60"
+  }, {
+    "iri" : "https://eu-phoenix.eu/sri#ImpactThing",
+    "baseIri" : "https://eu-phoenix.eu/sri",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ImpactThing",
+      "en" : "ImpactThing"
+    },
+    "subClasses" : [ "16", "17" ],
+    "id" : "36"
+  }, {
+    "iri" : "https://eu-phoenix.eu/sri#Level",
+    "baseIri" : "https://eu-phoenix.eu/sri",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Level",
+      "en" : "Level"
+    },
+    "individuals" : [ {
+      "iri" : "https://eu-phoenix.eu/sri#level2",
+      "baseIri" : "https://eu-phoenix.eu/sri",
+      "labels" : {
+        "IRI-based" : "level2",
+        "en" : "Level 2"
+      }
+    }, {
+      "iri" : "https://eu-phoenix.eu/sri#level1",
+      "baseIri" : "https://eu-phoenix.eu/sri",
+      "labels" : {
+        "IRI-based" : "level1",
+        "en" : "Level 1"
+      }
+    }, {
+      "iri" : "https://eu-phoenix.eu/sri#level4",
+      "baseIri" : "https://eu-phoenix.eu/sri",
+      "labels" : {
+        "IRI-based" : "level4",
+        "en" : "Level 4"
+      }
+    }, {
+      "iri" : "https://eu-phoenix.eu/sri#level3",
+      "baseIri" : "https://eu-phoenix.eu/sri",
+      "labels" : {
+        "IRI-based" : "level3",
+        "en" : "Level 3"
+      }
+    }, {
+      "iri" : "https://eu-phoenix.eu/sri#level0",
+      "baseIri" : "https://eu-phoenix.eu/sri",
+      "labels" : {
+        "IRI-based" : "level0",
+        "en" : "Level 0"
+      }
+    } ],
+    "id" : "10"
+  }, {
+    "iri" : "https://eu-phoenix.eu/sri#Domain",
+    "baseIri" : "https://eu-phoenix.eu/sri",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Domain",
+      "en" : "Domain"
+    },
+    "id" : "21",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "46",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#DataSet",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DataSet"
+    },
+    "individuals" : [ {
+      "iri" : "https://eu-phoenix.eu/sri#scores",
+      "baseIri" : "https://eu-phoenix.eu/sri",
+      "annotations" : {
+        "structure" : [ {
+          "identifier" : "structure",
+          "language" : "undefined",
+          "value" : "https://eu-phoenix.eu/sri#dsd-scores",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "scores",
+        "en" : "has SRI scores dataset"
+      }
+    }, {
+      "iri" : "https://eu-phoenix.eu/sri#weights",
+      "baseIri" : "https://eu-phoenix.eu/sri",
+      "annotations" : {
+        "structure" : [ {
+          "identifier" : "structure",
+          "language" : "undefined",
+          "value" : "https://eu-phoenix.eu/sri#dsd-weights",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "weights",
+        "en" : "SRI weights"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "71"
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#DataStructureDefinition",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DataStructureDefinition"
+    },
+    "individuals" : [ {
+      "iri" : "https://eu-phoenix.eu/sri#dsd-scores",
+      "baseIri" : "https://eu-phoenix.eu/sri",
+      "annotations" : {
+        "component" : [ {
+          "identifier" : "component",
+          "language" : "undefined",
+          "value" : "_:genid2147483652",
+          "type" : "label"
+        }, {
+          "identifier" : "component",
+          "language" : "undefined",
+          "value" : "_:genid2147483654",
+          "type" : "label"
+        }, {
+          "identifier" : "component",
+          "language" : "undefined",
+          "value" : "_:genid2147483653",
+          "type" : "label"
+        }, {
+          "identifier" : "component",
+          "language" : "undefined",
+          "value" : "_:genid2147483651",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "dsd-scores"
+      }
+    }, {
+      "iri" : "https://eu-phoenix.eu/sri#dsd-assessment",
+      "baseIri" : "https://eu-phoenix.eu/sri",
+      "annotations" : {
+        "component" : [ {
+          "identifier" : "component",
+          "language" : "undefined",
+          "value" : "_:genid2147483657",
+          "type" : "label"
+        }, {
+          "identifier" : "component",
+          "language" : "undefined",
+          "value" : "_:genid2147483659",
+          "type" : "label"
+        }, {
+          "identifier" : "component",
+          "language" : "undefined",
+          "value" : "_:genid2147483658",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "dsd-assessment"
+      }
+    }, {
+      "iri" : "https://eu-phoenix.eu/sri#sriscores",
+      "baseIri" : "https://eu-phoenix.eu/sri",
+      "labels" : {
+        "IRI-based" : "sriscores",
+        "en" : "SRI scores DSD"
+      }
+    }, {
+      "iri" : "https://eu-phoenix.eu/sri#dsd-weights",
+      "baseIri" : "https://eu-phoenix.eu/sri",
+      "annotations" : {
+        "component" : [ {
+          "identifier" : "component",
+          "language" : "undefined",
+          "value" : "_:genid2147483650",
+          "type" : "label"
+        }, {
+          "identifier" : "component",
+          "language" : "undefined",
+          "value" : "_:genid2147483648",
+          "type" : "label"
+        }, {
+          "identifier" : "component",
+          "language" : "undefined",
+          "value" : "_:genid2147483655",
+          "type" : "label"
+        }, {
+          "identifier" : "component",
+          "language" : "undefined",
+          "value" : "_:genid2147483656",
+          "type" : "label"
+        }, {
+          "identifier" : "component",
+          "language" : "undefined",
+          "value" : "_:genid2147483649",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "dsd-weights"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "75"
+  }, {
+    "iri" : "https://eu-phoenix.eu/sri#Impact",
+    "baseIri" : "https://eu-phoenix.eu/sri",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Impact",
+      "en" : "Impact"
+    },
+    "id" : "17",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "https://eu-phoenix.eu/sri#Service",
+    "baseIri" : "https://eu-phoenix.eu/sri",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Service",
+      "en" : "Service"
+    },
+    "id" : "13",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "76",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "74",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "29",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "38",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "31",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://eu-phoenix.eu/sri#ServiceLevel",
+    "baseIri" : "https://eu-phoenix.eu/sri",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ServiceLevel",
+      "en" : "ServiceLevel"
+    },
+    "id" : "12"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "52",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://eu-phoenix.eu/sri#SpatialThing",
+    "baseIri" : "https://eu-phoenix.eu/sri",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SpatialThing"
+    },
+    "id" : "24"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "50",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "9",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "55",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "4",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "8",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "11",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "14",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "15",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "18",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "19",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "20",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "22",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "23",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "25",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "26",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "27",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "28",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "30",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "34",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "35",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "37",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "39",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "40",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "41",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "42",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "43",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "44",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "45",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "47",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "48",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "49",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "51",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "53",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "54",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "56",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "57",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "58",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "59",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "61",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "62",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "63",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "64",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "65",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "66",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "67",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "69",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "70",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "72",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "73",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "77",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "78",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://purl.org/linked-data/cube#structure",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "structure"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "0"
+  }, {
+    "iri" : "https://eu-phoenix.eu/sri#mandatory",
+    "baseIri" : "https://eu-phoenix.eu/sri",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "mandatory"
+    },
+    "domain" : "5",
+    "attributes" : [ "object" ],
+    "id" : "4"
+  }, {
+    "iri" : "https://eu-phoenix.eu/sri#additionalLevel",
+    "baseIri" : "https://eu-phoenix.eu/sri",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "additionalLevel",
+      "en" : "additional level"
+    },
+    "domain" : "9",
+    "attributes" : [ "object" ],
+    "id" : "8"
+  }, {
+    "iri" : "https://eu-phoenix.eu/sri#function",
+    "baseIri" : "https://eu-phoenix.eu/sri",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "function",
+      "en" : "function"
+    },
+    "domain" : "12",
+    "attributes" : [ "someValues", "object", "functional" ],
+    "id" : "11"
+  }, {
+    "iri" : "https://eu-phoenix.eu/sri#scores",
+    "baseIri" : "https://eu-phoenix.eu/sri",
+    "range" : "1",
+    "annotations" : {
+      "structure" : [ {
+        "identifier" : "structure",
+        "language" : "undefined",
+        "value" : "https://eu-phoenix.eu/sri#dsd-scores",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "scores",
+      "en" : "has SRI scores dataset"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "14"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#narrower",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "narrower"
+    },
+    "domain" : "16",
+    "attributes" : [ "allValues", "object", "external" ],
+    "id" : "15"
+  }, {
+    "range" : "16",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "18"
+  }, {
+    "iri" : "https://eu-phoenix.eu/sri#level",
+    "baseIri" : "https://eu-phoenix.eu/sri",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "level",
+      "en" : "level"
+    },
+    "domain" : "12",
+    "attributes" : [ "someValues", "object", "functional" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#broader",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "broader"
+    },
+    "domain" : "13",
+    "attributes" : [ "allValues", "object", "external" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#narrower",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "narrower"
+    },
+    "domain" : "21",
+    "attributes" : [ "allValues", "object", "external" ],
+    "id" : "22"
+  }, {
+    "range" : "24",
+    "domain" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "23"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#broader",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "broader"
+    },
+    "domain" : "17",
+    "attributes" : [ "allValues", "object", "external" ],
+    "id" : "25"
+  }, {
+    "range" : "13",
+    "domain" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "26"
+  }, {
+    "iri" : "http://purl.org/linked-data/sdmx/2009/dimension#refArea",
+    "baseIri" : "http://purl.org/linked-data/sdmx/2009/dimension",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "refArea"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "27"
+  }, {
+    "iri" : "https://eu-phoenix.eu/sri#serviceCatalogue",
+    "baseIri" : "https://eu-phoenix.eu/sri",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "serviceCatalogue"
+    },
+    "domain" : "29",
+    "attributes" : [ "object" ],
+    "id" : "28"
+  }, {
+    "iri" : "https://eu-phoenix.eu/sri#weight",
+    "baseIri" : "https://eu-phoenix.eu/sri",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "weight",
+      "en" : "weight"
+    },
+    "domain" : "1",
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "30"
+  }, {
+    "range" : "12",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "34"
+  }, {
+    "range" : "24",
+    "domain" : "36",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "35"
+  }, {
+    "iri" : "https://eu-phoenix.eu/sri#share",
+    "baseIri" : "https://eu-phoenix.eu/sri",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "share",
+      "en" : "share"
+    },
+    "domain" : "1",
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "37"
+  }, {
+    "range" : "24",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "39"
+  }, {
+    "range" : "24",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "40"
+  }, {
+    "range" : "12",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "41"
+  }, {
+    "range" : "12",
+    "domain" : "36",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "42"
+  }, {
+    "range" : "10",
+    "domain" : "36",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "43"
+  }, {
+    "range" : "24",
+    "domain" : "32",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "44"
+  }, {
+    "iri" : "https://eu-phoenix.eu/sri#triage",
+    "baseIri" : "https://eu-phoenix.eu/sri",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "triage"
+    },
+    "domain" : "46",
+    "attributes" : [ "object" ],
+    "id" : "45"
+  }, {
+    "range" : "10",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "47"
+  }, {
+    "range" : "36",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "48"
+  }, {
+    "iri" : "https://eu-phoenix.eu/sri#function",
+    "baseIri" : "https://eu-phoenix.eu/sri",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "function",
+      "en" : "function"
+    },
+    "domain" : "50",
+    "attributes" : [ "object", "functional" ],
+    "id" : "49"
+  }, {
+    "iri" : "http://purl.org/linked-data/sdmx/2009/measure#obsValue",
+    "baseIri" : "http://purl.org/linked-data/sdmx/2009/measure",
+    "range" : "52",
+    "label" : {
+      "IRI-based" : "obsValue"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "51"
+  }, {
+    "iri" : "https://eu-phoenix.eu/sri#score",
+    "baseIri" : "https://eu-phoenix.eu/sri",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "score",
+      "en" : "smart readiness score"
+    },
+    "domain" : "1",
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "53"
+  }, {
+    "iri" : "https://eu-phoenix.eu/sri#type",
+    "baseIri" : "https://eu-phoenix.eu/sri",
+    "range" : "32",
+    "label" : {
+      "IRI-based" : "type",
+      "en" : "type"
+    },
+    "domain" : "55",
+    "attributes" : [ "object", "functional" ],
+    "id" : "54"
+  }, {
+    "range" : "36",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "56"
+  }, {
+    "range" : "10",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "57"
+  }, {
+    "range" : "12",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "58"
+  }, {
+    "range" : "24",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "59"
+  }, {
+    "range" : "6",
+    "domain" : "32",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "61"
+  }, {
+    "range" : "36",
+    "domain" : "32",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "62"
+  }, {
+    "range" : "10",
+    "domain" : "32",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "63"
+  }, {
+    "range" : "12",
+    "domain" : "32",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "64"
+  }, {
+    "range" : "32",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "65"
+  }, {
+    "range" : "6",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "66"
+  }, {
+    "range" : "36",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "67"
+  }, {
+    "range" : "6",
+    "domain" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "68"
+  }, {
+    "range" : "36",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "69"
+  }, {
+    "range" : "6",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "70"
+  }, {
+    "iri" : "https://eu-phoenix.eu/sri#assessment",
+    "baseIri" : "https://eu-phoenix.eu/sri",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "assessment"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "72"
+  }, {
+    "iri" : "https://eu-phoenix.eu/sri#impact",
+    "baseIri" : "https://eu-phoenix.eu/sri",
+    "range" : "36",
+    "label" : {
+      "IRI-based" : "impact",
+      "en" : "impact"
+    },
+    "domain" : "74",
+    "attributes" : [ "object", "functional" ],
+    "id" : "73"
+  }, {
+    "iri" : "https://eu-phoenix.eu/sri#level",
+    "baseIri" : "https://eu-phoenix.eu/sri",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "level",
+      "en" : "level"
+    },
+    "domain" : "9",
+    "attributes" : [ "object", "functional" ],
+    "id" : "77"
+  }, {
+    "iri" : "https://eu-phoenix.eu/sri#icscore",
+    "baseIri" : "https://eu-phoenix.eu/sri",
+    "range" : "76",
+    "label" : {
+      "IRI-based" : "icscore",
+      "en" : "impact criterion score"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "78"
+  } ]
+}
