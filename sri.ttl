@@ -1,157 +1,499 @@
-@prefix : <https://w3id.org/sri#> .
+@prefix : <https://eu-phoenix.eu/sri#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://w3id.org/sri> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-measure: <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@base <https://eu-phoenix.eu/sri#> .
 
-<https://w3id.org/sri> rdf:type owl:Ontology ;
-                            owl:versionIRI <https://w3id.org/sri/1.0> ;
-                            <http://purl.org/dc/terms/abstract> "An example vocabulary designed to illustrate how to publish vocabularies on the Web following the FAIR principles"@en ;
-                            <http://purl.org/dc/elements/1.1/description> "This is an example ontology to illustrate some of the annotations that should be included"@en ;
-                            <http://purl.org/dc/elements/1.1/title> "The example ontology"@en ;
-                            <http://purl.org/dc/terms/created> "February 5th, 2020"@en ;
-                            <http://purl.org/dc/terms/creator> "Daniel Garijo"@en ,
-                                                               "Maria Poveda-Villalon"@en ;
-                            <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/2.0/> ;
-                            <http://purl.org/vocab/vann/preferredNamespacePrefix> "sri"@en ;
-                            <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/sri" ;
-                            <http://schema.org/citation> "Cite this vocabulary as: Garijo, D. and Poveda-Villalon, M. The example ontology 1.0.1."@en ;
-                            rdfs:comment "An example vocabulary designed to illustrate how to publish vocabularies on the Web following the FAIR principles. This vocabulary describes three simple classes with 3 properties and a data property."@en ;
-                            owl:versionInfo "1.0.0"@en .
+<https://eu-phoenix.eu/sri> rdf:type owl:Ontology ;
+                             owl:versionIRI <https://eu-phoenix.eu/sri/1.0> ;
+                             dcterms:created "2022-02-02" ;
+                             dcterms:creator "Stefan Bischoff" ;
+                             dcterms:title "Semantic Readiness Indicator"@en ;
+                             vann:preferredNamespacePrefix "sri" ;
+                             rdfs:label "SRI Ontology"@en ;
+                             rdfs:seeAlso <https://smartreadinessindicator.eu/> ;
+                             owl:versionInfo "1.0.0" .
 
 #################################################################
 #    Annotation properties
 #################################################################
 
-###  http://purl.org/dc/elements/1.1/abstract
-<http://purl.org/dc/elements/1.1/abstract> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/elements/1.1/created
-<http://purl.org/dc/elements/1.1/created> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/elements/1.1/description
-<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/elements/1.1/publisher
-<http://purl.org/dc/elements/1.1/publisher> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/elements/1.1/title
-<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
-
-
 ###  http://purl.org/dc/terms/created
-<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+dcterms:created rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/creator
-<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+dcterms:creator rdf:type owl:AnnotationProperty .
 
 
-###  http://purl.org/dc/terms/license
-<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/title
+dcterms:title rdf:type owl:AnnotationProperty .
 
 
-###  http://purl.org/vocab/vann/example
-<http://purl.org/vocab/vann/example> rdf:type owl:AnnotationProperty .
+###  http://purl.org/linked-data/cube#component
+qb:component rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/linked-data/cube#dimension
+qb:dimension rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/linked-data/cube#measure
+qb:measure rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/linked-data/cube#order
+qb:order rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/vocab/vann/preferredNamespacePrefix
-<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/vocab/vann/preferredNamespaceUri
-<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
-
-
-###  http://schema.org/author
-<http://schema.org/author> rdf:type owl:AnnotationProperty .
-
-
-###  http://schema.org/citation
-<http://schema.org/citation> rdf:type owl:AnnotationProperty .
-
-
-###  http://www.linkedmodel.org/schema/vaem#rationale
-<http://www.linkedmodel.org/schema/vaem#rationale> rdf:type owl:AnnotationProperty .
-
-
-#################################################################
-#    Datatypes
-#################################################################
-
-###  http://www.w3.org/2001/XMLSchema#date
-xsd:date rdf:type rdfs:Datatype .
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
 
 
 #################################################################
 #    Object Properties
 #################################################################
 
-###  https://w3id.org/sri#hasMember
-:hasMember rdf:type owl:ObjectProperty ;
-           rdfs:domain :Organization ;
-           rdfs:range :Researcher ;
-           rdfs:comment "This example property indicates that an Organization has a Researcher as member"@en ;
-           rdfs:label "has member"@en .
+###  http://purl.org/linked-data/sdmx/2009/dimension#refArea
+sdmx-dimension:refArea rdf:type owl:ObjectProperty .
 
 
-###  https://w3id.org/sri#hasMentor
-:hasMentor rdf:type owl:ObjectProperty ;
-           rdfs:domain :Student ;
-           rdfs:range :Researcher ;
-           rdfs:comment "This property links the students to the researcher who mentored them"@en ;
-           rdfs:label "has mentor"@en .
+###  http://www.w3.org/2004/02/skos/core#broader
+skos:broader rdf:type owl:ObjectProperty .
 
 
-###  https://w3id.org/sri#partOf
-:partOf rdf:type owl:ObjectProperty ;
-        rdfs:domain :Researcher ;
-        rdfs:range :Organization ;
-        rdfs:comment "This property links instances from Researcher to Organization"@en ;
-        rdfs:label "part of"@en .
+###  http://www.w3.org/2004/02/skos/core#narrower
+skos:narrower rdf:type owl:ObjectProperty .
+
+
+###  https://eu-phoenix.eu/sri#additionalLevel
+:additionalLevel rdf:type owl:ObjectProperty ;
+                 rdfs:range :Level ;
+                 rdfs:label "additional level"@en .
+
+
+###  https://eu-phoenix.eu/sri#assessment
+:assessment rdf:type owl:ObjectProperty ;
+            rdfs:range [ owl:intersectionOf ( qb:DataSet
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty qb:structure ;
+                                                owl:hasValue :dsd-assessment
+                                              ]
+                                            ) ;
+                         rdf:type owl:Class
+                       ] .
+
+
+###  https://eu-phoenix.eu/sri#function
+:function rdf:type owl:ObjectProperty ,
+                   owl:FunctionalProperty ;
+          rdfs:range :FunctionalThing .
+
+
+###  https://eu-phoenix.eu/sri#impact
+:impact rdf:type owl:ObjectProperty ,
+                 owl:FunctionalProperty ;
+        rdfs:range :ImpactThing .
+
+
+###  https://eu-phoenix.eu/sri#level
+:level rdf:type owl:ObjectProperty ,
+                owl:FunctionalProperty ;
+       rdfs:range :Level .
+
+
+###  https://eu-phoenix.eu/sri#mandatory
+:mandatory rdf:type owl:ObjectProperty ;
+           rdfs:domain :Triage ;
+           rdfs:range :FunctionalThing .
+
+
+###  https://eu-phoenix.eu/sri#scores
+:scores rdf:type owl:ObjectProperty .
+
+
+###  https://eu-phoenix.eu/sri#serviceCatalogue
+:serviceCatalogue rdf:type owl:ObjectProperty ;
+                  rdfs:range :ServiceCatalogue .
+
+
+###  https://eu-phoenix.eu/sri#triage
+:triage rdf:type owl:ObjectProperty ;
+        rdfs:range :Triage .
+
+
+###  https://eu-phoenix.eu/sri#type
+:type rdf:type owl:ObjectProperty ,
+               owl:FunctionalProperty ;
+      rdfs:range :BuildingType .
 
 
 #################################################################
 #    Data properties
 #################################################################
 
-###  https://w3id.org/sri#foundedIn
-:foundedIn rdf:type owl:DatatypeProperty ;
-           rdfs:domain :Organization ;
-           rdfs:range xsd:date ;
-           rdfs:comment "Date when an organization was founded"@en ;
-           rdfs:label "founded in"@en .
+###  http://purl.org/linked-data/sdmx/2009/measure#obsValue
+sdmx-measure:obsValue rdf:type owl:DatatypeProperty .
+
+
+###  https://eu-phoenix.eu/sri#icscore
+:icscore rdf:type owl:DatatypeProperty ;
+         rdfs:range [ rdf:type rdfs:Datatype ;
+                      owl:unionOf ( xsd:decimal
+                                    xsd:double
+                                    xsd:float
+                                  )
+                    ] ;
+         rdfs:label "impact criterion score"@en .
+
+
+###  https://eu-phoenix.eu/sri#score
+:score rdf:type owl:DatatypeProperty ;
+       rdfs:subPropertyOf sdmx-measure:obsValue ;
+       rdf:type owl:FunctionalProperty ;
+       rdfs:range xsd:integer .
+
+
+###  https://eu-phoenix.eu/sri#share
+:share rdf:type owl:DatatypeProperty ,
+                owl:FunctionalProperty ;
+       rdfs:range [ rdf:type rdfs:Datatype ;
+                    owl:unionOf ( xsd:decimal
+                                  xsd:double
+                                  xsd:float
+                                )
+                  ] ;
+       rdfs:label "share"@en .
+
+
+###  https://eu-phoenix.eu/sri#weight
+:weight rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf sdmx-measure:obsValue ;
+        rdf:type owl:FunctionalProperty ;
+        rdfs:range [ rdf:type rdfs:Datatype ;
+                     owl:unionOf ( xsd:decimal
+                                   xsd:double
+                                   xsd:float
+                                 )
+                   ] .
 
 
 #################################################################
 #    Classes
 #################################################################
 
-###  https://w3id.org/sri#Organization
-:Organization rdf:type owl:Class ;
-              <http://purl.org/vocab/vann/example> "University of Southern California"@en ;
-              rdfs:comment "An organized body of people with a particular purpose, especially a business, society, association, etc."@en ;
-              rdfs:label "Organization"@en .
+###  http://purl.org/linked-data/cube#DataSet
+qb:DataSet rdf:type owl:Class .
 
 
-###  https://w3id.org/sri#Researcher
-:Researcher rdf:type owl:Class ;
-            <http://purl.org/vocab/vann/example> "An example using the Researcher class, e.g., Bob is a professor at the University of Southern California."@en ;
-            <http://www.linkedmodel.org/schema/vaem#rationale> "The reason why this concept was added to the ontology. This could reflect some agreement or use cases that may need to be reflected here. For example: The concept Researcher was added to the ontology to represent those authors of scientific publications that belong to a public institution."@en ;
-            rdfs:comment "A definition of your class. For example, A researcher is a person who publishes scientific papers, writes research proposals and mentors students"@en ;
-            rdfs:label "Researcher"@en .
+###  http://purl.org/linked-data/cube#DataStructureDefinition
+qb:DataStructureDefinition rdf:type owl:Class .
 
 
-###  https://w3id.org/sri#Student
-:Student rdf:type owl:Class ;
-         rdfs:comment "Student is a class introduced in the version 1.0.1 of the ontology. "@en ;
-         rdfs:label "Student"@en .
+###  http://purl.org/linked-data/cube#DimensionProperty
+qb:DimensionProperty rdf:type owl:Class .
 
 
-###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
+###  http://purl.org/linked-data/cube#MeasureProperty
+qb:MeasureProperty rdf:type owl:Class .
+
+
+###  https://eu-phoenix.eu/sri#Building
+:Building rdf:type owl:Class ;
+          rdfs:label "Building"@en .
+
+
+###  https://eu-phoenix.eu/sri#BuildingType
+:BuildingType rdf:type owl:Class ;
+              rdfs:label "BuildingType"@en .
+
+
+###  https://eu-phoenix.eu/sri#Domain
+:Domain rdf:type owl:Class ;
+        rdfs:subClassOf :FunctionalThing ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty skos:narrower ;
+                          owl:allValuesFrom :Service
+                        ] ;
+        owl:disjointWith :Service ;
+        rdfs:label "Domain"@en .
+
+
+###  https://eu-phoenix.eu/sri#FunctionalThing
+:FunctionalThing rdf:type owl:Class ;
+                 rdfs:label "FunctionalThing"@en .
+
+
+###  https://eu-phoenix.eu/sri#Impact
+:Impact rdf:type owl:Class ;
+        rdfs:subClassOf :ImpactThing ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty skos:broader ;
+                          owl:allValuesFrom :KeyCapability
+                        ] ;
+        owl:disjointWith :KeyCapability ;
+        rdfs:label "Impact"@en .
+
+
+###  https://eu-phoenix.eu/sri#ImpactThing
+:ImpactThing rdf:type owl:Class ;
+             rdfs:label "ImpactThing"@en .
+
+
+###  https://eu-phoenix.eu/sri#KeyCapability
+:KeyCapability rdf:type owl:Class ;
+               rdfs:subClassOf :ImpactThing ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty skos:narrower ;
+                                 owl:allValuesFrom :Impact
+                               ] ;
+               rdfs:label "KeyCapability"@en .
+
+
+###  https://eu-phoenix.eu/sri#Level
+:Level rdf:type owl:Class ;
+       rdfs:label "Level"@en .
+
+
+###  https://eu-phoenix.eu/sri#Service
+:Service rdf:type owl:Class ;
+         rdfs:subClassOf :FunctionalThing ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty skos:broader ;
+                           owl:allValuesFrom :Domain
+                         ] ;
+         rdfs:label "Service"@en .
+
+
+###  https://eu-phoenix.eu/sri#ServiceCatalogue
+:ServiceCatalogue rdf:type owl:Class .
+
+
+###  https://eu-phoenix.eu/sri#ServiceLevel
+:ServiceLevel rdf:type owl:Class ;
+              rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                owl:onProperty :function ;
+                                owl:someValuesFrom :Service
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :level ;
+                                owl:someValuesFrom :Level
+                              ] ;
+              rdfs:label "ServiceLevel"@en .
+
+
+###  https://eu-phoenix.eu/sri#SpatialThing
+:SpatialThing rdf:type owl:Class .
+
+
+###  https://eu-phoenix.eu/sri#Triage
+:Triage rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://eu-phoenix.eu/sri#dsd-assessment
+:dsd-assessment rdf:type owl:NamedIndividual ,
+                         qb:DataStructureDefinition ;
+                qb:component [ qb:measure :score
+                             ] ,
+                             [ qb:dimension :function ;
+                               qb:order 1
+                             ] ,
+                             [ qb:dimension :level ;
+                               qb:order 2
+                             ] .
+
+
+###  https://eu-phoenix.eu/sri#dsd-scores
+:dsd-scores rdf:type owl:NamedIndividual ,
+                     qb:DataStructureDefinition ;
+            qb:component [ qb:measure :score
+                         ] ,
+                         [ qb:dimension :impact ;
+                           qb:order 2
+                         ] ,
+                         [ qb:dimension :function ;
+                           qb:order 1
+                         ] ,
+                         [ qb:dimension :level ;
+                           qb:order 3
+                         ] .
+
+
+###  https://eu-phoenix.eu/sri#dsd-weights
+:dsd-weights rdf:type owl:NamedIndividual ,
+                      qb:DataStructureDefinition ;
+             qb:component [ qb:dimension :refArea ;
+                            qb:order 3
+                          ] ,
+                          [ qb:dimension :impact ;
+                            qb:order 2
+                          ] ,
+                          [ qb:measure :weight
+                          ] ,
+                          [ qb:dimension :type ;
+                            qb:order 4
+                          ] ,
+                          [ qb:dimension :function ;
+                            qb:order 1
+                          ] .
+
+
+###  https://eu-phoenix.eu/sri#function
+:function rdf:type owl:NamedIndividual ,
+                   qb:DimensionProperty .
+
+
+###  https://eu-phoenix.eu/sri#impact
+:impact rdf:type owl:NamedIndividual ,
+                 qb:DimensionProperty .
+
+
+###  https://eu-phoenix.eu/sri#level
+:level rdf:type owl:NamedIndividual ,
+                qb:DimensionProperty .
+
+
+###  https://eu-phoenix.eu/sri#level0
+:level0 rdf:type owl:NamedIndividual ,
+                 :Level ;
+        rdfs:label "Level 0"@en .
+
+
+###  https://eu-phoenix.eu/sri#level1
+:level1 rdf:type owl:NamedIndividual ,
+                 :Level ;
+        rdfs:label "Level 1"@en .
+
+
+###  https://eu-phoenix.eu/sri#level2
+:level2 rdf:type owl:NamedIndividual ,
+                 :Level ;
+        rdfs:label "Level 2"@en .
+
+
+###  https://eu-phoenix.eu/sri#level3
+:level3 rdf:type owl:NamedIndividual ,
+                 :Level ;
+        rdfs:label "Level 3"@en .
+
+
+###  https://eu-phoenix.eu/sri#level4
+:level4 rdf:type owl:NamedIndividual ,
+                 :Level ;
+        rdfs:label "Level 4"@en .
+
+
+###  https://eu-phoenix.eu/sri#nonresidential
+:nonresidential rdf:type owl:NamedIndividual ,
+                         :BuildingType ;
+                rdfs:label "Non-residential"@en .
+
+
+###  https://eu-phoenix.eu/sri#residential
+:residential rdf:type owl:NamedIndividual ,
+                      :BuildingType ;
+             rdfs:label "Residential"@en .
+
+
+###  https://eu-phoenix.eu/sri#score
+:score rdf:type owl:NamedIndividual ,
+                qb:MeasureProperty .
+
+
+###  https://eu-phoenix.eu/sri#scores
+:scores rdf:type owl:NamedIndividual ,
+                 qb:DataSet ;
+                qb:structure :dsd-scores.
+
+
+###  https://eu-phoenix.eu/sri#sriscores
+:sriscores rdf:type owl:NamedIndividual ,
+                    qb:DataStructureDefinition ;
+           rdfs:label "SRI scores DSD"@en .
+
+
+###  https://eu-phoenix.eu/sri#topDomain
+:topDomain rdf:type owl:NamedIndividual ;
+           rdfs:label "All domains"@en .
+
+
+###  https://eu-phoenix.eu/sri#topImpact
+:topImpact rdf:type owl:NamedIndividual ;
+           rdfs:label "All impacts"@en .
+
+
+###  https://eu-phoenix.eu/sri#type
+:type rdf:type owl:NamedIndividual ,
+               qb:DimensionProperty .
+
+
+###  https://eu-phoenix.eu/sri#weight
+:weight rdf:type owl:NamedIndividual ,
+                 qb:MeasureProperty .
+
+
+###  https://eu-phoenix.eu/sri#weights
+:weights rdf:type owl:NamedIndividual ,
+                  qb:DataSet ;
+         qb:structure :dsd-weights ;
+         rdfs:label "SRI weights"@en .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+:function rdfs:label "function"@en .
+
+
+:impact rdfs:label "impact"@en .
+
+
+:level rdfs:label "level"@en .
+
+
+:refArea rdfs:label "ref area"@en .
+
+
+:score rdfs:label "smart readiness score"@en .
+
+
+:scores rdfs:label "has SRI scores dataset"@en .
+
+
+:type rdfs:label "type"@en .
+
+
+:weight rdfs:label "weight"@en .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Building
+                :BuildingType
+                :FunctionalThing
+                :ImpactThing
+                :Level
+                :ServiceLevel
+                :SpatialThing
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi
