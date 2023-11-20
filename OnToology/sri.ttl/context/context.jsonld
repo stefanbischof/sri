@@ -1,7 +1,11 @@
 {
   "@context" : {
-    "abstract" : {
-      "@id" : "http://purl.org/dc/elements/1.1/abstract"
+    "Level" : {
+      "@id" : "https://eu-phoenix.eu/sri#Level"
+    },
+    "score" : {
+      "@id" : "https://eu-phoenix.eu/sri#score",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
     },
     "versionInfo" : {
       "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
@@ -9,69 +13,148 @@
     "created" : {
       "@id" : "http://purl.org/dc/terms/created"
     },
-    "example" : {
-      "@id" : "http://purl.org/vocab/vann/example"
+    "obsValue" : {
+      "@id" : "http://purl.org/linked-data/sdmx/2009/measure#obsValue"
     },
-    "license" : {
-      "@id" : "http://purl.org/dc/terms/license"
-    },
-    "citation" : {
-      "@id" : "http://schema.org/citation"
-    },
-    "Organization" : {
-      "@id" : "https://w3id.org/sri#Organization"
-    },
-    "hasMentor" : {
-      "@id" : "https://w3id.org/sri#hasMentor",
+    "structure" : {
+      "@id" : "http://purl.org/linked-data/cube#structure",
       "@type" : "@id"
     },
     "label" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
     },
-    "author" : {
-      "@id" : "http://schema.org/author"
+    "narrower" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#narrower",
+      "@type" : "@id"
     },
-    "foundedIn" : {
-      "@id" : "https://w3id.org/sri#foundedIn",
-      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    "component" : {
+      "@id" : "http://purl.org/linked-data/cube#component"
     },
-    "rationale" : {
-      "@id" : "http://www.linkedmodel.org/schema/vaem#rationale"
+    "measure" : {
+      "@id" : "http://purl.org/linked-data/cube#measure"
+    },
+    "ServiceLevel" : {
+      "@id" : "https://eu-phoenix.eu/sri#ServiceLevel"
+    },
+    "Domain" : {
+      "@id" : "https://eu-phoenix.eu/sri#Domain"
     },
     "creator" : {
       "@id" : "http://purl.org/dc/terms/creator"
     },
-    "hasMember" : {
-      "@id" : "https://w3id.org/sri#hasMember",
+    "level" : {
+      "@id" : "https://eu-phoenix.eu/sri#level",
       "@type" : "@id"
     },
-    "partOf" : {
-      "@id" : "https://w3id.org/sri#partOf",
+    "Building" : {
+      "@id" : "https://eu-phoenix.eu/sri#Building"
+    },
+    "ServiceCatalogue" : {
+      "@id" : "https://eu-phoenix.eu/sri#ServiceCatalogue"
+    },
+    "Impact" : {
+      "@id" : "https://eu-phoenix.eu/sri#Impact"
+    },
+    "DimensionProperty" : {
+      "@id" : "http://purl.org/linked-data/cube#DimensionProperty"
+    },
+    "impact" : {
+      "@id" : "https://eu-phoenix.eu/sri#impact",
       "@type" : "@id"
     },
     "preferredNamespacePrefix" : {
       "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
     },
+    "serviceCatalogue" : {
+      "@id" : "https://eu-phoenix.eu/sri#serviceCatalogue",
+      "@type" : "@id"
+    },
+    "function" : {
+      "@id" : "https://eu-phoenix.eu/sri#function",
+      "@type" : "@id"
+    },
+    "order" : {
+      "@id" : "http://purl.org/linked-data/cube#order"
+    },
     "title" : {
-      "@id" : "http://purl.org/dc/elements/1.1/title"
+      "@id" : "http://purl.org/dc/terms/title"
     },
-    "publisher" : {
-      "@id" : "http://purl.org/dc/elements/1.1/publisher"
+    "triage" : {
+      "@id" : "https://eu-phoenix.eu/sri#triage",
+      "@type" : "@id"
     },
-    "Student" : {
-      "@id" : "https://w3id.org/sri#Student"
+    "MeasureProperty" : {
+      "@id" : "http://purl.org/linked-data/cube#MeasureProperty"
     },
-    "Researcher" : {
-      "@id" : "https://w3id.org/sri#Researcher"
+    "type" : {
+      "@id" : "https://eu-phoenix.eu/sri#type",
+      "@type" : "@id"
     },
-    "comment" : {
-      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    "assessment" : {
+      "@id" : "https://eu-phoenix.eu/sri#assessment",
+      "@type" : "@id"
     },
-    "description" : {
-      "@id" : "http://purl.org/dc/elements/1.1/description"
+    "refArea" : {
+      "@id" : "http://purl.org/linked-data/sdmx/2009/dimension#refArea",
+      "@type" : "@id"
     },
-    "preferredNamespaceUri" : {
-      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+    },
+    "icscore" : {
+      "@id" : "https://eu-phoenix.eu/sri#icscore"
+    },
+    "broader" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#broader",
+      "@type" : "@id"
+    },
+    "BuildingType" : {
+      "@id" : "https://eu-phoenix.eu/sri#BuildingType"
+    },
+    "DataSet" : {
+      "@id" : "http://purl.org/linked-data/cube#DataSet"
+    },
+    "SpatialThing" : {
+      "@id" : "https://eu-phoenix.eu/sri#SpatialThing"
+    },
+    "Service" : {
+      "@id" : "https://eu-phoenix.eu/sri#Service"
+    },
+    "Triage" : {
+      "@id" : "https://eu-phoenix.eu/sri#Triage"
+    },
+    "ImpactThing" : {
+      "@id" : "https://eu-phoenix.eu/sri#ImpactThing"
+    },
+    "additionalLevel" : {
+      "@id" : "https://eu-phoenix.eu/sri#additionalLevel",
+      "@type" : "@id"
+    },
+    "mandatory" : {
+      "@id" : "https://eu-phoenix.eu/sri#mandatory",
+      "@type" : "@id"
+    },
+    "dimension" : {
+      "@id" : "http://purl.org/linked-data/cube#dimension"
+    },
+    "KeyCapability" : {
+      "@id" : "https://eu-phoenix.eu/sri#KeyCapability"
+    },
+    "FunctionalThing" : {
+      "@id" : "https://eu-phoenix.eu/sri#FunctionalThing"
+    },
+    "weight" : {
+      "@id" : "https://eu-phoenix.eu/sri#weight"
+    },
+    "share" : {
+      "@id" : "https://eu-phoenix.eu/sri#share"
+    },
+    "scores" : {
+      "@id" : "https://eu-phoenix.eu/sri#scores",
+      "@type" : "@id"
+    },
+    "DataStructureDefinition" : {
+      "@id" : "http://purl.org/linked-data/cube#DataStructureDefinition"
     }
   }
 }

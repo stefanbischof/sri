@@ -1,21 +1,228 @@
 [ {
-  "@id" : "http://purl.org/dc/elements/1.1/abstract",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/linked-data/cube#DataSet"
+    }, {
+      "@id" : "_:genid3"
+    } ]
+  } ]
 }, {
-  "@id" : "http://purl.org/dc/elements/1.1/created",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+    }, {
+      "@id" : "http://www.w3.org/2001/XMLSchema#double"
+    }, {
+      "@id" : "http://www.w3.org/2001/XMLSchema#float"
+    } ]
+  } ]
 }, {
-  "@id" : "http://purl.org/dc/elements/1.1/description",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://eu-phoenix.eu/sri#Service"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#narrower"
+  } ]
 }, {
-  "@id" : "http://purl.org/dc/elements/1.1/publisher",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+  "@id" : "_:genid18",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://eu-phoenix.eu/sri#KeyCapability"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#broader"
+  } ]
 }, {
-  "@id" : "http://purl.org/dc/elements/1.1/title",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+  "@id" : "_:genid19",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://eu-phoenix.eu/sri#Impact"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#narrower"
+  } ]
 }, {
-  "@id" : "http://purl.org/dc/terms/abstract",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+  "@id" : "_:genid20",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://eu-phoenix.eu/sri#Domain"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#broader"
+  } ]
+}, {
+  "@id" : "_:genid21",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://eu-phoenix.eu/sri#function"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://eu-phoenix.eu/sri#Service"
+  } ]
+}, {
+  "@id" : "_:genid22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://eu-phoenix.eu/sri#level"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://eu-phoenix.eu/sri#Level"
+  } ]
+}, {
+  "@id" : "_:genid23",
+  "http://purl.org/linked-data/cube#dimension" : [ {
+    "@id" : "https://eu-phoenix.eu/sri#level"
+  } ],
+  "http://purl.org/linked-data/cube#order" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2"
+  } ]
+}, {
+  "@id" : "_:genid24",
+  "http://purl.org/linked-data/cube#dimension" : [ {
+    "@id" : "https://eu-phoenix.eu/sri#function"
+  } ],
+  "http://purl.org/linked-data/cube#order" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid25",
+  "http://purl.org/linked-data/cube#measure" : [ {
+    "@id" : "https://eu-phoenix.eu/sri#score"
+  } ]
+}, {
+  "@id" : "_:genid26",
+  "http://purl.org/linked-data/cube#dimension" : [ {
+    "@id" : "https://eu-phoenix.eu/sri#level"
+  } ],
+  "http://purl.org/linked-data/cube#order" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "3"
+  } ]
+}, {
+  "@id" : "_:genid27",
+  "http://purl.org/linked-data/cube#dimension" : [ {
+    "@id" : "https://eu-phoenix.eu/sri#function"
+  } ],
+  "http://purl.org/linked-data/cube#order" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid28",
+  "http://purl.org/linked-data/cube#measure" : [ {
+    "@id" : "https://eu-phoenix.eu/sri#score"
+  } ]
+}, {
+  "@id" : "_:genid29",
+  "http://purl.org/linked-data/cube#dimension" : [ {
+    "@id" : "https://eu-phoenix.eu/sri#impact"
+  } ],
+  "http://purl.org/linked-data/cube#order" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "https://eu-phoenix.eu/sri#dsd-assessment"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/linked-data/cube#structure"
+  } ]
+}, {
+  "@id" : "_:genid30",
+  "http://purl.org/linked-data/cube#dimension" : [ {
+    "@id" : "https://eu-phoenix.eu/sri#function"
+  } ],
+  "http://purl.org/linked-data/cube#order" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid31",
+  "http://purl.org/linked-data/cube#dimension" : [ {
+    "@id" : "https://eu-phoenix.eu/sri#type"
+  } ],
+  "http://purl.org/linked-data/cube#order" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "4"
+  } ]
+}, {
+  "@id" : "_:genid32",
+  "http://purl.org/linked-data/cube#measure" : [ {
+    "@id" : "https://eu-phoenix.eu/sri#weight"
+  } ]
+}, {
+  "@id" : "_:genid33",
+  "http://purl.org/linked-data/cube#dimension" : [ {
+    "@id" : "https://eu-phoenix.eu/sri#impact"
+  } ],
+  "http://purl.org/linked-data/cube#order" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2"
+  } ]
+}, {
+  "@id" : "_:genid34",
+  "http://purl.org/linked-data/cube#dimension" : [ {
+    "@id" : "https://eu-phoenix.eu/sri#refArea"
+  } ],
+  "http://purl.org/linked-data/cube#order" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "3"
+  } ]
+}, {
+  "@id" : "_:genid35",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "https://eu-phoenix.eu/sri#Building"
+    }, {
+      "@id" : "https://eu-phoenix.eu/sri#BuildingType"
+    }, {
+      "@id" : "https://eu-phoenix.eu/sri#FunctionalThing"
+    }, {
+      "@id" : "https://eu-phoenix.eu/sri#ImpactThing"
+    }, {
+      "@id" : "https://eu-phoenix.eu/sri#Level"
+    }, {
+      "@id" : "https://eu-phoenix.eu/sri#ServiceLevel"
+    }, {
+      "@id" : "https://eu-phoenix.eu/sri#SpatialThing"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+    }, {
+      "@id" : "http://www.w3.org/2001/XMLSchema#double"
+    }, {
+      "@id" : "http://www.w3.org/2001/XMLSchema#float"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+    }, {
+      "@id" : "http://www.w3.org/2001/XMLSchema#double"
+    }, {
+      "@id" : "http://www.w3.org/2001/XMLSchema#float"
+    } ]
+  } ]
 }, {
   "@id" : "http://purl.org/dc/terms/created",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
@@ -23,191 +230,499 @@
   "@id" : "http://purl.org/dc/terms/creator",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://purl.org/dc/terms/license",
+  "@id" : "http://purl.org/dc/terms/title",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://purl.org/vocab/vann/example",
+  "@id" : "http://purl.org/linked-data/cube#DataSet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://purl.org/linked-data/cube#DataStructureDefinition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://purl.org/linked-data/cube#DimensionProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://purl.org/linked-data/cube#MeasureProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://purl.org/linked-data/cube#component",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/linked-data/cube#dimension",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/linked-data/cube#measure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/linked-data/cube#order",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/linked-data/cube#structure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://purl.org/linked-data/sdmx/2009/dimension#refArea",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://purl.org/linked-data/sdmx/2009/measure#obsValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
 }, {
   "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+  "@id" : "http://www.w3.org/2004/02/skos/core#broader",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
-  "@id" : "http://schema.org/author",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+  "@id" : "http://www.w3.org/2004/02/skos/core#narrower",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
-  "@id" : "http://schema.org/citation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.linkedmodel.org/schema/vaem#rationale",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.w3.org/2001/XMLSchema#date",
-  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
-}, {
-  "@id" : "https://w3id.org/sri",
+  "@id" : "https://eu-phoenix.eu/sri",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
-  "http://purl.org/dc/elements/1.1/description" : [ {
-    "@language" : "en",
-    "@value" : "This is an example ontology to illustrate some of the annotations that should be included"
-  } ],
-  "http://purl.org/dc/elements/1.1/title" : [ {
-    "@language" : "en",
-    "@value" : "The example ontology"
-  } ],
-  "http://purl.org/dc/terms/abstract" : [ {
-    "@language" : "en",
-    "@value" : "An example vocabulary designed to illustrate how to publish vocabularies on the Web following the FAIR principles"
-  } ],
   "http://purl.org/dc/terms/created" : [ {
-    "@language" : "en",
-    "@value" : "February 5th, 2020"
+    "@value" : "2022-02-02"
   } ],
   "http://purl.org/dc/terms/creator" : [ {
-    "@language" : "en",
-    "@value" : "Daniel Garijo"
-  }, {
-    "@language" : "en",
-    "@value" : "Maria Poveda-Villalon"
+    "@value" : "Stefan Bischoff"
   } ],
-  "http://purl.org/dc/terms/license" : [ {
-    "@id" : "http://creativecommons.org/licenses/by/2.0/"
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "Semantic Readiness Indicator"
   } ],
   "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
-    "@language" : "en",
     "@value" : "sri"
   } ],
-  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
-    "@value" : "https://w3id.org/sri"
-  } ],
-  "http://schema.org/citation" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Cite this vocabulary as: Garijo, D. and Poveda-Villalon, M. The example ontology 1.0.1."
+    "@value" : "SRI Ontology"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "An example vocabulary designed to illustrate how to publish vocabularies on the Web following the FAIR principles. This vocabulary describes three simple classes with 3 properties and a data property."
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://smartreadinessindicator.eu/"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "https://w3id.org/sri/1.0"
+    "@id" : "https://eu-phoenix.eu/sri/1.0"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "en",
     "@value" : "1.0.0"
   } ]
 }, {
-  "@id" : "https://w3id.org/sri#Organization",
+  "@id" : "https://eu-phoenix.eu/sri#Building",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/vocab/vann/example" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "University of Southern California"
+    "@value" : "Building"
+  } ]
+}, {
+  "@id" : "https://eu-phoenix.eu/sri#BuildingType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "BuildingType"
+  } ]
+}, {
+  "@id" : "https://eu-phoenix.eu/sri#Domain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Domain"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://eu-phoenix.eu/sri#FunctionalThing"
+  }, {
+    "@id" : "_:genid17"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://eu-phoenix.eu/sri#Service"
+  } ]
+}, {
+  "@id" : "https://eu-phoenix.eu/sri#FunctionalThing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "An organized body of people with a particular purpose, especially a business, society, association, etc."
+    "@value" : "FunctionalThing"
+  } ]
+}, {
+  "@id" : "https://eu-phoenix.eu/sri#Impact",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Impact"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://eu-phoenix.eu/sri#ImpactThing"
+  }, {
+    "@id" : "_:genid18"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://eu-phoenix.eu/sri#KeyCapability"
+  } ]
+}, {
+  "@id" : "https://eu-phoenix.eu/sri#ImpactThing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ImpactThing"
+  } ]
+}, {
+  "@id" : "https://eu-phoenix.eu/sri#KeyCapability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "KeyCapability"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://eu-phoenix.eu/sri#ImpactThing"
+  }, {
+    "@id" : "_:genid19"
+  } ]
+}, {
+  "@id" : "https://eu-phoenix.eu/sri#Level",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Level"
+  } ]
+}, {
+  "@id" : "https://eu-phoenix.eu/sri#Service",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://eu-phoenix.eu/sri#FunctionalThing"
+  }, {
+    "@id" : "_:genid20"
+  } ]
+}, {
+  "@id" : "https://eu-phoenix.eu/sri#ServiceCatalogue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://eu-phoenix.eu/sri#ServiceLevel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ServiceLevel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid21"
+  }, {
+    "@id" : "_:genid22"
+  } ]
+}, {
+  "@id" : "https://eu-phoenix.eu/sri#SpatialThing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://eu-phoenix.eu/sri#Triage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://eu-phoenix.eu/sri#additionalLevel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "additional level"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://eu-phoenix.eu/sri#Level"
+  } ]
+}, {
+  "@id" : "https://eu-phoenix.eu/sri#assessment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "https://eu-phoenix.eu/sri#dsd-assessment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/linked-data/cube#component" : [ {
+    "@id" : "_:genid23"
+  }, {
+    "@id" : "_:genid24"
+  }, {
+    "@id" : "_:genid25"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://purl.org/linked-data/cube#DataStructureDefinition"
+  } ]
+}, {
+  "@id" : "https://eu-phoenix.eu/sri#dsd-scores",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/linked-data/cube#component" : [ {
+    "@id" : "_:genid26"
+  }, {
+    "@id" : "_:genid27"
+  }, {
+    "@id" : "_:genid28"
+  }, {
+    "@id" : "_:genid29"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://purl.org/linked-data/cube#DataStructureDefinition"
+  } ]
+}, {
+  "@id" : "https://eu-phoenix.eu/sri#dsd-weights",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/linked-data/cube#component" : [ {
+    "@id" : "_:genid30"
+  }, {
+    "@id" : "_:genid31"
+  }, {
+    "@id" : "_:genid32"
+  }, {
+    "@id" : "_:genid33"
+  }, {
+    "@id" : "_:genid34"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://purl.org/linked-data/cube#DataStructureDefinition"
+  } ]
+}, {
+  "@id" : "https://eu-phoenix.eu/sri#function",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://purl.org/linked-data/cube#DimensionProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Organization"
+    "@value" : "function"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://eu-phoenix.eu/sri#FunctionalThing"
   } ]
 }, {
-  "@id" : "https://w3id.org/sri#Researcher",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/vocab/vann/example" : [ {
-    "@language" : "en",
-    "@value" : "An example using the Researcher class, e.g., Bob is a professor at the University of Southern California."
-  } ],
-  "http://www.linkedmodel.org/schema/vaem#rationale" : [ {
-    "@language" : "en",
-    "@value" : "The reason why this concept was added to the ontology. This could reflect some agreement or use cases that may need to be reflected here. For example: The concept Researcher was added to the ontology to represent those authors of scientific publications that belong to a public institution."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A definition of your class. For example, A researcher is a person who publishes scientific papers, writes research proposals and mentors students"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Researcher"
-  } ]
-}, {
-  "@id" : "https://w3id.org/sri#Student",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Student is a class introduced in the version 1.0.1 of the ontology. "
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Student"
-  } ]
-}, {
-  "@id" : "https://w3id.org/sri#foundedIn",
+  "@id" : "https://eu-phoenix.eu/sri#icscore",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Date when an organization was founded"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/sri#Organization"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "founded in"
+    "@value" : "impact criterion score"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+    "@id" : "_:genid5"
   } ]
 }, {
-  "@id" : "https://w3id.org/sri#hasMember",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This example property indicates that an Organization has a Researcher as member"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/sri#Organization"
+  "@id" : "https://eu-phoenix.eu/sri#impact",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://purl.org/linked-data/cube#DimensionProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "has member"
+    "@value" : "impact"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/sri#Researcher"
+    "@id" : "https://eu-phoenix.eu/sri#ImpactThing"
   } ]
 }, {
-  "@id" : "https://w3id.org/sri#hasMentor",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This property links the students to the researcher who mentored them"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/sri#Student"
+  "@id" : "https://eu-phoenix.eu/sri#level",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://purl.org/linked-data/cube#DimensionProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "has mentor"
+    "@value" : "level"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/sri#Researcher"
+    "@id" : "https://eu-phoenix.eu/sri#Level"
   } ]
 }, {
-  "@id" : "https://w3id.org/sri#partOf",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This property links instances from Researcher to Organization"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/sri#Researcher"
+  "@id" : "https://eu-phoenix.eu/sri#level0",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://eu-phoenix.eu/sri#Level"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "part of"
+    "@value" : "Level 0"
+  } ]
+}, {
+  "@id" : "https://eu-phoenix.eu/sri#level1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://eu-phoenix.eu/sri#Level"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Level 1"
+  } ]
+}, {
+  "@id" : "https://eu-phoenix.eu/sri#level2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://eu-phoenix.eu/sri#Level"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Level 2"
+  } ]
+}, {
+  "@id" : "https://eu-phoenix.eu/sri#level3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://eu-phoenix.eu/sri#Level"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Level 3"
+  } ]
+}, {
+  "@id" : "https://eu-phoenix.eu/sri#level4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://eu-phoenix.eu/sri#Level"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Level 4"
+  } ]
+}, {
+  "@id" : "https://eu-phoenix.eu/sri#mandatory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://eu-phoenix.eu/sri#Triage"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/sri#Organization"
+    "@id" : "https://eu-phoenix.eu/sri#FunctionalThing"
+  } ]
+}, {
+  "@id" : "https://eu-phoenix.eu/sri#nonresidential",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://eu-phoenix.eu/sri#BuildingType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Non-residential"
+  } ]
+}, {
+  "@id" : "https://eu-phoenix.eu/sri#refArea",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ref area"
+  } ]
+}, {
+  "@id" : "https://eu-phoenix.eu/sri#residential",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://eu-phoenix.eu/sri#BuildingType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Residential"
+  } ]
+}, {
+  "@id" : "https://eu-phoenix.eu/sri#score",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://purl.org/linked-data/cube#MeasureProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "smart readiness score"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/linked-data/sdmx/2009/measure#obsValue"
+  } ]
+}, {
+  "@id" : "https://eu-phoenix.eu/sri#scores",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/linked-data/cube#structure" : [ {
+    "@id" : "https://eu-phoenix.eu/sri#dsd-scores"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://purl.org/linked-data/cube#DataSet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has SRI scores dataset"
+  } ]
+}, {
+  "@id" : "https://eu-phoenix.eu/sri#serviceCatalogue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://eu-phoenix.eu/sri#ServiceCatalogue"
+  } ]
+}, {
+  "@id" : "https://eu-phoenix.eu/sri#share",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "share"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid9"
+  } ]
+}, {
+  "@id" : "https://eu-phoenix.eu/sri#sriscores",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://purl.org/linked-data/cube#DataStructureDefinition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "SRI scores DSD"
+  } ]
+}, {
+  "@id" : "https://eu-phoenix.eu/sri#topDomain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "All domains"
+  } ]
+}, {
+  "@id" : "https://eu-phoenix.eu/sri#topImpact",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "All impacts"
+  } ]
+}, {
+  "@id" : "https://eu-phoenix.eu/sri#triage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://eu-phoenix.eu/sri#Triage"
+  } ]
+}, {
+  "@id" : "https://eu-phoenix.eu/sri#type",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://purl.org/linked-data/cube#DimensionProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://eu-phoenix.eu/sri#BuildingType"
+  } ]
+}, {
+  "@id" : "https://eu-phoenix.eu/sri#weight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://purl.org/linked-data/cube#MeasureProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "weight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid13"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/linked-data/sdmx/2009/measure#obsValue"
+  } ]
+}, {
+  "@id" : "https://eu-phoenix.eu/sri#weights",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/linked-data/cube#structure" : [ {
+    "@id" : "https://eu-phoenix.eu/sri#dsd-weights"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://purl.org/linked-data/cube#DataSet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "SRI weights"
   } ]
 } ]

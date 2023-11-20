@@ -6,94 +6,296 @@ This section provides details for each class and property defined by The example
    <h3 id="classes-headline" class="list">Classes</h3>
    <ul class="hlist">
       <li>
-         <a href="#Organization" title="https://w3id.org/sri#Organization">Organization</a>
+         <a href="#https://eu-phoenix.eu/sri#Building" title="https://eu-phoenix.eu/sri#Building">Building</a>
       </li>
       <li>
-         <a href="#Researcher" title="https://w3id.org/sri#Researcher">Researcher</a>
+         <a href="#https://eu-phoenix.eu/sri#BuildingType" title="https://eu-phoenix.eu/sri#BuildingType">BuildingType</a>
       </li>
       <li>
-         <a href="#Student" title="https://w3id.org/sri#Student">Student</a>
+         <a href="#https://eu-phoenix.eu/sri#Domain" title="https://eu-phoenix.eu/sri#Domain">Domain</a>
+      </li>
+      <li>
+         <a href="#https://eu-phoenix.eu/sri#FunctionalThing" title="https://eu-phoenix.eu/sri#FunctionalThing">FunctionalThing</a>
+      </li>
+      <li>
+         <a href="#https://eu-phoenix.eu/sri#Impact" title="https://eu-phoenix.eu/sri#Impact">Impact</a>
+      </li>
+      <li>
+         <a href="#https://eu-phoenix.eu/sri#ImpactThing" title="https://eu-phoenix.eu/sri#ImpactThing">ImpactThing</a>
+      </li>
+      <li>
+         <a href="#https://eu-phoenix.eu/sri#KeyCapability" title="https://eu-phoenix.eu/sri#KeyCapability">KeyCapability</a>
+      </li>
+      <li>
+         <a href="#https://eu-phoenix.eu/sri#Level" title="https://eu-phoenix.eu/sri#Level">Level</a>
+      </li>
+      <li>
+         <a href="#https://eu-phoenix.eu/sri#Service" title="https://eu-phoenix.eu/sri#Service">Service</a>
+      </li>
+      <li>
+         <a href="#https://eu-phoenix.eu/sri#ServiceLevel" title="https://eu-phoenix.eu/sri#ServiceLevel">ServiceLevel</a>
       </li>
    </ul>
-   <div class="entity" id="Organization">
-      <h3>Organization<sup class="type-c" title="class">c</sup>
+   <div class="entity" id="https://eu-phoenix.eu/sri#Building">
+      <h3>Building<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/sri#Organization</p>
-      <div class="comment">
-         <span class="markdown">An organized body of people with a particular purpose, especially a business, society, association, etc.</span>
-      </div>
-      <dl>
-         <dt>Example</dt>
-         <dd>
-            <pre>University of Southern California</pre>
-         </dd>
-      </dl>
+         <strong>IRI:</strong> https://eu-phoenix.eu/sri#Building</p>
       <dl class="description">
-         <dt>is in domain of</dt>
+         <dt>is disjoint with</dt>
          <dd>
-            <a href="#foundedIn" title="https://w3id.org/sri#foundedIn">founded in</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasMember" title="https://w3id.org/sri#hasMember">has member</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#partOf" title="https://w3id.org/sri#partOf">part of</a>
-            <sup class="type-op" title="object property">op</sup>
+            <a href="#https://eu-phoenix.eu/sri#BuildingType" title="https://eu-phoenix.eu/sri#BuildingType">BuildingType</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://eu-phoenix.eu/sri#FunctionalThing" title="https://eu-phoenix.eu/sri#FunctionalThing">FunctionalThing</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://eu-phoenix.eu/sri#ImpactThing" title="https://eu-phoenix.eu/sri#ImpactThing">ImpactThing</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://eu-phoenix.eu/sri#Level" title="https://eu-phoenix.eu/sri#Level">Level</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://eu-phoenix.eu/sri#ServiceLevel" title="https://eu-phoenix.eu/sri#ServiceLevel">ServiceLevel</a>
+            <sup class="type-c" title="class">c</sup>, <a href="https://eu-phoenix.eu/sri#SpatialThing"
+               target="_blank"
+               title="https://eu-phoenix.eu/sri#SpatialThing">spatial thing</a>
+            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="Researcher">
-      <h3>Researcher<sup class="type-c" title="class">c</sup>
+   <div class="entity" id="https://eu-phoenix.eu/sri#BuildingType">
+      <h3>BuildingType<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/sri#Researcher</p>
-      <div class="comment">
-         <span class="markdown">A definition of your class. For example, A researcher is a person who publishes scientific papers, writes research proposals and mentors students</span>
-      </div>
-      <dl>
-         <dt>Term rationale</dt>
-         <dd>The reason why this concept was added to the ontology. This could reflect some agreement or use cases that may need to be reflected here. For example: The concept Researcher was added to the ontology to represent those authors of scientific publications that belong to a public institution.</dd>
-      </dl>
-      <dl>
-         <dt>Example</dt>
-         <dd>
-            <pre>An example using the Researcher class, e.g., Bob is a professor at the University of Southern California.</pre>
-         </dd>
-      </dl>
+         <strong>IRI:</strong> https://eu-phoenix.eu/sri#BuildingType</p>
       <dl class="description">
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#partOf" title="https://w3id.org/sri#partOf">part of</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#hasMember" title="https://w3id.org/sri#hasMember">has member</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasMentor" title="https://w3id.org/sri#hasMentor">has mentor</a>
+            <a href="#https://eu-phoenix.eu/sri#type" title="https://eu-phoenix.eu/sri#type">type</a>
             <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#https://eu-phoenix.eu/sri#nonresidential" title="https://eu-phoenix.eu/sri#nonresidential">Non-residential</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://eu-phoenix.eu/sri#residential" title="https://eu-phoenix.eu/sri#residential">Residential</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#https://eu-phoenix.eu/sri#Building" title="https://eu-phoenix.eu/sri#Building">Building</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://eu-phoenix.eu/sri#FunctionalThing" title="https://eu-phoenix.eu/sri#FunctionalThing">FunctionalThing</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://eu-phoenix.eu/sri#ImpactThing" title="https://eu-phoenix.eu/sri#ImpactThing">ImpactThing</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://eu-phoenix.eu/sri#Level" title="https://eu-phoenix.eu/sri#Level">Level</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://eu-phoenix.eu/sri#ServiceLevel" title="https://eu-phoenix.eu/sri#ServiceLevel">ServiceLevel</a>
+            <sup class="type-c" title="class">c</sup>, <a href="https://eu-phoenix.eu/sri#SpatialThing"
+               target="_blank"
+               title="https://eu-phoenix.eu/sri#SpatialThing">spatial thing</a>
+            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="Student">
-      <h3>Student<sup class="type-c" title="class">c</sup>
+   <div class="entity" id="https://eu-phoenix.eu/sri#Domain">
+      <h3>Domain<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/sri#Student</p>
-      <div class="comment">
-         <span class="markdown">Student is a class introduced in the version 1.0.1 of the ontology. </span>
-      </div>
+         <strong>IRI:</strong> https://eu-phoenix.eu/sri#Domain</p>
       <dl class="description">
-         <dt>is in domain of</dt>
+         <dt>has super-classes</dt>
          <dd>
-            <a href="#hasMentor" title="https://w3id.org/sri#hasMentor">has mentor</a>
+            <a href="#https://eu-phoenix.eu/sri#FunctionalThing" title="https://eu-phoenix.eu/sri#FunctionalThing">FunctionalThing</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#https://eu-phoenix.eu/sri#Service" title="https://eu-phoenix.eu/sri#Service">Service</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://eu-phoenix.eu/sri#FunctionalThing">
+      <h3>FunctionalThing<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://eu-phoenix.eu/sri#FunctionalThing</p>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#https://eu-phoenix.eu/sri#Domain" title="https://eu-phoenix.eu/sri#Domain">Domain</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://eu-phoenix.eu/sri#Service" title="https://eu-phoenix.eu/sri#Service">Service</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#https://eu-phoenix.eu/sri#function" title="https://eu-phoenix.eu/sri#function">function</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://eu-phoenix.eu/sri#mandatory" title="https://eu-phoenix.eu/sri#mandatory">mandatory</a>
             <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#https://eu-phoenix.eu/sri#Building" title="https://eu-phoenix.eu/sri#Building">Building</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://eu-phoenix.eu/sri#BuildingType" title="https://eu-phoenix.eu/sri#BuildingType">BuildingType</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://eu-phoenix.eu/sri#ImpactThing" title="https://eu-phoenix.eu/sri#ImpactThing">ImpactThing</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://eu-phoenix.eu/sri#Level" title="https://eu-phoenix.eu/sri#Level">Level</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://eu-phoenix.eu/sri#ServiceLevel" title="https://eu-phoenix.eu/sri#ServiceLevel">ServiceLevel</a>
+            <sup class="type-c" title="class">c</sup>, <a href="https://eu-phoenix.eu/sri#SpatialThing"
+               target="_blank"
+               title="https://eu-phoenix.eu/sri#SpatialThing">spatial thing</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://eu-phoenix.eu/sri#Impact">
+      <h3>Impact<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://eu-phoenix.eu/sri#Impact</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#https://eu-phoenix.eu/sri#ImpactThing" title="https://eu-phoenix.eu/sri#ImpactThing">ImpactThing</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#https://eu-phoenix.eu/sri#KeyCapability" title="https://eu-phoenix.eu/sri#KeyCapability">KeyCapability</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://eu-phoenix.eu/sri#ImpactThing">
+      <h3>ImpactThing<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://eu-phoenix.eu/sri#ImpactThing</p>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#https://eu-phoenix.eu/sri#Impact" title="https://eu-phoenix.eu/sri#Impact">Impact</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://eu-phoenix.eu/sri#KeyCapability" title="https://eu-phoenix.eu/sri#KeyCapability">KeyCapability</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#https://eu-phoenix.eu/sri#impact" title="https://eu-phoenix.eu/sri#impact">impact</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#https://eu-phoenix.eu/sri#Building" title="https://eu-phoenix.eu/sri#Building">Building</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://eu-phoenix.eu/sri#BuildingType" title="https://eu-phoenix.eu/sri#BuildingType">BuildingType</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://eu-phoenix.eu/sri#FunctionalThing" title="https://eu-phoenix.eu/sri#FunctionalThing">FunctionalThing</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://eu-phoenix.eu/sri#Level" title="https://eu-phoenix.eu/sri#Level">Level</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://eu-phoenix.eu/sri#ServiceLevel" title="https://eu-phoenix.eu/sri#ServiceLevel">ServiceLevel</a>
+            <sup class="type-c" title="class">c</sup>, <a href="https://eu-phoenix.eu/sri#SpatialThing"
+               target="_blank"
+               title="https://eu-phoenix.eu/sri#SpatialThing">spatial thing</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://eu-phoenix.eu/sri#KeyCapability">
+      <h3>KeyCapability<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://eu-phoenix.eu/sri#KeyCapability</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#https://eu-phoenix.eu/sri#ImpactThing" title="https://eu-phoenix.eu/sri#ImpactThing">ImpactThing</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#https://eu-phoenix.eu/sri#Impact" title="https://eu-phoenix.eu/sri#Impact">Impact</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://eu-phoenix.eu/sri#Level">
+      <h3>Level<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://eu-phoenix.eu/sri#Level</p>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#https://eu-phoenix.eu/sri#additionalLevel" title="https://eu-phoenix.eu/sri#additionalLevel">additional level</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://eu-phoenix.eu/sri#level" title="https://eu-phoenix.eu/sri#level">level</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#https://eu-phoenix.eu/sri#level0" title="https://eu-phoenix.eu/sri#level0">Level 0</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://eu-phoenix.eu/sri#level1" title="https://eu-phoenix.eu/sri#level1">Level 1</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://eu-phoenix.eu/sri#level2" title="https://eu-phoenix.eu/sri#level2">Level 2</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://eu-phoenix.eu/sri#level3" title="https://eu-phoenix.eu/sri#level3">Level 3</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://eu-phoenix.eu/sri#level4" title="https://eu-phoenix.eu/sri#level4">Level 4</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#https://eu-phoenix.eu/sri#Building" title="https://eu-phoenix.eu/sri#Building">Building</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://eu-phoenix.eu/sri#BuildingType" title="https://eu-phoenix.eu/sri#BuildingType">BuildingType</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://eu-phoenix.eu/sri#FunctionalThing" title="https://eu-phoenix.eu/sri#FunctionalThing">FunctionalThing</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://eu-phoenix.eu/sri#ImpactThing" title="https://eu-phoenix.eu/sri#ImpactThing">ImpactThing</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://eu-phoenix.eu/sri#ServiceLevel" title="https://eu-phoenix.eu/sri#ServiceLevel">ServiceLevel</a>
+            <sup class="type-c" title="class">c</sup>, <a href="https://eu-phoenix.eu/sri#SpatialThing"
+               target="_blank"
+               title="https://eu-phoenix.eu/sri#SpatialThing">spatial thing</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://eu-phoenix.eu/sri#Service">
+      <h3>Service<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://eu-phoenix.eu/sri#Service</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#https://eu-phoenix.eu/sri#FunctionalThing" title="https://eu-phoenix.eu/sri#FunctionalThing">FunctionalThing</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#https://eu-phoenix.eu/sri#Domain" title="https://eu-phoenix.eu/sri#Domain">Domain</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://eu-phoenix.eu/sri#ServiceLevel">
+      <h3>ServiceLevel<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://eu-phoenix.eu/sri#ServiceLevel</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd/>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#https://eu-phoenix.eu/sri#Building" title="https://eu-phoenix.eu/sri#Building">Building</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://eu-phoenix.eu/sri#BuildingType" title="https://eu-phoenix.eu/sri#BuildingType">BuildingType</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://eu-phoenix.eu/sri#FunctionalThing" title="https://eu-phoenix.eu/sri#FunctionalThing">FunctionalThing</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://eu-phoenix.eu/sri#ImpactThing" title="https://eu-phoenix.eu/sri#ImpactThing">ImpactThing</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://eu-phoenix.eu/sri#Level" title="https://eu-phoenix.eu/sri#Level">Level</a>
+            <sup class="type-c" title="class">c</sup>, <a href="https://eu-phoenix.eu/sri#SpatialThing"
+               target="_blank"
+               title="https://eu-phoenix.eu/sri#SpatialThing">spatial thing</a>
+            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
@@ -103,86 +305,243 @@ This section provides details for each class and property defined by The example
    <h3 id="properties" class="list">Object Properties</h3>
    <ul class="hlist">
       <li>
-         <a href="#hasMember" title="https://w3id.org/sri#hasMember">has member</a>
+         <a href="#https://eu-phoenix.eu/sri#additionalLevel" title="https://eu-phoenix.eu/sri#additionalLevel">additional level</a>
       </li>
       <li>
-         <a href="#hasMentor" title="https://w3id.org/sri#hasMentor">has mentor</a>
+         <a href="#https://eu-phoenix.eu/sri#assessment" title="https://eu-phoenix.eu/sri#assessment">
+            <span>assessment</span>
+         </a>
       </li>
       <li>
-         <a href="#partOf" title="https://w3id.org/sri#partOf">part of</a>
+         <a href="#https://eu-phoenix.eu/sri#function" title="https://eu-phoenix.eu/sri#function">
+            <span>function</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://eu-phoenix.eu/sri#impact" title="https://eu-phoenix.eu/sri#impact">
+            <span>impact</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://eu-phoenix.eu/sri#level" title="https://eu-phoenix.eu/sri#level">
+            <span>level</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://eu-phoenix.eu/sri#mandatory" title="https://eu-phoenix.eu/sri#mandatory">
+            <span>mandatory</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://eu-phoenix.eu/sri#serviceCatalogue" title="https://eu-phoenix.eu/sri#serviceCatalogue">
+            <span>service catalogue</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://eu-phoenix.eu/sri#triage" title="https://eu-phoenix.eu/sri#triage">
+            <span>triage</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://eu-phoenix.eu/sri#type" title="https://eu-phoenix.eu/sri#type">
+            <span>type</span>
+         </a>
       </li>
    </ul>
-   <div class="entity" id="hasMember">
-      <h3>has member<sup class="type-op" title="object property">op</sup>
+   <div class="entity" id="https://eu-phoenix.eu/sri#additionalLevel">
+      <h3>additional level<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/sri#hasMember</p>
-      <div class="comment">
-         <span class="markdown">This example property indicates that an Organization has a Researcher as member</span>
-      </div>
+         <strong>IRI:</strong> https://eu-phoenix.eu/sri#additionalLevel</p>
       <div class="description">
          <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Organization" title="https://w3id.org/sri#Organization">Organization</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#Researcher" title="https://w3id.org/sri#Researcher">Researcher</a>
+               <a href="#https://eu-phoenix.eu/sri#Level" title="https://eu-phoenix.eu/sri#Level">Level</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
    </div>
-   <div class="entity" id="hasMentor">
-      <h3>has mentor<sup class="type-op" title="object property">op</sup>
+   <div class="entity" id="https://eu-phoenix.eu/sri#assessment">
+      <h3>assessment<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/sri#hasMentor</p>
-      <div class="comment">
-         <span class="markdown">This property links the students to the researcher who mentored them</span>
+         <strong>IRI:</strong> https://eu-phoenix.eu/sri#assessment</p>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://purl.org/linked-data/cube#DataSet"
+                  target="_blank"
+                  title="http://purl.org/linked-data/cube#DataSet">data set</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">and</span> (<a href="http://purl.org/linked-data/cube#structure"
+                  target="_blank"
+                  title="http://purl.org/linked-data/cube#structure">structure</a> 
+               <span class="logic">value</span> 
+               <a href="#https://eu-phoenix.eu/sri#dsd-assessment" title="https://eu-phoenix.eu/sri#dsd-assessment">dsd assessment</a>)</dd>
+         </dl>
       </div>
+   </div>
+   <div class="entity" id="https://eu-phoenix.eu/sri#function">
+      <h3>function<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://eu-phoenix.eu/sri#function</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <a href="#https://eu-phoenix.eu/sri#FunctionalThing" title="https://eu-phoenix.eu/sri#FunctionalThing">FunctionalThing</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>
+               <a href="#https://eu-phoenix.eu/sri#function">named individual</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://eu-phoenix.eu/sri#impact">
+      <h3>impact<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://eu-phoenix.eu/sri#impact</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <a href="#https://eu-phoenix.eu/sri#ImpactThing" title="https://eu-phoenix.eu/sri#ImpactThing">ImpactThing</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>
+               <a href="#https://eu-phoenix.eu/sri#impact">named individual</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://eu-phoenix.eu/sri#level">
+      <h3>level<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://eu-phoenix.eu/sri#level</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <a href="#https://eu-phoenix.eu/sri#Level" title="https://eu-phoenix.eu/sri#Level">Level</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>
+               <a href="#https://eu-phoenix.eu/sri#level">named individual</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://eu-phoenix.eu/sri#mandatory">
+      <h3>mandatory<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://eu-phoenix.eu/sri#mandatory</p>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Student" title="https://w3id.org/sri#Student">Student</a>
+               <a href="https://eu-phoenix.eu/sri#Triage"
+                  target="_blank"
+                  title="https://eu-phoenix.eu/sri#Triage">triage</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#Researcher" title="https://w3id.org/sri#Researcher">Researcher</a>
+               <a href="#https://eu-phoenix.eu/sri#FunctionalThing" title="https://eu-phoenix.eu/sri#FunctionalThing">FunctionalThing</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
    </div>
-   <div class="entity" id="partOf">
-      <h3>part of<sup class="type-op" title="object property">op</sup>
+   <div class="entity" id="https://eu-phoenix.eu/sri#serviceCatalogue">
+      <h3>service catalogue<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/sri#partOf</p>
-      <div class="comment">
-         <span class="markdown">This property links instances from Researcher to Organization</span>
-      </div>
+         <strong>IRI:</strong> https://eu-phoenix.eu/sri#serviceCatalogue</p>
       <div class="description">
          <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Researcher" title="https://w3id.org/sri#Researcher">Researcher</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#Organization" title="https://w3id.org/sri#Organization">Organization</a>
+               <a href="https://eu-phoenix.eu/sri#ServiceCatalogue"
+                  target="_blank"
+                  title="https://eu-phoenix.eu/sri#ServiceCatalogue">service catalogue</a>
                <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://eu-phoenix.eu/sri#triage">
+      <h3>triage<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://eu-phoenix.eu/sri#triage</p>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <a href="https://eu-phoenix.eu/sri#Triage"
+                  target="_blank"
+                  title="https://eu-phoenix.eu/sri#Triage">triage</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://eu-phoenix.eu/sri#type">
+      <h3>type<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://eu-phoenix.eu/sri#type</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <a href="#https://eu-phoenix.eu/sri#BuildingType" title="https://eu-phoenix.eu/sri#BuildingType">BuildingType</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>
+               <a href="#https://eu-phoenix.eu/sri#type">named individual</a>
             </dd>
          </dl>
       </div>
@@ -193,34 +552,588 @@ This section provides details for each class and property defined by The example
    <h3 id="dataproperties-headline" class="list">Data Properties</h3>
    <ul class="hlist">
       <li>
-         <a href="#foundedIn" title="https://w3id.org/sri#foundedIn">founded in</a>
+         <a href="#https://eu-phoenix.eu/sri#icscore" title="https://eu-phoenix.eu/sri#icscore">impact criterion score</a>
+      </li>
+      <li>
+         <a href="#https://eu-phoenix.eu/sri#share" title="https://eu-phoenix.eu/sri#share">share</a>
+      </li>
+      <li>
+         <a href="#https://eu-phoenix.eu/sri#score" title="https://eu-phoenix.eu/sri#score">
+            <span>smart readiness score</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://eu-phoenix.eu/sri#weight" title="https://eu-phoenix.eu/sri#weight">
+            <span>weight</span>
+         </a>
       </li>
    </ul>
-   <div class="entity" id="foundedIn">
-      <h3>founded in<sup class="type-dp" title="data property">dp</sup>
+   <div class="entity" id="https://eu-phoenix.eu/sri#icscore">
+      <h3>impact criterion score<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/sri#foundedIn</p>
-      <div class="comment">
-         <span class="markdown">Date when an organization was founded</span>
-      </div>
+         <strong>IRI:</strong> https://eu-phoenix.eu/sri#icscore</p>
       <div class="description">
          <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Organization" title="https://w3id.org/sri#Organization">Organization</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
             <dt>has range</dt>
             <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#date"
+               <a href="http://www.w3.org/2001/XMLSchema#decimal"
                   target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#date">date</a>
+                  title="http://www.w3.org/2001/XMLSchema#decimal">decimal</a> 
+               <span class="logic">or</span> 
+               <a href="http://www.w3.org/2001/XMLSchema#double"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#double">double</a> 
+               <span class="logic">or</span> 
+               <a href="http://www.w3.org/2001/XMLSchema#float"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#float">float</a>
             </dd>
          </dl>
       </div>
+   </div>
+   <div class="entity" id="https://eu-phoenix.eu/sri#share">
+      <h3>share<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://eu-phoenix.eu/sri#share</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#decimal"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#decimal">decimal</a> 
+               <span class="logic">or</span> 
+               <a href="http://www.w3.org/2001/XMLSchema#double"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#double">double</a> 
+               <span class="logic">or</span> 
+               <a href="http://www.w3.org/2001/XMLSchema#float"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#float">float</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://eu-phoenix.eu/sri#score">
+      <h3>smart readiness score<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://eu-phoenix.eu/sri#score</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://purl.org/linked-data/sdmx/2009/measure#obsValue"
+                  target="_blank"
+                  title="http://purl.org/linked-data/sdmx/2009/measure#obsValue">obs value</a>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#integer"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>
+               <a href="#https://eu-phoenix.eu/sri#score">named individual</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://eu-phoenix.eu/sri#weight">
+      <h3>weight<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://eu-phoenix.eu/sri#weight</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://purl.org/linked-data/sdmx/2009/measure#obsValue"
+                  target="_blank"
+                  title="http://purl.org/linked-data/sdmx/2009/measure#obsValue">obs value</a>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#decimal"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#decimal">decimal</a> 
+               <span class="logic">or</span> 
+               <a href="http://www.w3.org/2001/XMLSchema#double"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#double">double</a> 
+               <span class="logic">or</span> 
+               <a href="http://www.w3.org/2001/XMLSchema#float"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#float">float</a>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>
+               <a href="#https://eu-phoenix.eu/sri#weight">named individual</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div xmlns:extra="https://w3id.org/extra#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     id="namedindividuals">
+   <h3 id="namedindividuals" class="list">Named Individuals</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#https://eu-phoenix.eu/sri#topDomain" title="https://eu-phoenix.eu/sri#topDomain">All domains</a>
+      </li>
+      <li>
+         <a href="#https://eu-phoenix.eu/sri#topImpact" title="https://eu-phoenix.eu/sri#topImpact">All impacts</a>
+      </li>
+      <li>
+         <a href="#https://eu-phoenix.eu/sri#dsd-assessment" title="https://eu-phoenix.eu/sri#dsd-assessment">
+            <span>dsd assessment</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://eu-phoenix.eu/sri#dsd-scores" title="https://eu-phoenix.eu/sri#dsd-scores">
+            <span>dsd scores</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://eu-phoenix.eu/sri#dsd-weights" title="https://eu-phoenix.eu/sri#dsd-weights">
+            <span>dsd weights</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://eu-phoenix.eu/sri#function" title="https://eu-phoenix.eu/sri#function">
+            <span>function</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://eu-phoenix.eu/sri#scores" title="https://eu-phoenix.eu/sri#scores">
+            <span>has SRI scores dataset</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://eu-phoenix.eu/sri#impact" title="https://eu-phoenix.eu/sri#impact">
+            <span>impact</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://eu-phoenix.eu/sri#level" title="https://eu-phoenix.eu/sri#level">
+            <span>level</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://eu-phoenix.eu/sri#level0" title="https://eu-phoenix.eu/sri#level0">Level 0</a>
+      </li>
+      <li>
+         <a href="#https://eu-phoenix.eu/sri#level1" title="https://eu-phoenix.eu/sri#level1">Level 1</a>
+      </li>
+      <li>
+         <a href="#https://eu-phoenix.eu/sri#level2" title="https://eu-phoenix.eu/sri#level2">Level 2</a>
+      </li>
+      <li>
+         <a href="#https://eu-phoenix.eu/sri#level3" title="https://eu-phoenix.eu/sri#level3">Level 3</a>
+      </li>
+      <li>
+         <a href="#https://eu-phoenix.eu/sri#level4" title="https://eu-phoenix.eu/sri#level4">Level 4</a>
+      </li>
+      <li>
+         <a href="#https://eu-phoenix.eu/sri#nonresidential" title="https://eu-phoenix.eu/sri#nonresidential">Non-residential</a>
+      </li>
+      <li>
+         <a href="#https://eu-phoenix.eu/sri#residential" title="https://eu-phoenix.eu/sri#residential">Residential</a>
+      </li>
+      <li>
+         <a href="#https://eu-phoenix.eu/sri#score" title="https://eu-phoenix.eu/sri#score">
+            <span>smart readiness score</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://eu-phoenix.eu/sri#sriscores" title="https://eu-phoenix.eu/sri#sriscores">SRI scores DSD</a>
+      </li>
+      <li>
+         <a href="#https://eu-phoenix.eu/sri#weights" title="https://eu-phoenix.eu/sri#weights">SRI weights</a>
+      </li>
+      <li>
+         <a href="#https://eu-phoenix.eu/sri#type" title="https://eu-phoenix.eu/sri#type">
+            <span>type</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://eu-phoenix.eu/sri#weight" title="https://eu-phoenix.eu/sri#weight">
+            <span>weight</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="https://eu-phoenix.eu/sri#topDomain">
+      <h3>All domains<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://eu-phoenix.eu/sri#topDomain</p>
+   </div>
+   <div class="entity" id="https://eu-phoenix.eu/sri#topImpact">
+      <h3>All impacts<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://eu-phoenix.eu/sri#topImpact</p>
+   </div>
+   <div class="entity" id="https://eu-phoenix.eu/sri#dsd-assessment">
+      <h3>dsd assessment<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://eu-phoenix.eu/sri#dsd-assessment</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://purl.org/linked-data/cube#DataStructureDefinition"
+               target="_blank"
+               title="http://purl.org/linked-data/cube#DataStructureDefinition">data structure definition</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://eu-phoenix.eu/sri#dsd-scores">
+      <h3>dsd scores<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://eu-phoenix.eu/sri#dsd-scores</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://purl.org/linked-data/cube#DataStructureDefinition"
+               target="_blank"
+               title="http://purl.org/linked-data/cube#DataStructureDefinition">data structure definition</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://eu-phoenix.eu/sri#dsd-weights">
+      <h3>dsd weights<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://eu-phoenix.eu/sri#dsd-weights</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://purl.org/linked-data/cube#DataStructureDefinition"
+               target="_blank"
+               title="http://purl.org/linked-data/cube#DataStructureDefinition">data structure definition</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://eu-phoenix.eu/sri#function">
+      <h3>function<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://eu-phoenix.eu/sri#function</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://purl.org/linked-data/cube#DimensionProperty"
+               target="_blank"
+               title="http://purl.org/linked-data/cube#DimensionProperty">dimension property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is also defined as</dt>
+         <dd>
+            <a href="#https://eu-phoenix.eu/sri#function">object property</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://eu-phoenix.eu/sri#scores">
+      <h3>has SRI scores dataset<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://eu-phoenix.eu/sri#scores</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://purl.org/linked-data/cube#DataSet"
+               target="_blank"
+               title="http://purl.org/linked-data/cube#DataSet">data set</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is also defined as</dt>
+         <dd>object property</dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://eu-phoenix.eu/sri#impact">
+      <h3>impact<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://eu-phoenix.eu/sri#impact</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://purl.org/linked-data/cube#DimensionProperty"
+               target="_blank"
+               title="http://purl.org/linked-data/cube#DimensionProperty">dimension property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is also defined as</dt>
+         <dd>
+            <a href="#https://eu-phoenix.eu/sri#impact">object property</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://eu-phoenix.eu/sri#level">
+      <h3>level<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://eu-phoenix.eu/sri#level</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://purl.org/linked-data/cube#DimensionProperty"
+               target="_blank"
+               title="http://purl.org/linked-data/cube#DimensionProperty">dimension property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is also defined as</dt>
+         <dd>
+            <a href="#https://eu-phoenix.eu/sri#level">object property</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://eu-phoenix.eu/sri#level0">
+      <h3>Level 0<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://eu-phoenix.eu/sri#level0</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#https://eu-phoenix.eu/sri#Level" title="https://eu-phoenix.eu/sri#Level">Level</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://eu-phoenix.eu/sri#level1">
+      <h3>Level 1<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://eu-phoenix.eu/sri#level1</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#https://eu-phoenix.eu/sri#Level" title="https://eu-phoenix.eu/sri#Level">Level</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://eu-phoenix.eu/sri#level2">
+      <h3>Level 2<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://eu-phoenix.eu/sri#level2</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#https://eu-phoenix.eu/sri#Level" title="https://eu-phoenix.eu/sri#Level">Level</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://eu-phoenix.eu/sri#level3">
+      <h3>Level 3<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://eu-phoenix.eu/sri#level3</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#https://eu-phoenix.eu/sri#Level" title="https://eu-phoenix.eu/sri#Level">Level</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://eu-phoenix.eu/sri#level4">
+      <h3>Level 4<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://eu-phoenix.eu/sri#level4</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#https://eu-phoenix.eu/sri#Level" title="https://eu-phoenix.eu/sri#Level">Level</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://eu-phoenix.eu/sri#nonresidential">
+      <h3>Non-residential<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://eu-phoenix.eu/sri#nonresidential</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#https://eu-phoenix.eu/sri#BuildingType" title="https://eu-phoenix.eu/sri#BuildingType">BuildingType</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://eu-phoenix.eu/sri#residential">
+      <h3>Residential<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://eu-phoenix.eu/sri#residential</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#https://eu-phoenix.eu/sri#BuildingType" title="https://eu-phoenix.eu/sri#BuildingType">BuildingType</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://eu-phoenix.eu/sri#score">
+      <h3>smart readiness score<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://eu-phoenix.eu/sri#score</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://purl.org/linked-data/cube#MeasureProperty"
+               target="_blank"
+               title="http://purl.org/linked-data/cube#MeasureProperty">measure property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is also defined as</dt>
+         <dd>
+            <a href="#https://eu-phoenix.eu/sri#score">data property</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://eu-phoenix.eu/sri#sriscores">
+      <h3>SRI scores DSD<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://eu-phoenix.eu/sri#sriscores</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://purl.org/linked-data/cube#DataStructureDefinition"
+               target="_blank"
+               title="http://purl.org/linked-data/cube#DataStructureDefinition">data structure definition</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://eu-phoenix.eu/sri#weights">
+      <h3>SRI weights<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://eu-phoenix.eu/sri#weights</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://purl.org/linked-data/cube#DataSet"
+               target="_blank"
+               title="http://purl.org/linked-data/cube#DataSet">data set</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://eu-phoenix.eu/sri#type">
+      <h3>type<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://eu-phoenix.eu/sri#type</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://purl.org/linked-data/cube#DimensionProperty"
+               target="_blank"
+               title="http://purl.org/linked-data/cube#DimensionProperty">dimension property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is also defined as</dt>
+         <dd>
+            <a href="#https://eu-phoenix.eu/sri#type">object property</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://eu-phoenix.eu/sri#weight">
+      <h3>weight<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://eu-phoenix.eu/sri#weight</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://purl.org/linked-data/cube#MeasureProperty"
+               target="_blank"
+               title="http://purl.org/linked-data/cube#MeasureProperty">measure property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is also defined as</dt>
+         <dd>
+            <a href="#https://eu-phoenix.eu/sri#weight">data property</a>
+         </dd>
+      </dl>
    </div>
 </div><div id="legend">
 <h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
@@ -228,5 +1141,6 @@ This section provides details for each class and property defined by The example
 <sup class="type-c" title="Classes">c</sup>: Classes <br/>
 <sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
 <sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
 </div>
 </div>
