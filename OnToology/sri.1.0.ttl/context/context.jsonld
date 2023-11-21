@@ -1,0 +1,140 @@
+{
+  "@context" : {
+    "Level" : {
+      "@id" : "https://w3id.org/sri#Level"
+    },
+    "score" : {
+      "@id" : "https://w3id.org/sri#score",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created"
+    },
+    "obsValue" : {
+      "@id" : "http://purl.org/linked-data/sdmx/2009/measure#obsValue"
+    },
+    "structure" : {
+      "@id" : "http://purl.org/linked-data/cube#structure",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "narrower" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#narrower",
+      "@type" : "@id"
+    },
+    "component" : {
+      "@id" : "http://purl.org/linked-data/cube#component"
+    },
+    "measure" : {
+      "@id" : "http://purl.org/linked-data/cube#measure"
+    },
+    "ServiceLevel" : {
+      "@id" : "https://w3id.org/sri#ServiceLevel"
+    },
+    "Domain" : {
+      "@id" : "https://w3id.org/sri#Domain"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "level" : {
+      "@id" : "https://w3id.org/sri#level",
+      "@type" : "@id"
+    },
+    "Building" : {
+      "@id" : "https://w3id.org/sri#Building"
+    },
+    "ServiceCatalogue" : {
+      "@id" : "https://w3id.org/sri#ServiceCatalogue"
+    },
+    "Impact" : {
+      "@id" : "https://w3id.org/sri#Impact"
+    },
+    "impact" : {
+      "@id" : "https://w3id.org/sri#impact",
+      "@type" : "@id"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "serviceCatalogue" : {
+      "@id" : "https://w3id.org/sri#serviceCatalogue",
+      "@type" : "@id"
+    },
+    "function" : {
+      "@id" : "https://w3id.org/sri#function",
+      "@type" : "@id"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "triage" : {
+      "@id" : "https://w3id.org/sri#triage",
+      "@type" : "@id"
+    },
+    "MeasureProperty" : {
+      "@id" : "http://purl.org/linked-data/cube#MeasureProperty"
+    },
+    "assessment" : {
+      "@id" : "https://w3id.org/sri#assessment",
+      "@type" : "@id"
+    },
+    "building" : {
+      "@id" : "https://w3id.org/sri#building",
+      "@type" : "@id"
+    },
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+    },
+    "icscore" : {
+      "@id" : "https://w3id.org/sri#icscore"
+    },
+    "broader" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#broader",
+      "@type" : "@id"
+    },
+    "DataSet" : {
+      "@id" : "http://purl.org/linked-data/cube#DataSet"
+    },
+    "Service" : {
+      "@id" : "https://w3id.org/sri#Service"
+    },
+    "Triage" : {
+      "@id" : "https://w3id.org/sri#Triage"
+    },
+    "ImpactThing" : {
+      "@id" : "https://w3id.org/sri#ImpactThing"
+    },
+    "additionalLevel" : {
+      "@id" : "https://w3id.org/sri#additionalLevel",
+      "@type" : "@id"
+    },
+    "mandatory" : {
+      "@id" : "https://w3id.org/sri#mandatory",
+      "@type" : "@id"
+    },
+    "dimension" : {
+      "@id" : "http://purl.org/linked-data/cube#dimension"
+    },
+    "KeyCapability" : {
+      "@id" : "https://w3id.org/sri#KeyCapability"
+    },
+    "FunctionalThing" : {
+      "@id" : "https://w3id.org/sri#FunctionalThing"
+    },
+    "weight" : {
+      "@id" : "https://w3id.org/sri#weight"
+    },
+    "share" : {
+      "@id" : "https://w3id.org/sri#share"
+    },
+    "DataStructureDefinition" : {
+      "@id" : "http://purl.org/linked-data/cube#DataStructureDefinition"
+    }
+  }
+}
