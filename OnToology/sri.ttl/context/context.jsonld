@@ -1,10 +1,10 @@
 {
   "@context" : {
     "Level" : {
-      "@id" : "https://eu-phoenix.eu/sri#Level"
+      "@id" : "https://w3id.org/sri#Level"
     },
     "score" : {
-      "@id" : "https://eu-phoenix.eu/sri#score",
+      "@id" : "https://w3id.org/sri#score",
       "@type" : "http://www.w3.org/2001/XMLSchema#integer"
     },
     "versionInfo" : {
@@ -34,124 +34,104 @@
       "@id" : "http://purl.org/linked-data/cube#measure"
     },
     "ServiceLevel" : {
-      "@id" : "https://eu-phoenix.eu/sri#ServiceLevel"
+      "@id" : "https://w3id.org/sri#ServiceLevel"
     },
     "Domain" : {
-      "@id" : "https://eu-phoenix.eu/sri#Domain"
+      "@id" : "https://w3id.org/sri#Domain"
     },
     "creator" : {
       "@id" : "http://purl.org/dc/terms/creator"
     },
     "level" : {
-      "@id" : "https://eu-phoenix.eu/sri#level",
+      "@id" : "https://w3id.org/sri#level",
       "@type" : "@id"
     },
     "Building" : {
-      "@id" : "https://eu-phoenix.eu/sri#Building"
+      "@id" : "https://w3id.org/sri#Building"
     },
     "ServiceCatalogue" : {
-      "@id" : "https://eu-phoenix.eu/sri#ServiceCatalogue"
+      "@id" : "https://w3id.org/sri#ServiceCatalogue"
     },
     "Impact" : {
-      "@id" : "https://eu-phoenix.eu/sri#Impact"
-    },
-    "DimensionProperty" : {
-      "@id" : "http://purl.org/linked-data/cube#DimensionProperty"
+      "@id" : "https://w3id.org/sri#Impact"
     },
     "impact" : {
-      "@id" : "https://eu-phoenix.eu/sri#impact",
+      "@id" : "https://w3id.org/sri#impact",
       "@type" : "@id"
     },
     "preferredNamespacePrefix" : {
       "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
     },
     "serviceCatalogue" : {
-      "@id" : "https://eu-phoenix.eu/sri#serviceCatalogue",
+      "@id" : "https://w3id.org/sri#serviceCatalogue",
       "@type" : "@id"
     },
     "function" : {
-      "@id" : "https://eu-phoenix.eu/sri#function",
+      "@id" : "https://w3id.org/sri#function",
       "@type" : "@id"
-    },
-    "order" : {
-      "@id" : "http://purl.org/linked-data/cube#order"
     },
     "title" : {
       "@id" : "http://purl.org/dc/terms/title"
     },
     "triage" : {
-      "@id" : "https://eu-phoenix.eu/sri#triage",
+      "@id" : "https://w3id.org/sri#triage",
       "@type" : "@id"
     },
     "MeasureProperty" : {
       "@id" : "http://purl.org/linked-data/cube#MeasureProperty"
     },
-    "type" : {
-      "@id" : "https://eu-phoenix.eu/sri#type",
-      "@type" : "@id"
-    },
     "assessment" : {
-      "@id" : "https://eu-phoenix.eu/sri#assessment",
+      "@id" : "https://w3id.org/sri#assessment",
       "@type" : "@id"
     },
-    "refArea" : {
-      "@id" : "http://purl.org/linked-data/sdmx/2009/dimension#refArea",
+    "building" : {
+      "@id" : "https://w3id.org/sri#building",
       "@type" : "@id"
     },
     "seeAlso" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
     },
     "icscore" : {
-      "@id" : "https://eu-phoenix.eu/sri#icscore"
+      "@id" : "https://w3id.org/sri#icscore"
     },
     "broader" : {
       "@id" : "http://www.w3.org/2004/02/skos/core#broader",
       "@type" : "@id"
     },
-    "BuildingType" : {
-      "@id" : "https://eu-phoenix.eu/sri#BuildingType"
-    },
     "DataSet" : {
       "@id" : "http://purl.org/linked-data/cube#DataSet"
     },
-    "SpatialThing" : {
-      "@id" : "https://eu-phoenix.eu/sri#SpatialThing"
-    },
     "Service" : {
-      "@id" : "https://eu-phoenix.eu/sri#Service"
+      "@id" : "https://w3id.org/sri#Service"
     },
     "Triage" : {
-      "@id" : "https://eu-phoenix.eu/sri#Triage"
+      "@id" : "https://w3id.org/sri#Triage"
     },
     "ImpactThing" : {
-      "@id" : "https://eu-phoenix.eu/sri#ImpactThing"
+      "@id" : "https://w3id.org/sri#ImpactThing"
     },
     "additionalLevel" : {
-      "@id" : "https://eu-phoenix.eu/sri#additionalLevel",
+      "@id" : "https://w3id.org/sri#additionalLevel",
       "@type" : "@id"
     },
     "mandatory" : {
-      "@id" : "https://eu-phoenix.eu/sri#mandatory",
+      "@id" : "https://w3id.org/sri#mandatory",
       "@type" : "@id"
     },
     "dimension" : {
       "@id" : "http://purl.org/linked-data/cube#dimension"
     },
     "KeyCapability" : {
-      "@id" : "https://eu-phoenix.eu/sri#KeyCapability"
+      "@id" : "https://w3id.org/sri#KeyCapability"
     },
     "FunctionalThing" : {
-      "@id" : "https://eu-phoenix.eu/sri#FunctionalThing"
+      "@id" : "https://w3id.org/sri#FunctionalThing"
     },
     "weight" : {
-      "@id" : "https://eu-phoenix.eu/sri#weight"
+      "@id" : "https://w3id.org/sri#weight"
     },
     "share" : {
-      "@id" : "https://eu-phoenix.eu/sri#share"
-    },
-    "scores" : {
-      "@id" : "https://eu-phoenix.eu/sri#scores",
-      "@type" : "@id"
+      "@id" : "https://w3id.org/sri#share"
     },
     "DataStructureDefinition" : {
       "@id" : "http://purl.org/linked-data/cube#DataStructureDefinition"
