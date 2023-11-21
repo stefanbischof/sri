@@ -1,7 +1,8 @@
-@prefix : <https://eu-phoenix.eu/sri#> .
+@prefix : <https://w3id.org/sri#> .
 @prefix qb: <http://purl.org/linked-data/cube#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sri: <https://w3id.org/sri#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -11,489 +12,377 @@
 @prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
 @prefix sdmx-measure: <http://purl.org/linked-data/sdmx/2009/measure#> .
 @prefix sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/dimension#> .
-@base <https://eu-phoenix.eu/sri#> .
+@base <https://w3id.org/sri> .
 
-<https://eu-phoenix.eu/sri> rdf:type owl:Ontology ;
-                             owl:versionIRI <https://eu-phoenix.eu/sri/1.0> ;
-                             dcterms:created "2022-02-02" ;
-                             dcterms:creator "Stefan Bischoff" ;
-                             dcterms:title "Semantic Readiness Indicator"@en ;
-                             vann:preferredNamespacePrefix "sri" ;
-                             rdfs:label "SRI Ontology"@en ;
-                             rdfs:seeAlso <https://smartreadinessindicator.eu/> ;
-                             owl:versionInfo "1.0.0" .
-
-#################################################################
-#    Annotation properties
-#################################################################
-
-###  http://purl.org/dc/terms/created
-dcterms:created rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/creator
-dcterms:creator rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/title
-dcterms:title rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/linked-data/cube#component
-qb:component rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/linked-data/cube#dimension
-qb:dimension rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/linked-data/cube#measure
-qb:measure rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/linked-data/cube#order
-qb:order rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/vocab/vann/preferredNamespacePrefix
-vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+<https://w3id.org/sri> rdf:type owl:Ontology ;
+                        owl:versionIRI <https://w3id.org/sri/1.0> ;
+                        owl:imports <http://purl.org/linked-data/cube> ;
+                        dcterms:created "2022-02-02" ;
+                        dcterms:creator "Stefan Bischof" ;
+                        dcterms:title "Semantic Readiness Indicator Vocabulary"@en ;
+                        vann:preferredNamespacePrefix "sri" ;
+                        rdfs:label "Semantic Readiness Indicator Vocabulary"@en ;
+                        rdfs:seeAlso <https://energy.ec.europa.eu/topics/energy-efficiency/energy-efficient-buildings/smart-readiness-indicator_en> ;
+                        owl:versionInfo "1.0.0" .
 
 
 #################################################################
 #    Object Properties
 #################################################################
 
-###  http://purl.org/linked-data/sdmx/2009/dimension#refArea
-sdmx-dimension:refArea rdf:type owl:ObjectProperty .
+
+###  https://w3id.org/sri#additionalLevel
+sri:additionalLevel rdf:type owl:ObjectProperty ;
+                    rdfs:range sri:Level ;
+                    rdfs:label "additional level"@en .
 
 
-###  http://www.w3.org/2004/02/skos/core#broader
-skos:broader rdf:type owl:ObjectProperty .
+###  https://w3id.org/sri#assessment
+sri:assessment rdf:type owl:ObjectProperty ;
+               rdfs:range qb:DataSet ;
+               rdfs:range [ rdf:type owl:Restriction ;
+                        owl:onProperty qb:structure ;
+                        owl:hasValue sri:dsd-assessment
+                                                 ] ;
+                rdfs:label "assessment"@en .
 
 
-###  http://www.w3.org/2004/02/skos/core#narrower
-skos:narrower rdf:type owl:ObjectProperty .
+###  https://w3id.org/sri#function
+sri:function rdf:type owl:ObjectProperty ,
+                      owl:FunctionalProperty ;
+             rdfs:range sri:FunctionalThing ;
+             rdfs:label "function"@en .
 
 
-###  https://eu-phoenix.eu/sri#additionalLevel
-:additionalLevel rdf:type owl:ObjectProperty ;
-                 rdfs:range :Level ;
-                 rdfs:label "additional level"@en .
+sri:building rdf:type owl:ObjectProperty ;
+        rdfs:range sri:Building ;
+        rdfs:label "building"@en .
 
 
-###  https://eu-phoenix.eu/sri#assessment
-:assessment rdf:type owl:ObjectProperty ;
-            rdfs:range [ owl:intersectionOf ( qb:DataSet
-                                              [ rdf:type owl:Restriction ;
-                                                owl:onProperty qb:structure ;
-                                                owl:hasValue :dsd-assessment
-                                              ]
-                                            ) ;
-                         rdf:type owl:Class
-                       ] .
+###  https://w3id.org/sri#impact
+sri:impact rdf:type owl:ObjectProperty ,
+                    owl:FunctionalProperty ;
+           rdfs:range sri:ImpactThing ;
+           rdfs:label "impact"@en .
 
 
-###  https://eu-phoenix.eu/sri#function
-:function rdf:type owl:ObjectProperty ,
+###  https://w3id.org/sri#level
+sri:level rdf:type owl:ObjectProperty ,
                    owl:FunctionalProperty ;
-          rdfs:range :FunctionalThing .
+          rdfs:range sri:Level ;
+          rdfs:label "level"@en .
 
 
-###  https://eu-phoenix.eu/sri#impact
-:impact rdf:type owl:ObjectProperty ,
-                 owl:FunctionalProperty ;
-        rdfs:range :ImpactThing .
+###  https://w3id.org/sri#mandatory
+sri:mandatory rdf:type owl:ObjectProperty ;
+              rdfs:domain sri:Triage ;
+              rdfs:range sri:FunctionalThing ;
+              rdfs:label "mandatory"@en .
 
 
-###  https://eu-phoenix.eu/sri#level
-:level rdf:type owl:ObjectProperty ,
-                owl:FunctionalProperty ;
-       rdfs:range :Level .
+###  https://w3id.org/sri#serviceCatalogue
+sri:serviceCatalogue rdf:type owl:ObjectProperty ;
+                     rdfs:range sri:ServiceCatalogue ;
+        rdfs:label "service catalogue"@en ;
+        rdfs:range sri:ServiceCatalogue .
 
 
-###  https://eu-phoenix.eu/sri#mandatory
-:mandatory rdf:type owl:ObjectProperty ;
-           rdfs:domain :Triage ;
-           rdfs:range :FunctionalThing .
-
-
-###  https://eu-phoenix.eu/sri#scores
-:scores rdf:type owl:ObjectProperty .
-
-
-###  https://eu-phoenix.eu/sri#serviceCatalogue
-:serviceCatalogue rdf:type owl:ObjectProperty ;
-                  rdfs:range :ServiceCatalogue .
-
-
-###  https://eu-phoenix.eu/sri#triage
-:triage rdf:type owl:ObjectProperty ;
-        rdfs:range :Triage .
-
-
-###  https://eu-phoenix.eu/sri#type
-:type rdf:type owl:ObjectProperty ,
-               owl:FunctionalProperty ;
-      rdfs:range :BuildingType .
+###  https://w3id.org/sri#triage
+sri:triage rdf:type owl:ObjectProperty ;
+           rdfs:range sri:Triage ;
+           rdfs:domain sri:ServiceCatalogue ;
+           rdfs:label "triage"@en .
 
 
 #################################################################
 #    Data properties
 #################################################################
 
-###  http://purl.org/linked-data/sdmx/2009/measure#obsValue
-sdmx-measure:obsValue rdf:type owl:DatatypeProperty .
 
-
-###  https://eu-phoenix.eu/sri#icscore
-:icscore rdf:type owl:DatatypeProperty ;
-         rdfs:range [ rdf:type rdfs:Datatype ;
-                      owl:unionOf ( xsd:decimal
-                                    xsd:double
-                                    xsd:float
-                                  )
-                    ] ;
-         rdfs:label "impact criterion score"@en .
-
-
-###  https://eu-phoenix.eu/sri#score
-:score rdf:type owl:DatatypeProperty ;
-       rdfs:subPropertyOf sdmx-measure:obsValue ;
-       rdf:type owl:FunctionalProperty ;
-       rdfs:range xsd:integer .
-
-
-###  https://eu-phoenix.eu/sri#share
-:share rdf:type owl:DatatypeProperty ,
-                owl:FunctionalProperty ;
-       rdfs:range [ rdf:type rdfs:Datatype ;
-                    owl:unionOf ( xsd:decimal
-                                  xsd:double
-                                  xsd:float
-                                )
-                  ] ;
-       rdfs:label "share"@en .
-
-
-###  https://eu-phoenix.eu/sri#weight
-:weight rdf:type owl:DatatypeProperty ;
+###  https://w3id.org/sri#icscore
+sri:icscore rdf:type owl:DatatypeProperty , qb:MeasureProperty ;
         rdfs:subPropertyOf sdmx-measure:obsValue ;
-        rdf:type owl:FunctionalProperty ;
         rdfs:range [ rdf:type rdfs:Datatype ;
-                     owl:unionOf ( xsd:decimal
-                                   xsd:double
-                                   xsd:float
-                                 )
-                   ] .
+                        owl:unionOf ( xsd:decimal
+                                xsd:double
+                                xsd:float
+                                )
+                ] ;
+        rdfs:label "impact criterion score"@en .
+
+
+###  https://w3id.org/sri#score
+sri:score rdf:type owl:DatatypeProperty , qb:MeasureProperty ;
+          rdfs:subPropertyOf sdmx-measure:obsValue ;
+          rdf:type owl:FunctionalProperty ;
+          rdfs:range xsd:integer .
+
+
+###  https://w3id.org/sri#share
+sri:share rdf:type owl:DatatypeProperty ,
+                   owl:FunctionalProperty ;
+          rdfs:range [ rdf:type rdfs:Datatype ;
+                       owl:unionOf ( xsd:decimal
+                                     xsd:double
+                                     xsd:float
+                                   )
+                     ] ;
+          rdfs:label "share"@en .
+
+
+###  https://w3id.org/sri#weight
+sri:weight rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf sdmx-measure:obsValue ;
+           rdf:type owl:FunctionalProperty ;
+           rdfs:range [ rdf:type rdfs:Datatype ;
+                        owl:unionOf ( xsd:decimal
+                                      xsd:double
+                                      xsd:float
+                                    )
+                      ] .
 
 
 #################################################################
 #    Classes
 #################################################################
 
-###  http://purl.org/linked-data/cube#DataSet
-qb:DataSet rdf:type owl:Class .
+
+###  https://w3id.org/sri#Building
+sri:Building rdf:type owl:Class ;
+             rdfs:label "Building"@en .
 
 
-###  http://purl.org/linked-data/cube#DataStructureDefinition
-qb:DataStructureDefinition rdf:type owl:Class .
+###  https://w3id.org/sri#Domain
+sri:Domain rdf:type owl:Class ;
+           rdfs:subClassOf sri:FunctionalThing ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty skos:narrower ;
+                             owl:allValuesFrom sri:Service
+                           ] ;
+           owl:disjointWith sri:Service ;
+           rdfs:label "Domain"@en .
 
 
-###  http://purl.org/linked-data/cube#DimensionProperty
-qb:DimensionProperty rdf:type owl:Class .
+###  https://w3id.org/sri#FunctionalThing
+sri:FunctionalThing rdf:type owl:Class ;
+                    rdfs:label "FunctionalThing"@en .
 
 
-###  http://purl.org/linked-data/cube#MeasureProperty
-qb:MeasureProperty rdf:type owl:Class .
+###  https://w3id.org/sri#Impact
+sri:Impact rdf:type owl:Class ;
+           rdfs:subClassOf sri:ImpactThing ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty skos:broader ;
+                             owl:allValuesFrom sri:KeyCapability
+                           ] ;
+           owl:disjointWith sri:KeyCapability ;
+           rdfs:label "Impact"@en .
 
 
-###  https://eu-phoenix.eu/sri#Building
-:Building rdf:type owl:Class ;
-          rdfs:label "Building"@en .
+###  https://w3id.org/sri#ImpactThing
+sri:ImpactThing rdf:type owl:Class ;
+                rdfs:label "ImpactThing"@en .
 
 
-###  https://eu-phoenix.eu/sri#BuildingType
-:BuildingType rdf:type owl:Class ;
-              rdfs:label "BuildingType"@en .
+###  https://w3id.org/sri#KeyCapability
+sri:KeyCapability rdf:type owl:Class ;
+                  rdfs:subClassOf sri:ImpactThing ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty skos:narrower ;
+                                    owl:allValuesFrom sri:Impact
+                                  ] ;
+                  rdfs:label "KeyCapability"@en .
 
 
-###  https://eu-phoenix.eu/sri#Domain
-:Domain rdf:type owl:Class ;
-        rdfs:subClassOf :FunctionalThing ,
-                        [ rdf:type owl:Restriction ;
-                          owl:onProperty skos:narrower ;
-                          owl:allValuesFrom :Service
-                        ] ;
-        owl:disjointWith :Service ;
-        rdfs:label "Domain"@en .
+###  https://w3id.org/sri#Level
+sri:Level rdf:type owl:Class ;
+          rdfs:label "Level"@en .
 
 
-###  https://eu-phoenix.eu/sri#FunctionalThing
-:FunctionalThing rdf:type owl:Class ;
-                 rdfs:label "FunctionalThing"@en .
+###  https://w3id.org/sri#Service
+sri:Service rdf:type owl:Class ;
+            rdfs:subClassOf sri:FunctionalThing ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty skos:broader ;
+                              owl:allValuesFrom sri:Domain
+                            ] ;
+            rdfs:label "Service"@en .
 
 
-###  https://eu-phoenix.eu/sri#Impact
-:Impact rdf:type owl:Class ;
-        rdfs:subClassOf :ImpactThing ,
-                        [ rdf:type owl:Restriction ;
-                          owl:onProperty skos:broader ;
-                          owl:allValuesFrom :KeyCapability
-                        ] ;
-        owl:disjointWith :KeyCapability ;
-        rdfs:label "Impact"@en .
+###  https://w3id.org/sri#ServiceCatalogue
+sri:ServiceCatalogue rdf:type owl:Class ;
+        rdfs:label "service catalogue"@en .
 
 
-###  https://eu-phoenix.eu/sri#ImpactThing
-:ImpactThing rdf:type owl:Class ;
-             rdfs:label "ImpactThing"@en .
+###  https://w3id.org/sri#ServiceLevel
+sri:ServiceLevel rdf:type owl:Class ;
+                 rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                   owl:onProperty sri:function ;
+                                   owl:someValuesFrom sri:Service
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty sri:level ;
+                                   owl:someValuesFrom sri:Level
+                                 ] ;
+                 rdfs:label "service level"@en .
 
 
-###  https://eu-phoenix.eu/sri#KeyCapability
-:KeyCapability rdf:type owl:Class ;
-               rdfs:subClassOf :ImpactThing ,
-                               [ rdf:type owl:Restriction ;
-                                 owl:onProperty skos:narrower ;
-                                 owl:allValuesFrom :Impact
-                               ] ;
-               rdfs:label "KeyCapability"@en .
-
-
-###  https://eu-phoenix.eu/sri#Level
-:Level rdf:type owl:Class ;
-       rdfs:label "Level"@en .
-
-
-###  https://eu-phoenix.eu/sri#Service
-:Service rdf:type owl:Class ;
-         rdfs:subClassOf :FunctionalThing ,
-                         [ rdf:type owl:Restriction ;
-                           owl:onProperty skos:broader ;
-                           owl:allValuesFrom :Domain
-                         ] ;
-         rdfs:label "Service"@en .
-
-
-###  https://eu-phoenix.eu/sri#ServiceCatalogue
-:ServiceCatalogue rdf:type owl:Class .
-
-
-###  https://eu-phoenix.eu/sri#ServiceLevel
-:ServiceLevel rdf:type owl:Class ;
-              rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                owl:onProperty :function ;
-                                owl:someValuesFrom :Service
-                              ] ,
-                              [ rdf:type owl:Restriction ;
-                                owl:onProperty :level ;
-                                owl:someValuesFrom :Level
-                              ] ;
-              rdfs:label "ServiceLevel"@en .
-
-
-###  https://eu-phoenix.eu/sri#SpatialThing
-:SpatialThing rdf:type owl:Class .
-
-
-###  https://eu-phoenix.eu/sri#Triage
-:Triage rdf:type owl:Class .
+###  https://w3id.org/sri#Triage
+sri:Triage rdf:type owl:Class ;
+        rdfs:label "triage"@en .
 
 
 #################################################################
 #    Individuals
 #################################################################
 
-###  https://eu-phoenix.eu/sri#dsd-assessment
-:dsd-assessment rdf:type owl:NamedIndividual ,
-                         qb:DataStructureDefinition ;
-                qb:component [ qb:measure :score
-                             ] ,
-                             [ qb:dimension :function ;
-                               qb:order 1
-                             ] ,
-                             [ qb:dimension :level ;
+###  https://w3id.org/sri#dsd-assessment
+sri:dsd-assessment rdf:type qb:DataStructureDefinition ;
+                   qb:component [ qb:measure sri:score
+                                ] ,
+                                [ qb:dimension sri:function ;
+                                  qb:order 1
+                                ] ,
+                                [ qb:dimension sri:level ;
+                                  qb:order 2
+                                ] .
+
+
+###  https://w3id.org/sri#dsd-scores
+sri:dsd-scores rdf:type qb:DataStructureDefinition ;
+               qb:component [ qb:dimension sri:impact ;
+                              qb:order 2
+                            ] ,
+                            [ qb:dimension sri:function ;
+                              qb:order 1
+                            ] ,
+                            [ qb:dimension sri:level ;
+                              qb:order 3
+                            ] ,
+                            [ qb:measure sri:score
+                            ] .
+
+
+###  https://w3id.org/sri#dsd-weights
+sri:dsd-weights rdf:type qb:DataStructureDefinition ;
+                qb:component [ qb:dimension sri:impact ;
                                qb:order 2
+                             ] ,
+                             [ qb:measure sri:weight
+                             ] ,
+                             [ qb:dimension sri:function ;
+                               qb:order 1
                              ] .
 
 
-###  https://eu-phoenix.eu/sri#dsd-scores
-:dsd-scores rdf:type owl:NamedIndividual ,
-                     qb:DataStructureDefinition ;
-            qb:component [ qb:measure :score
-                         ] ,
-                         [ qb:dimension :impact ;
-                           qb:order 2
-                         ] ,
-                         [ qb:dimension :function ;
-                           qb:order 1
-                         ] ,
-                         [ qb:dimension :level ;
-                           qb:order 3
-                         ] .
+###  https://w3id.org/sri#sriscores
+sri:sriscores rdf:type qb:DataStructureDefinition ;
+              rdfs:label "SRI scores DSD"@en .
 
 
-###  https://eu-phoenix.eu/sri#dsd-weights
-:dsd-weights rdf:type owl:NamedIndividual ,
-                      qb:DataStructureDefinition ;
-             qb:component [ qb:dimension :refArea ;
-                            qb:order 3
-                          ] ,
-                          [ qb:dimension :impact ;
-                            qb:order 2
-                          ] ,
-                          [ qb:measure :weight
-                          ] ,
-                          [ qb:dimension :type ;
-                            qb:order 4
-                          ] ,
-                          [ qb:dimension :function ;
-                            qb:order 1
-                          ] .
+###  https://w3id.org/sri#level0
+sri:level0 rdf:type sri:Level ;
+           rdfs:label "Level 0"@en .
 
 
-###  https://eu-phoenix.eu/sri#function
-:function rdf:type owl:NamedIndividual ,
-                   qb:DimensionProperty .
+###  https://w3id.org/sri#level1
+sri:level1 rdf:type sri:Level ;
+           rdfs:label "Level 1"@en .
 
 
-###  https://eu-phoenix.eu/sri#impact
-:impact rdf:type owl:NamedIndividual ,
-                 qb:DimensionProperty .
+###  https://w3id.org/sri#level2
+sri:level2 rdf:type sri:Level ;
+           rdfs:label "Level 2"@en .
 
 
-###  https://eu-phoenix.eu/sri#level
-:level rdf:type owl:NamedIndividual ,
-                qb:DimensionProperty .
+###  https://w3id.org/sri#level3
+sri:level3 rdf:type sri:Level ;
+           rdfs:label "Level 3"@en .
 
 
-###  https://eu-phoenix.eu/sri#level0
-:level0 rdf:type owl:NamedIndividual ,
-                 :Level ;
-        rdfs:label "Level 0"@en .
+###  https://w3id.org/sri#level4
+sri:level4 rdf:type sri:Level ;
+           rdfs:label "Level 4"@en .
 
 
-###  https://eu-phoenix.eu/sri#level1
-:level1 rdf:type owl:NamedIndividual ,
-                 :Level ;
-        rdfs:label "Level 1"@en .
+###  https://w3id.org/sri#topDomain
+sri:topDomain rdf:type sri:FunctionalThing ;
+              rdfs:label "All domains"@en .
 
 
-###  https://eu-phoenix.eu/sri#level2
-:level2 rdf:type owl:NamedIndividual ,
-                 :Level ;
-        rdfs:label "Level 2"@en .
+###  https://w3id.org/sri#topImpact
+sri:topImpact rdf:type sri:ImpactThing ;
+              rdfs:label "All impacts"@en .
 
 
-###  https://eu-phoenix.eu/sri#level3
-:level3 rdf:type owl:NamedIndividual ,
-                 :Level ;
-        rdfs:label "Level 3"@en .
+### Key Capabilities
+
+sri:AdaptTheirOperationToTheNeedsOfTheOccupant a sri:KeyCapability ;
+    rdfs:label "Adapt their operation to the needs of the occupant"@en ;
+    skos:narrower sri:comfort,
+        sri:convenience,
+        sri:health_well_being_and_accessibility,
+        sri:information_to_occupants .
+
+sri:AdaptToSignalsFromTheGrid a sri:KeyCapability ;
+    rdfs:label "Adapt to signals from the grid"@en ;
+    skos:narrower sri:energy_flexibility_and_storage .
+
+sri:OptimiseEnergyEfficiencyAndOverallIn-UsePerformance a sri:KeyCapability ;
+    rdfs:label "Optimise energy efficiency and overall in-use performance"@en ;
+    skos:narrower sri:energy_efficiency,
+        sri:maintenance_and_fault_prediction .
 
 
-###  https://eu-phoenix.eu/sri#level4
-:level4 rdf:type owl:NamedIndividual ,
-                 :Level ;
-        rdfs:label "Level 4"@en .
+### Impacts
+
+sri:health_well_being_and_accessibility a sri:Impact ;
+    rdfs:label "Health well being and accessibility"@en .
+
+sri:comfort a sri:Impact ;
+    rdfs:label "Comfort"@en .
+
+sri:energy_flexibility_and_storage a sri:Impact ;
+    rdfs:label "Energy flexibility and storage"@en .
+
+sri:maintenance_and_fault_prediction a sri:Impact ;
+    rdfs:label "Maintenance and fault prediction"@en .
+
+sri:energy_efficiency a sri:Impact ;
+    rdfs:label "Energy efficiency"@en .
+
+sri:information_to_occupants a sri:Impact ;
+    rdfs:label "Information to occupants"@en .
+
+sri:convenience a sri:Impact ;
+    rdfs:label "Convenience"@en .
 
 
-###  https://eu-phoenix.eu/sri#nonresidential
-:nonresidential rdf:type owl:NamedIndividual ,
-                         :BuildingType ;
-                rdfs:label "Non-residential"@en .
+### Domains
 
+sri:eV a sri:Domain ;
+    rdfs:label "Electric vehicle charging"@en  .
 
-###  https://eu-phoenix.eu/sri#residential
-:residential rdf:type owl:NamedIndividual ,
-                      :BuildingType ;
-             rdfs:label "Residential"@en .
+sri:lighting a sri:Domain ;
+    rdfs:label "Lighting"@en .
 
+sri:dHW a sri:Domain ;
+    rdfs:label "Domestic hot water"@en .
 
-###  https://eu-phoenix.eu/sri#score
-:score rdf:type owl:NamedIndividual ,
-                qb:MeasureProperty .
+sri:electricity a sri:Domain ;
+    rdfs:label "Electricity"@en .
 
+sri:dE a sri:Domain ;
+    rdfs:label "Dynamic building envelope"@en .
 
-###  https://eu-phoenix.eu/sri#scores
-:scores rdf:type owl:NamedIndividual ,
-                 qb:DataSet ;
-                qb:structure :dsd-scores.
+sri:ventilation a sri:Domain ;
+    rdfs:label "Ventilation"@en .
 
+sri:cooling a sri:Domain ;
+    rdfs:label "Cooling"@en .
 
-###  https://eu-phoenix.eu/sri#sriscores
-:sriscores rdf:type owl:NamedIndividual ,
-                    qb:DataStructureDefinition ;
-           rdfs:label "SRI scores DSD"@en .
+sri:heating a sri:Domain ;
+    rdfs:label "Heating"@en  .
 
-
-###  https://eu-phoenix.eu/sri#topDomain
-:topDomain rdf:type owl:NamedIndividual ;
-           rdfs:label "All domains"@en .
-
-
-###  https://eu-phoenix.eu/sri#topImpact
-:topImpact rdf:type owl:NamedIndividual ;
-           rdfs:label "All impacts"@en .
-
-
-###  https://eu-phoenix.eu/sri#type
-:type rdf:type owl:NamedIndividual ,
-               qb:DimensionProperty .
-
-
-###  https://eu-phoenix.eu/sri#weight
-:weight rdf:type owl:NamedIndividual ,
-                 qb:MeasureProperty .
-
-
-###  https://eu-phoenix.eu/sri#weights
-:weights rdf:type owl:NamedIndividual ,
-                  qb:DataSet ;
-         qb:structure :dsd-weights ;
-         rdfs:label "SRI weights"@en .
-
-
-#################################################################
-#    Annotations
-#################################################################
-
-:function rdfs:label "function"@en .
-
-
-:impact rdfs:label "impact"@en .
-
-
-:level rdfs:label "level"@en .
-
-
-:refArea rdfs:label "ref area"@en .
-
-
-:score rdfs:label "smart readiness score"@en .
-
-
-:scores rdfs:label "has SRI scores dataset"@en .
-
-
-:type rdfs:label "type"@en .
-
-
-:weight rdfs:label "weight"@en .
-
-
-#################################################################
-#    General axioms
-#################################################################
-
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( :Building
-                :BuildingType
-                :FunctionalThing
-                :ImpactThing
-                :Level
-                :ServiceLevel
-                :SpatialThing
-              )
-] .
-
-
-###  Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi
+sri:mC a sri:Domain ;
+    rdfs:label "Monitoring and control"@en  .
