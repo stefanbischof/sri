@@ -1,17 +1,12 @@
-<https://w3id.org/sri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://w3id.org/sri> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/sri/1.0> .
-<https://w3id.org/sri> <http://purl.org/dc/elements/1.1/description> "This is an example ontology to illustrate some of the annotations that should be included"@en .
-<https://w3id.org/sri> <http://purl.org/dc/elements/1.1/title> "The example ontology"@en .
-<https://w3id.org/sri> <http://purl.org/dc/terms/abstract> "An example vocabulary designed to illustrate how to publish vocabularies on the Web following the FAIR principles"@en .
-<https://w3id.org/sri> <http://purl.org/dc/terms/created> "February 5th, 2020"@en .
-<https://w3id.org/sri> <http://purl.org/dc/terms/creator> "Daniel Garijo"@en .
-<https://w3id.org/sri> <http://purl.org/dc/terms/creator> "Maria Poveda-Villalon"@en .
-<https://w3id.org/sri> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/2.0/> .
-<https://w3id.org/sri> <http://purl.org/vocab/vann/preferredNamespacePrefix> "sri"@en .
-<https://w3id.org/sri> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/sri" .
-<https://w3id.org/sri> <http://schema.org/citation> "Cite this vocabulary as: Garijo, D. and Poveda-Villalon, M. The example ontology 1.0.1."@en .
-<https://w3id.org/sri> <http://www.w3.org/2000/01/rdf-schema#comment> "An example vocabulary designed to illustrate how to publish vocabularies on the Web following the FAIR principles. This vocabulary describes three simple classes with 3 properties and a data property."@en .
-<https://w3id.org/sri> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0"@en .
+<https://eu-phoenix.eu/sri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://eu-phoenix.eu/sri> <http://www.w3.org/2002/07/owl#versionIRI> <https://eu-phoenix.eu/sri/1.0> .
+<https://eu-phoenix.eu/sri> <http://purl.org/dc/terms/created> "2022-02-02" .
+<https://eu-phoenix.eu/sri> <http://purl.org/dc/terms/creator> "Stefan Bischoff" .
+<https://eu-phoenix.eu/sri> <http://purl.org/dc/terms/title> "Semantic Readiness Indicator"@en .
+<https://eu-phoenix.eu/sri> <http://purl.org/vocab/vann/preferredNamespacePrefix> "sri" .
+<https://eu-phoenix.eu/sri> <http://www.w3.org/2000/01/rdf-schema#label> "SRI Ontology"@en .
+<https://eu-phoenix.eu/sri> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://smartreadinessindicator.eu/> .
+<https://eu-phoenix.eu/sri> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0" .
 # 
 # 
 # #################################################################
@@ -21,62 +16,29 @@
 # #################################################################
 # 
 # 
-# http://purl.org/dc/elements/1.1/abstract
-<http://purl.org/dc/elements/1.1/abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://purl.org/dc/elements/1.1/created
-<http://purl.org/dc/elements/1.1/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://purl.org/dc/elements/1.1/description
-<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://purl.org/dc/elements/1.1/publisher
-<http://purl.org/dc/elements/1.1/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://purl.org/dc/elements/1.1/title
-<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://purl.org/dc/terms/abstract
-<http://purl.org/dc/terms/abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
 # http://purl.org/dc/terms/created
 <http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://purl.org/dc/terms/creator
 <http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
-# http://purl.org/dc/terms/license
-<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
-# http://purl.org/vocab/vann/example
-<http://purl.org/vocab/vann/example> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# http://purl.org/linked-data/cube#component
+<http://purl.org/linked-data/cube#component> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/linked-data/cube#dimension
+<http://purl.org/linked-data/cube#dimension> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/linked-data/cube#measure
+<http://purl.org/linked-data/cube#measure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/linked-data/cube#order
+<http://purl.org/linked-data/cube#order> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://purl.org/vocab/vann/preferredNamespacePrefix
 <http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://purl.org/vocab/vann/preferredNamespaceUri
-<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://schema.org/author
-<http://schema.org/author> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://schema.org/citation
-<http://schema.org/citation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://www.linkedmodel.org/schema/vaem#rationale
-<http://www.linkedmodel.org/schema/vaem#rationale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# 
-# 
-# #################################################################
-# #
-# #    Datatypes
-# #
-# #################################################################
-# 
-# 
-# http://www.w3.org/2001/XMLSchema#date
-<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
 # 
 # 
 # 
@@ -87,26 +49,71 @@
 # #################################################################
 # 
 # 
-# https://w3id.org/sri#hasMember
-<https://w3id.org/sri#hasMember> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/sri#hasMember> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/sri#Organization> .
-<https://w3id.org/sri#hasMember> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/sri#Researcher> .
-<https://w3id.org/sri#hasMember> <http://www.w3.org/2000/01/rdf-schema#comment> "This example property indicates that an Organization has a Researcher as member"@en .
-<https://w3id.org/sri#hasMember> <http://www.w3.org/2000/01/rdf-schema#label> "has member"@en .
+# http://purl.org/linked-data/sdmx/2009/dimension#refArea
+<http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 # 
-# https://w3id.org/sri#hasMentor
-<https://w3id.org/sri#hasMentor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/sri#hasMentor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/sri#Student> .
-<https://w3id.org/sri#hasMentor> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/sri#Researcher> .
-<https://w3id.org/sri#hasMentor> <http://www.w3.org/2000/01/rdf-schema#comment> "This property links the students to the researcher who mentored them"@en .
-<https://w3id.org/sri#hasMentor> <http://www.w3.org/2000/01/rdf-schema#label> "has mentor"@en .
+# http://www.w3.org/2004/02/skos/core#broader
+<http://www.w3.org/2004/02/skos/core#broader> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 # 
-# https://w3id.org/sri#partOf
-<https://w3id.org/sri#partOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/sri#partOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/sri#Researcher> .
-<https://w3id.org/sri#partOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/sri#Organization> .
-<https://w3id.org/sri#partOf> <http://www.w3.org/2000/01/rdf-schema#comment> "This property links instances from Researcher to Organization"@en .
-<https://w3id.org/sri#partOf> <http://www.w3.org/2000/01/rdf-schema#label> "part of"@en .
+# http://www.w3.org/2004/02/skos/core#narrower
+<http://www.w3.org/2004/02/skos/core#narrower> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://eu-phoenix.eu/sri#additionalLevel
+<https://eu-phoenix.eu/sri#additionalLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://eu-phoenix.eu/sri#additionalLevel> <http://www.w3.org/2000/01/rdf-schema#range> <https://eu-phoenix.eu/sri#Level> .
+<https://eu-phoenix.eu/sri#additionalLevel> <http://www.w3.org/2000/01/rdf-schema#label> "additional level"@en .
+# 
+# https://eu-phoenix.eu/sri#assessment
+<https://eu-phoenix.eu/sri#assessment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://eu-phoenix.eu/sri#assessment> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid1 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#hasValue> <https://eu-phoenix.eu/sri#dsd-assessment> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/linked-data/cube#structure> .
+<http://purl.org/linked-data/cube#structure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/linked-data/cube#DataSet> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# https://eu-phoenix.eu/sri#function
+<https://eu-phoenix.eu/sri#function> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://eu-phoenix.eu/sri#function> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://eu-phoenix.eu/sri#function> <http://www.w3.org/2000/01/rdf-schema#range> <https://eu-phoenix.eu/sri#FunctionalThing> .
+# 
+# https://eu-phoenix.eu/sri#impact
+<https://eu-phoenix.eu/sri#impact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://eu-phoenix.eu/sri#impact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://eu-phoenix.eu/sri#impact> <http://www.w3.org/2000/01/rdf-schema#range> <https://eu-phoenix.eu/sri#ImpactThing> .
+# 
+# https://eu-phoenix.eu/sri#level
+<https://eu-phoenix.eu/sri#level> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://eu-phoenix.eu/sri#level> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://eu-phoenix.eu/sri#level> <http://www.w3.org/2000/01/rdf-schema#range> <https://eu-phoenix.eu/sri#Level> .
+# 
+# https://eu-phoenix.eu/sri#mandatory
+<https://eu-phoenix.eu/sri#mandatory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://eu-phoenix.eu/sri#mandatory> <http://www.w3.org/2000/01/rdf-schema#domain> <https://eu-phoenix.eu/sri#Triage> .
+<https://eu-phoenix.eu/sri#mandatory> <http://www.w3.org/2000/01/rdf-schema#range> <https://eu-phoenix.eu/sri#FunctionalThing> .
+# 
+# https://eu-phoenix.eu/sri#scores
+<https://eu-phoenix.eu/sri#scores> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://eu-phoenix.eu/sri#serviceCatalogue
+<https://eu-phoenix.eu/sri#serviceCatalogue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://eu-phoenix.eu/sri#serviceCatalogue> <http://www.w3.org/2000/01/rdf-schema#range> <https://eu-phoenix.eu/sri#ServiceCatalogue> .
+# 
+# https://eu-phoenix.eu/sri#triage
+<https://eu-phoenix.eu/sri#triage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://eu-phoenix.eu/sri#triage> <http://www.w3.org/2000/01/rdf-schema#range> <https://eu-phoenix.eu/sri#Triage> .
+# 
+# https://eu-phoenix.eu/sri#type
+<https://eu-phoenix.eu/sri#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://eu-phoenix.eu/sri#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://eu-phoenix.eu/sri#type> <http://www.w3.org/2000/01/rdf-schema#range> <https://eu-phoenix.eu/sri#BuildingType> .
 # 
 # 
 # 
@@ -117,12 +124,64 @@
 # #################################################################
 # 
 # 
-# https://w3id.org/sri#foundedIn
-<https://w3id.org/sri#foundedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/sri#foundedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/sri#Organization> .
-<https://w3id.org/sri#foundedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
-<https://w3id.org/sri#foundedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Date when an organization was founded"@en .
-<https://w3id.org/sri#foundedIn> <http://www.w3.org/2000/01/rdf-schema#label> "founded in"@en .
+# http://purl.org/linked-data/sdmx/2009/measure#obsValue
+<http://purl.org/linked-data/sdmx/2009/measure#obsValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://eu-phoenix.eu/sri#icscore
+<https://eu-phoenix.eu/sri#icscore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://eu-phoenix.eu/sri#icscore> <http://www.w3.org/2000/01/rdf-schema#range> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#unionOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#float> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#double> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<https://eu-phoenix.eu/sri#icscore> <http://www.w3.org/2000/01/rdf-schema#label> "impact criterion score"@en .
+# 
+# https://eu-phoenix.eu/sri#score
+<https://eu-phoenix.eu/sri#score> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://eu-phoenix.eu/sri#score> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/linked-data/sdmx/2009/measure#obsValue> .
+<https://eu-phoenix.eu/sri#score> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://eu-phoenix.eu/sri#score> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# https://eu-phoenix.eu/sri#share
+<https://eu-phoenix.eu/sri#share> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://eu-phoenix.eu/sri#share> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://eu-phoenix.eu/sri#share> <http://www.w3.org/2000/01/rdf-schema#range> _:genid9 .
+_:genid9 <http://www.w3.org/2002/07/owl#unionOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#float> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#double> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<https://eu-phoenix.eu/sri#share> <http://www.w3.org/2000/01/rdf-schema#label> "share"@en .
+# 
+# https://eu-phoenix.eu/sri#weight
+<https://eu-phoenix.eu/sri#weight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://eu-phoenix.eu/sri#weight> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/linked-data/sdmx/2009/measure#obsValue> .
+<https://eu-phoenix.eu/sri#weight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://eu-phoenix.eu/sri#weight> <http://www.w3.org/2000/01/rdf-schema#range> _:genid13 .
+_:genid13 <http://www.w3.org/2002/07/owl#unionOf> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#float> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#double> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
 # 
 # 
 # 
@@ -133,22 +192,290 @@
 # #################################################################
 # 
 # 
-# https://w3id.org/sri#Organization
-<https://w3id.org/sri#Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/sri#Organization> <http://purl.org/vocab/vann/example> "University of Southern California"@en .
-<https://w3id.org/sri#Organization> <http://www.w3.org/2000/01/rdf-schema#comment> "An organized body of people with a particular purpose, especially a business, society, association, etc."@en .
-<https://w3id.org/sri#Organization> <http://www.w3.org/2000/01/rdf-schema#label> "Organization"@en .
+# http://purl.org/linked-data/cube#DataSet
+<http://purl.org/linked-data/cube#DataSet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
-# https://w3id.org/sri#Researcher
-<https://w3id.org/sri#Researcher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/sri#Researcher> <http://purl.org/vocab/vann/example> "An example using the Researcher class, e.g., Bob is a professor at the University of Southern California."@en .
-<https://w3id.org/sri#Researcher> <http://www.linkedmodel.org/schema/vaem#rationale> "The reason why this concept was added to the ontology. This could reflect some agreement or use cases that may need to be reflected here. For example: The concept Researcher was added to the ontology to represent those authors of scientific publications that belong to a public institution."@en .
-<https://w3id.org/sri#Researcher> <http://www.w3.org/2000/01/rdf-schema#comment> "A definition of your class. For example, A researcher is a person who publishes scientific papers, writes research proposals and mentors students"@en .
-<https://w3id.org/sri#Researcher> <http://www.w3.org/2000/01/rdf-schema#label> "Researcher"@en .
+# http://purl.org/linked-data/cube#DataStructureDefinition
+<http://purl.org/linked-data/cube#DataStructureDefinition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
-# https://w3id.org/sri#Student
-<https://w3id.org/sri#Student> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/sri#Student> <http://www.w3.org/2000/01/rdf-schema#comment> "Student is a class introduced in the version 1.0.1 of the ontology. "@en .
-<https://w3id.org/sri#Student> <http://www.w3.org/2000/01/rdf-schema#label> "Student"@en .
+# http://purl.org/linked-data/cube#DimensionProperty
+<http://purl.org/linked-data/cube#DimensionProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/linked-data/cube#MeasureProperty
+<http://purl.org/linked-data/cube#MeasureProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://eu-phoenix.eu/sri#Building
+<https://eu-phoenix.eu/sri#Building> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://eu-phoenix.eu/sri#Building> <http://www.w3.org/2000/01/rdf-schema#label> "Building"@en .
+# 
+# https://eu-phoenix.eu/sri#BuildingType
+<https://eu-phoenix.eu/sri#BuildingType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://eu-phoenix.eu/sri#BuildingType> <http://www.w3.org/2000/01/rdf-schema#label> "BuildingType"@en .
+# 
+# https://eu-phoenix.eu/sri#Domain
+<https://eu-phoenix.eu/sri#Domain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://eu-phoenix.eu/sri#Domain> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://eu-phoenix.eu/sri#FunctionalThing> .
+<https://eu-phoenix.eu/sri#Domain> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
+_:genid17 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://eu-phoenix.eu/sri#Service> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#narrower> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://eu-phoenix.eu/sri#Domain> <http://www.w3.org/2002/07/owl#disjointWith> <https://eu-phoenix.eu/sri#Service> .
+<https://eu-phoenix.eu/sri#Domain> <http://www.w3.org/2000/01/rdf-schema#label> "Domain"@en .
+# 
+# https://eu-phoenix.eu/sri#FunctionalThing
+<https://eu-phoenix.eu/sri#FunctionalThing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://eu-phoenix.eu/sri#FunctionalThing> <http://www.w3.org/2000/01/rdf-schema#label> "FunctionalThing"@en .
+# 
+# https://eu-phoenix.eu/sri#Impact
+<https://eu-phoenix.eu/sri#Impact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://eu-phoenix.eu/sri#Impact> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://eu-phoenix.eu/sri#ImpactThing> .
+<https://eu-phoenix.eu/sri#Impact> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
+_:genid18 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://eu-phoenix.eu/sri#KeyCapability> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#broader> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://eu-phoenix.eu/sri#Impact> <http://www.w3.org/2002/07/owl#disjointWith> <https://eu-phoenix.eu/sri#KeyCapability> .
+<https://eu-phoenix.eu/sri#Impact> <http://www.w3.org/2000/01/rdf-schema#label> "Impact"@en .
+# 
+# https://eu-phoenix.eu/sri#ImpactThing
+<https://eu-phoenix.eu/sri#ImpactThing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://eu-phoenix.eu/sri#ImpactThing> <http://www.w3.org/2000/01/rdf-schema#label> "ImpactThing"@en .
+# 
+# https://eu-phoenix.eu/sri#KeyCapability
+<https://eu-phoenix.eu/sri#KeyCapability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://eu-phoenix.eu/sri#KeyCapability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://eu-phoenix.eu/sri#ImpactThing> .
+<https://eu-phoenix.eu/sri#KeyCapability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
+_:genid19 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://eu-phoenix.eu/sri#Impact> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#narrower> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://eu-phoenix.eu/sri#KeyCapability> <http://www.w3.org/2000/01/rdf-schema#label> "KeyCapability"@en .
+# 
+# https://eu-phoenix.eu/sri#Level
+<https://eu-phoenix.eu/sri#Level> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://eu-phoenix.eu/sri#Level> <http://www.w3.org/2000/01/rdf-schema#label> "Level"@en .
+# 
+# https://eu-phoenix.eu/sri#Service
+<https://eu-phoenix.eu/sri#Service> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://eu-phoenix.eu/sri#Service> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://eu-phoenix.eu/sri#FunctionalThing> .
+<https://eu-phoenix.eu/sri#Service> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
+_:genid20 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://eu-phoenix.eu/sri#Domain> .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#broader> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://eu-phoenix.eu/sri#Service> <http://www.w3.org/2000/01/rdf-schema#label> "Service"@en .
+# 
+# https://eu-phoenix.eu/sri#ServiceCatalogue
+<https://eu-phoenix.eu/sri#ServiceCatalogue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://eu-phoenix.eu/sri#ServiceLevel
+<https://eu-phoenix.eu/sri#ServiceLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://eu-phoenix.eu/sri#ServiceLevel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid21 .
+_:genid21 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://eu-phoenix.eu/sri#Service> .
+_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <https://eu-phoenix.eu/sri#function> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://eu-phoenix.eu/sri#ServiceLevel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid22 .
+_:genid22 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://eu-phoenix.eu/sri#Level> .
+_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <https://eu-phoenix.eu/sri#level> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://eu-phoenix.eu/sri#ServiceLevel> <http://www.w3.org/2000/01/rdf-schema#label> "ServiceLevel"@en .
+# 
+# https://eu-phoenix.eu/sri#SpatialThing
+<https://eu-phoenix.eu/sri#SpatialThing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://eu-phoenix.eu/sri#Triage
+<https://eu-phoenix.eu/sri#Triage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://eu-phoenix.eu/sri#dsd-assessment
+<https://eu-phoenix.eu/sri#dsd-assessment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://eu-phoenix.eu/sri#dsd-assessment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#DataStructureDefinition> .
+<https://eu-phoenix.eu/sri#dsd-assessment> <http://purl.org/linked-data/cube#component> _:genid23 .
+_:genid23 <http://purl.org/linked-data/cube#order> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid23 <http://purl.org/linked-data/cube#dimension> <https://eu-phoenix.eu/sri#level> .
+<https://eu-phoenix.eu/sri#dsd-assessment> <http://purl.org/linked-data/cube#component> _:genid24 .
+_:genid24 <http://purl.org/linked-data/cube#order> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid24 <http://purl.org/linked-data/cube#dimension> <https://eu-phoenix.eu/sri#function> .
+<https://eu-phoenix.eu/sri#dsd-assessment> <http://purl.org/linked-data/cube#component> _:genid25 .
+_:genid25 <http://purl.org/linked-data/cube#measure> <https://eu-phoenix.eu/sri#score> .
+# 
+# https://eu-phoenix.eu/sri#dsd-scores
+<https://eu-phoenix.eu/sri#dsd-scores> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://eu-phoenix.eu/sri#dsd-scores> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#DataStructureDefinition> .
+<https://eu-phoenix.eu/sri#dsd-scores> <http://purl.org/linked-data/cube#component> _:genid26 .
+_:genid26 <http://purl.org/linked-data/cube#order> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid26 <http://purl.org/linked-data/cube#dimension> <https://eu-phoenix.eu/sri#level> .
+<https://eu-phoenix.eu/sri#dsd-scores> <http://purl.org/linked-data/cube#component> _:genid27 .
+_:genid27 <http://purl.org/linked-data/cube#order> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid27 <http://purl.org/linked-data/cube#dimension> <https://eu-phoenix.eu/sri#function> .
+<https://eu-phoenix.eu/sri#dsd-scores> <http://purl.org/linked-data/cube#component> _:genid28 .
+_:genid28 <http://purl.org/linked-data/cube#measure> <https://eu-phoenix.eu/sri#score> .
+<https://eu-phoenix.eu/sri#dsd-scores> <http://purl.org/linked-data/cube#component> _:genid29 .
+_:genid29 <http://purl.org/linked-data/cube#order> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid29 <http://purl.org/linked-data/cube#dimension> <https://eu-phoenix.eu/sri#impact> .
+# 
+# https://eu-phoenix.eu/sri#dsd-weights
+<https://eu-phoenix.eu/sri#dsd-weights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://eu-phoenix.eu/sri#dsd-weights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#DataStructureDefinition> .
+<https://eu-phoenix.eu/sri#dsd-weights> <http://purl.org/linked-data/cube#component> _:genid30 .
+_:genid30 <http://purl.org/linked-data/cube#order> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid30 <http://purl.org/linked-data/cube#dimension> <https://eu-phoenix.eu/sri#function> .
+<https://eu-phoenix.eu/sri#dsd-weights> <http://purl.org/linked-data/cube#component> _:genid31 .
+_:genid31 <http://purl.org/linked-data/cube#order> "4"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid31 <http://purl.org/linked-data/cube#dimension> <https://eu-phoenix.eu/sri#type> .
+<https://eu-phoenix.eu/sri#dsd-weights> <http://purl.org/linked-data/cube#component> _:genid32 .
+_:genid32 <http://purl.org/linked-data/cube#measure> <https://eu-phoenix.eu/sri#weight> .
+<https://eu-phoenix.eu/sri#dsd-weights> <http://purl.org/linked-data/cube#component> _:genid33 .
+_:genid33 <http://purl.org/linked-data/cube#order> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid33 <http://purl.org/linked-data/cube#dimension> <https://eu-phoenix.eu/sri#impact> .
+<https://eu-phoenix.eu/sri#dsd-weights> <http://purl.org/linked-data/cube#component> _:genid34 .
+_:genid34 <http://purl.org/linked-data/cube#order> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid34 <http://purl.org/linked-data/cube#dimension> <https://eu-phoenix.eu/sri#refArea> .
+# 
+# https://eu-phoenix.eu/sri#function
+<https://eu-phoenix.eu/sri#function> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://eu-phoenix.eu/sri#function> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#DimensionProperty> .
+# 
+# https://eu-phoenix.eu/sri#impact
+<https://eu-phoenix.eu/sri#impact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://eu-phoenix.eu/sri#impact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#DimensionProperty> .
+# 
+# https://eu-phoenix.eu/sri#level
+<https://eu-phoenix.eu/sri#level> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://eu-phoenix.eu/sri#level> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#DimensionProperty> .
+# 
+# https://eu-phoenix.eu/sri#level0
+<https://eu-phoenix.eu/sri#level0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://eu-phoenix.eu/sri#level0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eu-phoenix.eu/sri#Level> .
+<https://eu-phoenix.eu/sri#level0> <http://www.w3.org/2000/01/rdf-schema#label> "Level 0"@en .
+# 
+# https://eu-phoenix.eu/sri#level1
+<https://eu-phoenix.eu/sri#level1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://eu-phoenix.eu/sri#level1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eu-phoenix.eu/sri#Level> .
+<https://eu-phoenix.eu/sri#level1> <http://www.w3.org/2000/01/rdf-schema#label> "Level 1"@en .
+# 
+# https://eu-phoenix.eu/sri#level2
+<https://eu-phoenix.eu/sri#level2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://eu-phoenix.eu/sri#level2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eu-phoenix.eu/sri#Level> .
+<https://eu-phoenix.eu/sri#level2> <http://www.w3.org/2000/01/rdf-schema#label> "Level 2"@en .
+# 
+# https://eu-phoenix.eu/sri#level3
+<https://eu-phoenix.eu/sri#level3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://eu-phoenix.eu/sri#level3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eu-phoenix.eu/sri#Level> .
+<https://eu-phoenix.eu/sri#level3> <http://www.w3.org/2000/01/rdf-schema#label> "Level 3"@en .
+# 
+# https://eu-phoenix.eu/sri#level4
+<https://eu-phoenix.eu/sri#level4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://eu-phoenix.eu/sri#level4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eu-phoenix.eu/sri#Level> .
+<https://eu-phoenix.eu/sri#level4> <http://www.w3.org/2000/01/rdf-schema#label> "Level 4"@en .
+# 
+# https://eu-phoenix.eu/sri#nonresidential
+<https://eu-phoenix.eu/sri#nonresidential> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://eu-phoenix.eu/sri#nonresidential> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eu-phoenix.eu/sri#BuildingType> .
+<https://eu-phoenix.eu/sri#nonresidential> <http://www.w3.org/2000/01/rdf-schema#label> "Non-residential"@en .
+# 
+# https://eu-phoenix.eu/sri#residential
+<https://eu-phoenix.eu/sri#residential> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://eu-phoenix.eu/sri#residential> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eu-phoenix.eu/sri#BuildingType> .
+<https://eu-phoenix.eu/sri#residential> <http://www.w3.org/2000/01/rdf-schema#label> "Residential"@en .
+# 
+# https://eu-phoenix.eu/sri#score
+<https://eu-phoenix.eu/sri#score> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://eu-phoenix.eu/sri#score> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#MeasureProperty> .
+# 
+# https://eu-phoenix.eu/sri#scores
+<https://eu-phoenix.eu/sri#scores> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://eu-phoenix.eu/sri#scores> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#DataSet> .
+# 
+# https://eu-phoenix.eu/sri#sriscores
+<https://eu-phoenix.eu/sri#sriscores> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://eu-phoenix.eu/sri#sriscores> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#DataStructureDefinition> .
+<https://eu-phoenix.eu/sri#sriscores> <http://www.w3.org/2000/01/rdf-schema#label> "SRI scores DSD"@en .
+# 
+# https://eu-phoenix.eu/sri#topDomain
+<https://eu-phoenix.eu/sri#topDomain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://eu-phoenix.eu/sri#topDomain> <http://www.w3.org/2000/01/rdf-schema#label> "All domains"@en .
+# 
+# https://eu-phoenix.eu/sri#topImpact
+<https://eu-phoenix.eu/sri#topImpact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://eu-phoenix.eu/sri#topImpact> <http://www.w3.org/2000/01/rdf-schema#label> "All impacts"@en .
+# 
+# https://eu-phoenix.eu/sri#type
+<https://eu-phoenix.eu/sri#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://eu-phoenix.eu/sri#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#DimensionProperty> .
+# 
+# https://eu-phoenix.eu/sri#weight
+<https://eu-phoenix.eu/sri#weight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://eu-phoenix.eu/sri#weight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#MeasureProperty> .
+# 
+# https://eu-phoenix.eu/sri#weights
+<https://eu-phoenix.eu/sri#weights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://eu-phoenix.eu/sri#weights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#DataSet> .
+<https://eu-phoenix.eu/sri#weights> <http://purl.org/linked-data/cube#structure> <https://eu-phoenix.eu/sri#dsd-weights> .
+<https://eu-phoenix.eu/sri#weights> <http://www.w3.org/2000/01/rdf-schema#label> "SRI weights"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<https://eu-phoenix.eu/sri#function> <http://www.w3.org/2000/01/rdf-schema#label> "function"@en .
+# 
+<https://eu-phoenix.eu/sri#impact> <http://www.w3.org/2000/01/rdf-schema#label> "impact"@en .
+# 
+<https://eu-phoenix.eu/sri#level> <http://www.w3.org/2000/01/rdf-schema#label> "level"@en .
+# 
+<https://eu-phoenix.eu/sri#refArea> <http://www.w3.org/2000/01/rdf-schema#label> "ref area"@en .
+# 
+<https://eu-phoenix.eu/sri#score> <http://www.w3.org/2000/01/rdf-schema#label> "smart readiness score"@en .
+# 
+<https://eu-phoenix.eu/sri#scores> <http://purl.org/linked-data/cube#structure> <https://eu-phoenix.eu/sri#dsd-scores> .
+<https://eu-phoenix.eu/sri#scores> <http://www.w3.org/2000/01/rdf-schema#label> "has SRI scores dataset"@en .
+# 
+<https://eu-phoenix.eu/sri#type> <http://www.w3.org/2000/01/rdf-schema#label> "type"@en .
+# 
+<https://eu-phoenix.eu/sri#weight> <http://www.w3.org/2000/01/rdf-schema#label> "weight"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid35 <http://www.w3.org/2002/07/owl#members> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://eu-phoenix.eu/sri#SpatialThing> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://eu-phoenix.eu/sri#ServiceLevel> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://eu-phoenix.eu/sri#Level> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://eu-phoenix.eu/sri#ImpactThing> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://eu-phoenix.eu/sri#FunctionalThing> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://eu-phoenix.eu/sri#BuildingType> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://eu-phoenix.eu/sri#Building> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
