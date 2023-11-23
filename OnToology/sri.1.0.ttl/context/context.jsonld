@@ -13,6 +13,9 @@
     "created" : {
       "@id" : "http://purl.org/dc/terms/created"
     },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
     "obsValue" : {
       "@id" : "http://purl.org/linked-data/sdmx/2009/measure#obsValue"
     },
@@ -22,6 +25,9 @@
     },
     "label" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "doi" : {
+      "@id" : "http://purl.org/ontology/bibo/doi"
     },
     "narrower" : {
       "@id" : "http://www.w3.org/2004/02/skos/core#narrower",
@@ -42,6 +48,9 @@
     "creator" : {
       "@id" : "http://purl.org/dc/terms/creator"
     },
+    "name" : {
+      "@id" : "http://xmlns.com/foaf/0.1/name"
+    },
     "level" : {
       "@id" : "https://w3id.org/sri#level",
       "@type" : "@id"
@@ -54,6 +63,9 @@
     },
     "Impact" : {
       "@id" : "https://w3id.org/sri#Impact"
+    },
+    "status" : {
+      "@id" : "http://purl.org/ontology/bibo/status"
     },
     "impact" : {
       "@id" : "https://w3id.org/sri#impact",
@@ -83,6 +95,9 @@
     "assessment" : {
       "@id" : "https://w3id.org/sri#assessment",
       "@type" : "@id"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified"
     },
     "building" : {
       "@id" : "https://w3id.org/sri#building",
@@ -114,12 +129,18 @@
       "@id" : "https://w3id.org/sri#additionalLevel",
       "@type" : "@id"
     },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/terms/contributor"
+    },
     "mandatory" : {
       "@id" : "https://w3id.org/sri#mandatory",
       "@type" : "@id"
     },
     "dimension" : {
       "@id" : "http://purl.org/linked-data/cube#dimension"
+    },
+    "funding" : {
+      "@id" : "http://schema.org/funding"
     },
     "KeyCapability" : {
       "@id" : "https://w3id.org/sri#KeyCapability"
@@ -129,6 +150,12 @@
     },
     "weight" : {
       "@id" : "https://w3id.org/sri#weight"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
     },
     "share" : {
       "@id" : "https://w3id.org/sri#share"

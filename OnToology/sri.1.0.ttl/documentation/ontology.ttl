@@ -9,11 +9,20 @@
 <https://w3id.org/sri> rdf:type owl:Ontology ;
                         owl:versionIRI <https://w3id.org/sri/1.0> ;
                         owl:imports <http://purl.org/linked-data/cube> ;
-                        <http://purl.org/dc/terms/created> "2022-02-02" ;
-                        <http://purl.org/dc/terms/creator> "Stefan Bischof" ;
-                        <http://purl.org/dc/terms/title> "Semantic Readiness Indicator Vocabulary"@en ;
+                        <http://purl.org/dc/terms/contributor> "Erwin Filtz" ,
+                                                               "Josiane Xavier Parreira" ;
+                        <http://purl.org/dc/terms/created> "2022-02-02"^^xsd:date ;
+                        <http://purl.org/dc/terms/creator> <https://orcid.org/0000-0001-9521-8907> ;
+                        <http://purl.org/dc/terms/description> "A vocabulary specifying concepts and structures needed to represent different data cubes needed for the Smart Readiness Indicator." ;
+                        <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
+                        <http://purl.org/dc/terms/modified> "2023-11-23"^^xsd:date ;
+                        <http://purl.org/dc/terms/title> "Smart Readiness Indicator Vocabulary"@en ;
+                        <http://purl.org/ontology/bibo/doi> "10.5281/zenodo.10047286" ;
+                        <http://purl.org/ontology/bibo/status> <http://purl.org/ontology/bibo/status/draft> ;
                         <http://purl.org/vocab/vann/preferredNamespacePrefix> "sri" ;
-                        rdfs:label "Semantic Readiness Indicator Vocabulary"@en ;
+                        <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/sri#" ;
+                        <http://schema.org/funding> <https://cordis.europa.eu/project/id/893079> ;
+                        rdfs:label "Smart Readiness Indicator Vocabulary"@en ;
                         rdfs:seeAlso <https://energy.ec.europa.eu/topics/energy-efficiency/energy-efficient-buildings/smart-readiness-indicator_en> ;
                         owl:versionInfo "1.0.0" .
 
@@ -25,8 +34,32 @@
 <http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/ontology/bibo/doi
+<http://purl.org/ontology/bibo/doi> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/ontology/bibo/status
+<http://purl.org/ontology/bibo/status> rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/vocab/vann/preferredNamespacePrefix
 <http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/funding
+<http://schema.org/funding> rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -319,16 +352,16 @@ _:genid22 <http://purl.org/linked-data/cube#dimension> :level ;
                                                          _:genid25 ,
                                                          _:genid26 .
 
-_:genid23 <http://purl.org/linked-data/cube#dimension> :impact ;
-           <http://purl.org/linked-data/cube#order> 2 .
+_:genid23 <http://purl.org/linked-data/cube#measure> :score .
 
-_:genid24 <http://purl.org/linked-data/cube#dimension> :function ;
-           <http://purl.org/linked-data/cube#order> 1 .
-
-_:genid25 <http://purl.org/linked-data/cube#dimension> :level ;
+_:genid24 <http://purl.org/linked-data/cube#dimension> :level ;
            <http://purl.org/linked-data/cube#order> 3 .
 
-_:genid26 <http://purl.org/linked-data/cube#measure> :score .
+_:genid25 <http://purl.org/linked-data/cube#dimension> :function ;
+           <http://purl.org/linked-data/cube#order> 1 .
+
+_:genid26 <http://purl.org/linked-data/cube#dimension> :impact ;
+           <http://purl.org/linked-data/cube#order> 2 .
 
 
 ###  https://w3id.org/sri#dsd-weights
@@ -338,13 +371,13 @@ _:genid26 <http://purl.org/linked-data/cube#measure> :score .
                                                           _:genid28 ,
                                                           _:genid29 .
 
-_:genid27 <http://purl.org/linked-data/cube#measure> :weight .
-
-_:genid28 <http://purl.org/linked-data/cube#dimension> :impact ;
-           <http://purl.org/linked-data/cube#order> 2 .
-
-_:genid29 <http://purl.org/linked-data/cube#dimension> :function ;
+_:genid27 <http://purl.org/linked-data/cube#dimension> :function ;
            <http://purl.org/linked-data/cube#order> 1 .
+
+_:genid28 <http://purl.org/linked-data/cube#measure> :weight .
+
+_:genid29 <http://purl.org/linked-data/cube#dimension> :impact ;
+           <http://purl.org/linked-data/cube#order> 2 .
 
 
 ###  https://w3id.org/sri#eV
@@ -491,6 +524,9 @@ _:genid29 <http://purl.org/linked-data/cube#dimension> :function ;
 #    Annotations
 #################################################################
 
+<https://orcid.org/0000-0001-9521-8907> <http://xmlns.com/foaf/0.1/name> "Stefan Bischof" .
+
+
 :function rdfs:label "function"@en .
 
 
@@ -501,6 +537,12 @@ _:genid29 <http://purl.org/linked-data/cube#dimension> :function ;
 
 
 :level rdfs:label "level"@en .
+
+
+:score rdfs:label "score"@en .
+
+
+:weight rdfs:label "weight"@en .
 
 
 ###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
