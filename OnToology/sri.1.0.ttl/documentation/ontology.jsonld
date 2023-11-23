@@ -110,24 +110,11 @@
   } ]
 }, {
   "@id" : "_:genid23",
-  "http://purl.org/linked-data/cube#dimension" : [ {
-    "@id" : "https://w3id.org/sri#impact"
-  } ],
-  "http://purl.org/linked-data/cube#order" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "2"
+  "http://purl.org/linked-data/cube#measure" : [ {
+    "@id" : "https://w3id.org/sri#score"
   } ]
 }, {
   "@id" : "_:genid24",
-  "http://purl.org/linked-data/cube#dimension" : [ {
-    "@id" : "https://w3id.org/sri#function"
-  } ],
-  "http://purl.org/linked-data/cube#order" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "1"
-  } ]
-}, {
-  "@id" : "_:genid25",
   "http://purl.org/linked-data/cube#dimension" : [ {
     "@id" : "https://w3id.org/sri#level"
   } ],
@@ -136,17 +123,16 @@
     "@value" : "3"
   } ]
 }, {
+  "@id" : "_:genid25",
+  "http://purl.org/linked-data/cube#dimension" : [ {
+    "@id" : "https://w3id.org/sri#function"
+  } ],
+  "http://purl.org/linked-data/cube#order" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
   "@id" : "_:genid26",
-  "http://purl.org/linked-data/cube#measure" : [ {
-    "@id" : "https://w3id.org/sri#score"
-  } ]
-}, {
-  "@id" : "_:genid27",
-  "http://purl.org/linked-data/cube#measure" : [ {
-    "@id" : "https://w3id.org/sri#weight"
-  } ]
-}, {
-  "@id" : "_:genid28",
   "http://purl.org/linked-data/cube#dimension" : [ {
     "@id" : "https://w3id.org/sri#impact"
   } ],
@@ -155,13 +141,27 @@
     "@value" : "2"
   } ]
 }, {
-  "@id" : "_:genid29",
+  "@id" : "_:genid27",
   "http://purl.org/linked-data/cube#dimension" : [ {
     "@id" : "https://w3id.org/sri#function"
   } ],
   "http://purl.org/linked-data/cube#order" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#integer",
     "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid28",
+  "http://purl.org/linked-data/cube#measure" : [ {
+    "@id" : "https://w3id.org/sri#weight"
+  } ]
+}, {
+  "@id" : "_:genid29",
+  "http://purl.org/linked-data/cube#dimension" : [ {
+    "@id" : "https://w3id.org/sri#impact"
+  } ],
+  "http://purl.org/linked-data/cube#order" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2"
   } ]
 }, {
   "@id" : "_:genid6",
@@ -179,10 +179,25 @@
   "@id" : "http://purl.org/dc/terms/creator",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://purl.org/linked-data/sdmx/2009/measure#obsValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
 }, {
+  "@id" : "http://purl.org/ontology/bibo/doi",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/ontology/bibo/status",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://schema.org/funding",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.w3.org/2004/02/skos/core#broader",
@@ -191,24 +206,60 @@
   "@id" : "http://www.w3.org/2004/02/skos/core#narrower",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
+  "@id" : "http://xmlns.com/foaf/0.1/name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://orcid.org/0000-0001-9521-8907",
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Stefan Bischof"
+  } ]
+}, {
   "@id" : "https://w3id.org/sri",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/contributor" : [ {
+    "@value" : "Erwin Filtz"
+  }, {
+    "@value" : "Josiane Xavier Parreira"
+  } ],
   "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2022-02-02"
   } ],
   "http://purl.org/dc/terms/creator" : [ {
-    "@value" : "Stefan Bischof"
+    "@id" : "https://orcid.org/0000-0001-9521-8907"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@value" : "A vocabulary specifying concepts and structures needed to represent different data cubes needed for the Smart Readiness Indicator."
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2023-11-23"
   } ],
   "http://purl.org/dc/terms/title" : [ {
     "@language" : "en",
-    "@value" : "Semantic Readiness Indicator Vocabulary"
+    "@value" : "Smart Readiness Indicator Vocabulary"
+  } ],
+  "http://purl.org/ontology/bibo/doi" : [ {
+    "@value" : "10.5281/zenodo.10047286"
+  } ],
+  "http://purl.org/ontology/bibo/status" : [ {
+    "@id" : "http://purl.org/ontology/bibo/status/draft"
   } ],
   "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
     "@value" : "sri"
   } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@value" : "https://w3id.org/sri#"
+  } ],
+  "http://schema.org/funding" : [ {
+    "@id" : "https://cordis.europa.eu/project/id/893079"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Semantic Readiness Indicator Vocabulary"
+    "@value" : "Smart Readiness Indicator Vocabulary"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
     "@id" : "https://energy.ec.europa.eu/topics/energy-efficiency/energy-efficient-buildings/smart-readiness-indicator_en"
@@ -700,6 +751,10 @@
 }, {
   "@id" : "https://w3id.org/sri#score",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/linked-data/cube#MeasureProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "score"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ],
@@ -779,6 +834,10 @@
 }, {
   "@id" : "https://w3id.org/sri#weight",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "weight"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "_:genid10"
   } ],
