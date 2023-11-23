@@ -1,0 +1,908 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/sri#"
+     xml:base="https://w3id.org/sri"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:bibo="http://purl.org/ontology/bibo/"
+     xmlns:cube="http://purl.org/linked-data/cube#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="http://schema.org/">
+    <owl:Ontology rdf:about="https://w3id.org/sri">
+        <owl:versionIRI rdf:resource="https://w3id.org/sri/1.0"/>
+        <owl:imports rdf:resource="http://purl.org/linked-data/cube"/>
+        <terms:contributor>Erwin Filtz</terms:contributor>
+        <terms:contributor>Josiane Xavier Parreira</terms:contributor>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-02-02</terms:created>
+        <terms:creator rdf:resource="https://orcid.org/0000-0001-9521-8907"/>
+        <terms:description>A vocabulary specifying concepts and structures needed to represent different data cubes needed for the Smart Readiness Indicator.</terms:description>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-11-23</terms:modified>
+        <terms:title xml:lang="en">Smart Readiness Indicator Vocabulary</terms:title>
+        <bibo:doi>10.5281/zenodo.10047286</bibo:doi>
+        <bibo:status rdf:resource="http://purl.org/ontology/bibo/status/draft"/>
+        <vann:preferredNamespacePrefix>sri</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>https://w3id.org/sri#</vann:preferredNamespaceUri>
+        <schema:funding rdf:resource="https://cordis.europa.eu/project/id/893079"/>
+        <rdfs:label xml:lang="en">Smart Readiness Indicator Vocabulary</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://energy.ec.europa.eu/topics/energy-efficiency/energy-efficient-buildings/smart-readiness-indicator_en"/>
+        <owl:versionInfo>1.0.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/doi -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/doi"/>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/status -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/status"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://schema.org/funding -->
+
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/funding"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#broader -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+    
+
+
+    <!-- https://w3id.org/sri#additionalLevel -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/sri#additionalLevel">
+        <rdfs:range rdf:resource="https://w3id.org/sri#Level"/>
+        <rdfs:label xml:lang="en">additional level</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/sri#assessment -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/sri#assessment">
+        <rdfs:range rdf:resource="http://purl.org/linked-data/cube#DataSet"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/linked-data/cube#structure"/>
+                <owl:hasValue rdf:resource="https://w3id.org/sri#dsd-assessment"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:label xml:lang="en">assessment</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/sri#building -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/sri#building">
+        <rdfs:range rdf:resource="https://w3id.org/sri#Building"/>
+        <rdfs:label xml:lang="en">building</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/sri#function -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/sri#function">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="https://w3id.org/sri#FunctionalThing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/sri#impact -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/sri#impact">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="https://w3id.org/sri#ImpactThing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/sri#level -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/sri#level">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="https://w3id.org/sri#Level"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/sri#mandatory -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/sri#mandatory">
+        <rdfs:domain rdf:resource="https://w3id.org/sri#Triage"/>
+        <rdfs:range rdf:resource="https://w3id.org/sri#FunctionalThing"/>
+        <rdfs:label xml:lang="en">mandatory</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/sri#serviceCatalogue -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/sri#serviceCatalogue">
+        <rdfs:range rdf:resource="https://w3id.org/sri#ServiceCatalogue"/>
+        <rdfs:label xml:lang="en">service catalogue</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/sri#triage -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/sri#triage">
+        <rdfs:domain rdf:resource="https://w3id.org/sri#ServiceCatalogue"/>
+        <rdfs:range rdf:resource="https://w3id.org/sri#Triage"/>
+        <rdfs:label xml:lang="en">triage</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/linked-data/sdmx/2009/measure#obsValue -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/linked-data/sdmx/2009/measure#obsValue"/>
+    
+
+
+    <!-- https://w3id.org/sri#icscore -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/sri#icscore">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/linked-data/sdmx/2009/measure#obsValue"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#decimal"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#double"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#float"/>
+                </owl:unionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/sri#score -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/sri#score">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/linked-data/sdmx/2009/measure#obsValue"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/sri#share -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/sri#share">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#decimal"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#double"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#float"/>
+                </owl:unionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:label xml:lang="en">share</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/sri#weight -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/sri#weight">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/linked-data/sdmx/2009/measure#obsValue"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#decimal"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#double"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#float"/>
+                </owl:unionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/sri#Building -->
+
+
+    <owl:Class rdf:about="https://w3id.org/sri#Building">
+        <rdfs:label xml:lang="en">Building</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/sri#Domain -->
+
+
+    <owl:Class rdf:about="https://w3id.org/sri#Domain">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sri#FunctionalThing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#narrower"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/sri#Service"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="https://w3id.org/sri#Service"/>
+        <rdfs:label xml:lang="en">Domain</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/sri#FunctionalThing -->
+
+
+    <owl:Class rdf:about="https://w3id.org/sri#FunctionalThing">
+        <rdfs:label xml:lang="en">FunctionalThing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/sri#Impact -->
+
+
+    <owl:Class rdf:about="https://w3id.org/sri#Impact">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sri#ImpactThing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/sri#KeyCapability"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="https://w3id.org/sri#KeyCapability"/>
+        <rdfs:label xml:lang="en">Impact</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/sri#ImpactThing -->
+
+
+    <owl:Class rdf:about="https://w3id.org/sri#ImpactThing">
+        <rdfs:label xml:lang="en">ImpactThing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/sri#KeyCapability -->
+
+
+    <owl:Class rdf:about="https://w3id.org/sri#KeyCapability">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sri#ImpactThing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#narrower"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/sri#Impact"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">KeyCapability</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/sri#Level -->
+
+
+    <owl:Class rdf:about="https://w3id.org/sri#Level">
+        <rdfs:label xml:lang="en">Level</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/sri#Service -->
+
+
+    <owl:Class rdf:about="https://w3id.org/sri#Service">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sri#FunctionalThing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/sri#Domain"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Service</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/sri#ServiceCatalogue -->
+
+
+    <owl:Class rdf:about="https://w3id.org/sri#ServiceCatalogue">
+        <rdfs:label xml:lang="en">service catalogue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/sri#ServiceLevel -->
+
+
+    <owl:Class rdf:about="https://w3id.org/sri#ServiceLevel">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/sri#function"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/sri#Service"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/sri#level"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/sri#Level"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">service level</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/sri#Triage -->
+
+
+    <owl:Class rdf:about="https://w3id.org/sri#Triage">
+        <rdfs:label xml:lang="en">triage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/sri#AdaptTheirOperationToTheNeedsOfTheOccupant -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sri#AdaptTheirOperationToTheNeedsOfTheOccupant">
+        <rdf:type rdf:resource="https://w3id.org/sri#KeyCapability"/>
+        <rdfs:label xml:lang="en">Adapt their operation to the needs of the occupant</rdfs:label>
+        <skos:narrower rdf:resource="https://w3id.org/sri#comfort"/>
+        <skos:narrower rdf:resource="https://w3id.org/sri#convenience"/>
+        <skos:narrower rdf:resource="https://w3id.org/sri#health_well_being_and_accessibility"/>
+        <skos:narrower rdf:resource="https://w3id.org/sri#information_to_occupants"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sri#AdaptToSignalsFromTheGrid -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sri#AdaptToSignalsFromTheGrid">
+        <rdf:type rdf:resource="https://w3id.org/sri#KeyCapability"/>
+        <rdfs:label xml:lang="en">Adapt to signals from the grid</rdfs:label>
+        <skos:narrower rdf:resource="https://w3id.org/sri#energy_flexibility_and_storage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sri#OptimiseEnergyEfficiencyAndOverallIn-UsePerformance -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sri#OptimiseEnergyEfficiencyAndOverallIn-UsePerformance">
+        <rdf:type rdf:resource="https://w3id.org/sri#KeyCapability"/>
+        <rdfs:label xml:lang="en">Optimise energy efficiency and overall in-use performance</rdfs:label>
+        <skos:narrower rdf:resource="https://w3id.org/sri#energy_efficiency"/>
+        <skos:narrower rdf:resource="https://w3id.org/sri#maintenance_and_fault_prediction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sri#comfort -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sri#comfort">
+        <rdf:type rdf:resource="https://w3id.org/sri#Impact"/>
+        <rdfs:label xml:lang="en">Comfort</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sri#convenience -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sri#convenience">
+        <rdf:type rdf:resource="https://w3id.org/sri#Impact"/>
+        <rdfs:label xml:lang="en">Convenience</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sri#cooling -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sri#cooling">
+        <rdf:type rdf:resource="https://w3id.org/sri#Domain"/>
+        <rdfs:label xml:lang="en">Cooling</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sri#dE -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sri#dE">
+        <rdf:type rdf:resource="https://w3id.org/sri#Domain"/>
+        <rdfs:label xml:lang="en">Dynamic building envelope</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sri#dHW -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sri#dHW">
+        <rdf:type rdf:resource="https://w3id.org/sri#Domain"/>
+        <rdfs:label xml:lang="en">Domestic hot water</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sri#dsd-assessment -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sri#dsd-assessment">
+        <rdf:type rdf:resource="http://purl.org/linked-data/cube#DataStructureDefinition"/>
+        <cube:component rdf:nodeID="genid20"/>
+        <cube:component rdf:nodeID="genid21"/>
+        <cube:component rdf:nodeID="genid22"/>
+    </owl:NamedIndividual>
+    <rdf:Description rdf:nodeID="genid20">
+        <cube:measure rdf:resource="https://w3id.org/sri#score"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid21">
+        <cube:dimension rdf:resource="https://w3id.org/sri#function"/>
+        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</cube:order>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid22">
+        <cube:dimension rdf:resource="https://w3id.org/sri#level"/>
+        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</cube:order>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/sri#dsd-scores -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sri#dsd-scores">
+        <rdf:type rdf:resource="http://purl.org/linked-data/cube#DataStructureDefinition"/>
+        <cube:component rdf:nodeID="genid23"/>
+        <cube:component rdf:nodeID="genid24"/>
+        <cube:component rdf:nodeID="genid25"/>
+        <cube:component rdf:nodeID="genid26"/>
+    </owl:NamedIndividual>
+    <rdf:Description rdf:nodeID="genid23">
+        <cube:dimension rdf:resource="https://w3id.org/sri#impact"/>
+        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</cube:order>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid24">
+        <cube:dimension rdf:resource="https://w3id.org/sri#function"/>
+        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</cube:order>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid25">
+        <cube:dimension rdf:resource="https://w3id.org/sri#level"/>
+        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</cube:order>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid26">
+        <cube:measure rdf:resource="https://w3id.org/sri#score"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/sri#dsd-weights -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sri#dsd-weights">
+        <rdf:type rdf:resource="http://purl.org/linked-data/cube#DataStructureDefinition"/>
+        <cube:component rdf:nodeID="genid27"/>
+        <cube:component rdf:nodeID="genid28"/>
+        <cube:component rdf:nodeID="genid29"/>
+    </owl:NamedIndividual>
+    <rdf:Description rdf:nodeID="genid27">
+        <cube:dimension rdf:resource="https://w3id.org/sri#function"/>
+        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</cube:order>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid28">
+        <cube:dimension rdf:resource="https://w3id.org/sri#impact"/>
+        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</cube:order>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid29">
+        <cube:measure rdf:resource="https://w3id.org/sri#weight"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/sri#eV -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sri#eV">
+        <rdf:type rdf:resource="https://w3id.org/sri#Domain"/>
+        <rdfs:label xml:lang="en">Electric vehicle charging</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sri#electricity -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sri#electricity">
+        <rdf:type rdf:resource="https://w3id.org/sri#Domain"/>
+        <rdfs:label xml:lang="en">Electricity</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sri#energy_efficiency -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sri#energy_efficiency">
+        <rdf:type rdf:resource="https://w3id.org/sri#Impact"/>
+        <rdfs:label xml:lang="en">Energy efficiency</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sri#energy_flexibility_and_storage -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sri#energy_flexibility_and_storage">
+        <rdf:type rdf:resource="https://w3id.org/sri#Impact"/>
+        <rdfs:label xml:lang="en">Energy flexibility and storage</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sri#function -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sri#function"/>
+    
+
+
+    <!-- https://w3id.org/sri#health_well_being_and_accessibility -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sri#health_well_being_and_accessibility">
+        <rdf:type rdf:resource="https://w3id.org/sri#Impact"/>
+        <rdfs:label xml:lang="en">Health well being and accessibility</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sri#heating -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sri#heating">
+        <rdf:type rdf:resource="https://w3id.org/sri#Domain"/>
+        <rdfs:label xml:lang="en">Heating</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sri#icscore -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sri#icscore">
+        <rdf:type rdf:resource="http://purl.org/linked-data/cube#MeasureProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sri#impact -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sri#impact"/>
+    
+
+
+    <!-- https://w3id.org/sri#information_to_occupants -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sri#information_to_occupants">
+        <rdf:type rdf:resource="https://w3id.org/sri#Impact"/>
+        <rdfs:label xml:lang="en">Information to occupants</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sri#level -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sri#level"/>
+    
+
+
+    <!-- https://w3id.org/sri#level0 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sri#level0">
+        <rdf:type rdf:resource="https://w3id.org/sri#Level"/>
+        <rdfs:label xml:lang="en">Level 0</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sri#level1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sri#level1">
+        <rdf:type rdf:resource="https://w3id.org/sri#Level"/>
+        <rdfs:label xml:lang="en">Level 1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sri#level2 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sri#level2">
+        <rdf:type rdf:resource="https://w3id.org/sri#Level"/>
+        <rdfs:label xml:lang="en">Level 2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sri#level3 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sri#level3">
+        <rdf:type rdf:resource="https://w3id.org/sri#Level"/>
+        <rdfs:label xml:lang="en">Level 3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sri#level4 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sri#level4">
+        <rdf:type rdf:resource="https://w3id.org/sri#Level"/>
+        <rdfs:label xml:lang="en">Level 4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sri#lighting -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sri#lighting">
+        <rdf:type rdf:resource="https://w3id.org/sri#Domain"/>
+        <rdfs:label xml:lang="en">Lighting</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sri#mC -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sri#mC">
+        <rdf:type rdf:resource="https://w3id.org/sri#Domain"/>
+        <rdfs:label xml:lang="en">Monitoring and control</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sri#maintenance_and_fault_prediction -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sri#maintenance_and_fault_prediction">
+        <rdf:type rdf:resource="https://w3id.org/sri#Impact"/>
+        <rdfs:label xml:lang="en">Maintenance and fault prediction</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sri#score -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sri#score">
+        <rdf:type rdf:resource="http://purl.org/linked-data/cube#MeasureProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sri#sriscores -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sri#sriscores">
+        <rdf:type rdf:resource="http://purl.org/linked-data/cube#DataStructureDefinition"/>
+        <rdfs:label xml:lang="en">SRI scores DSD</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sri#topDomain -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sri#topDomain">
+        <rdf:type rdf:resource="https://w3id.org/sri#FunctionalThing"/>
+        <rdfs:label xml:lang="en">All domains</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sri#topImpact -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sri#topImpact">
+        <rdf:type rdf:resource="https://w3id.org/sri#ImpactThing"/>
+        <rdfs:label xml:lang="en">All impacts</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sri#ventilation -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sri#ventilation">
+        <rdf:type rdf:resource="https://w3id.org/sri#Domain"/>
+        <rdfs:label xml:lang="en">Ventilation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sri#weight -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sri#weight"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="https://orcid.org/0000-0001-9521-8907">
+        <foaf:name>Stefan Bischof</foaf:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/sri#function">
+        <rdfs:label xml:lang="en">function</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/sri#icscore">
+        <rdfs:label xml:lang="en">impact criterion score</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/sri#impact">
+        <rdfs:label xml:lang="en">impact</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/sri#level">
+        <rdfs:label xml:lang="en">level</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/sri#score">
+        <rdfs:label xml:lang="en">score</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/sri#weight">
+        <rdfs:label xml:lang="en">weight</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
