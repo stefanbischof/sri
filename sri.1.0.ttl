@@ -9,6 +9,8 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <http://schema.org/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
 @prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
 @prefix sdmx-measure: <http://purl.org/linked-data/sdmx/2009/measure#> .
 @prefix sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/dimension#> .
@@ -17,14 +19,24 @@
 <https://w3id.org/sri> rdf:type owl:Ontology ;
                         owl:versionIRI <https://w3id.org/sri/1.0> ;
                         owl:imports <http://purl.org/linked-data/cube> ;
-                        dcterms:created "2022-02-02" ;
-                        dcterms:creator "Stefan Bischof" ;
-                        dcterms:title "Semantic Readiness Indicator Vocabulary"@en ;
+                        dcterms:created "2022-02-02"^^xsd:date ;
+                        dcterms:modified "2023-11-23"^^xsd:date ;
+                        dcterms:creator <https://orcid.org/0000-0001-9521-8907> ;
+                        dcterms:contributor "Erwin Filtz" ;
+                        dcterms:contributor "Josiane Xavier Parreira" ;
+                        dcterms:title "Smart Readiness Indicator Vocabulary"@en ;
+                        dcterms:description "A vocabulary specifying concepts and structures needed to represent different data cubes needed for the Smart Readiness Indicator." ;
+                        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+                        bibo:doi "10.5281/zenodo.10047286" ;
+                        bibo:status <http://purl.org/ontology/bibo/status/draft> ;
+                        schema:funding <https://cordis.europa.eu/project/id/893079> ;
+                        vann:preferredNamespaceUri "https://w3id.org/sri#" ; 
                         vann:preferredNamespacePrefix "sri" ;
-                        rdfs:label "Semantic Readiness Indicator Vocabulary"@en ;
+                        rdfs:label "Smart Readiness Indicator Vocabulary"@en ;
                         rdfs:seeAlso <https://energy.ec.europa.eu/topics/energy-efficiency/energy-efficient-buildings/smart-readiness-indicator_en> ;
                         owl:versionInfo "1.0.0" .
 
+<https://orcid.org/0000-0001-9521-8907> foaf:name "Stefan Bischof" .
 
 #################################################################
 #    Object Properties
@@ -112,10 +124,10 @@ sri:icscore rdf:type owl:DatatypeProperty , qb:MeasureProperty ;
 
 
 ###  https://w3id.org/sri#score
-sri:score rdf:type owl:DatatypeProperty , qb:MeasureProperty ;
+sri:score rdf:type owl:DatatypeProperty , qb:MeasureProperty , owl:FunctionalProperty;
           rdfs:subPropertyOf sdmx-measure:obsValue ;
-          rdf:type owl:FunctionalProperty ;
-          rdfs:range xsd:integer .
+          rdfs:range xsd:integer ;
+          rdfs:label "score"@en .
 
 
 ###  https://w3id.org/sri#share
@@ -131,15 +143,15 @@ sri:share rdf:type owl:DatatypeProperty ,
 
 
 ###  https://w3id.org/sri#weight
-sri:weight rdf:type owl:DatatypeProperty ;
+sri:weight rdf:type owl:DatatypeProperty , owl:FunctionalProperty;
            rdfs:subPropertyOf sdmx-measure:obsValue ;
-           rdf:type owl:FunctionalProperty ;
            rdfs:range [ rdf:type rdfs:Datatype ;
                         owl:unionOf ( xsd:decimal
                                       xsd:double
                                       xsd:float
                                     )
-                      ] .
+                      ] ;
+           rdfs:label "weight"@en .
 
 
 #################################################################
