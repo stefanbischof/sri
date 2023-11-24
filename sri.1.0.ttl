@@ -28,6 +28,7 @@
                         dcterms:title "Smart Readiness Indicator Vocabulary"@en ;
                         dcterms:description "A vocabulary specifying concepts and structures needed to represent different data cubes needed for the Smart Readiness Indicator." ;
                         dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+                        dcterms:source <https://energy.ec.europa.eu/topics/energy-efficiency/energy-efficient-buildings/smart-readiness-indicator_en> ;
                         bibo:doi "10.5281/zenodo.10047286" ;
                         bibo:status <http://purl.org/ontology/bibo/status/draft> ;
                         schema:funding <https://cordis.europa.eu/project/id/893079> ;
