@@ -33,6 +33,8 @@
                         bibo:doi "10.5281/zenodo.10047286" ;
                         bibo:status <http://purl.org/ontology/bibo/status/draft> ;
                         schema:funding <https://cordis.europa.eu/project/id/893079> ;
+                        schema:logo <https://raw.githubusercontent.com/stefanbischof/sri/main/srilogo.svg> ;
+                        schema:image <https://raw.githubusercontent.com/stefanbischof/sri/main/srilogo.svg> ;
                         vann:preferredNamespaceUri "https://w3id.org/sri#" ; 
                         vann:preferredNamespacePrefix "sri" ;
                         rdfs:label "Smart Readiness Indicator Vocabulary"@en ;
