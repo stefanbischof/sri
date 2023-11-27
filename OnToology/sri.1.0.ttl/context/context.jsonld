@@ -16,8 +16,14 @@
     "license" : {
       "@id" : "http://purl.org/dc/terms/license"
     },
+    "bibliographicCitation" : {
+      "@id" : "http://purl.org/dc/terms/bibliographicCitation"
+    },
     "obsValue" : {
       "@id" : "http://purl.org/linked-data/sdmx/2009/measure#obsValue"
+    },
+    "image" : {
+      "@id" : "http://schema.org/image"
     },
     "structure" : {
       "@id" : "http://purl.org/linked-data/cube#structure",
@@ -89,6 +95,9 @@
       "@id" : "https://w3id.org/sri#triage",
       "@type" : "@id"
     },
+    "source" : {
+      "@id" : "http://purl.org/dc/terms/source"
+    },
     "MeasureProperty" : {
       "@id" : "http://purl.org/linked-data/cube#MeasureProperty"
     },
@@ -102,6 +111,9 @@
     "building" : {
       "@id" : "https://w3id.org/sri#building",
       "@type" : "@id"
+    },
+    "logo" : {
+      "@id" : "http://schema.org/logo"
     },
     "seeAlso" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
