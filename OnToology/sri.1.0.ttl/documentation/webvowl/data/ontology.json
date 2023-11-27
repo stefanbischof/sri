@@ -1,0 +1,2205 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "https://w3id.org/sri", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://purl.org/linked-data/cube", "http://purl.org/linked-data/sdmx/2009/measure", "http://purl.org/NET/scovo", "http://www.w3.org/2004/02/skos/core" ],
+    "title" : {
+      "en" : "Smart Readiness Indicator Vocabulary"
+    },
+    "iri" : "https://w3id.org/sri",
+    "version" : "1.0.0",
+    "author" : [ "https://orcid.org/0000-0001-9521-8907" ],
+    "description" : {
+      "undefined" : "A vocabulary specifying concepts and structures needed to represent different data cubes needed for the Smart Readiness Indicator."
+    },
+    "labels" : {
+      "en" : "Smart Readiness Indicator Vocabulary"
+    },
+    "other" : {
+      "image" : [ {
+        "identifier" : "image",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/stefanbischof/sri/main/srilogo.svg",
+        "type" : "iri"
+      } ],
+      "funding" : [ {
+        "identifier" : "funding",
+        "language" : "undefined",
+        "value" : "https://cordis.europa.eu/project/id/893079",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "https://orcid.org/0000-0001-9521-8907",
+        "type" : "iri"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2022-02-02",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.0.0",
+        "type" : "label"
+      } ],
+      "source" : [ {
+        "identifier" : "source",
+        "language" : "undefined",
+        "value" : "https://energy.ec.europa.eu/topics/energy-efficiency/energy-efficient-buildings/smart-readiness-indicator_en",
+        "type" : "iri"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "Smart Readiness Indicator Vocabulary",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://energy.ec.europa.eu/topics/energy-efficiency/energy-efficient-buildings/smart-readiness-indicator_en",
+        "type" : "iri"
+      } ],
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/",
+        "type" : "iri"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "https://orcid.org/0000-0003-3445-0504",
+        "type" : "iri"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "https://orcid.org/0000-0002-3050-159X",
+        "type" : "iri"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Josiane Xavier Parreira",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "sri",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2023-11-23",
+        "type" : "label"
+      } ],
+      "logo" : [ {
+        "identifier" : "logo",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/stefanbischof/sri/main/srilogo.svg",
+        "type" : "iri"
+      } ],
+      "bibliographicCitation" : [ {
+        "identifier" : "bibliographicCitation",
+        "language" : "en",
+        "value" : "Stefan Bischof, Erwin Filtz, Josiane Xavier Parreira. Smart Readiness Indicator Vocabulary. Revision: 1.0.0. Retrieved from: https://w3id.org/sri/1.0",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://w3id.org/sri#",
+        "type" : "label"
+      } ],
+      "doi" : [ {
+        "identifier" : "doi",
+        "language" : "undefined",
+        "value" : "10.5281/zenodo.10047286",
+        "type" : "label"
+      } ],
+      "status" : [ {
+        "identifier" : "status",
+        "language" : "undefined",
+        "value" : "http://purl.org/ontology/bibo/status/draft",
+        "type" : "iri"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "20",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "24",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "26",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "27",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "28",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "31",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "43",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "17",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "44",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "45",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "50",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "71",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "54",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "60",
+    "type" : "owl:Class"
+  }, {
+    "id" : "66",
+    "type" : "owl:Class"
+  }, {
+    "id" : "79",
+    "type" : "owl:Class"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
+    "type" : "owl:Class"
+  }, {
+    "id" : "72",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "70",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "88",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://purl.org/linked-data/cube#Observation",
+    "equivalent" : [ "2" ],
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Observation",
+      "en" : "Observation"
+    },
+    "comment" : {
+      "en" : "A single observation in the cube, may have one or more associated measured values"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "0",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#Concept",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Concept"
+    },
+    "attributes" : [ "external" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#MeasureProperty",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MeasureProperty",
+      "en" : "Measure property"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/sri#score",
+      "baseIri" : "https://w3id.org/sri",
+      "labels" : {
+        "IRI-based" : "score",
+        "en" : "score"
+      }
+    }, {
+      "iri" : "https://w3id.org/sri#icscore",
+      "baseIri" : "https://w3id.org/sri",
+      "labels" : {
+        "IRI-based" : "icscore",
+        "en" : "impact criterion score"
+      }
+    } ],
+    "comment" : {
+      "en" : "The class of components which represent the measured value of the phenomenon being observed"
+    },
+    "attributes" : [ "external" ],
+    "id" : "13",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#HierarchicalCodeList",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "HierarchicalCodeList",
+      "en" : "Hierarchical Code List"
+    },
+    "comment" : {
+      "en" : "Represents a generalized hierarchy of concepts which can be used for coding. The hierarchy is defined by one or more roots together with a property which relates concepts in the hierarchy to thier child concept .  The same concepts may be members of multiple hierarchies provided that different qb:parentChildProperty values are used for each hierarchy."
+    },
+    "attributes" : [ "external" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "19",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "20",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://w3id.org/sri#Level",
+    "baseIri" : "https://w3id.org/sri",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Level",
+      "en" : "Level"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/sri#level3",
+      "baseIri" : "https://w3id.org/sri",
+      "labels" : {
+        "IRI-based" : "level3",
+        "en" : "Level 3"
+      }
+    }, {
+      "iri" : "https://w3id.org/sri#level2",
+      "baseIri" : "https://w3id.org/sri",
+      "labels" : {
+        "IRI-based" : "level2",
+        "en" : "Level 2"
+      }
+    }, {
+      "iri" : "https://w3id.org/sri#level1",
+      "baseIri" : "https://w3id.org/sri",
+      "labels" : {
+        "IRI-based" : "level1",
+        "en" : "Level 1"
+      }
+    }, {
+      "iri" : "https://w3id.org/sri#level0",
+      "baseIri" : "https://w3id.org/sri",
+      "labels" : {
+        "IRI-based" : "level0",
+        "en" : "Level 0"
+      }
+    }, {
+      "iri" : "https://w3id.org/sri#level4",
+      "baseIri" : "https://w3id.org/sri",
+      "labels" : {
+        "IRI-based" : "level4",
+        "en" : "Level 4"
+      }
+    } ],
+    "id" : "21"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "22",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "23",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "24",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "25",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "26",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "27",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "28",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "31",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#ComponentSet",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ComponentSet",
+      "en" : "Component set"
+    },
+    "subClasses" : [ "4", "10", "11" ],
+    "comment" : {
+      "en" : "Abstract class of things which reference one or more ComponentProperties"
+    },
+    "attributes" : [ "external" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://purl.org/NET/scovo#Dataset",
+    "equivalent" : [ "30" ],
+    "baseIri" : "http://purl.org/NET/scovo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Dataset"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "32"
+  }, {
+    "iri" : "https://w3id.org/sri#ServiceCatalogue",
+    "baseIri" : "https://w3id.org/sri",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ServiceCatalogue",
+      "en" : "service catalogue"
+    },
+    "id" : "35"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "39",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://w3id.org/sri#KeyCapability",
+    "baseIri" : "https://w3id.org/sri",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "KeyCapability",
+      "en" : "KeyCapability"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/sri#AdaptToSignalsFromTheGrid",
+      "baseIri" : "https://w3id.org/sri",
+      "annotations" : {
+        "narrower" : [ {
+          "identifier" : "narrower",
+          "language" : "undefined",
+          "value" : "https://w3id.org/sri#energy_flexibility_and_storage",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "AdaptToSignalsFromTheGrid",
+        "en" : "Adapt to signals from the grid"
+      }
+    }, {
+      "iri" : "https://w3id.org/sri#OptimiseEnergyEfficiencyAndOverallIn-UsePerformance",
+      "baseIri" : "https://w3id.org/sri",
+      "annotations" : {
+        "narrower" : [ {
+          "identifier" : "narrower",
+          "language" : "undefined",
+          "value" : "https://w3id.org/sri#energy_efficiency",
+          "type" : "iri"
+        }, {
+          "identifier" : "narrower",
+          "language" : "undefined",
+          "value" : "https://w3id.org/sri#maintenance_and_fault_prediction",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "OptimiseEnergyEfficiencyAndOverallIn-UsePerformance",
+        "en" : "Optimise energy efficiency and overall in-use performance"
+      }
+    }, {
+      "iri" : "https://w3id.org/sri#AdaptTheirOperationToTheNeedsOfTheOccupant",
+      "baseIri" : "https://w3id.org/sri",
+      "annotations" : {
+        "narrower" : [ {
+          "identifier" : "narrower",
+          "language" : "undefined",
+          "value" : "https://w3id.org/sri#comfort",
+          "type" : "iri"
+        }, {
+          "identifier" : "narrower",
+          "language" : "undefined",
+          "value" : "https://w3id.org/sri#convenience",
+          "type" : "iri"
+        }, {
+          "identifier" : "narrower",
+          "language" : "undefined",
+          "value" : "https://w3id.org/sri#health_well_being_and_accessibility",
+          "type" : "iri"
+        }, {
+          "identifier" : "narrower",
+          "language" : "undefined",
+          "value" : "https://w3id.org/sri#information_to_occupants",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "AdaptTheirOperationToTheNeedsOfTheOccupant",
+        "en" : "Adapt their operation to the needs of the occupant"
+      }
+    } ],
+    "id" : "40",
+    "superClasses" : [ "41" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "42",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "43",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://w3id.org/sri#Triage",
+    "baseIri" : "https://w3id.org/sri",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Triage",
+      "en" : "triage"
+    },
+    "id" : "37"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "7",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "18",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "17",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "44",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "15", "46", "47" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "45"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "48",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "49",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "https://w3id.org/sri#ServiceLevel",
+    "baseIri" : "https://w3id.org/sri",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ServiceLevel",
+      "en" : "service level"
+    },
+    "id" : "50"
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#DimensionProperty",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DimensionProperty",
+      "en" : "Dimension property"
+    },
+    "individuals" : [ {
+      "iri" : "http://purl.org/linked-data/cube#measureType",
+      "baseIri" : "http://purl.org/linked-data/cube",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://purl.org/linked-data/cube",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "Generic measure dimension, the value of this dimension indicates which measure (from the set of measures in the DSD) is being given by the obsValue (or other primary measure)"
+      },
+      "labels" : {
+        "IRI-based" : "measureType",
+        "en" : "measure type"
+      }
+    } ],
+    "comment" : {
+      "en" : "The class of components which represent the dimensions of the cube"
+    },
+    "attributes" : [ "external" ],
+    "id" : "53",
+    "superClasses" : [ "54", "14" ]
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#Attachable",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Attachable",
+      "en" : "Attachable (abstract)"
+    },
+    "subClasses" : [ "0", "30", "56" ],
+    "comment" : {
+      "en" : "Abstract superclass for everything that can have attributes and dimensions"
+    },
+    "attributes" : [ "external" ],
+    "id" : "1"
+  }, {
+    "iri" : "https://w3id.org/sri#Service",
+    "baseIri" : "https://w3id.org/sri",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Service",
+      "en" : "Service"
+    },
+    "id" : "71",
+    "superClasses" : [ "72" ]
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#Collection",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Collection"
+    },
+    "attributes" : [ "external" ],
+    "id" : "47"
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#DataStructureDefinition",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DataStructureDefinition",
+      "en" : "Data structure definition"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/sri#dsd-assessment",
+      "baseIri" : "https://w3id.org/sri",
+      "labels" : {
+        "IRI-based" : "dsd-assessment"
+      }
+    }, {
+      "iri" : "https://w3id.org/sri#sriscores",
+      "baseIri" : "https://w3id.org/sri",
+      "labels" : {
+        "IRI-based" : "sriscores",
+        "en" : "SRI scores DSD"
+      }
+    }, {
+      "iri" : "https://w3id.org/sri#dsd-weights",
+      "baseIri" : "https://w3id.org/sri",
+      "labels" : {
+        "IRI-based" : "dsd-weights"
+      }
+    }, {
+      "iri" : "https://w3id.org/sri#dsd-scores",
+      "baseIri" : "https://w3id.org/sri",
+      "labels" : {
+        "IRI-based" : "dsd-scores"
+      }
+    } ],
+    "comment" : {
+      "en" : "Defines the structure of a DataSet or slice"
+    },
+    "attributes" : [ "external" ],
+    "id" : "10",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#CodedProperty",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "CodedProperty",
+      "en" : "Coded property"
+    },
+    "subClasses" : [ "53" ],
+    "comment" : {
+      "en" : "Superclass of all coded ComponentProperties"
+    },
+    "attributes" : [ "external" ],
+    "id" : "54",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#ComponentSpecification",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ComponentSpecification",
+      "en" : "Component specification"
+    },
+    "comment" : {
+      "en" : "Used to define properties of a component (attribute, dimension etc) which are specific to its usage in a DSD."
+    },
+    "attributes" : [ "external" ],
+    "id" : "4",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+    "baseIri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Property"
+    },
+    "subClasses" : [ "14" ],
+    "attributes" : [ "external" ],
+    "id" : "52"
+  }, {
+    "iri" : "https://w3id.org/sri#Impact",
+    "baseIri" : "https://w3id.org/sri",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Impact",
+      "en" : "Impact"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/sri#maintenance_and_fault_prediction",
+      "baseIri" : "https://w3id.org/sri",
+      "labels" : {
+        "IRI-based" : "maintenance_and_fault_prediction",
+        "en" : "Maintenance and fault prediction"
+      }
+    }, {
+      "iri" : "https://w3id.org/sri#comfort",
+      "baseIri" : "https://w3id.org/sri",
+      "labels" : {
+        "IRI-based" : "comfort",
+        "en" : "Comfort"
+      }
+    }, {
+      "iri" : "https://w3id.org/sri#energy_efficiency",
+      "baseIri" : "https://w3id.org/sri",
+      "labels" : {
+        "IRI-based" : "energy_efficiency",
+        "en" : "Energy efficiency"
+      }
+    }, {
+      "iri" : "https://w3id.org/sri#convenience",
+      "baseIri" : "https://w3id.org/sri",
+      "labels" : {
+        "IRI-based" : "convenience",
+        "en" : "Convenience"
+      }
+    }, {
+      "iri" : "https://w3id.org/sri#energy_flexibility_and_storage",
+      "baseIri" : "https://w3id.org/sri",
+      "labels" : {
+        "IRI-based" : "energy_flexibility_and_storage",
+        "en" : "Energy flexibility and storage"
+      }
+    }, {
+      "iri" : "https://w3id.org/sri#information_to_occupants",
+      "baseIri" : "https://w3id.org/sri",
+      "labels" : {
+        "IRI-based" : "information_to_occupants",
+        "en" : "Information to occupants"
+      }
+    }, {
+      "iri" : "https://w3id.org/sri#health_well_being_and_accessibility",
+      "baseIri" : "https://w3id.org/sri",
+      "labels" : {
+        "IRI-based" : "health_well_being_and_accessibility",
+        "en" : "Health well being and accessibility"
+      }
+    } ],
+    "id" : "60",
+    "superClasses" : [ "41" ]
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#AttributeProperty",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "AttributeProperty",
+      "en" : "Attribute property"
+    },
+    "comment" : {
+      "en" : "The class of components which represent attributes of observations in the cube, e.g. unit of measurement"
+    },
+    "attributes" : [ "external" ],
+    "id" : "66",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "https://w3id.org/sri#Domain",
+    "baseIri" : "https://w3id.org/sri",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Domain",
+      "en" : "Domain"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/sri#lighting",
+      "baseIri" : "https://w3id.org/sri",
+      "labels" : {
+        "IRI-based" : "lighting",
+        "en" : "Lighting"
+      }
+    }, {
+      "iri" : "https://w3id.org/sri#eV",
+      "baseIri" : "https://w3id.org/sri",
+      "labels" : {
+        "IRI-based" : "eV",
+        "en" : "Electric vehicle charging"
+      }
+    }, {
+      "iri" : "https://w3id.org/sri#dE",
+      "baseIri" : "https://w3id.org/sri",
+      "labels" : {
+        "IRI-based" : "dE",
+        "en" : "Dynamic building envelope"
+      }
+    }, {
+      "iri" : "https://w3id.org/sri#dHW",
+      "baseIri" : "https://w3id.org/sri",
+      "labels" : {
+        "IRI-based" : "dHW",
+        "en" : "Domestic hot water"
+      }
+    }, {
+      "iri" : "https://w3id.org/sri#heating",
+      "baseIri" : "https://w3id.org/sri",
+      "labels" : {
+        "IRI-based" : "heating",
+        "en" : "Heating"
+      }
+    }, {
+      "iri" : "https://w3id.org/sri#electricity",
+      "baseIri" : "https://w3id.org/sri",
+      "labels" : {
+        "IRI-based" : "electricity",
+        "en" : "Electricity"
+      }
+    }, {
+      "iri" : "https://w3id.org/sri#mC",
+      "baseIri" : "https://w3id.org/sri",
+      "labels" : {
+        "IRI-based" : "mC",
+        "en" : "Monitoring and control"
+      }
+    }, {
+      "iri" : "https://w3id.org/sri#ventilation",
+      "baseIri" : "https://w3id.org/sri",
+      "labels" : {
+        "IRI-based" : "ventilation",
+        "en" : "Ventilation"
+      }
+    }, {
+      "iri" : "https://w3id.org/sri#cooling",
+      "baseIri" : "https://w3id.org/sri",
+      "labels" : {
+        "IRI-based" : "cooling",
+        "en" : "Cooling"
+      }
+    } ],
+    "id" : "79",
+    "superClasses" : [ "72" ]
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ConceptScheme"
+    },
+    "attributes" : [ "external" ],
+    "id" : "46"
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#Slice",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Slice",
+      "en" : "Slice"
+    },
+    "comment" : {
+      "en" : "Denotes a subset of a DataSet defined by fixing a subset of the dimensional values, component properties on the Slice"
+    },
+    "attributes" : [ "external" ],
+    "id" : "56",
+    "superClasses" : [ "1", "70" ]
+  }, {
+    "iri" : "https://w3id.org/sri#FunctionalThing",
+    "baseIri" : "https://w3id.org/sri",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FunctionalThing",
+      "en" : "FunctionalThing"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/sri#topDomain",
+      "baseIri" : "https://w3id.org/sri",
+      "labels" : {
+        "IRI-based" : "topDomain",
+        "en" : "All domains"
+      }
+    } ],
+    "subClasses" : [ "79", "71" ],
+    "id" : "72"
+  }, {
+    "iri" : "https://w3id.org/sri#Building",
+    "baseIri" : "https://w3id.org/sri",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Building",
+      "en" : "Building"
+    },
+    "id" : "8"
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#ObservationGroup",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ObservationGroup",
+      "en" : "Observation Group"
+    },
+    "subClasses" : [ "56" ],
+    "comment" : {
+      "en" : "A, possibly arbitrary, group of observations."
+    },
+    "attributes" : [ "external" ],
+    "id" : "70"
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#ComponentProperty",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ComponentProperty",
+      "en" : "Component property (abstract)"
+    },
+    "subClasses" : [ "54", "13", "53", "66" ],
+    "comment" : {
+      "en" : "Abstract super-property of all properties representing dimensions, attributes or measures"
+    },
+    "attributes" : [ "external" ],
+    "id" : "14",
+    "superClasses" : [ "52" ]
+  }, {
+    "iri" : "http://purl.org/NET/scovo#Item",
+    "equivalent" : [ "0" ],
+    "baseIri" : "http://purl.org/NET/scovo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Item"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Class",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Class"
+    },
+    "attributes" : [ "external" ],
+    "id" : "88"
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#DataSet",
+    "equivalent" : [ "32" ],
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DataSet",
+      "en" : "Data set"
+    },
+    "comment" : {
+      "en" : "Represents a collection of observations, possibly organized into various slices, conforming to some common dimensional structure."
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "30",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://w3id.org/sri#ImpactThing",
+    "baseIri" : "https://w3id.org/sri",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ImpactThing",
+      "en" : "ImpactThing"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/sri#topImpact",
+      "baseIri" : "https://w3id.org/sri",
+      "labels" : {
+        "IRI-based" : "topImpact",
+        "en" : "All impacts"
+      }
+    } ],
+    "subClasses" : [ "40", "60" ],
+    "id" : "41"
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#SliceKey",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SliceKey",
+      "en" : "Slice key"
+    },
+    "comment" : {
+      "en" : "Denotes a subset of the component properties of a DataSet which are fixed in the corresponding slices"
+    },
+    "attributes" : [ "external" ],
+    "id" : "11",
+    "superClasses" : [ "5" ]
+  } ],
+  "property" : [ {
+    "id" : "3",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "6",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "9",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "16",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "29",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "33",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "36",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "38",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "51",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "55",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "58",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "59",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "61",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "62",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "63",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "64",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "65",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "67",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "69",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "34",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "75",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "76",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "77",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "78",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "80",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "81",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "82",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "83",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "84",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "85",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "86",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "87",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "74",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "89",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "90",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "73",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "57",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "91",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "92",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "93",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "94",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "95",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "96",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "97",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "98",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "99",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "100",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "101",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "102",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "103",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "104",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "105",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "106",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "107",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "108",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "109",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "110",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "111",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "112",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "113",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "114",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "5",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "3"
+  }, {
+    "iri" : "https://w3id.org/sri#building",
+    "baseIri" : "https://w3id.org/sri",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "building",
+      "en" : "building"
+    },
+    "domain" : "7",
+    "attributes" : [ "object" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#sliceKey",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "range" : "11",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "sliceKey",
+      "en" : "slice key"
+    },
+    "domain" : "10",
+    "comment" : {
+      "en" : "indicates a slice key which is used for slices in this dataset"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "9"
+  }, {
+    "iri" : "https://w3id.org/sri#score",
+    "baseIri" : "https://w3id.org/sri",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "score",
+      "en" : "score"
+    },
+    "domain" : "17",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#dataSet",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "range" : "30",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "dataSet",
+      "en" : "data set"
+    },
+    "domain" : "0",
+    "comment" : {
+      "en" : "indicates the data set of which this observation is a part"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "29"
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#measure",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "range" : "13",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "measure",
+      "en" : "measure"
+    },
+    "superproperty" : [ "34" ],
+    "domain" : "28",
+    "comment" : {
+      "en" : "An alternative to qb:componentProperty which makes explicit that the component is a measure"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "33"
+  }, {
+    "iri" : "https://w3id.org/sri#triage",
+    "baseIri" : "https://w3id.org/sri",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "triage",
+      "en" : "triage"
+    },
+    "domain" : "35",
+    "attributes" : [ "object" ],
+    "id" : "36"
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#hierarchyRoot",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "range" : "24",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hierarchyRoot"
+    },
+    "domain" : "15",
+    "comment" : {
+      "en" : "Specifies a root of the hierarchy. A hierarchy may have multiple roots but must have at least one."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "38"
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#parentChildProperty",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "range" : "52",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "parentChildProperty",
+      "en" : "parent-child property"
+    },
+    "domain" : "15",
+    "comment" : {
+      "en" : "Specifies a property which relates a parent concept in the hierarchy to a child concept."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "51"
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#slice",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "range" : "56",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "slice",
+      "en" : "slice"
+    },
+    "superproperty" : [ "57" ],
+    "domain" : "30",
+    "comment" : {
+      "en" : "Indicates a subset of a DataSet defined by fixing a subset of the dimensional values"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "55"
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#dimension",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "range" : "53",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "dimension",
+      "en" : "dimension"
+    },
+    "superproperty" : [ "34" ],
+    "domain" : "26",
+    "comment" : {
+      "en" : "An alternative to qb:componentProperty which makes explicit that the component is a dimension"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "58"
+  }, {
+    "range" : "41",
+    "domain" : "60",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "59"
+  }, {
+    "range" : "14",
+    "domain" : "53",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "61"
+  }, {
+    "range" : "14",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "62"
+  }, {
+    "iri" : "https://w3id.org/sri#weight",
+    "baseIri" : "https://w3id.org/sri",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "weight",
+      "en" : "weight"
+    },
+    "domain" : "17",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "63"
+  }, {
+    "range" : "41",
+    "domain" : "40",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "64"
+  }, {
+    "range" : "14",
+    "domain" : "66",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "65"
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#concept",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "range" : "12",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "concept",
+      "en" : "concept"
+    },
+    "domain" : "14",
+    "comment" : {
+      "en" : "gives the concept which is being measured or indicated by a ComponentProperty"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "67"
+  }, {
+    "range" : "14",
+    "domain" : "54",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "68"
+  }, {
+    "range" : "70",
+    "domain" : "56",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "69"
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#componentProperty",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "range" : "14",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "componentProperty",
+      "en" : "component"
+    },
+    "domain" : "5",
+    "subproperty" : [ "58", "73", "74", "33" ],
+    "comment" : {
+      "en" : "indicates a ComponentProperty (i.e. attribute/dimension) expected on a DataSet, or a dimension fixed in a SliceKey"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "34"
+  }, {
+    "range" : "72",
+    "domain" : "71",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "75"
+  }, {
+    "range" : "54",
+    "domain" : "53",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "76"
+  }, {
+    "range" : "1",
+    "domain" : "56",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "77"
+  }, {
+    "range" : "72",
+    "domain" : "79",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "78"
+  }, {
+    "range" : "52",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "80"
+  }, {
+    "iri" : "https://w3id.org/sri#function",
+    "baseIri" : "https://w3id.org/sri",
+    "range" : "72",
+    "label" : {
+      "IRI-based" : "function",
+      "en" : "function"
+    },
+    "domain" : "19",
+    "attributes" : [ "object", "functional" ],
+    "id" : "81"
+  }, {
+    "range" : "5",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "82"
+  }, {
+    "range" : "5",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "83"
+  }, {
+    "range" : "1",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "84"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "85"
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#structure",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "range" : "10",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "structure",
+      "en" : "structure"
+    },
+    "domain" : "30",
+    "comment" : {
+      "en" : "indicates the structure to which this data set conforms"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "86"
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#componentAttachment",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "range" : "88",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "componentAttachment",
+      "en" : "component attachment"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Indicates the level at which the component property should be attached, this might an qb:DataSet, qb:Slice or qb:Observation, or a qb:MeasureProperty."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "87"
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#attribute",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "range" : "66",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "attribute",
+      "en" : "attribute"
+    },
+    "superproperty" : [ "34" ],
+    "domain" : "44",
+    "comment" : {
+      "en" : "An alternative to qb:componentProperty which makes explicit that the component is a attribute"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "74"
+  }, {
+    "iri" : "https://w3id.org/sri#serviceCatalogue",
+    "baseIri" : "https://w3id.org/sri",
+    "range" : "35",
+    "label" : {
+      "IRI-based" : "serviceCatalogue",
+      "en" : "service catalogue"
+    },
+    "domain" : "43",
+    "attributes" : [ "object" ],
+    "id" : "89"
+  }, {
+    "iri" : "https://w3id.org/sri#assessment",
+    "baseIri" : "https://w3id.org/sri",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "assessment",
+      "en" : "assessment"
+    },
+    "domain" : "27",
+    "attributes" : [ "object" ],
+    "id" : "90"
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#measureDimension",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "range" : "53",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "measureDimension",
+      "en" : "measure dimension"
+    },
+    "superproperty" : [ "34" ],
+    "domain" : "26",
+    "comment" : {
+      "en" : "An alternative to qb:componentProperty which makes explicit that the component is a measure dimension"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "73"
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#observationGroup",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "range" : "70",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "observationGroup",
+      "en" : "observation group"
+    },
+    "domain" : "31",
+    "subproperty" : [ "55" ],
+    "comment" : {
+      "en" : "Indicates a group of observations. The domain of this property is left open so that a group may be attached to different resources and need not be restricted to a single DataSet"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "57"
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#measureType",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "range" : "13",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "measureType",
+      "en" : "measure type"
+    },
+    "domain" : "28",
+    "comment" : {
+      "en" : "Generic measure dimension, the value of this dimension indicates which measure (from the set of measures in the DSD) is being given by the obsValue (or other primary measure)"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "91"
+  }, {
+    "iri" : "https://w3id.org/sri#share",
+    "baseIri" : "https://w3id.org/sri",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "share",
+      "en" : "share"
+    },
+    "domain" : "17",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "92"
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#sliceStructure",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "range" : "11",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "sliceStructure",
+      "en" : "slice structure"
+    },
+    "domain" : "56",
+    "comment" : {
+      "en" : "indicates the sub-key corresponding to this slice"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "93"
+  }, {
+    "iri" : "https://w3id.org/sri#mandatory",
+    "baseIri" : "https://w3id.org/sri",
+    "range" : "72",
+    "label" : {
+      "IRI-based" : "mandatory",
+      "en" : "mandatory"
+    },
+    "domain" : "37",
+    "attributes" : [ "object" ],
+    "id" : "94"
+  }, {
+    "iri" : "http://purl.org/linked-data/sdmx/2009/measure#obsValue",
+    "baseIri" : "http://purl.org/linked-data/sdmx/2009/measure",
+    "range" : "42",
+    "label" : {
+      "IRI-based" : "obsValue"
+    },
+    "domain" : "17",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "95"
+  }, {
+    "iri" : "https://w3id.org/sri#additionalLevel",
+    "baseIri" : "https://w3id.org/sri",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "additionalLevel",
+      "en" : "additional level"
+    },
+    "domain" : "39",
+    "attributes" : [ "object" ],
+    "id" : "96"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#narrower",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "range" : "71",
+    "label" : {
+      "IRI-based" : "narrower"
+    },
+    "domain" : "79",
+    "attributes" : [ "external", "allValues", "object" ],
+    "id" : "97"
+  }, {
+    "range" : "71",
+    "domain" : "79",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "98"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#broader",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "broader"
+    },
+    "domain" : "60",
+    "attributes" : [ "external", "allValues", "object" ],
+    "id" : "99"
+  }, {
+    "range" : "40",
+    "domain" : "60",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "100"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#narrower",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "range" : "60",
+    "label" : {
+      "IRI-based" : "narrower"
+    },
+    "domain" : "40",
+    "attributes" : [ "external", "allValues", "object" ],
+    "id" : "101"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#broader",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "range" : "79",
+    "label" : {
+      "IRI-based" : "broader"
+    },
+    "domain" : "71",
+    "attributes" : [ "external", "allValues", "object" ],
+    "id" : "102"
+  }, {
+    "iri" : "https://w3id.org/sri#level",
+    "baseIri" : "https://w3id.org/sri",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "level",
+      "en" : "level"
+    },
+    "domain" : "50",
+    "attributes" : [ "someValues", "object", "functional" ],
+    "id" : "103"
+  }, {
+    "iri" : "https://w3id.org/sri#function",
+    "baseIri" : "https://w3id.org/sri",
+    "range" : "71",
+    "label" : {
+      "IRI-based" : "function",
+      "en" : "function"
+    },
+    "domain" : "50",
+    "attributes" : [ "someValues", "object", "functional" ],
+    "id" : "104"
+  }, {
+    "range" : "13",
+    "domain" : "66",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "105"
+  }, {
+    "range" : "13",
+    "domain" : "53",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "106"
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#order",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "range" : "48",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "order",
+      "en" : "order"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "indicates a priority order for the components of sets with this structure, used to guide presentations - lower order numbers come before higher numbers, un-numbered components come last"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "107"
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#codeList",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "range" : "45",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "codeList",
+      "en" : "code list"
+    },
+    "domain" : "54",
+    "comment" : {
+      "en" : "gives the code list associated with a CodedProperty"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "108"
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#component",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "range" : "4",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "component",
+      "en" : "component specification"
+    },
+    "domain" : "10",
+    "comment" : {
+      "en" : "indicates a component specification which is included in the structure of the dataset"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "109"
+  }, {
+    "iri" : "https://w3id.org/sri#icscore",
+    "baseIri" : "https://w3id.org/sri",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "icscore",
+      "en" : "impact criterion score"
+    },
+    "domain" : "17",
+    "attributes" : [ "datatype" ],
+    "id" : "110"
+  }, {
+    "iri" : "https://w3id.org/sri#impact",
+    "baseIri" : "https://w3id.org/sri",
+    "range" : "41",
+    "label" : {
+      "IRI-based" : "impact",
+      "en" : "impact"
+    },
+    "domain" : "20",
+    "attributes" : [ "object", "functional" ],
+    "id" : "111"
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#observation",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "range" : "0",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "observation",
+      "en" : "observation"
+    },
+    "domain" : "70",
+    "comment" : {
+      "en" : "indicates a observation contained within this slice of the data set"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "112"
+  }, {
+    "iri" : "https://w3id.org/sri#level",
+    "baseIri" : "https://w3id.org/sri",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "level",
+      "en" : "level"
+    },
+    "domain" : "39",
+    "attributes" : [ "object", "functional" ],
+    "id" : "113"
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#componentRequired",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "range" : "49",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "componentRequired",
+      "en" : "component required"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Indicates whether a component property is required (true) or optional (false) in the context of a DSD. Only applicable\n    to components correspond to an attribute. Defaults to false (optional)."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "114"
+  } ]
+}

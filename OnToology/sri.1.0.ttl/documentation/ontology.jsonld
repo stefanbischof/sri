@@ -143,15 +143,6 @@
 }, {
   "@id" : "_:genid27",
   "http://purl.org/linked-data/cube#dimension" : [ {
-    "@id" : "https://w3id.org/sri#function"
-  } ],
-  "http://purl.org/linked-data/cube#order" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "1"
-  } ]
-}, {
-  "@id" : "_:genid28",
-  "http://purl.org/linked-data/cube#dimension" : [ {
     "@id" : "https://w3id.org/sri#impact"
   } ],
   "http://purl.org/linked-data/cube#order" : [ {
@@ -159,9 +150,18 @@
     "@value" : "2"
   } ]
 }, {
-  "@id" : "_:genid29",
+  "@id" : "_:genid28",
   "http://purl.org/linked-data/cube#measure" : [ {
     "@id" : "https://w3id.org/sri#weight"
+  } ]
+}, {
+  "@id" : "_:genid29",
+  "http://purl.org/linked-data/cube#dimension" : [ {
+    "@id" : "https://w3id.org/sri#function"
+  } ],
+  "http://purl.org/linked-data/cube#order" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
   } ]
 }, {
   "@id" : "_:genid6",

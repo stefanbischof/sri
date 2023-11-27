@@ -6,10 +6,12 @@
 	 dc:title "Smart Readiness Indicator Vocabulary";
 	 prov:wasAttributedTo <https://orcid.org/0000-0001-9521-8907>;
 	 dc:creator <https://orcid.org/0000-0001-9521-8907>;
+	 prov:wasAttributedTo <https://orcid.org/0000-0002-3050-159X>;
+	 dc:contributor <https://orcid.org/0000-0002-3050-159X>;
+	 prov:wasAttributedTo <https://orcid.org/0000-0003-3445-0504>;
+	 dc:contributor <https://orcid.org/0000-0003-3445-0504>;
 	 prov:wasAttributedTo :agent0;
-	 prov:wasAttributedTo :agent1;
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
 	 prov:wasGeneratedAt "2023-11-23";
 .
-:agent0 a prov:Agent; foaf:name "Erwin Filtz".
-:agent1 a prov:Agent; foaf:name "Josiane Xavier Parreira".
+:agent0 a prov:Agent; foaf:name "Josiane Xavier Parreira".

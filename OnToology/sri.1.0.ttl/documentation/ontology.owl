@@ -653,15 +653,15 @@
         <cube:component rdf:nodeID="genid29"/>
     </owl:NamedIndividual>
     <rdf:Description rdf:nodeID="genid27">
-        <cube:dimension rdf:resource="https://w3id.org/sri#function"/>
-        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</cube:order>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid28">
         <cube:dimension rdf:resource="https://w3id.org/sri#impact"/>
         <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</cube:order>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid29">
+    <rdf:Description rdf:nodeID="genid28">
         <cube:measure rdf:resource="https://w3id.org/sri#weight"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid29">
+        <cube:dimension rdf:resource="https://w3id.org/sri#function"/>
+        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</cube:order>
     </rdf:Description>
     
 
