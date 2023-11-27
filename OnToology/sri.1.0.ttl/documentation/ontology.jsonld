@@ -176,10 +176,16 @@
     } ]
   } ]
 }, {
+  "@id" : "http://purl.org/dc/terms/bibliographicCitation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://purl.org/dc/terms/creator",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/source",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/linked-data/sdmx/2009/measure#obsValue",
@@ -200,6 +206,12 @@
   "@id" : "http://schema.org/funding",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://schema.org/image",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://schema.org/logo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://www.w3.org/2004/02/skos/core#broader",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
@@ -214,10 +226,26 @@
     "@value" : "Stefan Bischof"
   } ]
 }, {
+  "@id" : "https://orcid.org/0000-0002-3050-159X",
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Josiane Xavier Parreira"
+  } ]
+}, {
+  "@id" : "https://orcid.org/0000-0003-3445-0504",
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Erwin Filtz"
+  } ]
+}, {
   "@id" : "https://w3id.org/sri",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/bibliographicCitation" : [ {
+    "@language" : "en",
+    "@value" : "Stefan Bischof, Erwin Filtz, Josiane Xavier Parreira. Smart Readiness Indicator Vocabulary. Revision: 1.0.0. Retrieved from: https://w3id.org/sri/1.0"
+  } ],
   "http://purl.org/dc/terms/contributor" : [ {
-    "@value" : "Erwin Filtz"
+    "@id" : "https://orcid.org/0000-0002-3050-159X"
+  }, {
+    "@id" : "https://orcid.org/0000-0003-3445-0504"
   }, {
     "@value" : "Josiane Xavier Parreira"
   } ],
@@ -238,6 +266,9 @@
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-11-23"
   } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://energy.ec.europa.eu/topics/energy-efficiency/energy-efficient-buildings/smart-readiness-indicator_en"
+  } ],
   "http://purl.org/dc/terms/title" : [ {
     "@language" : "en",
     "@value" : "Smart Readiness Indicator Vocabulary"
@@ -256,6 +287,12 @@
   } ],
   "http://schema.org/funding" : [ {
     "@id" : "https://cordis.europa.eu/project/id/893079"
+  } ],
+  "http://schema.org/image" : [ {
+    "@id" : "https://raw.githubusercontent.com/stefanbischof/sri/main/srilogo.svg"
+  } ],
+  "http://schema.org/logo" : [ {
+    "@id" : "https://raw.githubusercontent.com/stefanbischof/sri/main/srilogo.svg"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
