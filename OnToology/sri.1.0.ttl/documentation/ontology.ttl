@@ -392,13 +392,13 @@ _:genid26 <http://purl.org/linked-data/cube#measure> :score .
                                                           _:genid28 ,
                                                           _:genid29 .
 
-_:genid27 <http://purl.org/linked-data/cube#dimension> :function ;
-           <http://purl.org/linked-data/cube#order> 1 .
-
-_:genid28 <http://purl.org/linked-data/cube#dimension> :impact ;
+_:genid27 <http://purl.org/linked-data/cube#dimension> :impact ;
            <http://purl.org/linked-data/cube#order> 2 .
 
-_:genid29 <http://purl.org/linked-data/cube#measure> :weight .
+_:genid28 <http://purl.org/linked-data/cube#measure> :weight .
+
+_:genid29 <http://purl.org/linked-data/cube#dimension> :function ;
+           <http://purl.org/linked-data/cube#order> 1 .
 
 
 ###  https://w3id.org/sri#eV
