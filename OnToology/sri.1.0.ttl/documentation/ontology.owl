@@ -19,7 +19,6 @@
         <terms:bibliographicCitation xml:lang="en">Stefan Bischof, Erwin Filtz, Josiane Xavier Parreira. Smart Readiness Indicator Vocabulary. Revision: 1.0.0. Retrieved from: https://w3id.org/sri/1.0</terms:bibliographicCitation>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-3050-159X"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-3445-0504"/>
-        <terms:contributor>Josiane Xavier Parreira</terms:contributor>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-02-02</terms:created>
         <terms:creator rdf:resource="https://orcid.org/0000-0001-9521-8907"/>
         <terms:description>A vocabulary specifying concepts and structures needed to represent different data cubes needed for the Smart Readiness Indicator.</terms:description>
