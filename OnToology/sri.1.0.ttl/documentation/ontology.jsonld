@@ -246,8 +246,6 @@
     "@id" : "https://orcid.org/0000-0002-3050-159X"
   }, {
     "@id" : "https://orcid.org/0000-0003-3445-0504"
-  }, {
-    "@value" : "Josiane Xavier Parreira"
   } ],
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",

@@ -11,8 +11,7 @@
                         owl:imports <http://purl.org/linked-data/cube> ;
                         <http://purl.org/dc/terms/bibliographicCitation> "Stefan Bischof, Erwin Filtz, Josiane Xavier Parreira. Smart Readiness Indicator Vocabulary. Revision: 1.0.0. Retrieved from: https://w3id.org/sri/1.0"@en ;
                         <http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0002-3050-159X> ,
-                                                               <https://orcid.org/0000-0003-3445-0504> ,
-                                                               "Josiane Xavier Parreira" ;
+                                                               <https://orcid.org/0000-0003-3445-0504> ;
                         <http://purl.org/dc/terms/created> "2022-02-02"^^xsd:date ;
                         <http://purl.org/dc/terms/creator> <https://orcid.org/0000-0001-9521-8907> ;
                         <http://purl.org/dc/terms/description> "A vocabulary specifying concepts and structures needed to represent different data cubes needed for the Smart Readiness Indicator." ;
