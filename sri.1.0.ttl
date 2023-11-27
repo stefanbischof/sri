@@ -23,7 +23,8 @@
                         dcterms:created "2022-02-02"^^xsd:date ;
                         dcterms:modified "2023-11-23"^^xsd:date ;
                         dcterms:creator <https://orcid.org/0000-0001-9521-8907> ;
-                        dcterms:contributor "Erwin Filtz" ;
+                        dcterms:contributor <https://orcid.org/0000-0003-3445-0504> ;
+                        dcterms:contributor <https://orcid.org/0000-0002-3050-159X> ;
                         dcterms:contributor "Josiane Xavier Parreira" ;
                         dcterms:title "Smart Readiness Indicator Vocabulary"@en ;
                         dcterms:description "A vocabulary specifying concepts and structures needed to represent different data cubes needed for the Smart Readiness Indicator." ;
@@ -42,6 +43,8 @@
                         owl:versionInfo "1.0.0" .
 
 <https://orcid.org/0000-0001-9521-8907> foaf:name "Stefan Bischof" .
+<https://orcid.org/0000-0003-3445-0504> foaf:name "Erwin Filtz" .
+<https://orcid.org/0000-0002-3050-159X> foaf:name "Josiane Xavier Parreira" .
 
 #################################################################
 #    Object Properties
