@@ -31,7 +31,7 @@
         <vann:preferredNamespacePrefix>sri</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>https://w3id.org/sri#</vann:preferredNamespaceUri>
         <schema:funding rdf:resource="https://cordis.europa.eu/project/id/893079"/>
-        <schema:image rdf:resource="https://raw.githubusercontent.com/stefanbischof/sri/main/srilogo.svg"/>
+        <schema:image rdf:resource="https://raw.githubusercontent.com/stefanbischof/sri/main/sridiagram.svg"/>
         <schema:logo rdf:resource="https://raw.githubusercontent.com/stefanbischof/sri/main/srilogo.svg"/>
         <rdfs:label xml:lang="en">Smart Readiness Indicator Vocabulary</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://energy.ec.europa.eu/topics/energy-efficiency/energy-efficient-buildings/smart-readiness-indicator_en"/>

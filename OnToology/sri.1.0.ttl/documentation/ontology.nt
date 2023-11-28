@@ -16,7 +16,7 @@
 <https://w3id.org/sri> <http://purl.org/vocab/vann/preferredNamespacePrefix> "sri" .
 <https://w3id.org/sri> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/sri#" .
 <https://w3id.org/sri> <http://schema.org/funding> <https://cordis.europa.eu/project/id/893079> .
-<https://w3id.org/sri> <http://schema.org/image> <https://raw.githubusercontent.com/stefanbischof/sri/main/srilogo.svg> .
+<https://w3id.org/sri> <http://schema.org/image> <https://raw.githubusercontent.com/stefanbischof/sri/main/sridiagram.svg> .
 <https://w3id.org/sri> <http://schema.org/logo> <https://raw.githubusercontent.com/stefanbischof/sri/main/srilogo.svg> .
 <https://w3id.org/sri> <http://www.w3.org/2000/01/rdf-schema#label> "Smart Readiness Indicator Vocabulary"@en .
 <https://w3id.org/sri> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://energy.ec.europa.eu/topics/energy-efficiency/energy-efficient-buildings/smart-readiness-indicator_en> .

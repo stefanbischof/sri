@@ -287,7 +287,7 @@
     "@id" : "https://cordis.europa.eu/project/id/893079"
   } ],
   "http://schema.org/image" : [ {
-    "@id" : "https://raw.githubusercontent.com/stefanbischof/sri/main/srilogo.svg"
+    "@id" : "https://raw.githubusercontent.com/stefanbischof/sri/main/sridiagram.svg"
   } ],
   "http://schema.org/logo" : [ {
     "@id" : "https://raw.githubusercontent.com/stefanbischof/sri/main/srilogo.svg"
