@@ -569,12 +569,12 @@
         "narrower" : [ {
           "identifier" : "narrower",
           "language" : "undefined",
-          "value" : "https://w3id.org/sri#maintenance_and_fault_prediction",
+          "value" : "https://w3id.org/sri#energy_efficiency",
           "type" : "iri"
         }, {
           "identifier" : "narrower",
           "language" : "undefined",
-          "value" : "https://w3id.org/sri#energy_efficiency",
+          "value" : "https://w3id.org/sri#maintenance_and_fault_prediction",
           "type" : "iri"
         } ]
       },
@@ -589,22 +589,22 @@
         "narrower" : [ {
           "identifier" : "narrower",
           "language" : "undefined",
-          "value" : "https://w3id.org/sri#comfort",
-          "type" : "iri"
-        }, {
-          "identifier" : "narrower",
-          "language" : "undefined",
-          "value" : "https://w3id.org/sri#information_to_occupants",
-          "type" : "iri"
-        }, {
-          "identifier" : "narrower",
-          "language" : "undefined",
           "value" : "https://w3id.org/sri#health_well_being_and_accessibility",
           "type" : "iri"
         }, {
           "identifier" : "narrower",
           "language" : "undefined",
+          "value" : "https://w3id.org/sri#comfort",
+          "type" : "iri"
+        }, {
+          "identifier" : "narrower",
+          "language" : "undefined",
           "value" : "https://w3id.org/sri#convenience",
+          "type" : "iri"
+        }, {
+          "identifier" : "narrower",
+          "language" : "undefined",
+          "value" : "https://w3id.org/sri#information_to_occupants",
           "type" : "iri"
         } ]
       },
@@ -888,18 +888,18 @@
       "en" : "Impact"
     },
     "individuals" : [ {
-      "iri" : "https://w3id.org/sri#comfort",
-      "baseIri" : "https://w3id.org/sri",
-      "labels" : {
-        "IRI-based" : "comfort",
-        "en" : "Comfort"
-      }
-    }, {
       "iri" : "https://w3id.org/sri#maintenance_and_fault_prediction",
       "baseIri" : "https://w3id.org/sri",
       "labels" : {
         "IRI-based" : "maintenance_and_fault_prediction",
         "en" : "Maintenance and fault prediction"
+      }
+    }, {
+      "iri" : "https://w3id.org/sri#comfort",
+      "baseIri" : "https://w3id.org/sri",
+      "labels" : {
+        "IRI-based" : "comfort",
+        "en" : "Comfort"
       }
     }, {
       "iri" : "https://w3id.org/sri#energy_efficiency",
@@ -977,18 +977,18 @@
         "en" : "Lighting"
       }
     }, {
-      "iri" : "https://w3id.org/sri#dE",
-      "baseIri" : "https://w3id.org/sri",
-      "labels" : {
-        "IRI-based" : "dE",
-        "en" : "Dynamic building envelope"
-      }
-    }, {
       "iri" : "https://w3id.org/sri#eV",
       "baseIri" : "https://w3id.org/sri",
       "labels" : {
         "IRI-based" : "eV",
         "en" : "Electric vehicle charging"
+      }
+    }, {
+      "iri" : "https://w3id.org/sri#dE",
+      "baseIri" : "https://w3id.org/sri",
+      "labels" : {
+        "IRI-based" : "dE",
+        "en" : "Dynamic building envelope"
       }
     }, {
       "iri" : "https://w3id.org/sri#dHW",
@@ -1411,7 +1411,7 @@
   "propertyAttribute" : [ {
     "range" : "5",
     "domain" : "4",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "3"
   }, {
     "iri" : "https://w3id.org/sri#building",
@@ -1605,17 +1605,17 @@
   }, {
     "range" : "41",
     "domain" : "60",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "59"
   }, {
     "range" : "14",
     "domain" : "53",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "61"
   }, {
     "range" : "14",
     "domain" : "13",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "62"
   }, {
     "iri" : "https://w3id.org/sri#weight",
@@ -1631,12 +1631,12 @@
   }, {
     "range" : "41",
     "domain" : "40",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "64"
   }, {
     "range" : "14",
     "domain" : "66",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "65"
   }, {
     "iri" : "http://purl.org/linked-data/cube#concept",
@@ -1663,12 +1663,12 @@
   }, {
     "range" : "14",
     "domain" : "54",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "68"
   }, {
     "range" : "70",
     "domain" : "56",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "69"
   }, {
     "iri" : "http://purl.org/linked-data/cube#componentProperty",
@@ -1696,27 +1696,27 @@
   }, {
     "range" : "72",
     "domain" : "71",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "75"
   }, {
     "range" : "54",
     "domain" : "53",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "76"
   }, {
     "range" : "1",
     "domain" : "56",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "77"
   }, {
     "range" : "72",
     "domain" : "79",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "78"
   }, {
     "range" : "52",
     "domain" : "14",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "80"
   }, {
     "iri" : "https://w3id.org/sri#function",
@@ -1732,22 +1732,22 @@
   }, {
     "range" : "5",
     "domain" : "11",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "82"
   }, {
     "range" : "5",
     "domain" : "10",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "83"
   }, {
     "range" : "1",
     "domain" : "30",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "84"
   }, {
     "range" : "1",
     "domain" : "0",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "85"
   }, {
     "iri" : "http://purl.org/linked-data/cube#structure",
@@ -1984,7 +1984,7 @@
   }, {
     "range" : "71",
     "domain" : "79",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "98"
   }, {
     "iri" : "http://www.w3.org/2004/02/skos/core#broader",
@@ -1999,7 +1999,7 @@
   }, {
     "range" : "40",
     "domain" : "60",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "100"
   }, {
     "iri" : "http://www.w3.org/2004/02/skos/core#narrower",
@@ -2046,12 +2046,12 @@
   }, {
     "range" : "13",
     "domain" : "66",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "105"
   }, {
     "range" : "13",
     "domain" : "53",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "106"
   }, {
     "iri" : "http://purl.org/linked-data/cube#order",
