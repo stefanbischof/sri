@@ -87,8 +87,12 @@
   } ]
 }, {
   "@id" : "_:genid20",
-  "http://purl.org/linked-data/cube#measure" : [ {
-    "@id" : "https://w3id.org/sri#score"
+  "http://purl.org/linked-data/cube#dimension" : [ {
+    "@id" : "https://w3id.org/sri#level"
+  } ],
+  "http://purl.org/linked-data/cube#order" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2"
   } ]
 }, {
   "@id" : "_:genid21",
@@ -101,33 +105,16 @@
   } ]
 }, {
   "@id" : "_:genid22",
-  "http://purl.org/linked-data/cube#dimension" : [ {
-    "@id" : "https://w3id.org/sri#level"
-  } ],
-  "http://purl.org/linked-data/cube#order" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "2"
+  "http://purl.org/linked-data/cube#measure" : [ {
+    "@id" : "https://w3id.org/sri#score"
   } ]
 }, {
   "@id" : "_:genid23",
-  "http://purl.org/linked-data/cube#dimension" : [ {
-    "@id" : "https://w3id.org/sri#impact"
-  } ],
-  "http://purl.org/linked-data/cube#order" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "2"
+  "http://purl.org/linked-data/cube#measure" : [ {
+    "@id" : "https://w3id.org/sri#score"
   } ]
 }, {
   "@id" : "_:genid24",
-  "http://purl.org/linked-data/cube#dimension" : [ {
-    "@id" : "https://w3id.org/sri#function"
-  } ],
-  "http://purl.org/linked-data/cube#order" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "1"
-  } ]
-}, {
-  "@id" : "_:genid25",
   "http://purl.org/linked-data/cube#dimension" : [ {
     "@id" : "https://w3id.org/sri#level"
   } ],
@@ -136,18 +123,31 @@
     "@value" : "3"
   } ]
 }, {
-  "@id" : "_:genid26",
-  "http://purl.org/linked-data/cube#measure" : [ {
-    "@id" : "https://w3id.org/sri#score"
+  "@id" : "_:genid25",
+  "http://purl.org/linked-data/cube#dimension" : [ {
+    "@id" : "https://w3id.org/sri#function"
+  } ],
+  "http://purl.org/linked-data/cube#order" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid27",
+  "@id" : "_:genid26",
   "http://purl.org/linked-data/cube#dimension" : [ {
     "@id" : "https://w3id.org/sri#impact"
   } ],
   "http://purl.org/linked-data/cube#order" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#integer",
     "@value" : "2"
+  } ]
+}, {
+  "@id" : "_:genid27",
+  "http://purl.org/linked-data/cube#dimension" : [ {
+    "@id" : "https://w3id.org/sri#function"
+  } ],
+  "http://purl.org/linked-data/cube#order" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
   } ]
 }, {
   "@id" : "_:genid28",
@@ -157,11 +157,11 @@
 }, {
   "@id" : "_:genid29",
   "http://purl.org/linked-data/cube#dimension" : [ {
-    "@id" : "https://w3id.org/sri#function"
+    "@id" : "https://w3id.org/sri#impact"
   } ],
   "http://purl.org/linked-data/cube#order" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "1"
+    "@value" : "2"
   } ]
 }, {
   "@id" : "_:genid6",
@@ -265,7 +265,7 @@
     "@value" : "2023-11-23"
   } ],
   "http://purl.org/dc/terms/source" : [ {
-    "@id" : "https://energy.ec.europa.eu/topics/energy-efficiency/energy-efficient-buildings/smart-readiness-indicator_en"
+    "@id" : "https://data.europa.eu/doi/10.2833/41100"
   } ],
   "http://purl.org/dc/terms/title" : [ {
     "@language" : "en",

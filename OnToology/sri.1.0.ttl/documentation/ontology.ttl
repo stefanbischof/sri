@@ -17,7 +17,7 @@
                         <http://purl.org/dc/terms/description> "A vocabulary specifying concepts and structures needed to represent different data cubes needed for the Smart Readiness Indicator." ;
                         <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
                         <http://purl.org/dc/terms/modified> "2023-11-23"^^xsd:date ;
-                        <http://purl.org/dc/terms/source> <https://energy.ec.europa.eu/topics/energy-efficiency/energy-efficient-buildings/smart-readiness-indicator_en> ;
+                        <http://purl.org/dc/terms/source> <https://data.europa.eu/doi/10.2833/41100> ;
                         <http://purl.org/dc/terms/title> "Smart Readiness Indicator Vocabulary"@en ;
                         <http://purl.org/ontology/bibo/doi> "10.5281/zenodo.10047286" ;
                         <http://purl.org/ontology/bibo/status> <http://purl.org/ontology/bibo/status/draft> ;
@@ -355,13 +355,13 @@
                                                              _:genid21 ,
                                                              _:genid22 .
 
-_:genid20 <http://purl.org/linked-data/cube#measure> :score .
+_:genid20 <http://purl.org/linked-data/cube#dimension> :level ;
+           <http://purl.org/linked-data/cube#order> 2 .
 
 _:genid21 <http://purl.org/linked-data/cube#dimension> :function ;
            <http://purl.org/linked-data/cube#order> 1 .
 
-_:genid22 <http://purl.org/linked-data/cube#dimension> :level ;
-           <http://purl.org/linked-data/cube#order> 2 .
+_:genid22 <http://purl.org/linked-data/cube#measure> :score .
 
 
 ###  https://w3id.org/sri#dsd-scores
@@ -372,16 +372,16 @@ _:genid22 <http://purl.org/linked-data/cube#dimension> :level ;
                                                          _:genid25 ,
                                                          _:genid26 .
 
-_:genid23 <http://purl.org/linked-data/cube#dimension> :impact ;
-           <http://purl.org/linked-data/cube#order> 2 .
+_:genid23 <http://purl.org/linked-data/cube#measure> :score .
 
-_:genid24 <http://purl.org/linked-data/cube#dimension> :function ;
-           <http://purl.org/linked-data/cube#order> 1 .
-
-_:genid25 <http://purl.org/linked-data/cube#dimension> :level ;
+_:genid24 <http://purl.org/linked-data/cube#dimension> :level ;
            <http://purl.org/linked-data/cube#order> 3 .
 
-_:genid26 <http://purl.org/linked-data/cube#measure> :score .
+_:genid25 <http://purl.org/linked-data/cube#dimension> :function ;
+           <http://purl.org/linked-data/cube#order> 1 .
+
+_:genid26 <http://purl.org/linked-data/cube#dimension> :impact ;
+           <http://purl.org/linked-data/cube#order> 2 .
 
 
 ###  https://w3id.org/sri#dsd-weights
@@ -391,13 +391,13 @@ _:genid26 <http://purl.org/linked-data/cube#measure> :score .
                                                           _:genid28 ,
                                                           _:genid29 .
 
-_:genid27 <http://purl.org/linked-data/cube#dimension> :impact ;
-           <http://purl.org/linked-data/cube#order> 2 .
+_:genid27 <http://purl.org/linked-data/cube#dimension> :function ;
+           <http://purl.org/linked-data/cube#order> 1 .
 
 _:genid28 <http://purl.org/linked-data/cube#measure> :weight .
 
-_:genid29 <http://purl.org/linked-data/cube#dimension> :function ;
-           <http://purl.org/linked-data/cube#order> 1 .
+_:genid29 <http://purl.org/linked-data/cube#dimension> :impact ;
+           <http://purl.org/linked-data/cube#order> 2 .
 
 
 ###  https://w3id.org/sri#eV

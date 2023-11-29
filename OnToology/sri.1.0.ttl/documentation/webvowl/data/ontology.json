@@ -49,7 +49,7 @@
       "source" : [ {
         "identifier" : "source",
         "language" : "undefined",
-        "value" : "https://energy.ec.europa.eu/topics/energy-efficiency/energy-efficient-buildings/smart-readiness-indicator_en",
+        "value" : "https://data.europa.eu/doi/10.2833/41100",
         "type" : "iri"
       } ],
       "title" : [ {
@@ -99,16 +99,16 @@
         "value" : "2023-11-23",
         "type" : "label"
       } ],
-      "preferredNamespaceUri" : [ {
-        "identifier" : "preferredNamespaceUri",
-        "language" : "undefined",
-        "value" : "https://w3id.org/sri#",
-        "type" : "label"
-      } ],
       "bibliographicCitation" : [ {
         "identifier" : "bibliographicCitation",
         "language" : "en",
         "value" : "Stefan Bischof, Erwin Filtz, Josiane Xavier Parreira. Smart Readiness Indicator Vocabulary. Revision: 1.0.0. Retrieved from: https://w3id.org/sri/1.0",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://w3id.org/sri#",
         "type" : "label"
       } ],
       "status" : [ {
@@ -306,7 +306,7 @@
     "comment" : {
       "en" : "A single observation in the cube, may have one or more associated measured values"
     },
-    "attributes" : [ "external", "equivalent" ],
+    "attributes" : [ "equivalent", "external" ],
     "id" : "0",
     "superClasses" : [ "1" ]
   }, {
@@ -521,7 +521,7 @@
     "label" : {
       "IRI-based" : "Dataset"
     },
-    "attributes" : [ "external", "equivalent" ],
+    "attributes" : [ "equivalent", "external" ],
     "id" : "32"
   }, {
     "iri" : "https://w3id.org/sri#ServiceCatalogue",
@@ -569,12 +569,12 @@
         "narrower" : [ {
           "identifier" : "narrower",
           "language" : "undefined",
-          "value" : "https://w3id.org/sri#energy_efficiency",
+          "value" : "https://w3id.org/sri#maintenance_and_fault_prediction",
           "type" : "iri"
         }, {
           "identifier" : "narrower",
           "language" : "undefined",
-          "value" : "https://w3id.org/sri#maintenance_and_fault_prediction",
+          "value" : "https://w3id.org/sri#energy_efficiency",
           "type" : "iri"
         } ]
       },
@@ -669,7 +669,7 @@
   }, {
     "instances" : 0,
     "union" : [ "15", "46", "47" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "45"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#int",
@@ -895,18 +895,18 @@
         "en" : "Maintenance and fault prediction"
       }
     }, {
-      "iri" : "https://w3id.org/sri#comfort",
-      "baseIri" : "https://w3id.org/sri",
-      "labels" : {
-        "IRI-based" : "comfort",
-        "en" : "Comfort"
-      }
-    }, {
       "iri" : "https://w3id.org/sri#energy_efficiency",
       "baseIri" : "https://w3id.org/sri",
       "labels" : {
         "IRI-based" : "energy_efficiency",
         "en" : "Energy efficiency"
+      }
+    }, {
+      "iri" : "https://w3id.org/sri#comfort",
+      "baseIri" : "https://w3id.org/sri",
+      "labels" : {
+        "IRI-based" : "comfort",
+        "en" : "Comfort"
       }
     }, {
       "iri" : "https://w3id.org/sri#convenience",
@@ -1146,7 +1146,7 @@
     "label" : {
       "IRI-based" : "Item"
     },
-    "attributes" : [ "external", "equivalent" ],
+    "attributes" : [ "equivalent", "external" ],
     "id" : "2"
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Class",
@@ -1177,7 +1177,7 @@
     "comment" : {
       "en" : "Represents a collection of observations, possibly organized into various slices, conforming to some common dimensional structure."
     },
-    "attributes" : [ "external", "equivalent" ],
+    "attributes" : [ "equivalent", "external" ],
     "id" : "30",
     "superClasses" : [ "1" ]
   }, {
@@ -1349,10 +1349,10 @@
     "type" : "owl:objectProperty"
   }, {
     "id" : "95",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "96",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "97",
     "type" : "owl:allValuesFrom"
@@ -1411,7 +1411,7 @@
   "propertyAttribute" : [ {
     "range" : "5",
     "domain" : "4",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "3"
   }, {
     "iri" : "https://w3id.org/sri#building",
@@ -1455,7 +1455,7 @@
       "en" : "score"
     },
     "domain" : "17",
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "16"
   }, {
     "iri" : "http://purl.org/linked-data/cube#dataSet",
@@ -1605,17 +1605,17 @@
   }, {
     "range" : "41",
     "domain" : "60",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "59"
   }, {
     "range" : "14",
     "domain" : "53",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "61"
   }, {
     "range" : "14",
     "domain" : "13",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "62"
   }, {
     "iri" : "https://w3id.org/sri#weight",
@@ -1626,17 +1626,17 @@
       "en" : "weight"
     },
     "domain" : "17",
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "63"
   }, {
     "range" : "41",
     "domain" : "40",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "64"
   }, {
     "range" : "14",
     "domain" : "66",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "65"
   }, {
     "iri" : "http://purl.org/linked-data/cube#concept",
@@ -1663,12 +1663,12 @@
   }, {
     "range" : "14",
     "domain" : "54",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "68"
   }, {
     "range" : "70",
     "domain" : "56",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "69"
   }, {
     "iri" : "http://purl.org/linked-data/cube#componentProperty",
@@ -1696,27 +1696,27 @@
   }, {
     "range" : "72",
     "domain" : "71",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "75"
   }, {
     "range" : "54",
     "domain" : "53",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "76"
   }, {
     "range" : "1",
     "domain" : "56",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "77"
   }, {
     "range" : "72",
     "domain" : "79",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "78"
   }, {
     "range" : "52",
     "domain" : "14",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "80"
   }, {
     "iri" : "https://w3id.org/sri#function",
@@ -1732,22 +1732,22 @@
   }, {
     "range" : "5",
     "domain" : "11",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "82"
   }, {
     "range" : "5",
     "domain" : "10",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "83"
   }, {
     "range" : "1",
     "domain" : "30",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "84"
   }, {
     "range" : "1",
     "domain" : "0",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "85"
   }, {
     "iri" : "http://purl.org/linked-data/cube#structure",
@@ -1915,7 +1915,7 @@
       "en" : "share"
     },
     "domain" : "17",
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "92"
   }, {
     "iri" : "http://purl.org/linked-data/cube#sliceStructure",
@@ -1951,16 +1951,6 @@
     "attributes" : [ "object" ],
     "id" : "94"
   }, {
-    "iri" : "http://purl.org/linked-data/sdmx/2009/measure#obsValue",
-    "baseIri" : "http://purl.org/linked-data/sdmx/2009/measure",
-    "range" : "42",
-    "label" : {
-      "IRI-based" : "obsValue"
-    },
-    "domain" : "17",
-    "attributes" : [ "external", "datatype" ],
-    "id" : "95"
-  }, {
     "iri" : "https://w3id.org/sri#additionalLevel",
     "baseIri" : "https://w3id.org/sri",
     "range" : "21",
@@ -1970,6 +1960,16 @@
     },
     "domain" : "39",
     "attributes" : [ "object" ],
+    "id" : "95"
+  }, {
+    "iri" : "http://purl.org/linked-data/sdmx/2009/measure#obsValue",
+    "baseIri" : "http://purl.org/linked-data/sdmx/2009/measure",
+    "range" : "42",
+    "label" : {
+      "IRI-based" : "obsValue"
+    },
+    "domain" : "17",
+    "attributes" : [ "datatype", "external" ],
     "id" : "96"
   }, {
     "iri" : "http://www.w3.org/2004/02/skos/core#narrower",
@@ -1984,7 +1984,7 @@
   }, {
     "range" : "71",
     "domain" : "79",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "98"
   }, {
     "iri" : "http://www.w3.org/2004/02/skos/core#broader",
@@ -1999,7 +1999,7 @@
   }, {
     "range" : "40",
     "domain" : "60",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "100"
   }, {
     "iri" : "http://www.w3.org/2004/02/skos/core#narrower",
@@ -2022,17 +2022,6 @@
     "attributes" : [ "object", "external", "allValues" ],
     "id" : "102"
   }, {
-    "iri" : "https://w3id.org/sri#function",
-    "baseIri" : "https://w3id.org/sri",
-    "range" : "71",
-    "label" : {
-      "IRI-based" : "function",
-      "en" : "function"
-    },
-    "domain" : "50",
-    "attributes" : [ "functional", "object", "someValues" ],
-    "id" : "103"
-  }, {
     "iri" : "https://w3id.org/sri#level",
     "baseIri" : "https://w3id.org/sri",
     "range" : "21",
@@ -2041,17 +2030,28 @@
       "en" : "level"
     },
     "domain" : "50",
-    "attributes" : [ "functional", "object", "someValues" ],
+    "attributes" : [ "someValues", "functional", "object" ],
+    "id" : "103"
+  }, {
+    "iri" : "https://w3id.org/sri#function",
+    "baseIri" : "https://w3id.org/sri",
+    "range" : "71",
+    "label" : {
+      "IRI-based" : "function",
+      "en" : "function"
+    },
+    "domain" : "50",
+    "attributes" : [ "someValues", "functional", "object" ],
     "id" : "104"
   }, {
     "range" : "13",
     "domain" : "66",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "105"
   }, {
     "range" : "13",
     "domain" : "53",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "106"
   }, {
     "iri" : "http://purl.org/linked-data/cube#order",
@@ -2073,7 +2073,7 @@
     "comment" : {
       "en" : "indicates a priority order for the components of sets with this structure, used to guide presentations - lower order numbers come before higher numbers, un-numbered components come last"
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "107"
   }, {
     "iri" : "http://purl.org/linked-data/cube#codeList",
@@ -2194,7 +2194,7 @@
     "comment" : {
       "en" : "Indicates whether a component property is required (true) or optional (false) in the context of a DSD. Only applicable\n    to components correspond to an attribute. Defaults to false (optional)."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "114"
   } ]
 }

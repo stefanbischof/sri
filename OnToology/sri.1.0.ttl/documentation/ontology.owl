@@ -24,7 +24,7 @@
         <terms:description>A vocabulary specifying concepts and structures needed to represent different data cubes needed for the Smart Readiness Indicator.</terms:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-11-23</terms:modified>
-        <terms:source rdf:resource="https://energy.ec.europa.eu/topics/energy-efficiency/energy-efficient-buildings/smart-readiness-indicator_en"/>
+        <terms:source rdf:resource="https://data.europa.eu/doi/10.2833/41100"/>
         <terms:title xml:lang="en">Smart Readiness Indicator Vocabulary</terms:title>
         <bibo:doi>10.5281/zenodo.10047286</bibo:doi>
         <bibo:status rdf:resource="http://purl.org/ontology/bibo/status/draft"/>
@@ -601,15 +601,15 @@
         <cube:component rdf:nodeID="genid22"/>
     </owl:NamedIndividual>
     <rdf:Description rdf:nodeID="genid20">
-        <cube:measure rdf:resource="https://w3id.org/sri#score"/>
+        <cube:dimension rdf:resource="https://w3id.org/sri#level"/>
+        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</cube:order>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid21">
         <cube:dimension rdf:resource="https://w3id.org/sri#function"/>
         <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</cube:order>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid22">
-        <cube:dimension rdf:resource="https://w3id.org/sri#level"/>
-        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</cube:order>
+        <cube:measure rdf:resource="https://w3id.org/sri#score"/>
     </rdf:Description>
     
 
@@ -625,19 +625,19 @@
         <cube:component rdf:nodeID="genid26"/>
     </owl:NamedIndividual>
     <rdf:Description rdf:nodeID="genid23">
-        <cube:dimension rdf:resource="https://w3id.org/sri#impact"/>
-        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</cube:order>
+        <cube:measure rdf:resource="https://w3id.org/sri#score"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid24">
-        <cube:dimension rdf:resource="https://w3id.org/sri#function"/>
-        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</cube:order>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid25">
         <cube:dimension rdf:resource="https://w3id.org/sri#level"/>
         <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</cube:order>
     </rdf:Description>
+    <rdf:Description rdf:nodeID="genid25">
+        <cube:dimension rdf:resource="https://w3id.org/sri#function"/>
+        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</cube:order>
+    </rdf:Description>
     <rdf:Description rdf:nodeID="genid26">
-        <cube:measure rdf:resource="https://w3id.org/sri#score"/>
+        <cube:dimension rdf:resource="https://w3id.org/sri#impact"/>
+        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</cube:order>
     </rdf:Description>
     
 
@@ -652,15 +652,15 @@
         <cube:component rdf:nodeID="genid29"/>
     </owl:NamedIndividual>
     <rdf:Description rdf:nodeID="genid27">
-        <cube:dimension rdf:resource="https://w3id.org/sri#impact"/>
-        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</cube:order>
+        <cube:dimension rdf:resource="https://w3id.org/sri#function"/>
+        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</cube:order>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid28">
         <cube:measure rdf:resource="https://w3id.org/sri#weight"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid29">
-        <cube:dimension rdf:resource="https://w3id.org/sri#function"/>
-        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</cube:order>
+        <cube:dimension rdf:resource="https://w3id.org/sri#impact"/>
+        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</cube:order>
     </rdf:Description>
     
 
