@@ -4,7 +4,7 @@ The list of competency questions.
 
 #### CQ 1: Who performed an assessment for a building and when?
 
-```
+```sparql
 SELECT ?agentIRI ?fullName ?id ?email ?creationDate WHERE {
    sri:assessment1 prov:wasAttributedTo ?agentIRI ;
         dcterms:created ?creationDate . 
@@ -22,7 +22,7 @@ SELECT ?agentIRI ?fullName ?id ?email ?creationDate WHERE {
 
 #### CQ 2: What is the SRI score of a building?
 
-```
+```sparql
 SELECT ?score WHERE { 
     ?dataset rdf:type qb:DataSet ;
         qb:structure sri:dsd-scores ;
@@ -41,7 +41,7 @@ SELECT ?score WHERE {
 
 #### CQ 3: What are the impact scores of an assessment (in a specific order)?
 
-```
+```sparql
 SELECT ?impactIRI ?impactLabel (ROUND(?score_*100)/100 as ?score) WHERE { 
     VALUES (?impactLabel ?position) {
         ("Energy efficiency"@en 1) ("Energy flexibility and storage"@en 2) ("Comfort"@en 3) ("Convenience"@en 4) ("Health well being and accessibility"@en 5) ("Maintenance and fault prediction"@en 6) ("Information to occupants"@en 7)
@@ -69,7 +69,7 @@ SELECT ?impactIRI ?impactLabel (ROUND(?score_*100)/100 as ?score) WHERE {
 
 #### CQ 4: What are the SRI scores for the different SRI services of a given building and assessment?
 
-```
+```sparql
 SELECT ?domainIRI ?domainLabel 
 	(ROUND(SUM(?comfort_)*100)/100 as ?comfort) 
 	(ROUND(SUM(?convenience_)*100)/100 as ?convenience)
@@ -131,7 +131,7 @@ SELECT ?domainIRI ?domainLabel
 
 #### CQ 5: How did the SRI score change over time between two assessments of a building?
 
-```
+```sparql
 SELECT ?SRI ?score1 ?score2 WHERE {{
     SELECT ("SRI Score" as ?SRI) ?score1 WHERE {
         VALUES ?assessmentIRI1 {sri:assessment1}
