@@ -135,7 +135,7 @@ SELECT ?domainIRI ?domainLabel
 #### CQ 5: How did the SRI score change over time between two assessments of a building?
 
 ```sparql
-SELECT ?SRI ?score1 ?score2 WHERE {{
+SELECT ?SRI ?score1 ?score2 WHERE { {
     SELECT ("SRI Score" as ?SRI) ?score1 WHERE {
         VALUES ?assessmentIRI1 {sri:assessment1}
         ?assessmentIRI1 sri:hasBuilding ?buildingIRI1 ;
@@ -149,7 +149,7 @@ SELECT ?SRI ?score1 ?score2 WHERE {{
                      sri:impact sri:topImpact ;
                      sri:score ?value_1 .
         BIND(STR(ROUND(?value_1*100)/100) as ?score1)      
-}}{
+} } {
         SELECT ("SRI Score" as ?SRI) ?score2 WHERE {
             VALUES ?assessmentIRI2 {sri:assessment2}
             ?assessmentIRI2 sri:hasBuilding ?buildingIRI2 ;
@@ -163,7 +163,7 @@ SELECT ?SRI ?score1 ?score2 WHERE {{
                              sri:impact sri:topImpact ;
                              sri:score ?value_2 .
                 BIND(STR(ROUND(?value_2*100)/100) as ?score2)
-}}} GROUP BY ?SRI ?score1 ?score2
+} } } GROUP BY ?SRI ?score1 ?score2
 ```
 ##### Result
 
