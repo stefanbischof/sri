@@ -301,12 +301,12 @@ sri:level4 rdf:type sri:Level ;
 
 ###  https://w3id.org/sri#topDomain
 sri:topDomain rdf:type sri:FunctionalThing ;
-              rdfs:label "All domains"@en .
+  skos:narrower sri:eV , sri:lighting , sri:dHW , sri:electricity , sri:dE , sri:ventilation , sri:cooling , sri:heating , sri:mC ;
 
 
 ###  https://w3id.org/sri#topImpact
 sri:topImpact rdf:type sri:ImpactThing ;
-              rdfs:label "All impacts"@en .
+  skos:narrower sri:adaptTheirOperationToTheNeedsOfTheOccupant, sri:adaptToSignalsFromTheGrid, sri:optimiseEnergyEfficiencyAndOverallIn-UsePerformance ;
 
 
 ### Key Capabilities
