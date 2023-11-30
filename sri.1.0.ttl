@@ -269,8 +269,8 @@ sri:dsd-weights rdf:type qb:DataStructureDefinition ;
                              ] .
 
 
-###  https://w3id.org/sri#sriscores
-sri:sriscores rdf:type qb:DataStructureDefinition ;
+sri:dsd-sriscores rdf:type qb:DataStructureDefinition ;
+  qb:component [ qb:dimension sri:function ] , [ qb:dimension sri:level ] ; 
               rdfs:label "SRI scores DSD"@en .
 
 
