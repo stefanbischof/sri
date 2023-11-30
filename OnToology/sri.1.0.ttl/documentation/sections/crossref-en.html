@@ -30,13 +30,10 @@ This section provides details for each class and property defined by Smart Readi
          <a href="#Service" title="https://w3id.org/sri#Service">Service</a>
       </li>
       <li>
-         <a href="#ServiceCatalogue" title="https://w3id.org/sri#ServiceCatalogue">service catalogue</a>
+         <a href="#ServiceCatalogue" title="https://w3id.org/sri#ServiceCatalogue">Service catalogue</a>
       </li>
       <li>
          <a href="#ServiceLevel" title="https://w3id.org/sri#ServiceLevel">service level</a>
-      </li>
-      <li>
-         <a href="#Triage" title="https://w3id.org/sri#Triage">triage</a>
       </li>
    </ul>
    <div class="entity" id="Building">
@@ -46,6 +43,9 @@ This section provides details for each class and property defined by Smart Readi
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/sri#Building</p>
+      <div class="comment">
+         <span class="markdown">This represents a building which is assessed.</span>
+      </div>
       <dl class="description">
          <dt>is in range of</dt>
          <dd>
@@ -61,6 +61,9 @@ This section provides details for each class and property defined by Smart Readi
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/sri#Domain</p>
+      <div class="comment">
+         <span class="markdown">Class of technical domains.</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -94,6 +97,9 @@ This section provides details for each class and property defined by Smart Readi
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/sri#FunctionalThing</p>
+      <div class="comment">
+         <span class="markdown">Class of instances in the functional hierarchy, this includes Domains and Services.</span>
+      </div>
       <dl class="description">
          <dt>has sub-classes</dt>
          <dd>
@@ -104,7 +110,6 @@ This section provides details for each class and property defined by Smart Readi
          <dt>is in range of</dt>
          <dd>
             <a href="#function" title="https://w3id.org/sri#function">function</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#mandatory" title="https://w3id.org/sri#mandatory">mandatory</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>has members</dt>
@@ -121,6 +126,9 @@ This section provides details for each class and property defined by Smart Readi
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/sri#Impact</p>
+      <div class="comment">
+         <span class="markdown">Class of Impacts.</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -155,6 +163,9 @@ This section provides details for each class and property defined by Smart Readi
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/sri#ImpactThing</p>
+      <div class="comment">
+         <span class="markdown">Class of all instances in the impact hierarchy, this includes Impacts and Key Capabilities.</span>
+      </div>
       <dl class="description">
          <dt>has sub-classes</dt>
          <dd>
@@ -181,6 +192,9 @@ This section provides details for each class and property defined by Smart Readi
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/sri#KeyCapability</p>
+      <div class="comment">
+         <span class="markdown">Class of all Key Capabilities, aggregation of Impacts.</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -189,11 +203,11 @@ This section provides details for each class and property defined by Smart Readi
          </dd>
          <dt>has members</dt>
          <dd>
-            <a href="#AdaptTheirOperationToTheNeedsOfTheOccupant"
-               title="https://w3id.org/sri#AdaptTheirOperationToTheNeedsOfTheOccupant">Adapt their operation to the needs of the occupant</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#AdaptToSignalsFromTheGrid" title="https://w3id.org/sri#AdaptToSignalsFromTheGrid">Adapt to signals from the grid</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#OptimiseEnergyEfficiencyAndOverallIn-UsePerformance"
-               title="https://w3id.org/sri#OptimiseEnergyEfficiencyAndOverallIn-UsePerformance">Optimise energy efficiency and overall in-use performance</a>
+            <a href="#adaptTheirOperationToTheNeedsOfTheOccupant"
+               title="https://w3id.org/sri#adaptTheirOperationToTheNeedsOfTheOccupant">Adapt their operation to the needs of the occupant</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#adaptToSignalsFromTheGrid" title="https://w3id.org/sri#adaptToSignalsFromTheGrid">Adapt to signals from the grid</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#optimiseEnergyEfficiencyAndOverallIn-UsePerformance"
+               title="https://w3id.org/sri#optimiseEnergyEfficiencyAndOverallIn-UsePerformance">Optimise energy efficiency and overall in-use performance</a>
             <sup class="type-ni" title="named individual">ni</sup>
          </dd>
          <dt>is disjoint with</dt>
@@ -210,6 +224,9 @@ This section provides details for each class and property defined by Smart Readi
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/sri#Level</p>
+      <div class="comment">
+         <span class="markdown">Class of service levels.</span>
+      </div>
       <dl class="description">
          <dt>is in range of</dt>
          <dd>
@@ -235,6 +252,9 @@ This section provides details for each class and property defined by Smart Readi
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/sri#Service</p>
+      <div class="comment">
+         <span class="markdown">Class for Services.</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -249,18 +269,16 @@ This section provides details for each class and property defined by Smart Readi
       </dl>
    </div>
    <div class="entity" id="ServiceCatalogue">
-      <h3>service catalogue<sup class="type-c" title="class">c</sup>
+      <h3>Service catalogue<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/sri#ServiceCatalogue</p>
+      <div class="comment">
+         <span class="markdown">A Service Catalogue is a collection of services used in an assessment.</span>
+      </div>
       <dl class="description">
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#triage" title="https://w3id.org/sri#triage">triage</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
          <dt>is in range of</dt>
          <dd>
             <a href="#serviceCatalogue" title="https://w3id.org/sri#serviceCatalogue">service catalogue</a>
@@ -275,29 +293,12 @@ This section provides details for each class and property defined by Smart Readi
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/sri#ServiceLevel</p>
+      <div class="comment">
+         <span class="markdown">Class for all ServiceLevel instances, which are all allowed/defined combinations of Services and Levels.</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd/>
-      </dl>
-   </div>
-   <div class="entity" id="Triage">
-      <h3>triage<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/sri#Triage</p>
-      <dl class="description">
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#mandatory" title="https://w3id.org/sri#mandatory">mandatory</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#triage" title="https://w3id.org/sri#triage">triage</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
       </dl>
    </div>
 </div><div xmlns:widoco="https://w3id.org/widoco/vocab#"
@@ -330,13 +331,7 @@ This section provides details for each class and property defined by Smart Readi
          </a>
       </li>
       <li>
-         <a href="#mandatory" title="https://w3id.org/sri#mandatory">mandatory</a>
-      </li>
-      <li>
          <a href="#serviceCatalogue" title="https://w3id.org/sri#serviceCatalogue">service catalogue</a>
-      </li>
-      <li>
-         <a href="#triage" title="https://w3id.org/sri#triage">triage</a>
       </li>
    </ul>
    <div class="entity" id="additionalLevel">
@@ -346,6 +341,9 @@ This section provides details for each class and property defined by Smart Readi
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/sri#additionalLevel</p>
+      <div class="comment">
+         <span class="markdown">Additional Level if share is &lt; 100%.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has range</dt>
@@ -363,6 +361,9 @@ This section provides details for each class and property defined by Smart Readi
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/sri#assessment</p>
+      <div class="comment">
+         <span class="markdown">Relates something to an assessment dataset.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has range</dt>
@@ -388,6 +389,9 @@ This section provides details for each class and property defined by Smart Readi
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/sri#building</p>
+      <div class="comment">
+         <span class="markdown">Relates something to a Building.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has range</dt>
@@ -464,28 +468,6 @@ This section provides details for each class and property defined by Smart Readi
          </dl>
       </div>
    </div>
-   <div class="entity" id="mandatory">
-      <h3>mandatory<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/sri#mandatory</p>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Triage" title="https://w3id.org/sri#Triage">triage</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#FunctionalThing" title="https://w3id.org/sri#FunctionalThing">FunctionalThing</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="serviceCatalogue">
       <h3>service catalogue<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -493,33 +475,14 @@ This section provides details for each class and property defined by Smart Readi
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/sri#serviceCatalogue</p>
-      <div class="description">
-         <dl>
-            <dt>has range</dt>
-            <dd>
-               <a href="#ServiceCatalogue" title="https://w3id.org/sri#ServiceCatalogue">service catalogue</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
+      <div class="comment">
+         <span class="markdown">Relates something to a ServiceCatalogue.</span>
       </div>
-   </div>
-   <div class="entity" id="triage">
-      <h3>triage<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/sri#triage</p>
       <div class="description">
          <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#ServiceCatalogue" title="https://w3id.org/sri#ServiceCatalogue">service catalogue</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#Triage" title="https://w3id.org/sri#Triage">triage</a>
+               <a href="#ServiceCatalogue" title="https://w3id.org/sri#ServiceCatalogue">Service catalogue</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -536,12 +499,17 @@ This section provides details for each class and property defined by Smart Readi
          </a>
       </li>
       <li>
-         <a href="#score" title="https://w3id.org/sri#score">
-            <span>score</span>
+         <a href="#max" title="https://w3id.org/sri#max">
+            <span>maximum impact criterion score</span>
          </a>
       </li>
       <li>
          <a href="#share" title="https://w3id.org/sri#share">share</a>
+      </li>
+      <li>
+         <a href="#score" title="https://w3id.org/sri#score">
+            <span>smart-readiness score</span>
+         </a>
       </li>
       <li>
          <a href="#weight" title="https://w3id.org/sri#weight">
@@ -567,6 +535,56 @@ This section provides details for each class and property defined by Smart Readi
             </dd>
             <dt>has range</dt>
             <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#integer"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>
+               <a href="#icscore">named individual</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="max">
+      <h3>maximum impact criterion score<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/sri#max</p>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#integer"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>
+               <a href="#max">named individual</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="share">
+      <h3>share<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/sri#share</p>
+      <div class="comment">
+         <span class="markdown">A percentage (value between 0.0 and 1.0) which expresses that parts of a building are assessed with different levels wrt. a Service. If share is &lt; 100% then additionalLevel has to be defined.</span>
+      </div>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has range</dt>
+            <dd>
                <a href="http://www.w3.org/2001/XMLSchema#decimal"
                   target="_blank"
                   title="http://www.w3.org/2001/XMLSchema#decimal">decimal</a> 
@@ -579,15 +597,11 @@ This section provides details for each class and property defined by Smart Readi
                   target="_blank"
                   title="http://www.w3.org/2001/XMLSchema#float">float</a>
             </dd>
-            <dt>is also defined as</dt>
-            <dd>
-               <a href="#icscore">named individual</a>
-            </dd>
          </dl>
       </div>
    </div>
    <div class="entity" id="score">
-      <h3>score<sup class="type-dp" title="data property">dp</sup>
+      <h3>smart-readiness score<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
@@ -607,31 +621,6 @@ This section provides details for each class and property defined by Smart Readi
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#integer"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
-            </dd>
-            <dt>is also defined as</dt>
-            <dd>
-               <a href="#score">named individual</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="share">
-      <h3>share<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/sri#share</p>
-      <div class="description">
-         <p>
-            <strong>has characteristics:
-                </strong> functional</p>
-         <dl>
-            <dt>has range</dt>
-            <dd>
                <a href="http://www.w3.org/2001/XMLSchema#decimal"
                   target="_blank"
                   title="http://www.w3.org/2001/XMLSchema#decimal">decimal</a> 
@@ -643,6 +632,10 @@ This section provides details for each class and property defined by Smart Readi
                <a href="http://www.w3.org/2001/XMLSchema#float"
                   target="_blank"
                   title="http://www.w3.org/2001/XMLSchema#float">float</a>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>
+               <a href="#score">named individual</a>
             </dd>
          </dl>
       </div>
@@ -681,7 +674,9 @@ This section provides details for each class and property defined by Smart Readi
                   title="http://www.w3.org/2001/XMLSchema#float">float</a>
             </dd>
             <dt>is also defined as</dt>
-            <dd>named individual</dd>
+            <dd>
+               <a href="#weight">named individual</a>
+            </dd>
          </dl>
       </div>
    </div>
@@ -691,11 +686,11 @@ This section provides details for each class and property defined by Smart Readi
    <h3 id="namedindividuals" class="list">Named Individuals</h3>
    <ul class="hlist">
       <li>
-         <a href="#AdaptTheirOperationToTheNeedsOfTheOccupant"
-            title="https://w3id.org/sri#AdaptTheirOperationToTheNeedsOfTheOccupant">Adapt their operation to the needs of the occupant</a>
+         <a href="#adaptTheirOperationToTheNeedsOfTheOccupant"
+            title="https://w3id.org/sri#adaptTheirOperationToTheNeedsOfTheOccupant">Adapt their operation to the needs of the occupant</a>
       </li>
       <li>
-         <a href="#AdaptToSignalsFromTheGrid" title="https://w3id.org/sri#AdaptToSignalsFromTheGrid">Adapt to signals from the grid</a>
+         <a href="#adaptToSignalsFromTheGrid" title="https://w3id.org/sri#adaptToSignalsFromTheGrid">Adapt to signals from the grid</a>
       </li>
       <li>
          <a href="#topDomain" title="https://w3id.org/sri#topDomain">All domains</a>
@@ -784,31 +779,41 @@ This section provides details for each class and property defined by Smart Readi
             title="https://w3id.org/sri#maintenance_and_fault_prediction">Maintenance and fault prediction</a>
       </li>
       <li>
-         <a href="#mC" title="https://w3id.org/sri#mC">Monitoring and control</a>
-      </li>
-      <li>
-         <a href="#OptimiseEnergyEfficiencyAndOverallIn-UsePerformance"
-            title="https://w3id.org/sri#OptimiseEnergyEfficiencyAndOverallIn-UsePerformance">Optimise energy efficiency and overall in-use performance</a>
-      </li>
-      <li>
-         <a href="#score" title="https://w3id.org/sri#score">
-            <span>score</span>
+         <a href="#max" title="https://w3id.org/sri#max">
+            <span>maximum impact criterion score</span>
          </a>
       </li>
       <li>
-         <a href="#sriscores" title="https://w3id.org/sri#sriscores">SRI scores DSD</a>
+         <a href="#mC" title="https://w3id.org/sri#mC">Monitoring and control</a>
+      </li>
+      <li>
+         <a href="#optimiseEnergyEfficiencyAndOverallIn-UsePerformance"
+            title="https://w3id.org/sri#optimiseEnergyEfficiencyAndOverallIn-UsePerformance">Optimise energy efficiency and overall in-use performance</a>
+      </li>
+      <li>
+         <a href="#score" title="https://w3id.org/sri#score">
+            <span>smart-readiness score</span>
+         </a>
+      </li>
+      <li>
+         <a href="#dsd-sriscores" title="https://w3id.org/sri#dsd-sriscores">SRI scores DSD</a>
       </li>
       <li>
          <a href="#ventilation" title="https://w3id.org/sri#ventilation">Ventilation</a>
       </li>
+      <li>
+         <a href="#weight" title="https://w3id.org/sri#weight">
+            <span>weight</span>
+         </a>
+      </li>
    </ul>
-   <div class="entity" id="AdaptTheirOperationToTheNeedsOfTheOccupant">
+   <div class="entity" id="adaptTheirOperationToTheNeedsOfTheOccupant">
       <h3>Adapt their operation to the needs of the occupant<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/sri#AdaptTheirOperationToTheNeedsOfTheOccupant</p>
+         <strong>IRI:</strong> https://w3id.org/sri#adaptTheirOperationToTheNeedsOfTheOccupant</p>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
@@ -817,13 +822,13 @@ This section provides details for each class and property defined by Smart Readi
          </dd>
       </dl>
    </div>
-   <div class="entity" id="AdaptToSignalsFromTheGrid">
+   <div class="entity" id="adaptToSignalsFromTheGrid">
       <h3>Adapt to signals from the grid<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/sri#AdaptToSignalsFromTheGrid</p>
+         <strong>IRI:</strong> https://w3id.org/sri#adaptToSignalsFromTheGrid</p>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
@@ -1215,6 +1220,27 @@ This section provides details for each class and property defined by Smart Readi
          </dd>
       </dl>
    </div>
+   <div class="entity" id="max">
+      <h3>maximum impact criterion score<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/sri#max</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://purl.org/linked-data/cube#"
+               target="_blank"
+               title="http://purl.org/linked-data/cube#">cube:</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is also defined as</dt>
+         <dd>
+            <a href="#max">data property</a>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="mC">
       <h3>Monitoring and control<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
@@ -1230,13 +1256,13 @@ This section provides details for each class and property defined by Smart Readi
          </dd>
       </dl>
    </div>
-   <div class="entity" id="OptimiseEnergyEfficiencyAndOverallIn-UsePerformance">
+   <div class="entity" id="optimiseEnergyEfficiencyAndOverallIn-UsePerformance">
       <h3>Optimise energy efficiency and overall in-use performance<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/sri#OptimiseEnergyEfficiencyAndOverallIn-UsePerformance</p>
+         <strong>IRI:</strong> https://w3id.org/sri#optimiseEnergyEfficiencyAndOverallIn-UsePerformance</p>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
@@ -1246,7 +1272,7 @@ This section provides details for each class and property defined by Smart Readi
       </dl>
    </div>
    <div class="entity" id="score">
-      <h3>score<sup class="type-ni" title="named individual">ni</sup>
+      <h3>smart-readiness score<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
@@ -1265,13 +1291,13 @@ This section provides details for each class and property defined by Smart Readi
          </dd>
       </dl>
    </div>
-   <div class="entity" id="sriscores">
+   <div class="entity" id="dsd-sriscores">
       <h3>SRI scores DSD<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/sri#sriscores</p>
+         <strong>IRI:</strong> https://w3id.org/sri#dsd-sriscores</p>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
@@ -1293,6 +1319,26 @@ This section provides details for each class and property defined by Smart Readi
          <dd>
             <a href="#Domain" title="https://w3id.org/sri#Domain">Domain</a>
             <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="weight">
+      <h3>weight<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/sri#weight</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://purl.org/linked-data/cube#MeasureProperty"
+               target="_blank"
+               title="http://purl.org/linked-data/cube#MeasureProperty">measure property</a>
+         </dd>
+         <dt>is also defined as</dt>
+         <dd>
+            <a href="#weight">data property</a>
          </dd>
       </dl>
    </div>

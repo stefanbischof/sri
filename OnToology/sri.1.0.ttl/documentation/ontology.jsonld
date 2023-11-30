@@ -87,12 +87,8 @@
   } ]
 }, {
   "@id" : "_:genid20",
-  "http://purl.org/linked-data/cube#dimension" : [ {
-    "@id" : "https://w3id.org/sri#level"
-  } ],
-  "http://purl.org/linked-data/cube#order" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "2"
+  "http://purl.org/linked-data/cube#measure" : [ {
+    "@id" : "https://w3id.org/sri#score"
   } ]
 }, {
   "@id" : "_:genid21",
@@ -105,16 +101,15 @@
   } ]
 }, {
   "@id" : "_:genid22",
-  "http://purl.org/linked-data/cube#measure" : [ {
-    "@id" : "https://w3id.org/sri#score"
+  "http://purl.org/linked-data/cube#dimension" : [ {
+    "@id" : "https://w3id.org/sri#level"
+  } ],
+  "http://purl.org/linked-data/cube#order" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2"
   } ]
 }, {
   "@id" : "_:genid23",
-  "http://purl.org/linked-data/cube#measure" : [ {
-    "@id" : "https://w3id.org/sri#score"
-  } ]
-}, {
-  "@id" : "_:genid24",
   "http://purl.org/linked-data/cube#dimension" : [ {
     "@id" : "https://w3id.org/sri#impact"
   } ],
@@ -123,7 +118,7 @@
     "@value" : "2"
   } ]
 }, {
-  "@id" : "_:genid25",
+  "@id" : "_:genid24",
   "http://purl.org/linked-data/cube#dimension" : [ {
     "@id" : "https://w3id.org/sri#function"
   } ],
@@ -132,7 +127,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid26",
+  "@id" : "_:genid25",
   "http://purl.org/linked-data/cube#dimension" : [ {
     "@id" : "https://w3id.org/sri#level"
   } ],
@@ -141,18 +136,19 @@
     "@value" : "3"
   } ]
 }, {
+  "@id" : "_:genid26",
+  "http://purl.org/linked-data/cube#measure" : [ {
+    "@id" : "https://w3id.org/sri#score"
+  } ]
+}, {
   "@id" : "_:genid27",
   "http://purl.org/linked-data/cube#dimension" : [ {
-    "@id" : "https://w3id.org/sri#impact"
-  } ],
-  "http://purl.org/linked-data/cube#order" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "2"
+    "@id" : "https://w3id.org/sri#level"
   } ]
 }, {
   "@id" : "_:genid28",
-  "http://purl.org/linked-data/cube#measure" : [ {
-    "@id" : "https://w3id.org/sri#weight"
+  "http://purl.org/linked-data/cube#dimension" : [ {
+    "@id" : "https://w3id.org/sri#function"
   } ]
 }, {
   "@id" : "_:genid29",
@@ -162,6 +158,20 @@
   "http://purl.org/linked-data/cube#order" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#integer",
     "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid30",
+  "http://purl.org/linked-data/cube#measure" : [ {
+    "@id" : "https://w3id.org/sri#weight"
+  } ]
+}, {
+  "@id" : "_:genid31",
+  "http://purl.org/linked-data/cube#dimension" : [ {
+    "@id" : "https://w3id.org/sri#impact"
+  } ],
+  "http://purl.org/linked-data/cube#order" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2"
   } ]
 }, {
   "@id" : "_:genid6",
@@ -185,8 +195,17 @@
   "@id" : "http://purl.org/dc/terms/description",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://purl.org/dc/terms/issued",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/publisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://purl.org/dc/terms/source",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/linked-data/cube#",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "http://purl.org/linked-data/sdmx/2009/measure#obsValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
@@ -201,6 +220,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://schema.org/affiliation",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://schema.org/funding",
@@ -218,21 +240,27 @@
   "@id" : "http://www.w3.org/2004/02/skos/core#narrower",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
-  "@id" : "http://xmlns.com/foaf/0.1/name",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
   "@id" : "https://orcid.org/0000-0001-9521-8907",
-  "http://xmlns.com/foaf/0.1/name" : [ {
+  "http://schema.org/affiliation" : [ {
+    "@id" : "https://www.siemens.at/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Stefan Bischof"
   } ]
 }, {
   "@id" : "https://orcid.org/0000-0002-3050-159X",
-  "http://xmlns.com/foaf/0.1/name" : [ {
+  "http://schema.org/affiliation" : [ {
+    "@id" : "https://www.siemens.at/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Josiane Xavier Parreira"
   } ]
 }, {
   "@id" : "https://orcid.org/0000-0003-3445-0504",
-  "http://xmlns.com/foaf/0.1/name" : [ {
+  "http://schema.org/affiliation" : [ {
+    "@id" : "https://www.siemens.at/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Erwin Filtz"
   } ]
 }, {
@@ -257,12 +285,19 @@
   "http://purl.org/dc/terms/description" : [ {
     "@value" : "A vocabulary specifying concepts and structures needed to represent different data cubes needed for the Smart Readiness Indicator."
   } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2023-11-30"
+  } ],
   "http://purl.org/dc/terms/license" : [ {
     "@id" : "https://creativecommons.org/licenses/by/4.0/"
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2023-11-23"
+    "@value" : "2023-11-30"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@id" : "https://www.siemens.at/"
   } ],
   "http://purl.org/dc/terms/source" : [ {
     "@id" : "https://data.europa.eu/doi/10.2833/41100"
@@ -309,7 +344,148 @@
     "@value" : "1.0.0"
   } ]
 }, {
-  "@id" : "https://w3id.org/sri#AdaptTheirOperationToTheNeedsOfTheOccupant",
+  "@id" : "https://w3id.org/sri#Building",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This represents a building which is assessed."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Building"
+  } ]
+}, {
+  "@id" : "https://w3id.org/sri#Domain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Class of technical domains."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Domain"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/sri#FunctionalThing"
+  }, {
+    "@id" : "_:genid14"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/sri#Service"
+  } ]
+}, {
+  "@id" : "https://w3id.org/sri#FunctionalThing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Class of instances in the functional hierarchy, this includes Domains and Services."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "FunctionalThing"
+  } ]
+}, {
+  "@id" : "https://w3id.org/sri#Impact",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Class of Impacts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Impact"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/sri#ImpactThing"
+  }, {
+    "@id" : "_:genid15"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/sri#KeyCapability"
+  } ]
+}, {
+  "@id" : "https://w3id.org/sri#ImpactThing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Class of all instances in the impact hierarchy, this includes Impacts and Key Capabilities."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ImpactThing"
+  } ]
+}, {
+  "@id" : "https://w3id.org/sri#KeyCapability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Class of all Key Capabilities, aggregation of Impacts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "KeyCapability"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/sri#ImpactThing"
+  }, {
+    "@id" : "_:genid16"
+  } ]
+}, {
+  "@id" : "https://w3id.org/sri#Level",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Class of service levels."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Level"
+  } ]
+}, {
+  "@id" : "https://w3id.org/sri#Service",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Class for Services."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/sri#FunctionalThing"
+  }, {
+    "@id" : "_:genid17"
+  } ]
+}, {
+  "@id" : "https://w3id.org/sri#ServiceCatalogue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Service Catalogue is a collection of services used in an assessment."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Service catalogue"
+  } ]
+}, {
+  "@id" : "https://w3id.org/sri#ServiceLevel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Class for all ServiceLevel instances, which are all allowed/defined combinations of Services and Levels."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "service level"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid18"
+  }, {
+    "@id" : "_:genid19"
+  } ]
+}, {
+  "@id" : "https://w3id.org/sri#adaptTheirOperationToTheNeedsOfTheOccupant",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/sri#KeyCapability"
@@ -328,7 +504,7 @@
     "@id" : "https://w3id.org/sri#information_to_occupants"
   } ]
 }, {
-  "@id" : "https://w3id.org/sri#AdaptToSignalsFromTheGrid",
+  "@id" : "https://w3id.org/sri#adaptToSignalsFromTheGrid",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/sri#KeyCapability"
@@ -341,131 +517,12 @@
     "@id" : "https://w3id.org/sri#energy_flexibility_and_storage"
   } ]
 }, {
-  "@id" : "https://w3id.org/sri#Building",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Building"
-  } ]
-}, {
-  "@id" : "https://w3id.org/sri#Domain",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Domain"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/sri#FunctionalThing"
-  }, {
-    "@id" : "_:genid14"
-  } ],
-  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "https://w3id.org/sri#Service"
-  } ]
-}, {
-  "@id" : "https://w3id.org/sri#FunctionalThing",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "FunctionalThing"
-  } ]
-}, {
-  "@id" : "https://w3id.org/sri#Impact",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Impact"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/sri#ImpactThing"
-  }, {
-    "@id" : "_:genid15"
-  } ],
-  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "https://w3id.org/sri#KeyCapability"
-  } ]
-}, {
-  "@id" : "https://w3id.org/sri#ImpactThing",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "ImpactThing"
-  } ]
-}, {
-  "@id" : "https://w3id.org/sri#KeyCapability",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "KeyCapability"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/sri#ImpactThing"
-  }, {
-    "@id" : "_:genid16"
-  } ]
-}, {
-  "@id" : "https://w3id.org/sri#Level",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Level"
-  } ]
-}, {
-  "@id" : "https://w3id.org/sri#OptimiseEnergyEfficiencyAndOverallIn-UsePerformance",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/sri#KeyCapability"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Optimise energy efficiency and overall in-use performance"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#narrower" : [ {
-    "@id" : "https://w3id.org/sri#energy_efficiency"
-  }, {
-    "@id" : "https://w3id.org/sri#maintenance_and_fault_prediction"
-  } ]
-}, {
-  "@id" : "https://w3id.org/sri#Service",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Service"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/sri#FunctionalThing"
-  }, {
-    "@id" : "_:genid17"
-  } ]
-}, {
-  "@id" : "https://w3id.org/sri#ServiceCatalogue",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "service catalogue"
-  } ]
-}, {
-  "@id" : "https://w3id.org/sri#ServiceLevel",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "service level"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid18"
-  }, {
-    "@id" : "_:genid19"
-  } ]
-}, {
-  "@id" : "https://w3id.org/sri#Triage",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "triage"
-  } ]
-}, {
   "@id" : "https://w3id.org/sri#additionalLevel",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Additional Level if share is < 100%."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "additional level"
@@ -476,6 +533,10 @@
 }, {
   "@id" : "https://w3id.org/sri#assessment",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates something to an assessment dataset."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "assessment"
@@ -488,6 +549,10 @@
 }, {
   "@id" : "https://w3id.org/sri#building",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates something to a Building."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "building"
@@ -568,14 +633,26 @@
     "@id" : "_:genid26"
   } ]
 }, {
-  "@id" : "https://w3id.org/sri#dsd-weights",
+  "@id" : "https://w3id.org/sri#dsd-sriscores",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/linked-data/cube#DataStructureDefinition" ],
   "http://purl.org/linked-data/cube#component" : [ {
     "@id" : "_:genid27"
   }, {
     "@id" : "_:genid28"
-  }, {
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "SRI scores DSD"
+  } ]
+}, {
+  "@id" : "https://w3id.org/sri#dsd-weights",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/linked-data/cube#DataStructureDefinition" ],
+  "http://purl.org/linked-data/cube#component" : [ {
     "@id" : "_:genid29"
+  }, {
+    "@id" : "_:genid30"
+  }, {
+    "@id" : "_:genid31"
   } ]
 }, {
   "@id" : "https://w3id.org/sri#eV",
@@ -620,6 +697,10 @@
 }, {
   "@id" : "https://w3id.org/sri#function",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates something to a FunctionalThing."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "function"
@@ -650,12 +731,16 @@
 }, {
   "@id" : "https://w3id.org/sri#icscore",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/linked-data/cube#MeasureProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The impact criterion score is defined for Services and calculated for Domains in Step 3."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "impact criterion score"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid2"
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://purl.org/linked-data/sdmx/2009/measure#obsValue"
@@ -663,6 +748,10 @@
 }, {
   "@id" : "https://w3id.org/sri#impact",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates something to an ImpactThing."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "impact"
@@ -683,6 +772,10 @@
 }, {
   "@id" : "https://w3id.org/sri#level",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates something to a Level."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "level"
@@ -771,27 +864,50 @@
     "@value" : "Maintenance and fault prediction"
   } ]
 }, {
-  "@id" : "https://w3id.org/sri#mandatory",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/sri#Triage"
+  "@id" : "https://w3id.org/sri#max",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://purl.org/linked-data/cube#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Maximum impact criterion score. This is defined for Domains and calculated in Step 4."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "mandatory"
+    "@value" : "maximum impact criterion score"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/sri#FunctionalThing"
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "https://w3id.org/sri#optimiseEnergyEfficiencyAndOverallIn-UsePerformance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/sri#KeyCapability"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Optimise energy efficiency and overall in-use performance"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#narrower" : [ {
+    "@id" : "https://w3id.org/sri#energy_efficiency"
+  }, {
+    "@id" : "https://w3id.org/sri#maintenance_and_fault_prediction"
   } ]
 }, {
   "@id" : "https://w3id.org/sri#score",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/linked-data/cube#MeasureProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The smart-readiness score is defined for ImpactThings on all levels from Impacts to the complete Building (Steps 5, 6, and 7) and optionally for Domains (Step 8)"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "score"
+    "@value" : "smart-readiness score"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+    "@id" : "_:genid2"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://purl.org/linked-data/sdmx/2009/measure#obsValue"
@@ -799,6 +915,10 @@
 }, {
   "@id" : "https://w3id.org/sri#serviceCatalogue",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates something to a ServiceCatalogue."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "service catalogue"
@@ -809,19 +929,16 @@
 }, {
   "@id" : "https://w3id.org/sri#share",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A percentage (value between 0.0 and 1.0) which expresses that parts of a building are assessed with different levels wrt. a Service. If share is < 100% then additionalLevel has to be defined."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "share"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "_:genid6"
-  } ]
-}, {
-  "@id" : "https://w3id.org/sri#sriscores",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/linked-data/cube#DataStructureDefinition" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "SRI scores DSD"
   } ]
 }, {
   "@id" : "https://w3id.org/sri#topDomain",
@@ -832,6 +949,25 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "All domains"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#narrower" : [ {
+    "@id" : "https://w3id.org/sri#cooling"
+  }, {
+    "@id" : "https://w3id.org/sri#dE"
+  }, {
+    "@id" : "https://w3id.org/sri#dHW"
+  }, {
+    "@id" : "https://w3id.org/sri#eV"
+  }, {
+    "@id" : "https://w3id.org/sri#electricity"
+  }, {
+    "@id" : "https://w3id.org/sri#heating"
+  }, {
+    "@id" : "https://w3id.org/sri#lighting"
+  }, {
+    "@id" : "https://w3id.org/sri#mC"
+  }, {
+    "@id" : "https://w3id.org/sri#ventilation"
   } ]
 }, {
   "@id" : "https://w3id.org/sri#topImpact",
@@ -842,19 +978,13 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "All impacts"
-  } ]
-}, {
-  "@id" : "https://w3id.org/sri#triage",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/sri#ServiceCatalogue"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "triage"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/sri#Triage"
+  "http://www.w3.org/2004/02/skos/core#narrower" : [ {
+    "@id" : "https://w3id.org/sri#adaptTheirOperationToTheNeedsOfTheOccupant"
+  }, {
+    "@id" : "https://w3id.org/sri#adaptToSignalsFromTheGrid"
+  }, {
+    "@id" : "https://w3id.org/sri#optimiseEnergyEfficiencyAndOverallIn-UsePerformance"
   } ]
 }, {
   "@id" : "https://w3id.org/sri#ventilation",
@@ -868,7 +998,11 @@
   } ]
 }, {
   "@id" : "https://w3id.org/sri#weight",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/linked-data/cube#MeasureProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A weight of the weight matrix used for weighing the smart-readiness scores before aggregation."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "weight"
@@ -878,5 +1012,10 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://purl.org/linked-data/sdmx/2009/measure#obsValue"
+  } ]
+}, {
+  "@id" : "https://www.siemens.at/",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Siemens AG Österreich"
   } ]
 } ]
