@@ -88,20 +88,20 @@
 }, {
   "@id" : "_:genid20",
   "http://purl.org/linked-data/cube#dimension" : [ {
-    "@id" : "https://w3id.org/sri#level"
-  } ],
-  "http://purl.org/linked-data/cube#order" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "2"
-  } ]
-}, {
-  "@id" : "_:genid21",
-  "http://purl.org/linked-data/cube#dimension" : [ {
     "@id" : "https://w3id.org/sri#function"
   } ],
   "http://purl.org/linked-data/cube#order" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#integer",
     "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid21",
+  "http://purl.org/linked-data/cube#dimension" : [ {
+    "@id" : "https://w3id.org/sri#level"
+  } ],
+  "http://purl.org/linked-data/cube#order" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2"
   } ]
 }, {
   "@id" : "_:genid22",
@@ -110,29 +110,6 @@
   } ]
 }, {
   "@id" : "_:genid23",
-  "http://purl.org/linked-data/cube#measure" : [ {
-    "@id" : "https://w3id.org/sri#score"
-  } ]
-}, {
-  "@id" : "_:genid24",
-  "http://purl.org/linked-data/cube#dimension" : [ {
-    "@id" : "https://w3id.org/sri#level"
-  } ],
-  "http://purl.org/linked-data/cube#order" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "3"
-  } ]
-}, {
-  "@id" : "_:genid25",
-  "http://purl.org/linked-data/cube#dimension" : [ {
-    "@id" : "https://w3id.org/sri#function"
-  } ],
-  "http://purl.org/linked-data/cube#order" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "1"
-  } ]
-}, {
-  "@id" : "_:genid26",
   "http://purl.org/linked-data/cube#dimension" : [ {
     "@id" : "https://w3id.org/sri#impact"
   } ],
@@ -141,13 +118,36 @@
     "@value" : "2"
   } ]
 }, {
-  "@id" : "_:genid27",
+  "@id" : "_:genid24",
   "http://purl.org/linked-data/cube#dimension" : [ {
     "@id" : "https://w3id.org/sri#function"
   } ],
   "http://purl.org/linked-data/cube#order" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#integer",
     "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid25",
+  "http://purl.org/linked-data/cube#dimension" : [ {
+    "@id" : "https://w3id.org/sri#level"
+  } ],
+  "http://purl.org/linked-data/cube#order" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "3"
+  } ]
+}, {
+  "@id" : "_:genid26",
+  "http://purl.org/linked-data/cube#measure" : [ {
+    "@id" : "https://w3id.org/sri#score"
+  } ]
+}, {
+  "@id" : "_:genid27",
+  "http://purl.org/linked-data/cube#dimension" : [ {
+    "@id" : "https://w3id.org/sri#impact"
+  } ],
+  "http://purl.org/linked-data/cube#order" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2"
   } ]
 }, {
   "@id" : "_:genid28",
@@ -157,11 +157,11 @@
 }, {
   "@id" : "_:genid29",
   "http://purl.org/linked-data/cube#dimension" : [ {
-    "@id" : "https://w3id.org/sri#impact"
+    "@id" : "https://w3id.org/sri#function"
   } ],
   "http://purl.org/linked-data/cube#order" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "2"
+    "@value" : "1"
   } ]
 }, {
   "@id" : "_:genid6",
