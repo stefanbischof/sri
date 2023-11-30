@@ -1,3 +1,6 @@
+---
+render_with_liquid: false
+---
 # Competency Questions
 
 The list of competency questions.
