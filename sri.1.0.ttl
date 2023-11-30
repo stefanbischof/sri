@@ -311,18 +311,18 @@ sri:topImpact rdf:type sri:ImpactThing ;
 
 ### Key Capabilities
 
-sri:AdaptTheirOperationToTheNeedsOfTheOccupant a sri:KeyCapability ;
+sri:adaptTheirOperationToTheNeedsOfTheOccupant a sri:KeyCapability ;
     rdfs:label "Adapt their operation to the needs of the occupant"@en ;
     skos:narrower sri:comfort,
         sri:convenience,
         sri:health_well_being_and_accessibility,
         sri:information_to_occupants .
 
-sri:AdaptToSignalsFromTheGrid a sri:KeyCapability ;
+sri:adaptToSignalsFromTheGrid a sri:KeyCapability ;
     rdfs:label "Adapt to signals from the grid"@en ;
     skos:narrower sri:energy_flexibility_and_storage .
 
-sri:OptimiseEnergyEfficiencyAndOverallIn-UsePerformance a sri:KeyCapability ;
+sri:optimiseEnergyEfficiencyAndOverallIn-UsePerformance a sri:KeyCapability ;
     rdfs:label "Optimise energy efficiency and overall in-use performance"@en ;
     skos:narrower sri:energy_efficiency,
         sri:maintenance_and_fault_prediction .
