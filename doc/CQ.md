@@ -5,7 +5,7 @@ render_with_liquid: false
 
 The list of competency questions.
 
-#### CQ 1: Who performed an assessment for a building and when?
+## CQ 1: Who performed an assessment for a building and when?
 
 ```sparql
 SELECT ?agentIRI ?fullName ?id ?email ?creationDate WHERE {
@@ -17,13 +17,14 @@ SELECT ?agentIRI ?fullName ?id ?email ?creationDate WHERE {
     BIND(REPLACE(STR(?mbox),"mailto:","") AS ?email) 
 }
 ```
-##### Result
+
+### Result
 
 | agentIRI | fullName | id | email | creationDate |
 |---|---| --- | ---|---|
 | sri:agent1 | "John Doe"  | "abc123" | "john.doe@example.com" | "2023-11-28"^^xsd:date |
 
-#### CQ 2: What is the SRI score of a building?
+## CQ 2: What is the SRI score of a building?
 
 ```sparql
 SELECT ?score WHERE { 
@@ -36,13 +37,14 @@ SELECT ?score WHERE {
         sri:score ?score .
 }
 ```
-##### Result
 
-| score | 
+### Result
+
+| score |
 |---|
 | "3.52"^^xsd:float |
 
-#### CQ 3: What are the impact scores of an assessment (in a specific order)?
+## CQ 3: What are the impact scores of an assessment (in a specific order)?
 
 ```sparql
 SELECT ?impactIRI ?impactLabel (ROUND(?score_*100)/100 as ?score) WHERE { 
@@ -60,7 +62,9 @@ SELECT ?impactIRI ?impactLabel (ROUND(?score_*100)/100 as ?score) WHERE {
         rdfs:label ?impactLabel .
 } ORDER BY ?position
 ```
-##### Result
+
+### Result
+
 | impactIRI | impactLabel | score |
 |---|---|---|
 | sri:energy_efficiency | "Energy efficiency" | "5.77"^^xsd:float |
@@ -68,9 +72,7 @@ SELECT ?impactIRI ?impactLabel (ROUND(?score_*100)/100 as ?score) WHERE {
 | sri:comfort | "Comfort" | "8.74"^^xsd:float |
 | ... | ... | ... |
 
-
-
-#### CQ 4: What are the SRI scores for the different SRI services of a given building and assessment?
+## CQ 4: What are the SRI scores for the different SRI services of a given building and assessment?
 
 ```sparql
 SELECT ?domainIRI ?domainLabel 
@@ -124,7 +126,9 @@ SELECT ?domainIRI ?domainLabel
 		   rdf:type sri:Domain .
 } GROUP BY ?domainIRI ?domainLabel
 ```
-##### Result
+
+### Result
+
 | domainIRI | domainLabel | comfort | convenience | health | ... |
 |---|---|---|---|---|---|
 | sri:heating | "Heating" | "16.67"^^xsd:decimal | "18.18"^^xsd:decimal | "40"^^xsd:decimal | ... |
@@ -132,7 +136,7 @@ SELECT ?domainIRI ?domainLabel
 | sri:cooling | "Cooling" | "10"^^xsd:decimal | "18.18"^^xsd:decimal | "40"^^xsd:decimal | ... |
 | ... | ... | ... | ... | ... | ... |
 
-#### CQ 5: How did the SRI score change over time between two assessments of a building?
+## CQ 5: How did the SRI score change over time between two assessments of a building?
 
 ```sparql
 SELECT ?SRI ?score1 ?score2 WHERE { {
@@ -165,7 +169,8 @@ SELECT ?SRI ?score1 ?score2 WHERE { {
                 BIND(STR(ROUND(?value_2*100)/100) as ?score2)
 } } } GROUP BY ?SRI ?score1 ?score2
 ```
-##### Result
+
+### Result
 
 | domainLabel | score 1 | score2 |
 |---|---| -- |
