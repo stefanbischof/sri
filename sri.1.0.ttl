@@ -48,209 +48,182 @@
 <https://www.siemens.at/> rdfs:label "Siemens AG Österreich" .
 
 #################################################################
-#    Object Properties
+#  Object Properties
 #################################################################
 
 
-###  https://w3id.org/sri#additionalLevel
 sri:additionalLevel rdf:type owl:ObjectProperty ;
-                    rdfs:range sri:Level ;
-                    rdfs:label "additional level"@en .
+  rdfs:range sri:Level ;
+  rdfs:label "additional level"@en ;
+  rdfs:comment "Additional Level if share is < 100%."@en .
 
 
-###  https://w3id.org/sri#assessment
 sri:assessment rdf:type owl:ObjectProperty ;
-               rdfs:range qb:DataSet ;
-               rdfs:range [ rdf:type owl:Restriction ;
-                        owl:onProperty qb:structure ;
-                        owl:hasValue sri:dsd-assessment
-                                                 ] ;
-                rdfs:label "assessment"@en .
+  rdfs:range qb:DataSet ;
+  rdfs:range [ rdf:type owl:Restriction ;
+    owl:onProperty qb:structure ;
+    owl:hasValue sri:dsd-assessment ] ;
+  rdfs:label "assessment"@en ;
+  rdfs:comment "Relates something to an assessment dataset."@en .
 
 
-###  https://w3id.org/sri#function
-sri:function rdf:type owl:ObjectProperty ,
-                      owl:FunctionalProperty ;
-             rdfs:range sri:FunctionalThing ;
-             rdfs:label "function"@en .
+sri:function rdf:type owl:ObjectProperty , owl:FunctionalProperty ;
+  rdfs:range sri:FunctionalThing ;
+  rdfs:label "function"@en ;
+  rdfs:comment "Relates something to a FunctionalThing."@en .
 
 
 sri:building rdf:type owl:ObjectProperty ;
-        rdfs:range sri:Building ;
-        rdfs:label "building"@en .
+  rdfs:range sri:Building ;
+  rdfs:label "building"@en ;
+  rdfs:comment "Relates something to a Building."@en .
 
 
-###  https://w3id.org/sri#impact
-sri:impact rdf:type owl:ObjectProperty ,
-                    owl:FunctionalProperty ;
-           rdfs:range sri:ImpactThing ;
-           rdfs:label "impact"@en .
+sri:impact rdf:type owl:ObjectProperty , owl:FunctionalProperty ;
+  rdfs:range sri:ImpactThing ;
+  rdfs:label "impact"@en ;
+  rdfs:comment "Relates something to an ImpactThing."@en .
 
 
-###  https://w3id.org/sri#level
-sri:level rdf:type owl:ObjectProperty ,
-                   owl:FunctionalProperty ;
-          rdfs:range sri:Level ;
-          rdfs:label "level"@en .
+sri:level rdf:type owl:ObjectProperty , owl:FunctionalProperty ;
+  rdfs:range sri:Level ;
+  rdfs:label "level"@en ;
+  rdfs:comment "Relates something to a Level."@en .
 
 
-###  https://w3id.org/sri#mandatory
-sri:mandatory rdf:type owl:ObjectProperty ;
-              rdfs:domain sri:Triage ;
-              rdfs:range sri:FunctionalThing ;
-              rdfs:label "mandatory"@en .
-
-
-###  https://w3id.org/sri#serviceCatalogue
 sri:serviceCatalogue rdf:type owl:ObjectProperty ;
-                     rdfs:range sri:ServiceCatalogue ;
-        rdfs:label "service catalogue"@en ;
-        rdfs:range sri:ServiceCatalogue .
-
-
-###  https://w3id.org/sri#triage
-sri:triage rdf:type owl:ObjectProperty ;
-           rdfs:range sri:Triage ;
-           rdfs:domain sri:ServiceCatalogue ;
-           rdfs:label "triage"@en .
+  rdfs:range sri:ServiceCatalogue ;
+  rdfs:label "service catalogue"@en ;
+  rdfs:comment "Relates something to a ServiceCatalogue."@en .
 
 
 #################################################################
-#    Data properties
+#  Data properties
 #################################################################
 
 
-###  https://w3id.org/sri#icscore
+sri:max rdf:type owl:DatatypeProperty , qb: ;
+  rdfs:range xsd:integer ;
+  rdfs:label "maximum impact criterion score"@en ;
+  rdfs:comment "Maximum impact criterion score. This is defined for Domains and calculated in Step 4."@en .
+
+
 sri:icscore rdf:type owl:DatatypeProperty , qb:MeasureProperty ;
-        rdfs:subPropertyOf sdmx-measure:obsValue ;
-        rdfs:range [ rdf:type rdfs:Datatype ;
-                        owl:unionOf ( xsd:decimal
-                                xsd:double
-                                xsd:float
-                                )
-                ] ;
-        rdfs:label "impact criterion score"@en .
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:range xsd:integer ;
+  rdfs:label "impact criterion score"@en ;
+  rdfs:comment "The impact criterion score is defined for Services and calculated for Domains in Step 3."@en .
 
 
-###  https://w3id.org/sri#score
 sri:score rdf:type owl:DatatypeProperty , qb:MeasureProperty , owl:FunctionalProperty;
-          rdfs:subPropertyOf sdmx-measure:obsValue ;
-          rdfs:range xsd:integer ;
-          rdfs:label "score"@en .
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:range [ rdf:type rdfs:Datatype ;
+    owl:unionOf ( xsd:decimal xsd:double xsd:float )
+  ] ;
+  rdfs:label "smart-readiness score"@en ;
+  rdfs:comment "The smart-readiness score is defined for ImpactThings on all levels from Impacts to the complete Building (Steps 5, 6, and 7) and optionally for Domains (Step 8)"@en .
 
 
-###  https://w3id.org/sri#share
 sri:share rdf:type owl:DatatypeProperty ,
-                   owl:FunctionalProperty ;
-          rdfs:range [ rdf:type rdfs:Datatype ;
-                       owl:unionOf ( xsd:decimal
-                                     xsd:double
-                                     xsd:float
-                                   )
-                     ] ;
-          rdfs:label "share"@en .
+  owl:FunctionalProperty ;
+  rdfs:range [ rdf:type rdfs:Datatype ;
+    owl:unionOf ( xsd:decimal xsd:double xsd:float )
+  ] ;
+  rdfs:label "share"@en ;
+  rdfs:comment "A percentage (value between 0.0 and 1.0) which expresses that parts of a building are assessed with different levels wrt. a Service. If share is < 100% then additionalLevel has to be defined."@en .
 
 
-###  https://w3id.org/sri#weight
-sri:weight rdf:type owl:DatatypeProperty , owl:FunctionalProperty;
-           rdfs:subPropertyOf sdmx-measure:obsValue ;
-           rdfs:range [ rdf:type rdfs:Datatype ;
-                        owl:unionOf ( xsd:decimal
-                                      xsd:double
-                                      xsd:float
-                                    )
-                      ] ;
-           rdfs:label "weight"@en .
+sri:weight rdf:type owl:DatatypeProperty , qb:MeasureProperty, owl:FunctionalProperty;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:range [ rdf:type rdfs:Datatype ;
+    owl:unionOf ( xsd:decimal xsd:double xsd:float ) ] ;
+  rdfs:label "weight"@en ;
+  rdfs:comment "A weight of the weight matrix used for weighing the smart-readiness scores before aggregation."@en .
 
 
 #################################################################
-#    Classes
+#  Classes
 #################################################################
 
 
-###  https://w3id.org/sri#Building
 sri:Building rdf:type owl:Class ;
-             rdfs:label "Building"@en .
+  rdfs:label "Building"@en ;
+  rdfs:comment "This represents a building which is assessed."@en .
 
 
-###  https://w3id.org/sri#Domain
 sri:Domain rdf:type owl:Class ;
-           rdfs:subClassOf sri:FunctionalThing ,
-                           [ rdf:type owl:Restriction ;
-                             owl:onProperty skos:narrower ;
-                             owl:allValuesFrom sri:Service
-                           ] ;
-           owl:disjointWith sri:Service ;
-           rdfs:label "Domain"@en .
+  rdfs:subClassOf sri:FunctionalThing ,
+    [ rdf:type owl:Restriction ;
+      owl:onProperty skos:narrower ;
+      owl:allValuesFrom sri:Service
+    ] ;
+  owl:disjointWith sri:Service ;
+  rdfs:label "Domain"@en ;
+  rdfs:comment "Class of technical domains."@en .
 
 
-###  https://w3id.org/sri#FunctionalThing
 sri:FunctionalThing rdf:type owl:Class ;
-                    rdfs:label "FunctionalThing"@en .
+  rdfs:label "FunctionalThing"@en ;
+  rdfs:comment "Class of instances in the functional hierarchy, this includes Domains and Services."@en .
 
 
-###  https://w3id.org/sri#Impact
 sri:Impact rdf:type owl:Class ;
-           rdfs:subClassOf sri:ImpactThing ,
-                           [ rdf:type owl:Restriction ;
-                             owl:onProperty skos:broader ;
-                             owl:allValuesFrom sri:KeyCapability
-                           ] ;
-           owl:disjointWith sri:KeyCapability ;
-           rdfs:label "Impact"@en .
+  rdfs:subClassOf sri:ImpactThing ,
+  [ rdf:type owl:Restriction ;
+    owl:onProperty skos:broader ;
+    owl:allValuesFrom sri:KeyCapability
+  ] ;
+  owl:disjointWith sri:KeyCapability ;
+  rdfs:label "Impact"@en ;
+  rdfs:comment "Class of Impacts."@en .
 
 
-###  https://w3id.org/sri#ImpactThing
 sri:ImpactThing rdf:type owl:Class ;
-                rdfs:label "ImpactThing"@en .
+  rdfs:label "ImpactThing"@en ;
+  rdfs:comment "Class of all instances in the impact hierarchy, this includes Impacts and Key Capabilities."@en .
 
 
-###  https://w3id.org/sri#KeyCapability
 sri:KeyCapability rdf:type owl:Class ;
-                  rdfs:subClassOf sri:ImpactThing ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty skos:narrower ;
-                                    owl:allValuesFrom sri:Impact
-                                  ] ;
-                  rdfs:label "KeyCapability"@en .
+  rdfs:subClassOf sri:ImpactThing ,
+  [ rdf:type owl:Restriction ;
+    owl:onProperty skos:narrower ;
+    owl:allValuesFrom sri:Impact
+  ] ;
+  rdfs:label "KeyCapability"@en ;
+  rdfs:comment "Class of all Key Capabilities, aggregation of Impacts."@en .
 
 
-###  https://w3id.org/sri#Level
 sri:Level rdf:type owl:Class ;
-          rdfs:label "Level"@en .
+  rdfs:label "Level"@en ;
+  rdfs:comment "Class of service levels."@en .
 
 
-###  https://w3id.org/sri#Service
 sri:Service rdf:type owl:Class ;
-            rdfs:subClassOf sri:FunctionalThing ,
-                            [ rdf:type owl:Restriction ;
-                              owl:onProperty skos:broader ;
-                              owl:allValuesFrom sri:Domain
-                            ] ;
-            rdfs:label "Service"@en .
+  rdfs:subClassOf sri:FunctionalThing ,
+  [ rdf:type owl:Restriction ;
+    owl:onProperty skos:broader ;
+    owl:allValuesFrom sri:Domain
+  ] ;
+  rdfs:label "Service"@en ;
+  rdfs:comment "Class for Services."@en .
 
 
-###  https://w3id.org/sri#ServiceCatalogue
 sri:ServiceCatalogue rdf:type owl:Class ;
-        rdfs:label "service catalogue"@en .
+  rdfs:label "Service catalogue"@en ;
+  rdfs:comment "A Service Catalogue is a collection of services used in an assessment."@en .
 
 
-###  https://w3id.org/sri#ServiceLevel
 sri:ServiceLevel rdf:type owl:Class ;
-                 rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                   owl:onProperty sri:function ;
-                                   owl:someValuesFrom sri:Service
-                                 ] ,
-                                 [ rdf:type owl:Restriction ;
-                                   owl:onProperty sri:level ;
-                                   owl:someValuesFrom sri:Level
-                                 ] ;
-                 rdfs:label "service level"@en .
-
-
-###  https://w3id.org/sri#Triage
-sri:Triage rdf:type owl:Class ;
-        rdfs:label "triage"@en .
+  rdfs:subClassOf [ rdf:type owl:Restriction ;
+    owl:onProperty sri:function ;
+    owl:someValuesFrom sri:Service
+  ] ,
+  [ rdf:type owl:Restriction ;
+    owl:onProperty sri:level ;
+    owl:someValuesFrom sri:Level
+  ] ;
+  rdfs:label "service level"@en ;
+  rdfs:comment "Class for all ServiceLevel instances, which are all allowed/defined combinations of Services and Levels."@en .
 
 
 #################################################################
