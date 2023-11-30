@@ -355,11 +355,11 @@
                                                              _:genid21 ,
                                                              _:genid22 .
 
-_:genid20 <http://purl.org/linked-data/cube#dimension> :function ;
-           <http://purl.org/linked-data/cube#order> 1 .
-
-_:genid21 <http://purl.org/linked-data/cube#dimension> :level ;
+_:genid20 <http://purl.org/linked-data/cube#dimension> :level ;
            <http://purl.org/linked-data/cube#order> 2 .
+
+_:genid21 <http://purl.org/linked-data/cube#dimension> :function ;
+           <http://purl.org/linked-data/cube#order> 1 .
 
 _:genid22 <http://purl.org/linked-data/cube#measure> :score .
 
@@ -372,16 +372,16 @@ _:genid22 <http://purl.org/linked-data/cube#measure> :score .
                                                          _:genid25 ,
                                                          _:genid26 .
 
-_:genid23 <http://purl.org/linked-data/cube#dimension> :impact ;
+_:genid23 <http://purl.org/linked-data/cube#measure> :score .
+
+_:genid24 <http://purl.org/linked-data/cube#dimension> :impact ;
            <http://purl.org/linked-data/cube#order> 2 .
 
-_:genid24 <http://purl.org/linked-data/cube#dimension> :function ;
+_:genid25 <http://purl.org/linked-data/cube#dimension> :function ;
            <http://purl.org/linked-data/cube#order> 1 .
 
-_:genid25 <http://purl.org/linked-data/cube#dimension> :level ;
+_:genid26 <http://purl.org/linked-data/cube#dimension> :level ;
            <http://purl.org/linked-data/cube#order> 3 .
-
-_:genid26 <http://purl.org/linked-data/cube#measure> :score .
 
 
 ###  https://w3id.org/sri#dsd-weights
