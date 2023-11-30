@@ -601,12 +601,12 @@
         <cube:component rdf:nodeID="genid22"/>
     </owl:NamedIndividual>
     <rdf:Description rdf:nodeID="genid20">
-        <cube:dimension rdf:resource="https://w3id.org/sri#function"/>
-        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</cube:order>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid21">
         <cube:dimension rdf:resource="https://w3id.org/sri#level"/>
         <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</cube:order>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid21">
+        <cube:dimension rdf:resource="https://w3id.org/sri#function"/>
+        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</cube:order>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid22">
         <cube:measure rdf:resource="https://w3id.org/sri#score"/>
@@ -625,19 +625,19 @@
         <cube:component rdf:nodeID="genid26"/>
     </owl:NamedIndividual>
     <rdf:Description rdf:nodeID="genid23">
+        <cube:measure rdf:resource="https://w3id.org/sri#score"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid24">
         <cube:dimension rdf:resource="https://w3id.org/sri#impact"/>
         <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</cube:order>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid24">
+    <rdf:Description rdf:nodeID="genid25">
         <cube:dimension rdf:resource="https://w3id.org/sri#function"/>
         <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</cube:order>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid25">
+    <rdf:Description rdf:nodeID="genid26">
         <cube:dimension rdf:resource="https://w3id.org/sri#level"/>
         <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</cube:order>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid26">
-        <cube:measure rdf:resource="https://w3id.org/sri#score"/>
     </rdf:Description>
     
 
