@@ -40,17 +40,17 @@
         "value" : "2022-02-02",
         "type" : "label"
       } ],
-      "versionInfo" : [ {
-        "identifier" : "versionInfo",
-        "language" : "undefined",
-        "value" : "1.0.0",
-        "type" : "label"
-      } ],
       "source" : [ {
         "identifier" : "source",
         "language" : "undefined",
         "value" : "https://data.europa.eu/doi/10.2833/41100",
         "type" : "iri"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.0.0",
+        "type" : "label"
       } ],
       "title" : [ {
         "identifier" : "title",
@@ -73,12 +73,12 @@
       "contributor" : [ {
         "identifier" : "contributor",
         "language" : "undefined",
-        "value" : "https://orcid.org/0000-0003-3445-0504",
+        "value" : "https://orcid.org/0000-0002-3050-159X",
         "type" : "iri"
       }, {
         "identifier" : "contributor",
         "language" : "undefined",
-        "value" : "https://orcid.org/0000-0002-3050-159X",
+        "value" : "https://orcid.org/0000-0003-3445-0504",
         "type" : "iri"
       } ],
       "preferredNamespacePrefix" : [ {
@@ -87,28 +87,28 @@
         "value" : "sri",
         "type" : "label"
       } ],
-      "logo" : [ {
-        "identifier" : "logo",
-        "language" : "undefined",
-        "value" : "https://raw.githubusercontent.com/stefanbischof/sri/main/srilogo.svg",
-        "type" : "iri"
-      } ],
       "modified" : [ {
         "identifier" : "modified",
         "language" : "undefined",
         "value" : "2023-11-23",
         "type" : "label"
       } ],
-      "bibliographicCitation" : [ {
-        "identifier" : "bibliographicCitation",
-        "language" : "en",
-        "value" : "Stefan Bischof, Erwin Filtz, Josiane Xavier Parreira. Smart Readiness Indicator Vocabulary. Revision: 1.0.0. Retrieved from: https://w3id.org/sri/1.0",
-        "type" : "label"
+      "logo" : [ {
+        "identifier" : "logo",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/stefanbischof/sri/main/srilogo.svg",
+        "type" : "iri"
       } ],
       "preferredNamespaceUri" : [ {
         "identifier" : "preferredNamespaceUri",
         "language" : "undefined",
         "value" : "https://w3id.org/sri#",
+        "type" : "label"
+      } ],
+      "bibliographicCitation" : [ {
+        "identifier" : "bibliographicCitation",
+        "language" : "en",
+        "value" : "Stefan Bischof, Erwin Filtz, Josiane Xavier Parreira. Smart Readiness Indicator Vocabulary. Revision: 1.0.0. Retrieved from: https://w3id.org/sri/1.0",
         "type" : "label"
       } ],
       "status" : [ {
@@ -274,7 +274,7 @@
     "id" : "2",
     "type" : "owl:equivalentClass"
   }, {
-    "id" : "88",
+    "id" : "87",
     "type" : "owl:Class"
   }, {
     "id" : "30",
@@ -594,7 +594,7 @@
         }, {
           "identifier" : "narrower",
           "language" : "undefined",
-          "value" : "https://w3id.org/sri#comfort",
+          "value" : "https://w3id.org/sri#information_to_occupants",
           "type" : "iri"
         }, {
           "identifier" : "narrower",
@@ -604,7 +604,7 @@
         }, {
           "identifier" : "narrower",
           "language" : "undefined",
-          "value" : "https://w3id.org/sri#information_to_occupants",
+          "value" : "https://w3id.org/sri#comfort",
           "type" : "iri"
         } ]
       },
@@ -888,18 +888,18 @@
       "en" : "Impact"
     },
     "individuals" : [ {
-      "iri" : "https://w3id.org/sri#maintenance_and_fault_prediction",
-      "baseIri" : "https://w3id.org/sri",
-      "labels" : {
-        "IRI-based" : "maintenance_and_fault_prediction",
-        "en" : "Maintenance and fault prediction"
-      }
-    }, {
       "iri" : "https://w3id.org/sri#energy_efficiency",
       "baseIri" : "https://w3id.org/sri",
       "labels" : {
         "IRI-based" : "energy_efficiency",
         "en" : "Energy efficiency"
+      }
+    }, {
+      "iri" : "https://w3id.org/sri#maintenance_and_fault_prediction",
+      "baseIri" : "https://w3id.org/sri",
+      "labels" : {
+        "IRI-based" : "maintenance_and_fault_prediction",
+        "en" : "Maintenance and fault prediction"
       }
     }, {
       "iri" : "https://w3id.org/sri#comfort",
@@ -1156,7 +1156,7 @@
       "IRI-based" : "Class"
     },
     "attributes" : [ "external" ],
-    "id" : "88"
+    "id" : "87"
   }, {
     "iri" : "http://purl.org/linked-data/cube#DataSet",
     "equivalent" : [ "32" ],
@@ -1318,7 +1318,7 @@
     "id" : "86",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "87",
+    "id" : "88",
     "type" : "owl:objectProperty"
   }, {
     "id" : "74",
@@ -1349,10 +1349,10 @@
     "type" : "owl:objectProperty"
   }, {
     "id" : "95",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "96",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "97",
     "type" : "owl:allValuesFrom"
@@ -1727,7 +1727,7 @@
       "en" : "function"
     },
     "domain" : "19",
-    "attributes" : [ "functional", "object" ],
+    "attributes" : [ "object", "functional" ],
     "id" : "81"
   }, {
     "range" : "5",
@@ -1750,6 +1750,28 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "85"
   }, {
+    "iri" : "http://purl.org/linked-data/cube#componentAttachment",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "range" : "87",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "componentAttachment",
+      "en" : "component attachment"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Indicates the level at which the component property should be attached, this might an qb:DataSet, qb:Slice or qb:Observation, or a qb:MeasureProperty."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "86"
+  }, {
     "iri" : "http://purl.org/linked-data/cube#structure",
     "baseIri" : "http://purl.org/linked-data/cube",
     "range" : "10",
@@ -1770,29 +1792,7 @@
       "en" : "indicates the structure to which this data set conforms"
     },
     "attributes" : [ "object", "external" ],
-    "id" : "86"
-  }, {
-    "iri" : "http://purl.org/linked-data/cube#componentAttachment",
-    "baseIri" : "http://purl.org/linked-data/cube",
-    "range" : "88",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://purl.org/linked-data/cube",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "componentAttachment",
-      "en" : "component attachment"
-    },
-    "domain" : "4",
-    "comment" : {
-      "en" : "Indicates the level at which the component property should be attached, this might an qb:DataSet, qb:Slice or qb:Observation, or a qb:MeasureProperty."
-    },
-    "attributes" : [ "object", "external" ],
-    "id" : "87"
+    "id" : "88"
   }, {
     "iri" : "http://purl.org/linked-data/cube#attribute",
     "baseIri" : "http://purl.org/linked-data/cube",
@@ -1951,6 +1951,16 @@
     "attributes" : [ "object" ],
     "id" : "94"
   }, {
+    "iri" : "http://purl.org/linked-data/sdmx/2009/measure#obsValue",
+    "baseIri" : "http://purl.org/linked-data/sdmx/2009/measure",
+    "range" : "42",
+    "label" : {
+      "IRI-based" : "obsValue"
+    },
+    "domain" : "17",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "95"
+  }, {
     "iri" : "https://w3id.org/sri#additionalLevel",
     "baseIri" : "https://w3id.org/sri",
     "range" : "21",
@@ -1960,16 +1970,6 @@
     },
     "domain" : "39",
     "attributes" : [ "object" ],
-    "id" : "95"
-  }, {
-    "iri" : "http://purl.org/linked-data/sdmx/2009/measure#obsValue",
-    "baseIri" : "http://purl.org/linked-data/sdmx/2009/measure",
-    "range" : "42",
-    "label" : {
-      "IRI-based" : "obsValue"
-    },
-    "domain" : "17",
-    "attributes" : [ "datatype", "external" ],
     "id" : "96"
   }, {
     "iri" : "http://www.w3.org/2004/02/skos/core#narrower",
@@ -1979,7 +1979,7 @@
       "IRI-based" : "narrower"
     },
     "domain" : "79",
-    "attributes" : [ "object", "external", "allValues" ],
+    "attributes" : [ "object", "allValues", "external" ],
     "id" : "97"
   }, {
     "range" : "71",
@@ -1994,7 +1994,7 @@
       "IRI-based" : "broader"
     },
     "domain" : "60",
-    "attributes" : [ "object", "external", "allValues" ],
+    "attributes" : [ "object", "allValues", "external" ],
     "id" : "99"
   }, {
     "range" : "40",
@@ -2009,7 +2009,7 @@
       "IRI-based" : "narrower"
     },
     "domain" : "40",
-    "attributes" : [ "object", "external", "allValues" ],
+    "attributes" : [ "object", "allValues", "external" ],
     "id" : "101"
   }, {
     "iri" : "http://www.w3.org/2004/02/skos/core#broader",
@@ -2019,19 +2019,8 @@
       "IRI-based" : "broader"
     },
     "domain" : "71",
-    "attributes" : [ "object", "external", "allValues" ],
+    "attributes" : [ "object", "allValues", "external" ],
     "id" : "102"
-  }, {
-    "iri" : "https://w3id.org/sri#level",
-    "baseIri" : "https://w3id.org/sri",
-    "range" : "21",
-    "label" : {
-      "IRI-based" : "level",
-      "en" : "level"
-    },
-    "domain" : "50",
-    "attributes" : [ "someValues", "functional", "object" ],
-    "id" : "103"
   }, {
     "iri" : "https://w3id.org/sri#function",
     "baseIri" : "https://w3id.org/sri",
@@ -2041,7 +2030,18 @@
       "en" : "function"
     },
     "domain" : "50",
-    "attributes" : [ "someValues", "functional", "object" ],
+    "attributes" : [ "object", "functional", "someValues" ],
+    "id" : "103"
+  }, {
+    "iri" : "https://w3id.org/sri#level",
+    "baseIri" : "https://w3id.org/sri",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "level",
+      "en" : "level"
+    },
+    "domain" : "50",
+    "attributes" : [ "object", "functional", "someValues" ],
     "id" : "104"
   }, {
     "range" : "13",
@@ -2139,7 +2139,7 @@
       "en" : "impact"
     },
     "domain" : "20",
-    "attributes" : [ "functional", "object" ],
+    "attributes" : [ "object", "functional" ],
     "id" : "111"
   }, {
     "iri" : "http://purl.org/linked-data/cube#observation",
@@ -2172,7 +2172,7 @@
       "en" : "level"
     },
     "domain" : "39",
-    "attributes" : [ "functional", "object" ],
+    "attributes" : [ "object", "functional" ],
     "id" : "113"
   }, {
     "iri" : "http://purl.org/linked-data/cube#componentRequired",
