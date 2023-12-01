@@ -153,11 +153,11 @@
 }, {
   "@id" : "_:genid29",
   "http://purl.org/linked-data/cube#dimension" : [ {
-    "@id" : "https://w3id.org/sri#function"
+    "@id" : "https://w3id.org/sri#impact"
   } ],
   "http://purl.org/linked-data/cube#order" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "1"
+    "@value" : "2"
   } ]
 }, {
   "@id" : "_:genid30",
@@ -167,11 +167,11 @@
 }, {
   "@id" : "_:genid31",
   "http://purl.org/linked-data/cube#dimension" : [ {
-    "@id" : "https://w3id.org/sri#impact"
+    "@id" : "https://w3id.org/sri#function"
   } ],
   "http://purl.org/linked-data/cube#order" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "2"
+    "@value" : "1"
   } ]
 }, {
   "@id" : "_:genid6",
@@ -222,18 +222,6 @@
   "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://schema.org/affiliation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://schema.org/funding",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://schema.org/image",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://schema.org/logo",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
   "@id" : "http://www.w3.org/2004/02/skos/core#broader",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
@@ -241,28 +229,40 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
   "@id" : "https://orcid.org/0000-0001-9521-8907",
-  "http://schema.org/affiliation" : [ {
-    "@id" : "https://www.siemens.at/"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Stefan Bischof"
+  } ],
+  "https://schema.org/affiliation" : [ {
+    "@id" : "https://www.siemens.at/"
   } ]
 }, {
   "@id" : "https://orcid.org/0000-0002-3050-159X",
-  "http://schema.org/affiliation" : [ {
-    "@id" : "https://www.siemens.at/"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Josiane Xavier Parreira"
+  } ],
+  "https://schema.org/affiliation" : [ {
+    "@id" : "https://www.siemens.at/"
   } ]
 }, {
   "@id" : "https://orcid.org/0000-0003-3445-0504",
-  "http://schema.org/affiliation" : [ {
-    "@id" : "https://www.siemens.at/"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Erwin Filtz"
+  } ],
+  "https://schema.org/affiliation" : [ {
+    "@id" : "https://www.siemens.at/"
   } ]
+}, {
+  "@id" : "https://schema.org/affiliation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://schema.org/funding",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://schema.org/image",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://schema.org/logo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "https://w3id.org/sri",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
@@ -318,15 +318,6 @@
   "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
     "@value" : "https://w3id.org/sri#"
   } ],
-  "http://schema.org/funding" : [ {
-    "@id" : "https://cordis.europa.eu/project/id/893079"
-  } ],
-  "http://schema.org/image" : [ {
-    "@id" : "https://raw.githubusercontent.com/stefanbischof/sri/main/sridiagram.svg"
-  } ],
-  "http://schema.org/logo" : [ {
-    "@id" : "https://raw.githubusercontent.com/stefanbischof/sri/main/srilogo.svg"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Smart Readiness Indicator Vocabulary"
@@ -342,6 +333,15 @@
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@value" : "1.0.0"
+  } ],
+  "https://schema.org/funding" : [ {
+    "@id" : "https://cordis.europa.eu/project/id/893079"
+  } ],
+  "https://schema.org/image" : [ {
+    "@id" : "https://raw.githubusercontent.com/stefanbischof/sri/main/sridiagram.svg"
+  } ],
+  "https://schema.org/logo" : [ {
+    "@id" : "https://raw.githubusercontent.com/stefanbischof/sri/main/srilogo.svg"
   } ]
 }, {
   "@id" : "https://w3id.org/sri#Building",

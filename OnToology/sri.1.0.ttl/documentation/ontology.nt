@@ -17,12 +17,12 @@
 <https://w3id.org/sri> <http://purl.org/ontology/bibo/status> <http://purl.org/ontology/bibo/status/draft> .
 <https://w3id.org/sri> <http://purl.org/vocab/vann/preferredNamespacePrefix> "sri" .
 <https://w3id.org/sri> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/sri#" .
-<https://w3id.org/sri> <http://schema.org/funding> <https://cordis.europa.eu/project/id/893079> .
-<https://w3id.org/sri> <http://schema.org/image> <https://raw.githubusercontent.com/stefanbischof/sri/main/sridiagram.svg> .
-<https://w3id.org/sri> <http://schema.org/logo> <https://raw.githubusercontent.com/stefanbischof/sri/main/srilogo.svg> .
 <https://w3id.org/sri> <http://www.w3.org/2000/01/rdf-schema#label> "Smart Readiness Indicator Vocabulary"@en .
 <https://w3id.org/sri> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://energy.ec.europa.eu/topics/energy-efficiency/energy-efficient-buildings/smart-readiness-indicator_en> .
 <https://w3id.org/sri> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0" .
+<https://w3id.org/sri> <https://schema.org/funding> <https://cordis.europa.eu/project/id/893079> .
+<https://w3id.org/sri> <https://schema.org/image> <https://raw.githubusercontent.com/stefanbischof/sri/main/sridiagram.svg> .
+<https://w3id.org/sri> <https://schema.org/logo> <https://raw.githubusercontent.com/stefanbischof/sri/main/srilogo.svg> .
 # 
 # 
 # #################################################################
@@ -62,17 +62,17 @@
 # http://purl.org/vocab/vann/preferredNamespaceUri
 <http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
-# http://schema.org/affiliation
-<http://schema.org/affiliation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# https://schema.org/affiliation
+<https://schema.org/affiliation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
-# http://schema.org/funding
-<http://schema.org/funding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# https://schema.org/funding
+<https://schema.org/funding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
-# http://schema.org/image
-<http://schema.org/image> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# https://schema.org/image
+<https://schema.org/image> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
-# http://schema.org/logo
-<http://schema.org/logo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# https://schema.org/logo
+<https://schema.org/logo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # 
 # 
@@ -388,14 +388,14 @@ _:genid28 <http://purl.org/linked-data/cube#dimension> <https://w3id.org/sri#fun
 <https://w3id.org/sri#dsd-weights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/sri#dsd-weights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#DataStructureDefinition> .
 <https://w3id.org/sri#dsd-weights> <http://purl.org/linked-data/cube#component> _:genid29 .
-_:genid29 <http://purl.org/linked-data/cube#order> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:genid29 <http://purl.org/linked-data/cube#dimension> <https://w3id.org/sri#function> .
+_:genid29 <http://purl.org/linked-data/cube#order> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid29 <http://purl.org/linked-data/cube#dimension> <https://w3id.org/sri#impact> .
 <https://w3id.org/sri#dsd-weights> <http://purl.org/linked-data/cube#component> _:genid30 .
 _:genid30 <http://purl.org/linked-data/cube#measure> <https://w3id.org/sri#weight> .
 <https://w3id.org/sri#weight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/sri#dsd-weights> <http://purl.org/linked-data/cube#component> _:genid31 .
-_:genid31 <http://purl.org/linked-data/cube#order> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:genid31 <http://purl.org/linked-data/cube#dimension> <https://w3id.org/sri#impact> .
+_:genid31 <http://purl.org/linked-data/cube#order> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid31 <http://purl.org/linked-data/cube#dimension> <https://w3id.org/sri#function> .
 # 
 # https://w3id.org/sri#eV
 <https://w3id.org/sri#eV> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -535,14 +535,14 @@ _:genid31 <http://purl.org/linked-data/cube#dimension> <https://w3id.org/sri#imp
 # #################################################################
 # 
 # 
-<https://orcid.org/0000-0001-9521-8907> <http://schema.org/affiliation> <https://www.siemens.at/> .
 <https://orcid.org/0000-0001-9521-8907> <http://www.w3.org/2000/01/rdf-schema#label> "Stefan Bischof" .
+<https://orcid.org/0000-0001-9521-8907> <https://schema.org/affiliation> <https://www.siemens.at/> .
 # 
-<https://orcid.org/0000-0002-3050-159X> <http://schema.org/affiliation> <https://www.siemens.at/> .
 <https://orcid.org/0000-0002-3050-159X> <http://www.w3.org/2000/01/rdf-schema#label> "Josiane Xavier Parreira" .
+<https://orcid.org/0000-0002-3050-159X> <https://schema.org/affiliation> <https://www.siemens.at/> .
 # 
-<https://orcid.org/0000-0003-3445-0504> <http://schema.org/affiliation> <https://www.siemens.at/> .
 <https://orcid.org/0000-0003-3445-0504> <http://www.w3.org/2000/01/rdf-schema#label> "Erwin Filtz" .
+<https://orcid.org/0000-0003-3445-0504> <https://schema.org/affiliation> <https://www.siemens.at/> .
 # 
 <https://w3id.org/sri#function> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates something to a FunctionalThing."@en .
 <https://w3id.org/sri#function> <http://www.w3.org/2000/01/rdf-schema#label> "function"@en .
