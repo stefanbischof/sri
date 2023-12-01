@@ -33,7 +33,7 @@
   dcterms:issued "2023-11-30"^^xsd:date ;
   dcterms:bibliographicCitation "Stefan Bischof, Erwin Filtz, Josiane Xavier Parreira. Smart Readiness Indicator Vocabulary. Revision: 1.0.0. Retrieved from: https://w3id.org/sri/1.0"@en ;
   bibo:doi "10.5281/zenodo.10047286" ;
-  bibo:status <http://purl.org/ontology/bibo/status/draft> ;
+  bibo:status <http://purl.org/ontology/bibo/status/published> ;
   schema:funding <https://cordis.europa.eu/project/id/893079> ;
   schema:logo <https://raw.githubusercontent.com/stefanbischof/sri/main/srilogo.svg> ;
   schema:image <https://raw.githubusercontent.com/stefanbischof/sri/main/sridiagram.svg> ;
