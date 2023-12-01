@@ -29,7 +29,7 @@
         <terms:source rdf:resource="https://data.europa.eu/doi/10.2833/41100"/>
         <terms:title xml:lang="en">Smart Readiness Indicator Vocabulary</terms:title>
         <bibo:doi>10.5281/zenodo.10047286</bibo:doi>
-        <bibo:status rdf:resource="http://purl.org/ontology/bibo/status/draft"/>
+        <bibo:status rdf:resource="http://purl.org/ontology/bibo/status/published"/>
         <vann:preferredNamespacePrefix>sri</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>https://w3id.org/sri#</vann:preferredNamespaceUri>
         <rdfs:label xml:lang="en">Smart Readiness Indicator Vocabulary</rdfs:label>
@@ -656,10 +656,10 @@
         <rdfs:label xml:lang="en">SRI scores DSD</rdfs:label>
     </owl:NamedIndividual>
     <rdf:Description rdf:nodeID="genid27">
-        <cube:dimension rdf:resource="https://w3id.org/sri#level"/>
+        <cube:dimension rdf:resource="https://w3id.org/sri#function"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid28">
-        <cube:dimension rdf:resource="https://w3id.org/sri#function"/>
+        <cube:dimension rdf:resource="https://w3id.org/sri#level"/>
     </rdf:Description>
     
 
@@ -674,11 +674,11 @@
         <cube:component rdf:nodeID="genid31"/>
     </owl:NamedIndividual>
     <rdf:Description rdf:nodeID="genid29">
-        <cube:dimension rdf:resource="https://w3id.org/sri#impact"/>
-        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</cube:order>
+        <cube:measure rdf:resource="https://w3id.org/sri#weight"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid30">
-        <cube:measure rdf:resource="https://w3id.org/sri#weight"/>
+        <cube:dimension rdf:resource="https://w3id.org/sri#impact"/>
+        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</cube:order>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid31">
         <cube:dimension rdf:resource="https://w3id.org/sri#function"/>
