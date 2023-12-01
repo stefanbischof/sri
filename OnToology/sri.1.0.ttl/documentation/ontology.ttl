@@ -22,7 +22,7 @@
                         <http://purl.org/dc/terms/source> <https://data.europa.eu/doi/10.2833/41100> ;
                         <http://purl.org/dc/terms/title> "Smart Readiness Indicator Vocabulary"@en ;
                         <http://purl.org/ontology/bibo/doi> "10.5281/zenodo.10047286" ;
-                        <http://purl.org/ontology/bibo/status> <http://purl.org/ontology/bibo/status/draft> ;
+                        <http://purl.org/ontology/bibo/status> <http://purl.org/ontology/bibo/status/published> ;
                         <http://purl.org/vocab/vann/preferredNamespacePrefix> "sri" ;
                         <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/sri#" ;
                         rdfs:label "Smart Readiness Indicator Vocabulary"@en ;
@@ -362,13 +362,13 @@
                                                              _:genid21 ,
                                                              _:genid22 .
 
-_:genid20 <http://purl.org/linked-data/cube#measure> :score .
-
-_:genid21 <http://purl.org/linked-data/cube#dimension> :function ;
-           <http://purl.org/linked-data/cube#order> 1 .
-
-_:genid22 <http://purl.org/linked-data/cube#dimension> :level ;
+_:genid20 <http://purl.org/linked-data/cube#dimension> :level ;
            <http://purl.org/linked-data/cube#order> 2 .
+
+_:genid21 <http://purl.org/linked-data/cube#measure> :score .
+
+_:genid22 <http://purl.org/linked-data/cube#dimension> :function ;
+           <http://purl.org/linked-data/cube#order> 1 .
 
 
 ###  https://w3id.org/sri#dsd-scores
@@ -410,13 +410,13 @@ _:genid28 <http://purl.org/linked-data/cube#dimension> :function .
                                                           _:genid30 ,
                                                           _:genid31 .
 
-_:genid29 <http://purl.org/linked-data/cube#dimension> :impact ;
-           <http://purl.org/linked-data/cube#order> 2 .
+_:genid29 <http://purl.org/linked-data/cube#measure> :weight .
 
-_:genid30 <http://purl.org/linked-data/cube#measure> :weight .
-
-_:genid31 <http://purl.org/linked-data/cube#dimension> :function ;
+_:genid30 <http://purl.org/linked-data/cube#dimension> :function ;
            <http://purl.org/linked-data/cube#order> 1 .
+
+_:genid31 <http://purl.org/linked-data/cube#dimension> :impact ;
+           <http://purl.org/linked-data/cube#order> 2 .
 
 
 ###  https://w3id.org/sri#eV
