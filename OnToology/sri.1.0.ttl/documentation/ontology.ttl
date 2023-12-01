@@ -15,8 +15,10 @@
                         <http://purl.org/dc/terms/created> "2022-02-02"^^xsd:date ;
                         <http://purl.org/dc/terms/creator> <https://orcid.org/0000-0001-9521-8907> ;
                         <http://purl.org/dc/terms/description> "A vocabulary specifying concepts and structures needed to represent different data cubes needed for the Smart Readiness Indicator." ;
+                        <http://purl.org/dc/terms/issued> "2023-11-30"^^xsd:date ;
                         <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
-                        <http://purl.org/dc/terms/modified> "2023-11-23"^^xsd:date ;
+                        <http://purl.org/dc/terms/modified> "2023-11-30"^^xsd:date ;
+                        <http://purl.org/dc/terms/publisher> <https://www.siemens.at/> ;
                         <http://purl.org/dc/terms/source> <https://data.europa.eu/doi/10.2833/41100> ;
                         <http://purl.org/dc/terms/title> "Smart Readiness Indicator Vocabulary"@en ;
                         <http://purl.org/ontology/bibo/doi> "10.5281/zenodo.10047286" ;
@@ -46,6 +48,14 @@
 <http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/dc/terms/source
 <http://purl.org/dc/terms/source> rdf:type owl:AnnotationProperty .
 
@@ -66,6 +76,10 @@
 <http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
 
 
+###  http://schema.org/affiliation
+<http://schema.org/affiliation> rdf:type owl:AnnotationProperty .
+
+
 ###  http://schema.org/funding
 <http://schema.org/funding> rdf:type owl:AnnotationProperty .
 
@@ -76,10 +90,6 @@
 
 ###  http://schema.org/logo
 <http://schema.org/logo> rdf:type owl:AnnotationProperty .
-
-
-###  http://xmlns.com/foaf/0.1/name
-<http://xmlns.com/foaf/0.1/name> rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -93,6 +103,7 @@
 ###  https://w3id.org/sri#additionalLevel
 :additionalLevel rdf:type owl:ObjectProperty ;
                  rdfs:range :Level ;
+                 rdfs:comment "Additional Level if share is < 100%."@en ;
                  rdfs:label "additional level"@en .
 
 
@@ -103,12 +114,14 @@
                          owl:onProperty <http://purl.org/linked-data/cube#structure> ;
                          owl:hasValue :dsd-assessment
                        ] ;
+            rdfs:comment "Relates something to an assessment dataset."@en ;
             rdfs:label "assessment"@en .
 
 
 ###  https://w3id.org/sri#building
 :building rdf:type owl:ObjectProperty ;
           rdfs:range :Building ;
+          rdfs:comment "Relates something to a Building."@en ;
           rdfs:label "building"@en .
 
 
@@ -130,24 +143,11 @@
        rdfs:range :Level .
 
 
-###  https://w3id.org/sri#mandatory
-:mandatory rdf:type owl:ObjectProperty ;
-           rdfs:domain :Triage ;
-           rdfs:range :FunctionalThing ;
-           rdfs:label "mandatory"@en .
-
-
 ###  https://w3id.org/sri#serviceCatalogue
 :serviceCatalogue rdf:type owl:ObjectProperty ;
                   rdfs:range :ServiceCatalogue ;
+                  rdfs:comment "Relates something to a ServiceCatalogue."@en ;
                   rdfs:label "service catalogue"@en .
-
-
-###  https://w3id.org/sri#triage
-:triage rdf:type owl:ObjectProperty ;
-        rdfs:domain :ServiceCatalogue ;
-        rdfs:range :Triage ;
-        rdfs:label "triage"@en .
 
 
 #################################################################
@@ -161,19 +161,24 @@
 ###  https://w3id.org/sri#icscore
 :icscore rdf:type owl:DatatypeProperty ;
          rdfs:subPropertyOf <http://purl.org/linked-data/sdmx/2009/measure#obsValue> ;
-         rdfs:range [ rdf:type rdfs:Datatype ;
-                      owl:unionOf ( xsd:decimal
-                                    xsd:double
-                                    xsd:float
-                                  )
-                    ] .
+         rdfs:range xsd:integer .
+
+
+###  https://w3id.org/sri#max
+:max rdf:type owl:DatatypeProperty ;
+     rdfs:range xsd:integer .
 
 
 ###  https://w3id.org/sri#score
 :score rdf:type owl:DatatypeProperty ;
        rdfs:subPropertyOf <http://purl.org/linked-data/sdmx/2009/measure#obsValue> ;
        rdf:type owl:FunctionalProperty ;
-       rdfs:range xsd:integer .
+       rdfs:range [ rdf:type rdfs:Datatype ;
+                    owl:unionOf ( xsd:decimal
+                                  xsd:double
+                                  xsd:float
+                                )
+                  ] .
 
 
 ###  https://w3id.org/sri#share
@@ -185,6 +190,7 @@
                                   xsd:float
                                 )
                   ] ;
+       rdfs:comment "A percentage (value between 0.0 and 1.0) which expresses that parts of a building are assessed with different levels wrt. a Service. If share is < 100% then additionalLevel has to be defined."@en ;
        rdfs:label "share"@en .
 
 
@@ -204,8 +210,13 @@
 #    Classes
 #################################################################
 
+###  http://purl.org/linked-data/cube#
+<http://purl.org/linked-data/cube#> rdf:type owl:Class .
+
+
 ###  https://w3id.org/sri#Building
 :Building rdf:type owl:Class ;
+          rdfs:comment "This represents a building which is assessed."@en ;
           rdfs:label "Building"@en .
 
 
@@ -217,11 +228,13 @@
                           owl:allValuesFrom :Service
                         ] ;
         owl:disjointWith :Service ;
+        rdfs:comment "Class of technical domains."@en ;
         rdfs:label "Domain"@en .
 
 
 ###  https://w3id.org/sri#FunctionalThing
 :FunctionalThing rdf:type owl:Class ;
+                 rdfs:comment "Class of instances in the functional hierarchy, this includes Domains and Services."@en ;
                  rdfs:label "FunctionalThing"@en .
 
 
@@ -233,11 +246,13 @@
                           owl:allValuesFrom :KeyCapability
                         ] ;
         owl:disjointWith :KeyCapability ;
+        rdfs:comment "Class of Impacts."@en ;
         rdfs:label "Impact"@en .
 
 
 ###  https://w3id.org/sri#ImpactThing
 :ImpactThing rdf:type owl:Class ;
+             rdfs:comment "Class of all instances in the impact hierarchy, this includes Impacts and Key Capabilities."@en ;
              rdfs:label "ImpactThing"@en .
 
 
@@ -248,11 +263,13 @@
                                  owl:onProperty <http://www.w3.org/2004/02/skos/core#narrower> ;
                                  owl:allValuesFrom :Impact
                                ] ;
+               rdfs:comment "Class of all Key Capabilities, aggregation of Impacts."@en ;
                rdfs:label "KeyCapability"@en .
 
 
 ###  https://w3id.org/sri#Level
 :Level rdf:type owl:Class ;
+       rdfs:comment "Class of service levels."@en ;
        rdfs:label "Level"@en .
 
 
@@ -263,12 +280,14 @@
                            owl:onProperty <http://www.w3.org/2004/02/skos/core#broader> ;
                            owl:allValuesFrom :Domain
                          ] ;
+         rdfs:comment "Class for Services."@en ;
          rdfs:label "Service"@en .
 
 
 ###  https://w3id.org/sri#ServiceCatalogue
 :ServiceCatalogue rdf:type owl:Class ;
-                  rdfs:label "service catalogue"@en .
+                  rdfs:comment "A Service Catalogue is a collection of services used in an assessment."@en ;
+                  rdfs:label "Service catalogue"@en .
 
 
 ###  https://w3id.org/sri#ServiceLevel
@@ -281,20 +300,16 @@
                                 owl:onProperty :level ;
                                 owl:someValuesFrom :Level
                               ] ;
+              rdfs:comment "Class for all ServiceLevel instances, which are all allowed/defined combinations of Services and Levels."@en ;
               rdfs:label "service level"@en .
-
-
-###  https://w3id.org/sri#Triage
-:Triage rdf:type owl:Class ;
-        rdfs:label "triage"@en .
 
 
 #################################################################
 #    Individuals
 #################################################################
 
-###  https://w3id.org/sri#AdaptTheirOperationToTheNeedsOfTheOccupant
-:AdaptTheirOperationToTheNeedsOfTheOccupant rdf:type owl:NamedIndividual ,
+###  https://w3id.org/sri#adaptTheirOperationToTheNeedsOfTheOccupant
+:adaptTheirOperationToTheNeedsOfTheOccupant rdf:type owl:NamedIndividual ,
                                                      :KeyCapability ;
                                             rdfs:label "Adapt their operation to the needs of the occupant"@en ;
                                             <http://www.w3.org/2004/02/skos/core#narrower> :comfort ,
@@ -303,19 +318,11 @@
                                                                                            :information_to_occupants .
 
 
-###  https://w3id.org/sri#AdaptToSignalsFromTheGrid
-:AdaptToSignalsFromTheGrid rdf:type owl:NamedIndividual ,
+###  https://w3id.org/sri#adaptToSignalsFromTheGrid
+:adaptToSignalsFromTheGrid rdf:type owl:NamedIndividual ,
                                     :KeyCapability ;
                            rdfs:label "Adapt to signals from the grid"@en ;
                            <http://www.w3.org/2004/02/skos/core#narrower> :energy_flexibility_and_storage .
-
-
-###  https://w3id.org/sri#OptimiseEnergyEfficiencyAndOverallIn-UsePerformance
-:OptimiseEnergyEfficiencyAndOverallIn-UsePerformance rdf:type owl:NamedIndividual ,
-                                                              :KeyCapability ;
-                                                     rdfs:label "Optimise energy efficiency and overall in-use performance"@en ;
-                                                     <http://www.w3.org/2004/02/skos/core#narrower> :energy_efficiency ,
-                                                                                                    :maintenance_and_fault_prediction .
 
 
 ###  https://w3id.org/sri#comfort
@@ -355,13 +362,13 @@
                                                              _:genid21 ,
                                                              _:genid22 .
 
-_:genid20 <http://purl.org/linked-data/cube#dimension> :level ;
-           <http://purl.org/linked-data/cube#order> 2 .
+_:genid20 <http://purl.org/linked-data/cube#measure> :score .
 
 _:genid21 <http://purl.org/linked-data/cube#dimension> :function ;
            <http://purl.org/linked-data/cube#order> 1 .
 
-_:genid22 <http://purl.org/linked-data/cube#measure> :score .
+_:genid22 <http://purl.org/linked-data/cube#dimension> :level ;
+           <http://purl.org/linked-data/cube#order> 2 .
 
 
 ###  https://w3id.org/sri#dsd-scores
@@ -372,32 +379,44 @@ _:genid22 <http://purl.org/linked-data/cube#measure> :score .
                                                          _:genid25 ,
                                                          _:genid26 .
 
-_:genid23 <http://purl.org/linked-data/cube#measure> :score .
-
-_:genid24 <http://purl.org/linked-data/cube#dimension> :impact ;
+_:genid23 <http://purl.org/linked-data/cube#dimension> :impact ;
            <http://purl.org/linked-data/cube#order> 2 .
 
-_:genid25 <http://purl.org/linked-data/cube#dimension> :function ;
+_:genid24 <http://purl.org/linked-data/cube#dimension> :function ;
            <http://purl.org/linked-data/cube#order> 1 .
 
-_:genid26 <http://purl.org/linked-data/cube#dimension> :level ;
+_:genid25 <http://purl.org/linked-data/cube#dimension> :level ;
            <http://purl.org/linked-data/cube#order> 3 .
+
+_:genid26 <http://purl.org/linked-data/cube#measure> :score .
+
+
+###  https://w3id.org/sri#dsd-sriscores
+:dsd-sriscores rdf:type owl:NamedIndividual ,
+                        <http://purl.org/linked-data/cube#DataStructureDefinition> ;
+               <http://purl.org/linked-data/cube#component> _:genid27 ,
+                                                            _:genid28 ;
+               rdfs:label "SRI scores DSD"@en .
+
+_:genid27 <http://purl.org/linked-data/cube#dimension> :level .
+
+_:genid28 <http://purl.org/linked-data/cube#dimension> :function .
 
 
 ###  https://w3id.org/sri#dsd-weights
 :dsd-weights rdf:type owl:NamedIndividual ,
                       <http://purl.org/linked-data/cube#DataStructureDefinition> ;
-             <http://purl.org/linked-data/cube#component> _:genid27 ,
-                                                          _:genid28 ,
-                                                          _:genid29 .
-
-_:genid27 <http://purl.org/linked-data/cube#dimension> :impact ;
-           <http://purl.org/linked-data/cube#order> 2 .
-
-_:genid28 <http://purl.org/linked-data/cube#measure> :weight .
+             <http://purl.org/linked-data/cube#component> _:genid29 ,
+                                                          _:genid30 ,
+                                                          _:genid31 .
 
 _:genid29 <http://purl.org/linked-data/cube#dimension> :function ;
            <http://purl.org/linked-data/cube#order> 1 .
+
+_:genid30 <http://purl.org/linked-data/cube#measure> :weight .
+
+_:genid31 <http://purl.org/linked-data/cube#dimension> :impact ;
+           <http://purl.org/linked-data/cube#order> 2 .
 
 
 ###  https://w3id.org/sri#eV
@@ -507,27 +526,46 @@ _:genid29 <http://purl.org/linked-data/cube#dimension> :function ;
                                   rdfs:label "Maintenance and fault prediction"@en .
 
 
+###  https://w3id.org/sri#max
+:max rdf:type owl:NamedIndividual ,
+              <http://purl.org/linked-data/cube#> .
+
+
+###  https://w3id.org/sri#optimiseEnergyEfficiencyAndOverallIn-UsePerformance
+:optimiseEnergyEfficiencyAndOverallIn-UsePerformance rdf:type owl:NamedIndividual ,
+                                                              :KeyCapability ;
+                                                     rdfs:label "Optimise energy efficiency and overall in-use performance"@en ;
+                                                     <http://www.w3.org/2004/02/skos/core#narrower> :energy_efficiency ,
+                                                                                                    :maintenance_and_fault_prediction .
+
+
 ###  https://w3id.org/sri#score
 :score rdf:type owl:NamedIndividual ,
                 <http://purl.org/linked-data/cube#MeasureProperty> .
 
 
-###  https://w3id.org/sri#sriscores
-:sriscores rdf:type owl:NamedIndividual ,
-                    <http://purl.org/linked-data/cube#DataStructureDefinition> ;
-           rdfs:label "SRI scores DSD"@en .
-
-
 ###  https://w3id.org/sri#topDomain
 :topDomain rdf:type owl:NamedIndividual ,
                     :FunctionalThing ;
-           rdfs:label "All domains"@en .
+           rdfs:label "All domains"@en ;
+           <http://www.w3.org/2004/02/skos/core#narrower> :cooling ,
+                                                          :dE ,
+                                                          :dHW ,
+                                                          :eV ,
+                                                          :electricity ,
+                                                          :heating ,
+                                                          :lighting ,
+                                                          :mC ,
+                                                          :ventilation .
 
 
 ###  https://w3id.org/sri#topImpact
 :topImpact rdf:type owl:NamedIndividual ,
                     :ImpactThing ;
-           rdfs:label "All impacts"@en .
+           rdfs:label "All impacts"@en ;
+           <http://www.w3.org/2004/02/skos/core#narrower> :adaptTheirOperationToTheNeedsOfTheOccupant ,
+                                                          :adaptToSignalsFromTheGrid ,
+                                                          :optimiseEnergyEfficiencyAndOverallIn-UsePerformance .
 
 
 ###  https://w3id.org/sri#ventilation
@@ -537,38 +575,55 @@ _:genid29 <http://purl.org/linked-data/cube#dimension> :function ;
 
 
 ###  https://w3id.org/sri#weight
-:weight rdf:type owl:NamedIndividual .
+:weight rdf:type owl:NamedIndividual ,
+                 <http://purl.org/linked-data/cube#MeasureProperty> .
 
 
 #################################################################
 #    Annotations
 #################################################################
 
-<https://orcid.org/0000-0001-9521-8907> <http://xmlns.com/foaf/0.1/name> "Stefan Bischof" .
+<https://orcid.org/0000-0001-9521-8907> <http://schema.org/affiliation> <https://www.siemens.at/> ;
+                                        rdfs:label "Stefan Bischof" .
 
 
-<https://orcid.org/0000-0002-3050-159X> <http://xmlns.com/foaf/0.1/name> "Josiane Xavier Parreira" .
+<https://orcid.org/0000-0002-3050-159X> <http://schema.org/affiliation> <https://www.siemens.at/> ;
+                                        rdfs:label "Josiane Xavier Parreira" .
 
 
-<https://orcid.org/0000-0003-3445-0504> <http://xmlns.com/foaf/0.1/name> "Erwin Filtz" .
+<https://orcid.org/0000-0003-3445-0504> <http://schema.org/affiliation> <https://www.siemens.at/> ;
+                                        rdfs:label "Erwin Filtz" .
 
 
-:function rdfs:label "function"@en .
+:function rdfs:comment "Relates something to a FunctionalThing."@en ;
+          rdfs:label "function"@en .
 
 
-:icscore rdfs:label "impact criterion score"@en .
+:icscore rdfs:comment "The impact criterion score is defined for Services and calculated for Domains in Step 3."@en ;
+         rdfs:label "impact criterion score"@en .
 
 
-:impact rdfs:label "impact"@en .
+:impact rdfs:comment "Relates something to an ImpactThing."@en ;
+        rdfs:label "impact"@en .
 
 
-:level rdfs:label "level"@en .
+:level rdfs:comment "Relates something to a Level."@en ;
+       rdfs:label "level"@en .
 
 
-:score rdfs:label "score"@en .
+:max rdfs:comment "Maximum impact criterion score. This is defined for Domains and calculated in Step 4."@en ;
+     rdfs:label "maximum impact criterion score"@en .
 
 
-:weight rdfs:label "weight"@en .
+:score rdfs:comment "The smart-readiness score is defined for ImpactThings on all levels from Impacts to the complete Building (Steps 5, 6, and 7) and optionally for Domains (Step 8)"@en ;
+       rdfs:label "smart-readiness score"@en .
+
+
+:weight rdfs:comment "A weight of the weight matrix used for weighing the smart-readiness scores before aggregation."@en ;
+        rdfs:label "weight"@en .
+
+
+<https://www.siemens.at/> rdfs:label "Siemens AG Österreich" .
 
 
 ###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
