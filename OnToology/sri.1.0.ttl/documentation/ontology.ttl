@@ -22,7 +22,7 @@
                         <http://purl.org/dc/terms/source> <https://data.europa.eu/doi/10.2833/41100> ;
                         <http://purl.org/dc/terms/title> "Smart Readiness Indicator Vocabulary"@en ;
                         <http://purl.org/ontology/bibo/doi> "10.5281/zenodo.10047286" ;
-                        <http://purl.org/ontology/bibo/status> <http://purl.org/ontology/bibo/status/draft> ;
+                        <http://purl.org/ontology/bibo/status> <http://purl.org/ontology/bibo/status/published> ;
                         <http://purl.org/vocab/vann/preferredNamespacePrefix> "sri" ;
                         <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/sri#" ;
                         rdfs:label "Smart Readiness Indicator Vocabulary"@en ;
@@ -398,9 +398,9 @@ _:genid26 <http://purl.org/linked-data/cube#measure> :score .
                                                             _:genid28 ;
                rdfs:label "SRI scores DSD"@en .
 
-_:genid27 <http://purl.org/linked-data/cube#dimension> :level .
+_:genid27 <http://purl.org/linked-data/cube#dimension> :function .
 
-_:genid28 <http://purl.org/linked-data/cube#dimension> :function .
+_:genid28 <http://purl.org/linked-data/cube#dimension> :level .
 
 
 ###  https://w3id.org/sri#dsd-weights
@@ -410,10 +410,10 @@ _:genid28 <http://purl.org/linked-data/cube#dimension> :function .
                                                           _:genid30 ,
                                                           _:genid31 .
 
-_:genid29 <http://purl.org/linked-data/cube#dimension> :impact ;
-           <http://purl.org/linked-data/cube#order> 2 .
+_:genid29 <http://purl.org/linked-data/cube#measure> :weight .
 
-_:genid30 <http://purl.org/linked-data/cube#measure> :weight .
+_:genid30 <http://purl.org/linked-data/cube#dimension> :impact ;
+           <http://purl.org/linked-data/cube#order> 2 .
 
 _:genid31 <http://purl.org/linked-data/cube#dimension> :function ;
            <http://purl.org/linked-data/cube#order> 1 .

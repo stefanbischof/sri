@@ -126,7 +126,7 @@
       "status" : [ {
         "identifier" : "status",
         "language" : "undefined",
-        "value" : "http://purl.org/ontology/bibo/status/draft",
+        "value" : "http://purl.org/ontology/bibo/status/published",
         "type" : "iri"
       } ],
       "doi" : [ {
@@ -367,16 +367,6 @@
         "en" : "smart-readiness score"
       }
     }, {
-      "iri" : "https://w3id.org/sri#icscore",
-      "baseIri" : "https://w3id.org/sri",
-      "comment" : {
-        "en" : "The impact criterion score is defined for Services and calculated for Domains in Step 3."
-      },
-      "labels" : {
-        "IRI-based" : "icscore",
-        "en" : "impact criterion score"
-      }
-    }, {
       "iri" : "https://w3id.org/sri#weight",
       "baseIri" : "https://w3id.org/sri",
       "comment" : {
@@ -385,6 +375,16 @@
       "labels" : {
         "IRI-based" : "weight",
         "en" : "weight"
+      }
+    }, {
+      "iri" : "https://w3id.org/sri#icscore",
+      "baseIri" : "https://w3id.org/sri",
+      "comment" : {
+        "en" : "The impact criterion score is defined for Services and calculated for Domains in Step 3."
+      },
+      "labels" : {
+        "IRI-based" : "icscore",
+        "en" : "impact criterion score"
       }
     } ],
     "comment" : {
@@ -598,7 +598,12 @@
         "narrower" : [ {
           "identifier" : "narrower",
           "language" : "undefined",
-          "value" : "https://w3id.org/sri#convenience",
+          "value" : "https://w3id.org/sri#health_well_being_and_accessibility",
+          "type" : "iri"
+        }, {
+          "identifier" : "narrower",
+          "language" : "undefined",
+          "value" : "https://w3id.org/sri#information_to_occupants",
           "type" : "iri"
         }, {
           "identifier" : "narrower",
@@ -608,12 +613,7 @@
         }, {
           "identifier" : "narrower",
           "language" : "undefined",
-          "value" : "https://w3id.org/sri#health_well_being_and_accessibility",
-          "type" : "iri"
-        }, {
-          "identifier" : "narrower",
-          "language" : "undefined",
-          "value" : "https://w3id.org/sri#information_to_occupants",
+          "value" : "https://w3id.org/sri#convenience",
           "type" : "iri"
         } ]
       },
@@ -628,12 +628,12 @@
         "narrower" : [ {
           "identifier" : "narrower",
           "language" : "undefined",
-          "value" : "https://w3id.org/sri#energy_efficiency",
+          "value" : "https://w3id.org/sri#maintenance_and_fault_prediction",
           "type" : "iri"
         }, {
           "identifier" : "narrower",
           "language" : "undefined",
-          "value" : "https://w3id.org/sri#maintenance_and_fault_prediction",
+          "value" : "https://w3id.org/sri#energy_efficiency",
           "type" : "iri"
         } ]
       },
@@ -837,17 +837,17 @@
       "en" : "Data structure definition"
     },
     "individuals" : [ {
-      "iri" : "https://w3id.org/sri#dsd-assessment",
-      "baseIri" : "https://w3id.org/sri",
-      "labels" : {
-        "IRI-based" : "dsd-assessment"
-      }
-    }, {
       "iri" : "https://w3id.org/sri#dsd-sriscores",
       "baseIri" : "https://w3id.org/sri",
       "labels" : {
         "IRI-based" : "dsd-sriscores",
         "en" : "SRI scores DSD"
+      }
+    }, {
+      "iri" : "https://w3id.org/sri#dsd-assessment",
+      "baseIri" : "https://w3id.org/sri",
+      "labels" : {
+        "IRI-based" : "dsd-assessment"
       }
     }, {
       "iri" : "https://w3id.org/sri#dsd-weights",
@@ -1149,7 +1149,7 @@
         "narrower" : [ {
           "identifier" : "narrower",
           "language" : "undefined",
-          "value" : "https://w3id.org/sri#lighting",
+          "value" : "https://w3id.org/sri#dE",
           "type" : "iri"
         }, {
           "identifier" : "narrower",
@@ -1159,27 +1159,12 @@
         }, {
           "identifier" : "narrower",
           "language" : "undefined",
-          "value" : "https://w3id.org/sri#eV",
-          "type" : "iri"
-        }, {
-          "identifier" : "narrower",
-          "language" : "undefined",
-          "value" : "https://w3id.org/sri#dE",
-          "type" : "iri"
-        }, {
-          "identifier" : "narrower",
-          "language" : "undefined",
-          "value" : "https://w3id.org/sri#ventilation",
-          "type" : "iri"
-        }, {
-          "identifier" : "narrower",
-          "language" : "undefined",
-          "value" : "https://w3id.org/sri#dHW",
-          "type" : "iri"
-        }, {
-          "identifier" : "narrower",
-          "language" : "undefined",
           "value" : "https://w3id.org/sri#cooling",
+          "type" : "iri"
+        }, {
+          "identifier" : "narrower",
+          "language" : "undefined",
+          "value" : "https://w3id.org/sri#eV",
           "type" : "iri"
         }, {
           "identifier" : "narrower",
@@ -1190,6 +1175,21 @@
           "identifier" : "narrower",
           "language" : "undefined",
           "value" : "https://w3id.org/sri#mC",
+          "type" : "iri"
+        }, {
+          "identifier" : "narrower",
+          "language" : "undefined",
+          "value" : "https://w3id.org/sri#lighting",
+          "type" : "iri"
+        }, {
+          "identifier" : "narrower",
+          "language" : "undefined",
+          "value" : "https://w3id.org/sri#ventilation",
+          "type" : "iri"
+        }, {
+          "identifier" : "narrower",
+          "language" : "undefined",
+          "value" : "https://w3id.org/sri#dHW",
           "type" : "iri"
         } ]
       },
@@ -1322,12 +1322,12 @@
         }, {
           "identifier" : "narrower",
           "language" : "undefined",
-          "value" : "https://w3id.org/sri#optimiseEnergyEfficiencyAndOverallIn-UsePerformance",
+          "value" : "https://w3id.org/sri#adaptTheirOperationToTheNeedsOfTheOccupant",
           "type" : "iri"
         }, {
           "identifier" : "narrower",
           "language" : "undefined",
-          "value" : "https://w3id.org/sri#adaptTheirOperationToTheNeedsOfTheOccupant",
+          "value" : "https://w3id.org/sri#optimiseEnergyEfficiencyAndOverallIn-UsePerformance",
           "type" : "iri"
         } ]
       },
@@ -1489,10 +1489,10 @@
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "95",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "96",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "97",
     "type" : "owl:allValuesFrom"
@@ -1596,7 +1596,7 @@
     "comment" : {
       "en" : "The smart-readiness score is defined for ImpactThings on all levels from Impacts to the complete Building (Steps 5, 6, and 7) and optionally for Domains (Step 8)"
     },
-    "attributes" : [ "datatype", "functional" ],
+    "attributes" : [ "functional", "datatype" ],
     "id" : "14"
   }, {
     "iri" : "http://purl.org/linked-data/cube#dataSet",
@@ -1764,7 +1764,7 @@
     "comment" : {
       "en" : "A weight of the weight matrix used for weighing the smart-readiness scores before aggregation."
     },
-    "attributes" : [ "datatype", "functional" ],
+    "attributes" : [ "functional", "datatype" ],
     "id" : "62"
   }, {
     "range" : "12",
@@ -2065,7 +2065,7 @@
     "comment" : {
       "en" : "A percentage (value between 0.0 and 1.0) which expresses that parts of a building are assessed with different levels wrt. a Service. If share is < 100% then additionalLevel has to be defined."
     },
-    "attributes" : [ "datatype", "functional" ],
+    "attributes" : [ "functional", "datatype" ],
     "id" : "92"
   }, {
     "iri" : "http://purl.org/linked-data/cube#sliceStructure",
@@ -2104,6 +2104,16 @@
     "attributes" : [ "datatype" ],
     "id" : "94"
   }, {
+    "iri" : "http://purl.org/linked-data/sdmx/2009/measure#obsValue",
+    "baseIri" : "http://purl.org/linked-data/sdmx/2009/measure",
+    "range" : "36",
+    "label" : {
+      "IRI-based" : "obsValue"
+    },
+    "domain" : "15",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "95"
+  }, {
     "iri" : "https://w3id.org/sri#additionalLevel",
     "baseIri" : "https://w3id.org/sri",
     "range" : "19",
@@ -2116,16 +2126,6 @@
       "en" : "Additional Level if share is < 100%."
     },
     "attributes" : [ "object" ],
-    "id" : "95"
-  }, {
-    "iri" : "http://purl.org/linked-data/sdmx/2009/measure#obsValue",
-    "baseIri" : "http://purl.org/linked-data/sdmx/2009/measure",
-    "range" : "36",
-    "label" : {
-      "IRI-based" : "obsValue"
-    },
-    "domain" : "15",
-    "attributes" : [ "datatype", "external" ],
     "id" : "96"
   }, {
     "iri" : "http://www.w3.org/2004/02/skos/core#narrower",
@@ -2178,20 +2178,6 @@
     "attributes" : [ "object", "allValues", "external" ],
     "id" : "102"
   }, {
-    "iri" : "https://w3id.org/sri#level",
-    "baseIri" : "https://w3id.org/sri",
-    "range" : "19",
-    "label" : {
-      "IRI-based" : "level",
-      "en" : "level"
-    },
-    "domain" : "48",
-    "comment" : {
-      "en" : "Relates something to a Level."
-    },
-    "attributes" : [ "object", "functional", "someValues" ],
-    "id" : "103"
-  }, {
     "iri" : "https://w3id.org/sri#function",
     "baseIri" : "https://w3id.org/sri",
     "range" : "70",
@@ -2202,6 +2188,20 @@
     "domain" : "48",
     "comment" : {
       "en" : "Relates something to a FunctionalThing."
+    },
+    "attributes" : [ "object", "functional", "someValues" ],
+    "id" : "103"
+  }, {
+    "iri" : "https://w3id.org/sri#level",
+    "baseIri" : "https://w3id.org/sri",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "level",
+      "en" : "level"
+    },
+    "domain" : "48",
+    "comment" : {
+      "en" : "Relates something to a Level."
     },
     "attributes" : [ "object", "functional", "someValues" ],
     "id" : "104"
@@ -2235,7 +2235,7 @@
     "comment" : {
       "en" : "indicates a priority order for the components of sets with this structure, used to guide presentations - lower order numbers come before higher numbers, un-numbered components come last"
     },
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "107"
   }, {
     "iri" : "http://purl.org/linked-data/cube#codeList",
@@ -2365,7 +2365,7 @@
     "comment" : {
       "en" : "Indicates whether a component property is required (true) or optional (false) in the context of a DSD. Only applicable\n    to components correspond to an attribute. Defaults to false (optional)."
     },
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "114"
   } ]
 }

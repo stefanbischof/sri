@@ -143,26 +143,26 @@
 }, {
   "@id" : "_:genid27",
   "http://purl.org/linked-data/cube#dimension" : [ {
-    "@id" : "https://w3id.org/sri#level"
+    "@id" : "https://w3id.org/sri#function"
   } ]
 }, {
   "@id" : "_:genid28",
   "http://purl.org/linked-data/cube#dimension" : [ {
-    "@id" : "https://w3id.org/sri#function"
+    "@id" : "https://w3id.org/sri#level"
   } ]
 }, {
   "@id" : "_:genid29",
+  "http://purl.org/linked-data/cube#measure" : [ {
+    "@id" : "https://w3id.org/sri#weight"
+  } ]
+}, {
+  "@id" : "_:genid30",
   "http://purl.org/linked-data/cube#dimension" : [ {
     "@id" : "https://w3id.org/sri#impact"
   } ],
   "http://purl.org/linked-data/cube#order" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#integer",
     "@value" : "2"
-  } ]
-}, {
-  "@id" : "_:genid30",
-  "http://purl.org/linked-data/cube#measure" : [ {
-    "@id" : "https://w3id.org/sri#weight"
   } ]
 }, {
   "@id" : "_:genid31",
@@ -310,7 +310,7 @@
     "@value" : "10.5281/zenodo.10047286"
   } ],
   "http://purl.org/ontology/bibo/status" : [ {
-    "@id" : "http://purl.org/ontology/bibo/status/draft"
+    "@id" : "http://purl.org/ontology/bibo/status/published"
   } ],
   "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
     "@value" : "sri"
