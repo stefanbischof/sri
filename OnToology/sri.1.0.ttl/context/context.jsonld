@@ -7,7 +7,7 @@
       "@id" : "https://w3id.org/sri#Level"
     },
     "affiliation" : {
-      "@id" : "http://schema.org/affiliation"
+      "@id" : "https://schema.org/affiliation"
     },
     "score" : {
       "@id" : "https://w3id.org/sri#score"
@@ -31,7 +31,7 @@
       "@id" : "http://purl.org/linked-data/sdmx/2009/measure#obsValue"
     },
     "image" : {
-      "@id" : "http://schema.org/image"
+      "@id" : "https://schema.org/image"
     },
     "structure" : {
       "@id" : "http://purl.org/linked-data/cube#structure",
@@ -121,7 +121,7 @@
       "@type" : "@id"
     },
     "logo" : {
-      "@id" : "http://schema.org/logo"
+      "@id" : "https://schema.org/logo"
     },
     "seeAlso" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
@@ -157,7 +157,7 @@
       "@id" : "http://purl.org/linked-data/cube#dimension"
     },
     "funding" : {
-      "@id" : "http://schema.org/funding"
+      "@id" : "https://schema.org/funding"
     },
     "KeyCapability" : {
       "@id" : "https://w3id.org/sri#KeyCapability"

@@ -25,12 +25,12 @@
                         <http://purl.org/ontology/bibo/status> <http://purl.org/ontology/bibo/status/draft> ;
                         <http://purl.org/vocab/vann/preferredNamespacePrefix> "sri" ;
                         <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/sri#" ;
-                        <http://schema.org/funding> <https://cordis.europa.eu/project/id/893079> ;
-                        <http://schema.org/image> <https://raw.githubusercontent.com/stefanbischof/sri/main/sridiagram.svg> ;
-                        <http://schema.org/logo> <https://raw.githubusercontent.com/stefanbischof/sri/main/srilogo.svg> ;
                         rdfs:label "Smart Readiness Indicator Vocabulary"@en ;
                         rdfs:seeAlso <https://energy.ec.europa.eu/topics/energy-efficiency/energy-efficient-buildings/smart-readiness-indicator_en> ;
-                        owl:versionInfo "1.0.0" .
+                        owl:versionInfo "1.0.0" ;
+                        <https://schema.org/funding> <https://cordis.europa.eu/project/id/893079> ;
+                        <https://schema.org/image> <https://raw.githubusercontent.com/stefanbischof/sri/main/sridiagram.svg> ;
+                        <https://schema.org/logo> <https://raw.githubusercontent.com/stefanbischof/sri/main/srilogo.svg> .
 
 #################################################################
 #    Annotation properties
@@ -76,20 +76,20 @@
 <http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
 
 
-###  http://schema.org/affiliation
-<http://schema.org/affiliation> rdf:type owl:AnnotationProperty .
+###  https://schema.org/affiliation
+<https://schema.org/affiliation> rdf:type owl:AnnotationProperty .
 
 
-###  http://schema.org/funding
-<http://schema.org/funding> rdf:type owl:AnnotationProperty .
+###  https://schema.org/funding
+<https://schema.org/funding> rdf:type owl:AnnotationProperty .
 
 
-###  http://schema.org/image
-<http://schema.org/image> rdf:type owl:AnnotationProperty .
+###  https://schema.org/image
+<https://schema.org/image> rdf:type owl:AnnotationProperty .
 
 
-###  http://schema.org/logo
-<http://schema.org/logo> rdf:type owl:AnnotationProperty .
+###  https://schema.org/logo
+<https://schema.org/logo> rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -410,13 +410,13 @@ _:genid28 <http://purl.org/linked-data/cube#dimension> :function .
                                                           _:genid30 ,
                                                           _:genid31 .
 
-_:genid29 <http://purl.org/linked-data/cube#dimension> :function ;
-           <http://purl.org/linked-data/cube#order> 1 .
+_:genid29 <http://purl.org/linked-data/cube#dimension> :impact ;
+           <http://purl.org/linked-data/cube#order> 2 .
 
 _:genid30 <http://purl.org/linked-data/cube#measure> :weight .
 
-_:genid31 <http://purl.org/linked-data/cube#dimension> :impact ;
-           <http://purl.org/linked-data/cube#order> 2 .
+_:genid31 <http://purl.org/linked-data/cube#dimension> :function ;
+           <http://purl.org/linked-data/cube#order> 1 .
 
 
 ###  https://w3id.org/sri#eV
@@ -583,16 +583,16 @@ _:genid31 <http://purl.org/linked-data/cube#dimension> :impact ;
 #    Annotations
 #################################################################
 
-<https://orcid.org/0000-0001-9521-8907> <http://schema.org/affiliation> <https://www.siemens.at/> ;
-                                        rdfs:label "Stefan Bischof" .
+<https://orcid.org/0000-0001-9521-8907> rdfs:label "Stefan Bischof" ;
+                                        <https://schema.org/affiliation> <https://www.siemens.at/> .
 
 
-<https://orcid.org/0000-0002-3050-159X> <http://schema.org/affiliation> <https://www.siemens.at/> ;
-                                        rdfs:label "Josiane Xavier Parreira" .
+<https://orcid.org/0000-0002-3050-159X> rdfs:label "Josiane Xavier Parreira" ;
+                                        <https://schema.org/affiliation> <https://www.siemens.at/> .
 
 
-<https://orcid.org/0000-0003-3445-0504> <http://schema.org/affiliation> <https://www.siemens.at/> ;
-                                        rdfs:label "Erwin Filtz" .
+<https://orcid.org/0000-0003-3445-0504> rdfs:label "Erwin Filtz" ;
+                                        <https://schema.org/affiliation> <https://www.siemens.at/> .
 
 
 :function rdfs:comment "Relates something to a FunctionalThing."@en ;
