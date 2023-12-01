@@ -605,15 +605,15 @@
         <cube:component rdf:nodeID="genid22"/>
     </owl:NamedIndividual>
     <rdf:Description rdf:nodeID="genid20">
-        <cube:measure rdf:resource="https://w3id.org/sri#score"/>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid21">
-        <cube:dimension rdf:resource="https://w3id.org/sri#function"/>
-        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</cube:order>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid22">
         <cube:dimension rdf:resource="https://w3id.org/sri#level"/>
         <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</cube:order>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid21">
+        <cube:measure rdf:resource="https://w3id.org/sri#score"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid22">
+        <cube:dimension rdf:resource="https://w3id.org/sri#function"/>
+        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</cube:order>
     </rdf:Description>
     
 
@@ -656,10 +656,10 @@
         <rdfs:label xml:lang="en">SRI scores DSD</rdfs:label>
     </owl:NamedIndividual>
     <rdf:Description rdf:nodeID="genid27">
-        <cube:dimension rdf:resource="https://w3id.org/sri#function"/>
+        <cube:dimension rdf:resource="https://w3id.org/sri#level"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid28">
-        <cube:dimension rdf:resource="https://w3id.org/sri#level"/>
+        <cube:dimension rdf:resource="https://w3id.org/sri#function"/>
     </rdf:Description>
     
 
@@ -677,12 +677,12 @@
         <cube:measure rdf:resource="https://w3id.org/sri#weight"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid30">
-        <cube:dimension rdf:resource="https://w3id.org/sri#impact"/>
-        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</cube:order>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid31">
         <cube:dimension rdf:resource="https://w3id.org/sri#function"/>
         <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</cube:order>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid31">
+        <cube:dimension rdf:resource="https://w3id.org/sri#impact"/>
+        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</cube:order>
     </rdf:Description>
     
 
