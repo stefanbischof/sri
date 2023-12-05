@@ -1,0 +1,31 @@
+PREFIX sri: <https://w3id.org/sri#>
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+# Step 8 in the SRI methodology
+# documented in section 1.3.6.8 on page 132 in the final report
+# available from https://data.europa.eu/doi/10.2833/41100
+# "Smart-readiness scores for technical domains"
+INSERT {
+    GRAPH $scoresds {
+        ?scoresobsdi a qb:Observation ;
+             sri:score ?score .
+    }
+}
+WHERE {
+    # get impact criterion scores from Step 3
+    # get maximum impact score from Step 4
+    GRAPH $scoresds {
+        ?scoresobsdi
+            qb:dataSet $scoresds ;
+            sri:function ?domain ;
+            sri:impact ?impact ;
+            sri:icscore ?discore ;
+            sri:max ?maxscore.
+        $scoresds
+            qb:structure sri:dsd-scores ;
+            prov:wasDerivedFrom $ds .
+    }
+
+    BIND(?discore/?maxscore*100 as ?score)
+}

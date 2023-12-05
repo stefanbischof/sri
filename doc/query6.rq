@@ -1,0 +1,33 @@
+PREFIX sri: <https://w3id.org/sri#>
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+# Step 6 in the SRI methodology
+# documented in sections 1.3.6.6 on page 131 in the final report
+# available from https://data.europa.eu/doi/10.2833/41100
+# "Smart-readiness scores along the three EPBD key capabilities"
+INSERT {
+    GRAPH $scoresds {
+        ?scoresobs
+            sri:function sri:topDomain ;
+            sri:impact ?keycap ;
+            sri:score ?score ;
+            qb:dataSet $scoresds .
+    }
+}
+WHERE {
+    {
+        SELECT ?keycap (AVG(?iscore)as ?score) (COUNT(*) as ?nimpacts) (UUID() as ?scoresobs)
+        WHERE {
+            # get smart readiness score from step 5
+            GRAPH $scoresds {
+                ?scoresobs
+                    sri:function sri:topDomain ;
+                    sri:impact ?impact ;
+                    sri:score ?iscore ;
+                    qb:dataSet $scoresds  .
+            }
+
+            ?keycap a sri:KeyCapability ; skos:narrower ?impact .
+        } GROUP BY ?keycap
+    }
+}

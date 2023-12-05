@@ -1,0 +1,31 @@
+PREFIX sri: <https://w3id.org/sri#>
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+# Step 7 in the SRI methodology
+# documented in sections 1.3.6.7 on page 131f in the final report
+# available from https://data.europa.eu/doi/10.2833/41100
+# "Total smart-readiness score for a building or building unit"
+INSERT {
+    GRAPH $scoresds {
+        ?scoresobs
+            sri:function sri:topDomain ;
+            sri:impact sri:topImpact ;
+            sri:score ?sriscore ;
+            qb:dataSet $scoresds .
+    }
+}
+WHERE {
+    {
+        SELECT (AVG(?score)as ?sriscore) (COUNT(*) as ?nkeys) (UUID() as ?scoresobs)
+        WHERE {
+            ?keycap a sri:KeyCapability .
+            GRAPH $scoresds {
+                ?scoresobs
+                    sri:function sri:topDomain ;
+                    sri:impact ?keycap ;
+                    sri:score ?score ;
+                    qb:dataSet $scoresds .
+            }
+        }
+    }
+}

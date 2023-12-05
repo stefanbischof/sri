@@ -1,0 +1,54 @@
+PREFIX sri: <https://w3id.org/sri#>
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+# Steps 4 and 5 in the SRI methodology
+# documented in sections 1.3.6.4 and 1.3.6.5 on page 130 in the final report
+# available from https://data.europa.eu/doi/10.2833/41100
+# Step 4: "Calculate maximum impact scores"
+# Step 5: "Smart-readiness scores for impact criteria"
+INSERT {
+    GRAPH $scoresds {
+        ?scoresobs
+            sri:function sri:topDomain ;
+            sri:impact ?impact ;
+            sri:score ?score ;
+            qb:dataSet $scoresds .
+    }
+}
+WHERE {
+    {
+        SELECT  ?impact (COALESCE(SUM(?weight*?discore)/SUM(?weight*?maxscore),0)*100 as ?iscore) (UUID() as ?scoresobs)
+        WHERE {
+            GRAPH $scoresds {
+                $scoresds
+                    qb:structure sri:dsd-scores ;
+                    prov:wasDerivedFrom $ds .
+
+                # get impact criterion scores from Step 3
+                # get maximum impact score from Step 4
+                [] qb:dataSet $scoresds ;
+                    sri:function ?domain ;
+                    sri:impact ?impact ;
+                    sri:max ?maxscore ;
+                    sri:icscore ?discore .
+            }
+
+            # Get weighting factor
+            $ds sri:hasBuilding ?building .
+            ?building sri:inCountry ?country ;
+                    sri:type ?type .
+            ?zone skos:narrower ?country .
+
+            [] qb:dataSet sri:weights ;
+                sri:function ?domain ;
+                sri:impact ?impact ;
+                sri:refArea ?zone ;
+                sri:type ?type ;
+                sri:weight ?weight .
+
+        } GROUP BY ?impact
+    }
+    # workaround: if the impact criterion score for an impact is negative, then set to 0
+    BIND(IF(?iscore >= 0.0, ?iscore, 0.0) as ?score)
+}

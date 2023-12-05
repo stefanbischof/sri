@@ -1,0 +1,65 @@
+PREFIX sri: <https://w3id.org/sri#>
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+# Step 3 in the SRI methodology
+# documented in section 1.3.6.3 on page 129 in the final report
+# available from https://data.europa.eu/doi/10.2833/41100
+# "Calculate impact criterion scores"
+INSERT {
+    GRAPH $scoresds {
+        ?scoresobs a qb:Observation ;
+             qb:dataSet $scoresds ;
+             sri:function ?domain ;
+             sri:impact ?impact ;
+             sri:icscore ?discore .
+
+        $scoresds a qb:DataSet , prov:Entity ;
+             qb:structure sri:dsd-scores ;
+             sri:hasBuilding ?building ;
+             prov:wasDerivedFrom $ds ;
+             prov:wasAttributedTo <https://code.siemens.com/phoenix/sri-api> .
+    }
+}
+WHERE {
+    {
+        SELECT ?domain ?impact (SUM(?score*?share + ?addscore*(1.0-?share)) as ?discore) (UUID() as ?scoresobs)
+        WHERE {
+            # SRI service score
+            [] qb:dataSet sri:scores ;
+                sri:function ?service ;
+                sri:impact ?impact ;
+                sri:level ?level ;
+                sri:score ?score .
+
+            ?domain skos:narrower ?service .
+
+            $ds qb:structure sri:dsd-assessment .
+
+            # building
+            ?levelobs qb:dataSet $ds ;
+                    sri:function ?service ;
+                    sri:level ?level .
+
+            # in case of additional level
+            OPTIONAL {
+                ?levelobs sri:share ?share ;
+                    sri:additionalLevel ?addlevel .
+
+                # SRI service score additional level
+                [] qb:dataSet sri:scores ;
+                    sri:function ?service ;
+                    sri:impact ?impact ;
+                    sri:level ?addlevel ;
+                    sri:score ?addscore .
+                }
+            # default values in case no additional level present
+            OPTIONAL {
+                BIND(1.0 as ?share)
+                BIND(0.0 as ?addscore) }
+        }
+        GROUP BY ?domain ?impact #$ds
+    }
+
+    $ds sri:hasBuilding ?building .
+}
