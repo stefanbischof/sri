@@ -18,7 +18,7 @@ INSERT {
              qb:structure sri:dsd-scores ;
              sri:building ?building ;
              prov:wasDerivedFrom $ds ;
-             prov:wasAttributedTo <https://code.siemens.com/phoenix/sri-api> .
+             prov:wasAttributedTo <https://uri.of.calculation.agent/> .
     }
 }
 WHERE {
