@@ -16,7 +16,7 @@ INSERT {
 
         $scoresds a qb:DataSet , prov:Entity ;
              qb:structure sri:dsd-scores ;
-             sri:hasBuilding ?building ;
+             sri:building ?building ;
              prov:wasDerivedFrom $ds ;
              prov:wasAttributedTo <https://code.siemens.com/phoenix/sri-api> .
     }
@@ -61,5 +61,5 @@ WHERE {
         GROUP BY ?domain ?impact #$ds
     }
 
-    $ds sri:hasBuilding ?building .
+    $ds sri:building ?building .
 }

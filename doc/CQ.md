@@ -114,7 +114,7 @@ SELECT ?domainIRI ?domainLabel
     }
     {
         SELECT ?observation WHERE { 
-            sri:building1 ^sri:hasBuilding ?dataset .
+            ex:building1 ^sri:building ?dataset .
             ?dataset rdf:type qb:DataSet ;
                      qb:structure sri:dsd-scores ;
                      prov:wasDerivedFrom sri:assessment1 .
@@ -142,7 +142,7 @@ SELECT ?domainIRI ?domainLabel
 SELECT ?SRI ?score1 ?score2 WHERE { {
     SELECT ("SRI Score" as ?SRI) ?score1 WHERE {
         VALUES ?assessmentIRI1 {sri:assessment1}
-        ?assessmentIRI1 sri:hasBuilding ?buildingIRI1 ;
+        ?assessmentIRI1 sri:building ?buildingIRI1 ;
                         rdf:type qb:DataSet ;
                         qb:structure sri:dsd-assessment .	
         ?scoresIRI1 rdf:type qb:DataSet ;
@@ -156,7 +156,7 @@ SELECT ?SRI ?score1 ?score2 WHERE { {
 } } {
         SELECT ("SRI Score" as ?SRI) ?score2 WHERE {
             VALUES ?assessmentIRI2 {sri:assessment2}
-            ?assessmentIRI2 sri:hasBuilding ?buildingIRI2 ;
+            ?assessmentIRI2 sri:building ?buildingIRI2 ;
                             rdf:type qb:DataSet ;
                             qb:structure sri:dsd-assessment .
                 ?scoresIRI2 rdf:type qb:DataSet ;

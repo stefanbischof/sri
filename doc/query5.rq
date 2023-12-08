@@ -35,7 +35,7 @@ WHERE {
             }
 
             # Get weighting factor
-            $ds sri:hasBuilding ?building .
+            $ds sri:building ?building .
             ?building sri:inCountry ?country ;
                     sri:type ?type .
             ?zone skos:narrower ?country .
