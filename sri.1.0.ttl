@@ -227,35 +227,26 @@ sri:ServiceLevel rdf:type owl:Class ;
 #################################################################
 
 sri:dsd-assessment rdf:type qb:DataStructureDefinition ;
-  qb:component [ qb:measure sri:score ]  , [ qb:dimension sri:function ;
-    qb:order 1
-  ]  , [ qb:dimension sri:level ;
-    qb:order 2  
-  ] .
+  qb:component [ qb:dimension sri:function ]  , 
+    [ qb:measure sri:level ] .
 
 
 sri:dsd-scores rdf:type qb:DataStructureDefinition ;
-  qb:component [ qb:dimension sri:impact ;
-  qb:order 2
-  ]  , [ qb:dimension sri:function ;
-  qb:order 1
-  ]  , [ qb:dimension sri:level ;
-  qb:order 3
-  ]  , [ qb:measure sri:score
-  ] .
+  qb:component [ qb:dimension sri:impact ]  , 
+    [ qb:dimension sri:function ] , 
+    [ qb:measure sri:score ] .
 
 
 sri:dsd-weights rdf:type qb:DataStructureDefinition ;
-  qb:component [ qb:dimension sri:impact ;
-  qb:order 2
-  ]  , [ qb:measure sri:weight
-  ]  , [ qb:dimension sri:function ;
-  qb:order 1
-  ] .
+  qb:component [ qb:dimension sri:impact ]   , 
+    [ qb:dimension sri:function ] , 
+    [ qb:measure sri:weight].
 
 
 sri:dsd-sriscores rdf:type qb:DataStructureDefinition ;
-  qb:component [ qb:dimension sri:function ] , [ qb:dimension sri:level ] ; 
+  qb:component [ qb:dimension sri:function ] , 
+    [ qb:dimension sri:level ], 
+    [ qb:measure sri:icscore ] ; 
   rdfs:label "SRI scores DSD"@en .
 
 
