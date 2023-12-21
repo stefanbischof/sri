@@ -301,7 +301,7 @@
                                 owl:someValuesFrom :Level
                               ] ;
               rdfs:comment "Class for all ServiceLevel instances, which are all allowed/defined combinations of Services and Levels."@en ;
-              rdfs:label "service level"@en .
+              rdfs:label "Service level"@en .
 
 
 #################################################################
@@ -359,64 +359,54 @@
 :dsd-assessment rdf:type owl:NamedIndividual ,
                          <http://purl.org/linked-data/cube#DataStructureDefinition> ;
                 <http://purl.org/linked-data/cube#component> _:genid20 ,
-                                                             _:genid21 ,
-                                                             _:genid22 .
+                                                             _:genid21 .
 
-_:genid20 <http://purl.org/linked-data/cube#measure> :score .
+_:genid20 <http://purl.org/linked-data/cube#dimension> :function .
 
-_:genid21 <http://purl.org/linked-data/cube#dimension> :function ;
-           <http://purl.org/linked-data/cube#order> 1 .
-
-_:genid22 <http://purl.org/linked-data/cube#dimension> :level ;
-           <http://purl.org/linked-data/cube#order> 2 .
+_:genid21 <http://purl.org/linked-data/cube#measure> :level .
 
 
 ###  https://w3id.org/sri#dsd-scores
 :dsd-scores rdf:type owl:NamedIndividual ,
                      <http://purl.org/linked-data/cube#DataStructureDefinition> ;
-            <http://purl.org/linked-data/cube#component> _:genid23 ,
-                                                         _:genid24 ,
-                                                         _:genid25 ,
-                                                         _:genid26 .
+            <http://purl.org/linked-data/cube#component> _:genid22 ,
+                                                         _:genid23 ,
+                                                         _:genid24 .
 
-_:genid23 <http://purl.org/linked-data/cube#dimension> :impact ;
-           <http://purl.org/linked-data/cube#order> 2 .
+_:genid22 <http://purl.org/linked-data/cube#dimension> :impact .
 
-_:genid24 <http://purl.org/linked-data/cube#dimension> :function ;
-           <http://purl.org/linked-data/cube#order> 1 .
+_:genid23 <http://purl.org/linked-data/cube#dimension> :function .
 
-_:genid25 <http://purl.org/linked-data/cube#dimension> :level ;
-           <http://purl.org/linked-data/cube#order> 3 .
-
-_:genid26 <http://purl.org/linked-data/cube#measure> :score .
+_:genid24 <http://purl.org/linked-data/cube#measure> :score .
 
 
 ###  https://w3id.org/sri#dsd-sriscores
 :dsd-sriscores rdf:type owl:NamedIndividual ,
                         <http://purl.org/linked-data/cube#DataStructureDefinition> ;
-               <http://purl.org/linked-data/cube#component> _:genid27 ,
-                                                            _:genid28 ;
+               <http://purl.org/linked-data/cube#component> _:genid25 ,
+                                                            _:genid26 ,
+                                                            _:genid27 ;
                rdfs:label "SRI scores DSD"@en .
 
-_:genid27 <http://purl.org/linked-data/cube#dimension> :level .
+_:genid25 <http://purl.org/linked-data/cube#dimension> :function .
 
-_:genid28 <http://purl.org/linked-data/cube#dimension> :function .
+_:genid26 <http://purl.org/linked-data/cube#dimension> :level .
+
+_:genid27 <http://purl.org/linked-data/cube#measure> :icscore .
 
 
 ###  https://w3id.org/sri#dsd-weights
 :dsd-weights rdf:type owl:NamedIndividual ,
                       <http://purl.org/linked-data/cube#DataStructureDefinition> ;
-             <http://purl.org/linked-data/cube#component> _:genid29 ,
-                                                          _:genid30 ,
-                                                          _:genid31 .
+             <http://purl.org/linked-data/cube#component> _:genid28 ,
+                                                          _:genid29 ,
+                                                          _:genid30 .
 
-_:genid29 <http://purl.org/linked-data/cube#dimension> :function ;
-           <http://purl.org/linked-data/cube#order> 1 .
+_:genid28 <http://purl.org/linked-data/cube#measure> :weight .
 
-_:genid30 <http://purl.org/linked-data/cube#measure> :weight .
+_:genid29 <http://purl.org/linked-data/cube#dimension> :impact .
 
-_:genid31 <http://purl.org/linked-data/cube#dimension> :impact ;
-           <http://purl.org/linked-data/cube#order> 2 .
+_:genid30 <http://purl.org/linked-data/cube#dimension> :function .
 
 
 ###  https://w3id.org/sri#eV
