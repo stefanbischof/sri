@@ -4,8 +4,14 @@ authors:
 - family-names: "Bischof"
   given-names: "Stefan"
   orcid: "https://orcid.org/0000-0001-9521-8907"
-title: "sri"
-version: 0.0
-doi: 10.5281/zenodo.10047287
-date-released: 2023-10-27
-url: "https://doi.org/10.5281/zenodo.10047287"
+- family-names: "Erwin"
+  given-names: "Filtz"
+  orcid: "https://orcid.org/0000-0003-3445-0504"
+- family-names: "Josiane"
+  given-names: "Xavier Parreira"
+  orcid: "https://orcid.org/0000-0002-3050-159X"
+title: "Semantic Smart Readiness Indicator Framework"
+version: 1.0
+doi: 10.5281/zenodo.10047286
+date-released: 2023-12-08
+url: "https://doi.org/10.5281/zenodo.10047286"
