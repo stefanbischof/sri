@@ -294,7 +294,7 @@ _:genid19 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/sri#L
 _:genid19 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/sri#level> .
 _:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/sri#ServiceLevel> <http://www.w3.org/2000/01/rdf-schema#comment> "Class for all ServiceLevel instances, which are all allowed/defined combinations of Services and Levels."@en .
-<https://w3id.org/sri#ServiceLevel> <http://www.w3.org/2000/01/rdf-schema#label> "service level"@en .
+<https://w3id.org/sri#ServiceLevel> <http://www.w3.org/2000/01/rdf-schema#label> "Service level"@en .
 # 
 # 
 # 
@@ -348,54 +348,46 @@ _:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://w3id.org/sri#dsd-assessment
 <https://w3id.org/sri#dsd-assessment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#DataStructureDefinition> .
 <https://w3id.org/sri#dsd-assessment> <http://purl.org/linked-data/cube#component> _:genid20 .
-_:genid20 <http://purl.org/linked-data/cube#measure> <https://w3id.org/sri#score> .
-<https://w3id.org/sri#score> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/sri#dsd-assessment> <http://purl.org/linked-data/cube#component> _:genid21 .
-_:genid21 <http://purl.org/linked-data/cube#order> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:genid21 <http://purl.org/linked-data/cube#dimension> <https://w3id.org/sri#function> .
+_:genid20 <http://purl.org/linked-data/cube#dimension> <https://w3id.org/sri#function> .
 <https://w3id.org/sri#function> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/sri#dsd-assessment> <http://purl.org/linked-data/cube#component> _:genid22 .
-_:genid22 <http://purl.org/linked-data/cube#order> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:genid22 <http://purl.org/linked-data/cube#dimension> <https://w3id.org/sri#level> .
+<https://w3id.org/sri#dsd-assessment> <http://purl.org/linked-data/cube#component> _:genid21 .
+_:genid21 <http://purl.org/linked-data/cube#measure> <https://w3id.org/sri#level> .
 <https://w3id.org/sri#level> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
 # https://w3id.org/sri#dsd-scores
 <https://w3id.org/sri#dsd-scores> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/sri#dsd-scores> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#DataStructureDefinition> .
-<https://w3id.org/sri#dsd-scores> <http://purl.org/linked-data/cube#component> _:genid23 .
-_:genid23 <http://purl.org/linked-data/cube#order> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:genid23 <http://purl.org/linked-data/cube#dimension> <https://w3id.org/sri#impact> .
+<https://w3id.org/sri#dsd-scores> <http://purl.org/linked-data/cube#component> _:genid22 .
+_:genid22 <http://purl.org/linked-data/cube#dimension> <https://w3id.org/sri#impact> .
 <https://w3id.org/sri#impact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/sri#dsd-scores> <http://purl.org/linked-data/cube#component> _:genid23 .
+_:genid23 <http://purl.org/linked-data/cube#dimension> <https://w3id.org/sri#function> .
 <https://w3id.org/sri#dsd-scores> <http://purl.org/linked-data/cube#component> _:genid24 .
-_:genid24 <http://purl.org/linked-data/cube#order> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:genid24 <http://purl.org/linked-data/cube#dimension> <https://w3id.org/sri#function> .
-<https://w3id.org/sri#dsd-scores> <http://purl.org/linked-data/cube#component> _:genid25 .
-_:genid25 <http://purl.org/linked-data/cube#order> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:genid25 <http://purl.org/linked-data/cube#dimension> <https://w3id.org/sri#level> .
-<https://w3id.org/sri#dsd-scores> <http://purl.org/linked-data/cube#component> _:genid26 .
-_:genid26 <http://purl.org/linked-data/cube#measure> <https://w3id.org/sri#score> .
+_:genid24 <http://purl.org/linked-data/cube#measure> <https://w3id.org/sri#score> .
+<https://w3id.org/sri#score> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
 # https://w3id.org/sri#dsd-sriscores
 <https://w3id.org/sri#dsd-sriscores> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/sri#dsd-sriscores> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#DataStructureDefinition> .
+<https://w3id.org/sri#dsd-sriscores> <http://purl.org/linked-data/cube#component> _:genid25 .
+_:genid25 <http://purl.org/linked-data/cube#dimension> <https://w3id.org/sri#function> .
+<https://w3id.org/sri#dsd-sriscores> <http://purl.org/linked-data/cube#component> _:genid26 .
+_:genid26 <http://purl.org/linked-data/cube#dimension> <https://w3id.org/sri#level> .
 <https://w3id.org/sri#dsd-sriscores> <http://purl.org/linked-data/cube#component> _:genid27 .
-_:genid27 <http://purl.org/linked-data/cube#dimension> <https://w3id.org/sri#level> .
-<https://w3id.org/sri#dsd-sriscores> <http://purl.org/linked-data/cube#component> _:genid28 .
-_:genid28 <http://purl.org/linked-data/cube#dimension> <https://w3id.org/sri#function> .
+_:genid27 <http://purl.org/linked-data/cube#measure> <https://w3id.org/sri#icscore> .
+<https://w3id.org/sri#icscore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/sri#dsd-sriscores> <http://www.w3.org/2000/01/rdf-schema#label> "SRI scores DSD"@en .
 # 
 # https://w3id.org/sri#dsd-weights
 <https://w3id.org/sri#dsd-weights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/sri#dsd-weights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#DataStructureDefinition> .
-<https://w3id.org/sri#dsd-weights> <http://purl.org/linked-data/cube#component> _:genid29 .
-_:genid29 <http://purl.org/linked-data/cube#order> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:genid29 <http://purl.org/linked-data/cube#dimension> <https://w3id.org/sri#function> .
-<https://w3id.org/sri#dsd-weights> <http://purl.org/linked-data/cube#component> _:genid30 .
-_:genid30 <http://purl.org/linked-data/cube#measure> <https://w3id.org/sri#weight> .
+<https://w3id.org/sri#dsd-weights> <http://purl.org/linked-data/cube#component> _:genid28 .
+_:genid28 <http://purl.org/linked-data/cube#measure> <https://w3id.org/sri#weight> .
 <https://w3id.org/sri#weight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/sri#dsd-weights> <http://purl.org/linked-data/cube#component> _:genid31 .
-_:genid31 <http://purl.org/linked-data/cube#order> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:genid31 <http://purl.org/linked-data/cube#dimension> <https://w3id.org/sri#impact> .
+<https://w3id.org/sri#dsd-weights> <http://purl.org/linked-data/cube#component> _:genid29 .
+_:genid29 <http://purl.org/linked-data/cube#dimension> <https://w3id.org/sri#impact> .
+<https://w3id.org/sri#dsd-weights> <http://purl.org/linked-data/cube#component> _:genid30 .
+_:genid30 <http://purl.org/linked-data/cube#dimension> <https://w3id.org/sri#function> .
 # 
 # https://w3id.org/sri#eV
 <https://w3id.org/sri#eV> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -430,7 +422,6 @@ _:genid31 <http://purl.org/linked-data/cube#dimension> <https://w3id.org/sri#imp
 <https://w3id.org/sri#heating> <http://www.w3.org/2000/01/rdf-schema#label> "Heating"@en .
 # 
 # https://w3id.org/sri#icscore
-<https://w3id.org/sri#icscore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/sri#icscore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#MeasureProperty> .
 # 
 # https://w3id.org/sri#impact

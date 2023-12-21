@@ -503,7 +503,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Class for all ServiceLevel instances, which are all allowed/defined combinations of Services and Levels.</rdfs:comment>
-        <rdfs:label xml:lang="en">service level</rdfs:label>
+        <rdfs:label xml:lang="en">Service level</rdfs:label>
     </owl:Class>
     
 
@@ -602,18 +602,12 @@
         <rdf:type rdf:resource="http://purl.org/linked-data/cube#DataStructureDefinition"/>
         <cube:component rdf:nodeID="genid20"/>
         <cube:component rdf:nodeID="genid21"/>
-        <cube:component rdf:nodeID="genid22"/>
     </owl:NamedIndividual>
     <rdf:Description rdf:nodeID="genid20">
-        <cube:measure rdf:resource="https://w3id.org/sri#score"/>
+        <cube:dimension rdf:resource="https://w3id.org/sri#function"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid21">
-        <cube:dimension rdf:resource="https://w3id.org/sri#function"/>
-        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</cube:order>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid22">
-        <cube:dimension rdf:resource="https://w3id.org/sri#level"/>
-        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</cube:order>
+        <cube:measure rdf:resource="https://w3id.org/sri#level"/>
     </rdf:Description>
     
 
@@ -623,24 +617,17 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/sri#dsd-scores">
         <rdf:type rdf:resource="http://purl.org/linked-data/cube#DataStructureDefinition"/>
+        <cube:component rdf:nodeID="genid22"/>
         <cube:component rdf:nodeID="genid23"/>
         <cube:component rdf:nodeID="genid24"/>
-        <cube:component rdf:nodeID="genid25"/>
-        <cube:component rdf:nodeID="genid26"/>
     </owl:NamedIndividual>
-    <rdf:Description rdf:nodeID="genid23">
+    <rdf:Description rdf:nodeID="genid22">
         <cube:dimension rdf:resource="https://w3id.org/sri#impact"/>
-        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</cube:order>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid23">
+        <cube:dimension rdf:resource="https://w3id.org/sri#function"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid24">
-        <cube:dimension rdf:resource="https://w3id.org/sri#function"/>
-        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</cube:order>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid25">
-        <cube:dimension rdf:resource="https://w3id.org/sri#level"/>
-        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</cube:order>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid26">
         <cube:measure rdf:resource="https://w3id.org/sri#score"/>
     </rdf:Description>
     
@@ -651,15 +638,19 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/sri#dsd-sriscores">
         <rdf:type rdf:resource="http://purl.org/linked-data/cube#DataStructureDefinition"/>
+        <cube:component rdf:nodeID="genid25"/>
+        <cube:component rdf:nodeID="genid26"/>
         <cube:component rdf:nodeID="genid27"/>
-        <cube:component rdf:nodeID="genid28"/>
         <rdfs:label xml:lang="en">SRI scores DSD</rdfs:label>
     </owl:NamedIndividual>
-    <rdf:Description rdf:nodeID="genid27">
+    <rdf:Description rdf:nodeID="genid25">
+        <cube:dimension rdf:resource="https://w3id.org/sri#function"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid26">
         <cube:dimension rdf:resource="https://w3id.org/sri#level"/>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid28">
-        <cube:dimension rdf:resource="https://w3id.org/sri#function"/>
+    <rdf:Description rdf:nodeID="genid27">
+        <cube:measure rdf:resource="https://w3id.org/sri#icscore"/>
     </rdf:Description>
     
 
@@ -669,20 +660,18 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/sri#dsd-weights">
         <rdf:type rdf:resource="http://purl.org/linked-data/cube#DataStructureDefinition"/>
+        <cube:component rdf:nodeID="genid28"/>
         <cube:component rdf:nodeID="genid29"/>
         <cube:component rdf:nodeID="genid30"/>
-        <cube:component rdf:nodeID="genid31"/>
     </owl:NamedIndividual>
-    <rdf:Description rdf:nodeID="genid29">
-        <cube:dimension rdf:resource="https://w3id.org/sri#function"/>
-        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</cube:order>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid30">
+    <rdf:Description rdf:nodeID="genid28">
         <cube:measure rdf:resource="https://w3id.org/sri#weight"/>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid31">
+    <rdf:Description rdf:nodeID="genid29">
         <cube:dimension rdf:resource="https://w3id.org/sri#impact"/>
-        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</cube:order>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid30">
+        <cube:dimension rdf:resource="https://w3id.org/sri#function"/>
     </rdf:Description>
     
 
