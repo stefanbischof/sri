@@ -218,7 +218,7 @@ sri:ServiceLevel rdf:type owl:Class ;
     owl:onProperty sri:level ;
     owl:someValuesFrom sri:Level
   ] ;
-  rdfs:label "service level"@en ;
+  rdfs:label "Service level"@en ;
   rdfs:comment "Class for all ServiceLevel instances, which are all allowed/defined combinations of Services and Levels."@en .
 
 
