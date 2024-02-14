@@ -8,3 +8,4 @@
 - Documentation about competency questions and the SPARQL queries to answer them: [Competency Questions](doc/CQ.md)
 - SPARQL queries for the SPARQL-based SRI score calculation workflow are available from [SPARQL queries](doc/). SPARQL variables starting with `$` are supposed to be replaced before query evaluation, for example the URI of the assessment data cube.
 - SRI reference data including a service catalogue, the impact criterion scores, and 10 different weight data cubes is available at [SRI Reference Data Git Repo](https://github.com/stefanbischof/sri-ref/blob/main/sri-ref.ttl)
+- Full [example of assessment and scores](doc/sri-example.trig) in TriG format, and corresponding [excerpt of Excel file](doc/sri-example.xlsx)

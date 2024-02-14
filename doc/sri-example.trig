@@ -1,0 +1,865 @@
+@prefix schema: <https://schema.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix a: <https://eu-phoenix.eu/sri/a/> .
+@prefix b: <https://eu-phoenix.eu/sri/building/> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix sri: <https://eu-phoenix.eu/sri#> .
+@prefix sri-ref: <https://w3id.org/sri/ref#> .
+
+<https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9> {
+  <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9> a qb:DataSet,
+      prov:Entity;
+    rdfs:label "Ex#1 Office Building Full Scores" ;
+    qb:structure sri:dsd-scores;
+    prov:wasDerivedFrom a:10d17e8b-40f3-39f7-b2a8-6d48039718d4;
+    sri:hasBuilding b:98c5d866-b75e-3461-871a-24b0e325cad9 .
+  
+  <urn:uuid:c212594a-fb88-4151-8cd1-33b216296731> a qb:Observation;
+    qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:heating;
+    sri:impact sri:comfort;
+    sri:score 16.6666666666666666666667;
+    sri:icscore 2.0;
+    sri:max 12 .
+  
+  <urn:uuid:080c10a9-d2d4-465a-80c7-082e3ff179a0> a qb:Observation;
+    qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:heating;
+    sri:impact sri:convenience;
+    sri:score 18.1818181818181818181818;
+    sri:icscore 2.0;
+    sri:max 11 .
+  
+  <urn:uuid:4a6ff77f-b525-4919-99f0-2a391d000f5a> a qb:Observation;
+    qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:heating;
+    sri:impact sri:energy_efficiency;
+    sri:score 9.5238095238095238095238;
+    sri:icscore 2.0;
+    sri:max 21 .
+  
+  <urn:uuid:bcfbe42b-ba66-4085-963c-7707e0a2cb22> a qb:Observation;
+    qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:heating;
+    sri:impact sri:health_well_being_and_accessibility;
+    sri:score 40.0;
+    sri:icscore 2.0;
+    sri:max 5 .
+  
+  <urn:uuid:fa5ddd61-4fa7-4177-b415-1dbb8ded5386> a qb:Observation;
+    qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:heating;
+    sri:impact sri:maintenance_and_fault_prediction;
+    sri:score 0.0;
+    sri:icscore 0.0;
+    sri:max 5 .
+  
+  <urn:uuid:7015a069-ada5-46d8-8695-2878e1bd1cb6> a qb:Observation;
+    qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:heating;
+    sri:impact sri:information_to_occupants;
+    sri:score 0.0;
+    sri:icscore 0.0;
+    sri:max 4 .
+  
+  <urn:uuid:826067eb-8e89-4176-9041-b7350ac46339> a qb:Observation;
+    qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:heating;
+    sri:impact sri:energy_flexibility_and_storage;
+    sri:score 0.0;
+    sri:icscore 0.0;
+    sri:max 11 .
+  
+  <urn:uuid:df6e177f-565e-4af6-87d9-89b367083a9e> a qb:Observation;
+    qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:dHW;
+    sri:impact sri:energy_efficiency;
+    sri:score 0.0;
+    sri:icscore 0.0;
+    sri:max 11 .
+  
+  <urn:uuid:181ee536-20b7-416d-b5bf-b59247550145> a qb:Observation;
+    qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:dHW;
+    sri:impact sri:energy_flexibility_and_storage;
+    sri:score 0.0;
+    sri:icscore 0.0;
+    sri:max 9 .
+  
+  <urn:uuid:1cd43dc2-d524-4d3b-8e0d-271ba57d4829> a qb:Observation;
+    qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:dHW;
+    sri:impact sri:comfort;
+    sri:icscore 0.0;
+    sri:max 0 .
+  
+  <urn:uuid:9290236c-5524-4e1d-b126-97b8e57449df> a qb:Observation;
+    qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:dHW;
+    sri:impact sri:convenience;
+    sri:score 0.0;
+    sri:icscore 0.0;
+    sri:max 7 .
+  
+  <urn:uuid:2996ce45-76a2-4eaa-9528-2ab14d382d2c> a qb:Observation;
+    qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:dHW;
+    sri:impact sri:health_well_being_and_accessibility;
+    sri:icscore 0.0;
+    sri:max 0 .
+  
+  <urn:uuid:5f500671-79c4-44af-ad70-7425f9fde406> a qb:Observation;
+    qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:dHW;
+    sri:impact sri:maintenance_and_fault_prediction;
+    sri:score 0.0;
+    sri:icscore 0.0;
+    sri:max 2 .
+  
+  <urn:uuid:fa984773-3aab-4785-a4be-ff7be66fe809> a qb:Observation;
+    qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:dHW;
+    sri:impact sri:information_to_occupants;
+    sri:score 0.0;
+    sri:icscore 0.0;
+    sri:max 3 .
+  
+  <urn:uuid:f848f166-95af-4438-9a24-3e7cf304cdba> a qb:Observation;
+    qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:cooling;
+    sri:impact sri:energy_efficiency;
+    sri:score 4.5454545454545454545455;
+    sri:icscore 1.0;
+    sri:max 22 .
+  
+  <urn:uuid:df592704-908e-4242-a9e7-57d7ca4ec6fe> a qb:Observation;
+    qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:cooling;
+    sri:impact sri:energy_flexibility_and_storage;
+    sri:score 0.0;
+    sri:icscore 0.0;
+    sri:max 11 .
+  
+  <urn:uuid:c89b2dbc-7ece-4afa-a240-2c14e4d8da51> a qb:Observation;
+    qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:cooling;
+    sri:impact sri:comfort;
+    sri:score 10.0;
+    sri:icscore 1.0;
+    sri:max 10 .
+  
+  <urn:uuid:42b03ad8-1f41-465d-818b-21df63a6d2a9> a qb:Observation;
+    qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:cooling;
+    sri:impact sri:convenience;
+    sri:score 18.1818181818181818181818;
+    sri:icscore 2.0;
+    sri:max 11 .
+  
+  <urn:uuid:87f6b047-b70c-435e-8fa1-829de2006e2f> a qb:Observation;
+    qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:cooling;
+    sri:impact sri:health_well_being_and_accessibility;
+    sri:score 40.0;
+    sri:icscore 2.0;
+    sri:max 5 .
+  
+  <urn:uuid:eb725f83-8224-48d1-9d83-f90955cba236> a qb:Observation;
+    qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:cooling;
+    sri:impact sri:maintenance_and_fault_prediction;
+    sri:score 0.0;
+    sri:icscore 0.0;
+    sri:max 5 .
+  
+  <urn:uuid:3049900b-d050-4103-baeb-c86689ffe316> a qb:Observation;
+    qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:cooling;
+    sri:impact sri:information_to_occupants;
+    sri:score 0.0;
+    sri:icscore 0.0;
+    sri:max 4 .
+  
+  <urn:uuid:767aa1e0-7ef1-4dc5-9082-2cdfeeaf63c5> a qb:Observation;
+    qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:ventilation;
+    sri:impact sri:energy_efficiency;
+    sri:score 7.1428571428571428571429;
+    sri:icscore 1.0;
+    sri:max 14 .
+  
+  <urn:uuid:8e2f3ca2-212d-4086-9261-b0dcfe3f6ef2> a qb:Observation;
+    qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:ventilation;
+    sri:impact sri:energy_flexibility_and_storage;
+    sri:icscore 0.0;
+    sri:max 0 .
+  
+  <urn:uuid:429fc216-7b25-4b35-abee-d68fd4938015> a qb:Observation;
+    qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:ventilation;
+    sri:impact sri:comfort;
+    sri:score 10.0;
+    sri:icscore 1.0;
+    sri:max 10 .
+  
+  <urn:uuid:b589e240-0cf0-4feb-b77f-44e957d23b47> a qb:Observation;
+    qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:ventilation;
+    sri:impact sri:convenience;
+    sri:score 12.5;
+    sri:icscore 1.0;
+    sri:max 8 .
+  
+  <urn:uuid:aa41f799-9649-44ed-995e-947df95d5550> a qb:Observation;
+    qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:ventilation;
+    sri:impact sri:health_well_being_and_accessibility;
+    sri:score 0.0;
+    sri:icscore 0.0;
+    sri:max 9 .
+  
+  <urn:uuid:739df0d7-ea6a-4085-8443-8739152146da> a qb:Observation;
+    qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:ventilation;
+    sri:impact sri:maintenance_and_fault_prediction;
+    sri:score 0.0;
+    sri:icscore 0.0;
+    sri:max 2 .
+  
+  <urn:uuid:285c106f-3253-4a9b-8dd5-a1294071b76b> a qb:Observation;
+    qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:ventilation;
+    sri:impact sri:information_to_occupants;
+    sri:score 0.0;
+    sri:icscore 0.0;
+    sri:max 3 .
+  
+  <urn:uuid:30138d0b-9bcd-48ec-aaba-76c1c470380a> a qb:Observation;
+    qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:lighting;
+    sri:impact sri:energy_efficiency;
+    sri:score 0.0;
+    sri:icscore 0.0;
+    sri:max 6 .
+  
+  <urn:uuid:17d0171d-06fa-4f3c-885b-8a0ce2098694> a qb:Observation;
+    qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:lighting;
+    sri:impact sri:energy_flexibility_and_storage;
+    sri:icscore 0.0;
+    sri:max 0 .
+  
+  <urn:uuid:883178fe-d02e-41ba-976c-449295813aa4> a qb:Observation;
+    qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:lighting;
+    sri:impact sri:comfort;
+    sri:score 0.0;
+    sri:icscore 0.0;
+    sri:max 5 .
+  
+  <urn:uuid:adc731fc-e85a-45b2-855c-3193269faf05> a qb:Observation;
+    qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:lighting;
+    sri:impact sri:convenience;
+    sri:score 0.0;
+    sri:icscore 0.0;
+    sri:max 5 .
+  
+  <urn:uuid:a16de219-096b-4e55-b232-d1512fcb2966> a qb:Observation;
+    qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:lighting;
+    sri:impact sri:health_well_being_and_accessibility;
+    sri:score 0.0;
+    sri:icscore 0.0;
+    sri:max 3 .
+  
+  <urn:uuid:94574746-52b1-465d-b129-b413ef6877e3> a qb:Observation;
+    qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:lighting;
+    sri:impact sri:maintenance_and_fault_prediction;
+    sri:icscore 0.0;
+    sri:max 0 .
+  
+  <urn:uuid:58a998af-08dd-4771-b14e-0bf231526d8e> a qb:Observation;
+    qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:lighting;
+    sri:impact sri:information_to_occupants;
+    sri:icscore 0.0;
+    sri:max 0 .
+  
+  <urn:uuid:aa8ad396-9115-4fa7-bd6a-216ccd8f9961> a qb:Observation;
+    qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:dE;
+    sri:impact sri:energy_efficiency;
+    sri:score 0.0;
+    sri:icscore 0.0;
+    sri:max 5 .
+  
+  <urn:uuid:7b0c023f-f702-4a60-9ffe-559d92a7e1da> a qb:Observation;
+    qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:dE;
+    sri:impact sri:energy_flexibility_and_storage;
+    sri:icscore 0.0;
+    sri:max 0 .
+  
+  <urn:uuid:3bb9b374-f686-4d58-9a32-c10d97cc05ce> a qb:Observation;
+    qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:dE;
+    sri:impact sri:comfort;
+    sri:score 0.0;
+    sri:icscore 0.0;
+    sri:max 5 .
+  
+  <urn:uuid:89b416e9-7062-4d6c-afa9-a2ee4d5e3903> a qb:Observation;
+    qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:dE;
+    sri:impact sri:convenience;
+    sri:score 0.0;
+    sri:icscore 0.0;
+    sri:max 6 .
+  
+  <urn:uuid:a1653ce4-e6da-469d-9fd9-0bd3527c50f7> a qb:Observation;
+    qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:dE;
+    sri:impact sri:health_well_being_and_accessibility;
+    sri:score 0.0;
+    sri:icscore 0.0;
+    sri:max 4 .
+  
+  <urn:uuid:bda429a4-46d2-4877-bf8d-7dc55ea9701c> a qb:Observation;
+    qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:dE;
+    sri:impact sri:maintenance_and_fault_prediction;
+    sri:score 0.0;
+    sri:icscore 0.0;
+    sri:max 2 .
+  
+  <urn:uuid:c2cb2c3a-9d1e-4db2-b974-919e28945660> a qb:Observation;
+    qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:dE;
+    sri:impact sri:information_to_occupants;
+    sri:score 0.0;
+    sri:icscore 0.0;
+    sri:max 3 .
+  
+  <urn:uuid:830f7bfc-4e6c-41dd-a083-385946d9f67c> a qb:Observation;
+    qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:electricity;
+    sri:impact sri:energy_efficiency;
+    sri:score 0.0;
+    sri:icscore 0.0;
+    sri:max 7 .
+  
+  <urn:uuid:257fd050-ca90-4b60-bef7-84a1c6f53e7c> a qb:Observation;
+    qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:electricity;
+    sri:impact sri:energy_flexibility_and_storage;
+    sri:score 0.0;
+    sri:icscore 0.0;
+    sri:max 11 .
+  
+  <urn:uuid:a933a02e-8b86-44e4-ae48-71391cad248c> a qb:Observation;
+    qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:electricity;
+    sri:impact sri:comfort;
+    sri:icscore 0.0;
+    sri:max 0 .
+  
+  <urn:uuid:7d253d12-1c24-40c3-9c60-27077f83e69e> a qb:Observation;
+    qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:electricity;
+    sri:impact sri:convenience;
+    sri:score 0.0;
+    sri:icscore 0.0;
+    sri:max 11 .
+  
+  <urn:uuid:46a09c7a-5ced-432b-8774-c0bf9c52914b> a qb:Observation;
+    qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:electricity;
+    sri:impact sri:health_well_being_and_accessibility;
+    sri:icscore 0.0;
+    sri:max 0 .
+  
+  <urn:uuid:84c63a9b-6caf-4ca3-8716-8fdd1a67fb86> a qb:Observation;
+    qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:electricity;
+    sri:impact sri:maintenance_and_fault_prediction;
+    sri:score 0.0;
+    sri:icscore 0.0;
+    sri:max 6 .
+  
+  <urn:uuid:13a4b86b-6a3d-4d5d-9927-215179f447ae> a qb:Observation;
+    qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:electricity;
+    sri:impact sri:information_to_occupants;
+    sri:score 11.1111111111111111111111;
+    sri:icscore 1.0;
+    sri:max 9 .
+  
+  <urn:uuid:c7660e54-55bf-4632-9cb3-3b8a1c51d59b> a qb:Observation;
+    qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:eV;
+    sri:impact sri:energy_efficiency;
+    sri:icscore 0.0;
+    sri:max 0 .
+  
+  <urn:uuid:f9ca1c41-e4f8-4230-8565-08b6c0d6856d> a qb:Observation;
+    qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:eV;
+    sri:impact sri:energy_flexibility_and_storage;
+    sri:score -50.0;
+    sri:icscore -2.0;
+    sri:max 4 .
+  
+  <urn:uuid:230a3ab1-73b4-48cd-9f6d-1258bc9669bd> a qb:Observation;
+    qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:eV;
+    sri:impact sri:comfort;
+    sri:icscore 0.0;
+    sri:max 0 .
+  
+  <urn:uuid:9ad19d7c-f677-472d-a86c-5d0742556f0d> a qb:Observation;
+    qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:eV;
+    sri:impact sri:convenience;
+    sri:score 0.0;
+    sri:icscore 0.0;
+    sri:max 6 .
+  
+  <urn:uuid:4aa5b9b2-944f-44e8-a419-d3f99b7dbf3d> a qb:Observation;
+    qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:eV;
+    sri:impact sri:health_well_being_and_accessibility;
+    sri:icscore 0.0;
+    sri:max 0 .
+  
+  <urn:uuid:8f5edcde-1a6b-44e6-a5dc-104b144eef89> a qb:Observation;
+    qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:eV;
+    sri:impact sri:maintenance_and_fault_prediction;
+    sri:icscore 0.0;
+    sri:max 0 .
+  
+  <urn:uuid:1d5ec27b-4bff-470b-aeeb-6078e0cd33dc> a qb:Observation;
+    qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:eV;
+    sri:impact sri:information_to_occupants;
+    sri:score 0.0;
+    sri:icscore 0.0;
+    sri:max 3 .
+  
+  <urn:uuid:03df31c4-4988-4553-8dd6-382b8d3076ea> a qb:Observation;
+    qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:mC;
+    sri:impact sri:energy_efficiency;
+    sri:score 0.0;
+    sri:icscore 0.0;
+    sri:max 8 .
+  
+  <urn:uuid:18051e9d-420f-4fe8-a41f-9f8834bbd585> a qb:Observation;
+    qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:mC;
+    sri:impact sri:energy_flexibility_and_storage;
+    sri:score 0.0;
+    sri:icscore 0.0;
+    sri:max 10 .
+  
+  <urn:uuid:1f2d114e-8c95-4391-92a2-eb9d2ca56f60> a qb:Observation;
+    qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:mC;
+    sri:impact sri:comfort;
+    sri:score 0.0;
+    sri:icscore 0.0;
+    sri:max 3 .
+  
+  <urn:uuid:81a6e01a-87a7-4701-ace3-f4d5c66e5712> a qb:Observation;
+    qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:mC;
+    sri:impact sri:convenience;
+    sri:score 0.0;
+    sri:icscore 0.0;
+    sri:max 17 .
+  
+  <urn:uuid:879b47bd-6c86-4a73-8f9e-7bae739918a4> a qb:Observation;
+    qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:mC;
+    sri:impact sri:health_well_being_and_accessibility;
+    sri:score 0.0;
+    sri:icscore 0.0;
+    sri:max 4 .
+  
+  <urn:uuid:d6fc7b3f-bd0e-4d8a-bb0f-7d4980bc6dfd> a qb:Observation;
+    qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:mC;
+    sri:impact sri:maintenance_and_fault_prediction;
+    sri:score 0.0;
+    sri:icscore 0.0;
+    sri:max 11 .
+  
+  <urn:uuid:9e526379-e6f3-4cb2-a03d-9572971fa143> a qb:Observation;
+    qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:mC;
+    sri:impact sri:information_to_occupants;
+    sri:score 0.0;
+    sri:icscore 0.0;
+    sri:max 9 .
+  
+  <urn:uuid:642a73d7-55cb-4a8b-9405-364ac3266ac3> qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:topDomain;
+    sri:impact sri:maintenance_and_fault_prediction;
+    sri:score "0.0"^^xsd:float .
+  
+  <urn:uuid:e86a8c59-7de8-45ad-bf2b-c307e3d12698> qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:topDomain;
+    sri:impact sri:energy_efficiency;
+    sri:score "5.774038"^^xsd:float .
+  
+  <urn:uuid:aaf94991-5dfb-4be6-8583-e952771580be> qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:topDomain;
+    sri:impact sri:energy_flexibility_and_storage;
+    sri:score 0.0 .
+  
+  <urn:uuid:e4412005-3d09-42cb-8b2f-6b2cf4e97666> qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:topDomain;
+    sri:impact sri:comfort;
+    sri:score "8.74317"^^xsd:float .
+  
+  <urn:uuid:e8c7c10c-d624-46df-a4d8-d3b2dc75920a> qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:topDomain;
+    sri:impact sri:convenience;
+    sri:score "5.0505047"^^xsd:float .
+  
+  <urn:uuid:b37d9d3b-0c88-469e-8a89-349b2e16f063> qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:topDomain;
+    sri:impact sri:health_well_being_and_accessibility;
+    sri:score "14.814815"^^xsd:float .
+  
+  <urn:uuid:b264ce41-6eba-4757-a3ad-f5143ed75eba> qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:topDomain;
+    sri:impact sri:information_to_occupants;
+    sri:score "2.2346368"^^xsd:float .
+  
+  <urn:uuid:591467e1-c91e-4e17-a629-255da0a1a8ca> qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:topDomain;
+    sri:impact sri:OptimiseEnergyEfficiencyAndOverallIn-UsePerformance;
+    sri:score "2.887019"^^xsd:float .
+  
+  <urn:uuid:b363486d-7389-4a6a-891f-7db96f39d0c6> qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:topDomain;
+    sri:impact sri:AdaptToSignalsFromTheGrid;
+    sri:score 0.0 .
+  
+  <urn:uuid:d8b4d71f-962e-4383-a078-553e5e5fc73d> qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:topDomain;
+    sri:impact sri:AdaptTheirOperationToTheNeedsOfTheOccupant;
+    sri:score "7.7107816"^^xsd:float .
+  
+  <urn:uuid:fcce4de8-b59c-47ee-bcd7-5cfb40e4a0bf> qb:dataSet <https://eu-phoenix.eu/sri/scores/4551a63aaefc1edde9fa1e56ce82cbe9>;
+    sri:function sri:topDomain;
+    sri:impact sri:topImpact;
+    sri:score "3.5326002"^^xsd:float .
+}
+
+b:98c5d866-b75e-3461-871a-24b0e325cad9 {
+  b:98c5d866-b75e-3461-871a-24b0e325cad9 a sri:Building;
+    rdfs:comment "Building with offices and lecture rooms."@en;
+    rdfs:label "Ex#1 Office Building Full";
+    sri:inCountry sri:Spain .
+}
+
+a:10d17e8b-40f3-39f7-b2a8-6d48039718d4 {
+  a:10d17e8b-40f3-39f7-b2a8-6d48039718d4 a qb:DataSet, prov:Collection, sri:CompleteAssessment;
+    rdfs:label "Ex#1 Office Building Full Assessment";
+    qb:structure sri:dsd-assessment;
+    sri:building b:98c5d866-b75e-3461-871a-24b0e325cad9;
+    dcterms:created "2022-01-16"^^xsd:date;
+    dcterms:issued "2022-01-16"^^xsd:date;
+    prov:wasAttributedTo <https://eu-phoenix.eu/sri/assessor/930d1807-5aaf-3148-9917-070ff16c8047>;
+    prov:generatedAtTime "2022-12-07T15:29:03"^^xsd:dateTime ;
+    sri:serviceCatalogue sri-ref:scB ;
+    sri:weights sri-ref:s-eur-residential .
+  
+  <https://eu-phoenix.eu/sri/assessor/930d1807-5aaf-3148-9917-070ff16c8047> a prov:Person,
+      foaf:Person;
+    prov:actedOnBehalfOf <https://eu-phoenix.eu/sri/org/5c6e7660-f347-390c-8557-a6748bea39bd>;
+    foaf:name "Example Assessor" .
+  
+  <https://eu-phoenix.eu/sri/org/5c6e7660-f347-390c-8557-a6748bea39bd> a prov:Organization,
+      foaf:Organization;
+    foaf:name "Example Organisation" .
+  
+  <https://eu-phoenix.eu/sri/a/10d17e8b-40f3-39f7-b2a8-6d48039718d4#0> qb:dataSet a:10d17e8b-40f3-39f7-b2a8-6d48039718d4;
+    sri:function sri-ref:h1a;
+    sri:level sri:level2;
+    sri:share 1.0E0 .
+  
+  <https://eu-phoenix.eu/sri/a/10d17e8b-40f3-39f7-b2a8-6d48039718d4#1> qb:dataSet a:10d17e8b-40f3-39f7-b2a8-6d48039718d4;
+    sri:function sri-ref:h1b;
+    sri:level sri:level0;
+    sri:share 1.0E0 .
+  
+  <https://eu-phoenix.eu/sri/a/10d17e8b-40f3-39f7-b2a8-6d48039718d4#10> qb:dataSet a:10d17e8b-40f3-39f7-b2a8-6d48039718d4;
+    sri:function sri-ref:dHW1a;
+    sri:level sri:level0;
+    sri:share 1.0E0 .
+  
+  <https://eu-phoenix.eu/sri/a/10d17e8b-40f3-39f7-b2a8-6d48039718d4#11> qb:dataSet a:10d17e8b-40f3-39f7-b2a8-6d48039718d4;
+    sri:function sri-ref:dHW1b;
+    sri:level sri:level0;
+    sri:share 1.0E0 .
+  
+  <https://eu-phoenix.eu/sri/a/10d17e8b-40f3-39f7-b2a8-6d48039718d4#12> qb:dataSet a:10d17e8b-40f3-39f7-b2a8-6d48039718d4;
+    sri:function sri-ref:dHW1d;
+    sri:level sri:level0;
+    sri:share 1.0E0 .
+  
+  <https://eu-phoenix.eu/sri/a/10d17e8b-40f3-39f7-b2a8-6d48039718d4#13> qb:dataSet a:10d17e8b-40f3-39f7-b2a8-6d48039718d4;
+    sri:function sri-ref:dHW2b;
+    sri:level sri:level0;
+    sri:share 1.0E0 .
+  
+  <https://eu-phoenix.eu/sri/a/10d17e8b-40f3-39f7-b2a8-6d48039718d4#14> qb:dataSet a:10d17e8b-40f3-39f7-b2a8-6d48039718d4;
+    sri:function sri-ref:dHW3;
+    sri:level sri:level0;
+    sri:share 1.0E0 .
+  
+  <https://eu-phoenix.eu/sri/a/10d17e8b-40f3-39f7-b2a8-6d48039718d4#15> qb:dataSet a:10d17e8b-40f3-39f7-b2a8-6d48039718d4;
+    sri:function sri-ref:c1a;
+    sri:level sri:level2;
+    sri:share 1.0E0 .
+  
+  <https://eu-phoenix.eu/sri/a/10d17e8b-40f3-39f7-b2a8-6d48039718d4#16> qb:dataSet a:10d17e8b-40f3-39f7-b2a8-6d48039718d4;
+    sri:function sri-ref:c1b;
+    sri:level sri:level0;
+    sri:share 1.0E0 .
+  
+  <https://eu-phoenix.eu/sri/a/10d17e8b-40f3-39f7-b2a8-6d48039718d4#17> qb:dataSet a:10d17e8b-40f3-39f7-b2a8-6d48039718d4;
+    sri:function sri-ref:c1c;
+    sri:level sri:level0;
+    sri:share 1.0E0 .
+  
+  <https://eu-phoenix.eu/sri/a/10d17e8b-40f3-39f7-b2a8-6d48039718d4#18> qb:dataSet a:10d17e8b-40f3-39f7-b2a8-6d48039718d4;
+    sri:function sri-ref:c1d;
+    sri:level sri:level0;
+    sri:share 1.0E0 .
+  
+  <https://eu-phoenix.eu/sri/a/10d17e8b-40f3-39f7-b2a8-6d48039718d4#19> qb:dataSet a:10d17e8b-40f3-39f7-b2a8-6d48039718d4;
+    sri:function sri-ref:c1f;
+    sri:level sri:level0;
+    sri:share 1.0E0 .
+  
+  <https://eu-phoenix.eu/sri/a/10d17e8b-40f3-39f7-b2a8-6d48039718d4#2> qb:dataSet a:10d17e8b-40f3-39f7-b2a8-6d48039718d4;
+    sri:function sri-ref:h1c;
+    sri:level sri:level0;
+    sri:share 1.0E0 .
+  
+  <https://eu-phoenix.eu/sri/a/10d17e8b-40f3-39f7-b2a8-6d48039718d4#20> qb:dataSet a:10d17e8b-40f3-39f7-b2a8-6d48039718d4;
+    sri:function sri-ref:c1g;
+    sri:level sri:level0;
+    sri:share 1.0E0 .
+  
+  <https://eu-phoenix.eu/sri/a/10d17e8b-40f3-39f7-b2a8-6d48039718d4#21> qb:dataSet a:10d17e8b-40f3-39f7-b2a8-6d48039718d4;
+    sri:function sri-ref:c2a;
+    sri:level sri:level0;
+    sri:share 1.0E0 .
+  
+  <https://eu-phoenix.eu/sri/a/10d17e8b-40f3-39f7-b2a8-6d48039718d4#22> qb:dataSet a:10d17e8b-40f3-39f7-b2a8-6d48039718d4;
+    sri:function sri-ref:c2b;
+    sri:level sri:level0;
+    sri:share 1.0E0 .
+  
+  <https://eu-phoenix.eu/sri/a/10d17e8b-40f3-39f7-b2a8-6d48039718d4#23> qb:dataSet a:10d17e8b-40f3-39f7-b2a8-6d48039718d4;
+    sri:function sri-ref:c3;
+    sri:level sri:level0;
+    sri:share 1.0E0 .
+  
+  <https://eu-phoenix.eu/sri/a/10d17e8b-40f3-39f7-b2a8-6d48039718d4#24> qb:dataSet a:10d17e8b-40f3-39f7-b2a8-6d48039718d4;
+    sri:function sri-ref:c4;
+    sri:level sri:level0;
+    sri:share 1.0E0 .
+  
+  <https://eu-phoenix.eu/sri/a/10d17e8b-40f3-39f7-b2a8-6d48039718d4#25> qb:dataSet a:10d17e8b-40f3-39f7-b2a8-6d48039718d4;
+    sri:function sri-ref:v1a;
+    sri:level sri:level0;
+    sri:share 1.0E0 .
+  
+  <https://eu-phoenix.eu/sri/a/10d17e8b-40f3-39f7-b2a8-6d48039718d4#26> qb:dataSet a:10d17e8b-40f3-39f7-b2a8-6d48039718d4;
+    sri:function sri-ref:v1c;
+    sri:level sri:level0;
+    sri:share 1.0E0 .
+  
+  <https://eu-phoenix.eu/sri/a/10d17e8b-40f3-39f7-b2a8-6d48039718d4#27> qb:dataSet a:10d17e8b-40f3-39f7-b2a8-6d48039718d4;
+    sri:function sri-ref:v2c;
+    sri:level sri:level0;
+    sri:share 1.0E0 .
+  
+  <https://eu-phoenix.eu/sri/a/10d17e8b-40f3-39f7-b2a8-6d48039718d4#28> qb:dataSet a:10d17e8b-40f3-39f7-b2a8-6d48039718d4;
+    sri:function sri-ref:v2d;
+    sri:level sri:level1;
+    sri:share 1.0E0 .
+  
+  <https://eu-phoenix.eu/sri/a/10d17e8b-40f3-39f7-b2a8-6d48039718d4#29> qb:dataSet a:10d17e8b-40f3-39f7-b2a8-6d48039718d4;
+    sri:function sri-ref:v3;
+    sri:level sri:level0;
+    sri:share 1.0E0 .
+  
+  <https://eu-phoenix.eu/sri/a/10d17e8b-40f3-39f7-b2a8-6d48039718d4#3> qb:dataSet a:10d17e8b-40f3-39f7-b2a8-6d48039718d4;
+    sri:function sri-ref:h1d;
+    sri:level sri:level0;
+    sri:share 1.0E0 .
+  
+  <https://eu-phoenix.eu/sri/a/10d17e8b-40f3-39f7-b2a8-6d48039718d4#30> qb:dataSet a:10d17e8b-40f3-39f7-b2a8-6d48039718d4;
+    sri:function sri-ref:v6;
+    sri:level sri:level0;
+    sri:share 1.0E0 .
+  
+  <https://eu-phoenix.eu/sri/a/10d17e8b-40f3-39f7-b2a8-6d48039718d4#31> qb:dataSet a:10d17e8b-40f3-39f7-b2a8-6d48039718d4;
+    sri:function sri-ref:l1a;
+    sri:level sri:level0;
+    sri:share 1.0E0 .
+  
+  <https://eu-phoenix.eu/sri/a/10d17e8b-40f3-39f7-b2a8-6d48039718d4#32> qb:dataSet a:10d17e8b-40f3-39f7-b2a8-6d48039718d4;
+    sri:function sri-ref:l2;
+    sri:level sri:level0;
+    sri:share 1.0E0 .
+  
+  <https://eu-phoenix.eu/sri/a/10d17e8b-40f3-39f7-b2a8-6d48039718d4#33> qb:dataSet a:10d17e8b-40f3-39f7-b2a8-6d48039718d4;
+    sri:function sri-ref:dE1;
+    sri:level sri:level0;
+    sri:share 1.0E0 .
+  
+  <https://eu-phoenix.eu/sri/a/10d17e8b-40f3-39f7-b2a8-6d48039718d4#34> qb:dataSet a:10d17e8b-40f3-39f7-b2a8-6d48039718d4;
+    sri:function sri-ref:dE2;
+    sri:level sri:level0;
+    sri:share 1.0E0 .
+  
+  <https://eu-phoenix.eu/sri/a/10d17e8b-40f3-39f7-b2a8-6d48039718d4#35> qb:dataSet a:10d17e8b-40f3-39f7-b2a8-6d48039718d4;
+    sri:function sri-ref:dE4;
+    sri:level sri:level0;
+    sri:share 1.0E0 .
+  
+  <https://eu-phoenix.eu/sri/a/10d17e8b-40f3-39f7-b2a8-6d48039718d4#36> qb:dataSet a:10d17e8b-40f3-39f7-b2a8-6d48039718d4;
+    sri:function sri-ref:e2;
+    sri:level sri:level0;
+    sri:share 1.0E0 .
+  
+  <https://eu-phoenix.eu/sri/a/10d17e8b-40f3-39f7-b2a8-6d48039718d4#37> qb:dataSet a:10d17e8b-40f3-39f7-b2a8-6d48039718d4;
+    sri:function sri-ref:e3;
+    sri:level sri:level0;
+    sri:share 1.0E0 .
+  
+  <https://eu-phoenix.eu/sri/a/10d17e8b-40f3-39f7-b2a8-6d48039718d4#38> qb:dataSet a:10d17e8b-40f3-39f7-b2a8-6d48039718d4;
+    sri:function sri-ref:e4;
+    sri:level sri:level0;
+    sri:share 1.0E0 .
+  
+  <https://eu-phoenix.eu/sri/a/10d17e8b-40f3-39f7-b2a8-6d48039718d4#39> qb:dataSet a:10d17e8b-40f3-39f7-b2a8-6d48039718d4;
+    sri:function sri-ref:e5;
+    sri:level sri:level0;
+    sri:share 1.0E0 .
+  
+  <https://eu-phoenix.eu/sri/a/10d17e8b-40f3-39f7-b2a8-6d48039718d4#4> qb:dataSet a:10d17e8b-40f3-39f7-b2a8-6d48039718d4;
+    sri:function sri-ref:h1f;
+    sri:level sri:level0;
+    sri:share 1.0E0 .
+  
+  <https://eu-phoenix.eu/sri/a/10d17e8b-40f3-39f7-b2a8-6d48039718d4#40> qb:dataSet a:10d17e8b-40f3-39f7-b2a8-6d48039718d4;
+    sri:function sri-ref:e8;
+    sri:level sri:level0;
+    sri:share 1.0E0 .
+  
+  <https://eu-phoenix.eu/sri/a/10d17e8b-40f3-39f7-b2a8-6d48039718d4#41> qb:dataSet a:10d17e8b-40f3-39f7-b2a8-6d48039718d4;
+    sri:function sri-ref:e11;
+    sri:level sri:level0;
+    sri:share 1.0E0 .
+  
+  <https://eu-phoenix.eu/sri/a/10d17e8b-40f3-39f7-b2a8-6d48039718d4#42> qb:dataSet a:10d17e8b-40f3-39f7-b2a8-6d48039718d4;
+    sri:function sri-ref:e12;
+    sri:level sri:level1;
+    sri:share 1.0E0 .
+  
+  <https://eu-phoenix.eu/sri/a/10d17e8b-40f3-39f7-b2a8-6d48039718d4#43> qb:dataSet a:10d17e8b-40f3-39f7-b2a8-6d48039718d4;
+    sri:function sri-ref:eV15;
+    sri:level sri:level0;
+    sri:share 1.0E0 .
+  
+  <https://eu-phoenix.eu/sri/a/10d17e8b-40f3-39f7-b2a8-6d48039718d4#44> qb:dataSet a:10d17e8b-40f3-39f7-b2a8-6d48039718d4;
+    sri:function sri-ref:eV16;
+    sri:level sri:level0;
+    sri:share 1.0E0 .
+  
+  <https://eu-phoenix.eu/sri/a/10d17e8b-40f3-39f7-b2a8-6d48039718d4#45> qb:dataSet a:10d17e8b-40f3-39f7-b2a8-6d48039718d4;
+    sri:function sri-ref:eV17;
+    sri:level sri:level0;
+    sri:share 1.0E0 .
+  
+  <https://eu-phoenix.eu/sri/a/10d17e8b-40f3-39f7-b2a8-6d48039718d4#46> qb:dataSet a:10d17e8b-40f3-39f7-b2a8-6d48039718d4;
+    sri:function sri-ref:mC3;
+    sri:level sri:level0;
+    sri:share 1.0E0 .
+  
+  <https://eu-phoenix.eu/sri/a/10d17e8b-40f3-39f7-b2a8-6d48039718d4#47> qb:dataSet a:10d17e8b-40f3-39f7-b2a8-6d48039718d4;
+    sri:function sri-ref:mC4;
+    sri:level sri:level0;
+    sri:share 1.0E0 .
+  
+  <https://eu-phoenix.eu/sri/a/10d17e8b-40f3-39f7-b2a8-6d48039718d4#48> qb:dataSet a:10d17e8b-40f3-39f7-b2a8-6d48039718d4;
+    sri:function sri-ref:mC9;
+    sri:level sri:level0;
+    sri:share 1.0E0 .
+  
+  <https://eu-phoenix.eu/sri/a/10d17e8b-40f3-39f7-b2a8-6d48039718d4#49> qb:dataSet a:10d17e8b-40f3-39f7-b2a8-6d48039718d4;
+    sri:function sri-ref:mC13;
+    sri:level sri:level0;
+    sri:share 1.0E0 .
+  
+  <https://eu-phoenix.eu/sri/a/10d17e8b-40f3-39f7-b2a8-6d48039718d4#5> qb:dataSet a:10d17e8b-40f3-39f7-b2a8-6d48039718d4;
+    sri:function sri-ref:h2a;
+    sri:level sri:level0;
+    sri:share 1.0E0 .
+  
+  <https://eu-phoenix.eu/sri/a/10d17e8b-40f3-39f7-b2a8-6d48039718d4#50> qb:dataSet a:10d17e8b-40f3-39f7-b2a8-6d48039718d4;
+    sri:function sri-ref:mC25;
+    sri:level sri:level0;
+    sri:share 1.0E0 .
+  
+  <https://eu-phoenix.eu/sri/a/10d17e8b-40f3-39f7-b2a8-6d48039718d4#51> qb:dataSet a:10d17e8b-40f3-39f7-b2a8-6d48039718d4;
+    sri:function sri-ref:mC28;
+    sri:level sri:level0;
+    sri:share 1.0E0 .
+  
+  <https://eu-phoenix.eu/sri/a/10d17e8b-40f3-39f7-b2a8-6d48039718d4#52> qb:dataSet a:10d17e8b-40f3-39f7-b2a8-6d48039718d4;
+    sri:function sri-ref:mC29;
+    sri:level sri:level0;
+    sri:share 1.0E0 .
+  
+  <https://eu-phoenix.eu/sri/a/10d17e8b-40f3-39f7-b2a8-6d48039718d4#53> qb:dataSet a:10d17e8b-40f3-39f7-b2a8-6d48039718d4;
+    sri:function sri-ref:mC30;
+    sri:level sri:level0;
+    sri:share 1.0E0 .
+  
+  <https://eu-phoenix.eu/sri/a/10d17e8b-40f3-39f7-b2a8-6d48039718d4#6> qb:dataSet a:10d17e8b-40f3-39f7-b2a8-6d48039718d4;
+    sri:function sri-ref:h2b;
+    sri:level sri:level0;
+    sri:share 1.0E0 .
+  
+  <https://eu-phoenix.eu/sri/a/10d17e8b-40f3-39f7-b2a8-6d48039718d4#7> qb:dataSet a:10d17e8b-40f3-39f7-b2a8-6d48039718d4;
+    sri:function sri-ref:h2d;
+    sri:level sri:level0;
+    sri:share 1.0E0 .
+  
+  <https://eu-phoenix.eu/sri/a/10d17e8b-40f3-39f7-b2a8-6d48039718d4#8> qb:dataSet a:10d17e8b-40f3-39f7-b2a8-6d48039718d4;
+    sri:function sri-ref:h3;
+    sri:level sri:level0;
+    sri:share 1.0E0 .
+  
+  <https://eu-phoenix.eu/sri/a/10d17e8b-40f3-39f7-b2a8-6d48039718d4#9> qb:dataSet a:10d17e8b-40f3-39f7-b2a8-6d48039718d4;
+    sri:function sri-ref:h4;
+    sri:level sri:level0;
+    sri:share 1.0E0 .
+}
