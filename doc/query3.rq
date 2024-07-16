@@ -25,21 +25,21 @@ WHERE {
     {
         SELECT ?domain ?impact (SUM(?score*?share + ?addscore*(1.0-?share)) as ?discore) (UUID() as ?scoresobs)
         WHERE {
+            # assessment
+            $ds qb:structure sri:dsd-assessment ;
+                sri:serviceCatalogue ?sc .
+            ?levelobs qb:dataSet $ds ;
+                    sri:function ?service ;
+                    sri:level ?level .
+
             # SRI service score
-            [] qb:dataSet sri:scores ;
+            [] qb:dataSet ?refscoresds ;
                 sri:function ?service ;
                 sri:impact ?impact ;
                 sri:level ?level ;
                 sri:score ?score .
-
             ?domain skos:narrower ?service .
-
-            $ds qb:structure sri:dsd-assessment .
-
-            # building
-            ?levelobs qb:dataSet $ds ;
-                    sri:function ?service ;
-                    sri:level ?level .
+            ?sc sri:scores ?refscoresds .
 
             # in case of additional level
             OPTIONAL {
@@ -47,7 +47,7 @@ WHERE {
                     sri:additionalLevel ?addlevel .
 
                 # SRI service score additional level
-                [] qb:dataSet sri:scores ;
+                [] qb:dataSet ?refscoresds ;
                     sri:function ?service ;
                     sri:impact ?impact ;
                     sri:level ?addlevel ;

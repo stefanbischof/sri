@@ -20,10 +20,6 @@ WHERE {
         SELECT  ?impact (COALESCE(SUM(?weight*?discore)/SUM(?weight*?maxscore),0)*100 as ?iscore) (UUID() as ?scoresobs)
         WHERE {
             GRAPH $scoresds {
-                $scoresds
-                    qb:structure sri:dsd-scores ;
-                    prov:wasDerivedFrom $ds .
-
                 # get impact criterion scores from Step 3
                 # get maximum impact score from Step 4
                 [] qb:dataSet $scoresds ;
@@ -33,18 +29,11 @@ WHERE {
                     sri:icscore ?discore .
             }
 
-            # Get weighting factor
-            $ds sri:building ?building .
-            ?building sri:inCountry ?country ;
-                    sri:type ?type .
-            ?zone skos:narrower ?country .
-
-            [] qb:dataSet sri:weights ;
+            $ds sri:weights ?weightsds . # get weights dataset
+            [] qb:dataSet ?weightsds ; # Get weighting factor
                 sri:function ?domain ;
                 sri:impact ?impact ;
-                sri:refArea ?zone ;
-                sri:type ?type ;
-                sri:weight ?weight .
+                sri:score ?weight .
 
         } GROUP BY ?impact
     }

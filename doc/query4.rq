@@ -13,40 +13,38 @@ INSERT {
 }
 WHERE {
     {
-        SELECT ?domain ?impact (sum(?max) as ?maxscore)
+        SELECT ?domain ?impact (sum(?max) as ?maxscore) # aggregate from services to domains
         WHERE {
-            {   SELECT ?service ?impact (max(?score) as ?max)
+            {   SELECT ?service ?impact (max(?score) as ?max) # get maximum score of assessed service for each service
                 WHERE {
-                    [] qb:dataSet sri:scores ;
+                    [] qb:dataSet ?refscoresds ;
                         sri:function ?service ;
                         sri:impact ?impact ;
                         sri:score ?score .
-                    FILTER EXISTS {
-                        GRAPH $scoresds {
-                            ?scoresobsdi
-                                qb:dataSet $scoresds ;
-                                sri:function ?domain ;
-                                sri:impact ?impact ;
-                                sri:icscore ?discore .
-                            $scoresds
-                                qb:structure sri:dsd-scores ;
-                                prov:wasDerivedFrom $ds .
-                        }
-                    }
+                    
+                    ?service a sri:Service .
+                    ?sc sri:scores ?refscoresds .
 
+                    GRAPH $scoresds { # get the the assessment dataset ?assds
+                        $scoresds prov:wasDerivedFrom ?assds . 
+                    }
+                    
+                    GRAPH ?assds { # check if the assessment contains the service
+                        ?assds qb:structure sri:dsd-assessment ;
+                            sri:serviceCatalogue ?sc .
+                        [] qb:dataSet ?assds ;
+                            sri:function ?service  .   
+                    }
                 } GROUP BY ?impact ?service
             }
             ?domain skos:narrower ?service .
         } GROUP BY ?impact ?domain
     }
 
-    GRAPH $scoresds {
+    GRAPH $scoresds { # get corresponding observation
         ?scoresobsdi
             qb:dataSet $scoresds ;
             sri:function ?domain ;
             sri:impact ?impact .
-        $scoresds
-            qb:structure sri:dsd-scores ;
-            prov:wasDerivedFrom $ds .
     }
 }
