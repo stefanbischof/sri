@@ -37,7 +37,7 @@ WHERE {
                 sri:function ?service ;
                 sri:impact ?impact ;
                 sri:level ?level ;
-                sri:score ?score .
+                sri:icscore ?score .
             ?domain skos:narrower ?service .
             ?sc sri:scores ?refscoresds .
 
@@ -51,12 +51,12 @@ WHERE {
                     sri:function ?service ;
                     sri:impact ?impact ;
                     sri:level ?addlevel ;
-                    sri:score ?addscore .
+                    sri:icscore ?addscore .
                 }
-            # default values in case no additional level present
+            # neutral default values in case no additional level present
             OPTIONAL {
                 BIND(1.0 as ?share)
-                BIND(0.0 as ?addscore) }
+                BIND(0 as ?addscore) }
         }
         GROUP BY ?domain ?impact #$ds
     }
